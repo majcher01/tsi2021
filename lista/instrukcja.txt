@@ -1,0 +1,1 @@
+lista ma sie skladac z 3 punktow glownych, kazdy glowny ma miec 3 podpunkty, w kazdym z 3 podpunktow maja byc 3 pod pod punkty, podpodpunkty maja byc lista nieuporzadkowana i ma byc tytul do zdjecia ma byc wstep i opis zdjec itp

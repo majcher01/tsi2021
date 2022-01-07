@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/typeit@8.1.0/dist/index.umd.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" ></script>
+    <title>Bosch ARM 32</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+  font-family: 'Poppins', sans-serif;
+  margin: 0px 0px 200px 0px;
+  
+  background-image: url('../img/bg.webp');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+  color: white;
+
+}
+ 
+ 
+.div1{
+
+    display: flex;
+    justify-content: center;
+    
+}
+ 
+.trans--grow{
+  -webkit-transition: width 1s ease-out; /* For Safari 3.1 to 6.0 */
+  transition: width 1s  ease-out;
+  width : 0%;
+}
+.grow{
+  width:100%;
+}
+.hr1{
+  margin-left:0;
+}
+.hr2{
+  margin-right:0;
+}
+hr{
+  margin-top: 20px;
+  padding: 2px 0;
+  border: none;
+  background-color: rgb(250, 150, 0);
+  letter-spacing: 5px;
+}
+
+ </style>
+</head>
+<body>
+    <div class="div1">
+<span style="background-color: #505050; width: 900px; padding-top: 30px; padding-bottom: 200px;">
+    <div style="width: 100%; text-align: center; margin-bottom: 100px;">
+        <hr class="trans--grow hr1">
+        <p id="tytul" style="font-size: 28px;"></p>
+        <hr class="trans--grow hr2">
+    </div>
+<div style="display: flex; justify-content: center;">
+    <img src="../img/arm32.png" style="transform: scaleX(-1);"> 
+</div>
+    <br>
+    <p style="padding-left: 40px; padding-right: 40px; text-align: left; font-size: 18px;">
+        Ta kompaktowa kosiarka kosi trawę aż do samej krawędzi – nie ma konieczności dodatkowych poprawek. Model ARM 32 jest wyposażony w grzebień i automatycznie kosi krawędzie trawy rosnącej wzdłuż murów i ścieżek. Kosiarka jest bardzo lekka, waży tylko 6,8 kg, co ułatwia manewrowanie wokół przeszkód oraz transport narzędzia. Silnik Powerdrive zapewnia niezawodność i wydajność koszenia, także w trudnych warunkach. Kosiarka jest przeznaczona do koszenia małych i średnich ogrodów oraz do precyzyjnego koszenia trawy na krawędziach. Jest wyposażona w zbiornik o pojemności 31 l, który ułatwia utylizację skoszonej trawy. 
+
+</p>
+<p style="padding-left: 40px; padding-right: 40px; text-align: center; font-size: 18px; margin-top: 70px;">
+    <span style="font-size: 22px;">Dane techniczne ARM 32</span>
+
+<div>
+    <div style="text-align: center; display: flex; justify-content: left; padding-left: 80px;">
+        <span style="text-align: left; margin-right: 0px;">Moc silnika</span>
+        <span style="text-align: left; margin-left: 50px;">1200 W</span>
+        <span style="text-align: left; margin-left: 175px;">Moment obrotowy</span>
+        <span style="text-align: left; margin-left: 50px;">13 Nm</span>
+
+        
+    </div>
+    <div style="text-align: center; display: flex; justify-content: left; padding-left: 80px; margin-top: 10px;">
+        <span style="text-align: left; margin-right: 0px;">Szerokość cięcia</span>
+        <span style="text-align: left; margin-left: 50px;">32 cm</span>
+        <span style="text-align: left; margin-left: 135px;">System cięcia</span>
+        <span style="text-align: left; margin-left: 50px;">Nóż obrotowy</span>
+
+        
+    </div>
+    <div style="text-align: center; display: flex; justify-content: left; padding-left: 80px; margin-top: 10px;">
+        <span style="text-align: left; margin-right: 0px;">Waga</span>
+        <span style="text-align: left; margin-left: 50px;">6,8 kg</span>
+        <span style="text-align: left; margin-left: 220px;">Pojemność zbiornika na trawę</span>
+        <span style="text-align: left; margin-left: 50px;">31 l</span>
+
+        
+    </div>
+    <div style="text-align: center; display: flex; justify-content: left; padding-left: 80px; margin-top: 10px;">
+        <span style="text-align: left; margin-right: 0px;"> Wysokość cięcia  </span>
+        <span style="text-align: left; margin-left: 50px;">  20 - 60 mm </span>
+        <span style="text-align: left; margin-left: 90px;"> Regulacja wysokości cięcia  </span>
+        <span style="text-align: left; margin-left: 50px;"> 3-stopniowa, osiowa  </span>
+
+        
+    </div>
+    <div style="text-align: center; display: flex; justify-content: left; padding-left: 80px; margin-top: 10px;">
+        <span style="text-align: left; margin-right: 0px;"> Typ uchwytu  </span>
+        <span style="text-align: left; margin-left: 50px;">  standard </span>
+        <span style="text-align: left; margin-left: 140px;"> Nr katalogowy  </span>
+        <span style="text-align: left; margin-left: 50px;"> 0600885B03  </span>
+
+        
+    </div>
+    
+</div>
+</p>
+
+
+
+</span>
+ </div>
+
+
+    <script>
+
+        new TypeIt("#tytul", {
+        speed: 50,
+        startDelay:1000,
+        afterComplete: function(instance1){
+      instance1.destroy();
+  }
+    })
+    .type("<b>Bosch ARM 32</b>")
+    .go();
+
+    jQuery(document).ready(function($){
+    setTimeout(function(){
+        $('.trans--grow').addClass('grow');
+    }, 800);
+});
+    </script>
+
+</body>
+</html>

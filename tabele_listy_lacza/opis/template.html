@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/typeit@8.1.0/dist/index.umd.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" ></script>
+    <title>Bosch ARM 32</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+  font-family: 'Poppins', sans-serif;
+  margin: 0px 0px 200px 0px;
+  
+  background-image: url('../img/bg.webp');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+  color: white;
+
+}
+ 
+ 
+.div1{
+
+    display: flex;
+    justify-content: center;
+    
+}
+ 
+.trans--grow{
+  -webkit-transition: width 1s ease-out; /* For Safari 3.1 to 6.0 */
+  transition: width 1s  ease-out;
+  width : 0%;
+}
+.grow{
+  width:100%;
+}
+.hr1{
+  margin-left:0;
+}
+.hr2{
+  margin-right:0;
+}
+hr{
+  margin-top: 20px;
+  padding: 2px 0;
+  border: none;
+  background-color: rgb(250, 150, 0);
+  letter-spacing: 5px;
+}
+
+ </style>
+</head>
+<body>
+    <div class="div1">
+<span style="justify-content: center; display: flex; background-color: #505050; width: 900px; padding-top: 30px; padding-bottom: 50px;">
+    <div style="width: 100%; text-align: center; margin-bottom: 100px;">
+        <hr class="trans--grow hr1">
+        <p id="tytul" style="font-size: 28px;"></p>
+        <hr class="trans--grow hr2">
+    </div>
+</span>
+
+
+
+    </div>
+
+
+    <script>
+
+        new TypeIt("#tytul", {
+        speed: 50,
+        startDelay:1000,
+        afterComplete: function(instance1){
+      instance1.destroy();
+  }
+    })
+    .type("<b>Bosch ARM 32</b>")
+    .go();
+
+    jQuery(document).ready(function($){
+    setTimeout(function(){
+        $('.trans--grow').addClass('grow');
+    }, 800);
+});
+    </script>
+
+</body>
+</html>
