@@ -66,6 +66,10 @@ transition-duration: 0.4s;
   background-color: black;
 }
 
+#tabela2 td:nth-child(1) {
+width: auto;
+}
+
 td{
 width: 120px;
 height: auto;
@@ -110,8 +114,12 @@ body{
 }
 
 a{
-  text-decoration: none;
+  
   color: white;
+}
+
+a:hover {
+  color: black;
 }
 
 table#tabela2 img{
@@ -123,6 +131,10 @@ table#tabela2 img{
   
   padding-left: 25%;
   padding-right: 25%;
+}
+
+ul{
+  text-align: left;
 }
 
     </style>
@@ -229,7 +241,7 @@ table#tabela2 img{
   <script>  
 
   document.write('<form name="selecter"><select name="select1" size=1>');
-  document.write('<option value=none><b>Wybierz model</b>');
+  document.write('<option value=none><b>Wybierz model kosiarki</b>');
   document.write('<optgroup label="szer. robocza <33 cm">');
   document.write('<option value="https://www.narzedzia.pl/kosiarka-elektryczna-stiga-collector-39-el,6635.html">Stiga Collector 39E');
   document.write('<option value="https://www.narzedzia.pl/kosiarka-elektryczna-makita-elm3320,83759.html ">Makita ELM 3320');
@@ -284,15 +296,15 @@ table#tabela2 img{
     <table id="tabela3" style="border-width: 4px; border-bottom-width: 1px; border-color: white;">
       <thead >
       <tr> 
-        <th>Lp.</th>
+        <th style="width: auto;">Lp.</th>
         <th>Producent</th>
         <th>Model</th>                            <!--Nagłówki celowo zrobiłem w osobnej tabeli, aby zostawały widoczne podczas przeszukiwania. Mam nadzieję, że to nie będzie błąd.-->
-        <th>Wysokość koszenia [mm]</th>
-        <th>Szerokość koszenia [cm]</th>
-        <th>Moc [W]</th>
-        <th>Masa [kg]</th>
-        <th>Cena [zł]</th>
-        <th>Pojemność kosza [l]</th>
+        <th>Wysokość koszenia [<abbr title='milimetr - jednostka długości równa jednej tysięcznej metra'>mm</abbr>]</th>
+        <th>Szerokość koszenia [<abbr title="centymetr - setna część metra">cm</abbr>]</th>
+        <th>Moc [<abbr title="Wat - jednostka mocy i strumienia energii w układzie SI.">W</abbr>]</th>
+        <th>Masa [<abbr title="Kilogram -  jednostka masy, jednostka podstawowa układu SI">kg</abbr>]</th>
+        <th>Cena [<abbr title="Złotówka - waluta obowiązująca w Polsce.">zł</abbr>]</th>
+        <th>Pojemność kosza [<abbr title="Litr - jednostka objętości cieczy i ciał sypkich oraz pojemności naczyń równa jednemu decymetrowi sześciennemu">l</abbr>]</th>
         <th>Zdjęcie</th>
       </tr>
     </thead>
@@ -305,7 +317,7 @@ table#tabela2 img{
     </thead>
     <tbody>
       <tr>
-        <td>1.</td>
+        <td >1.</td>
         <td><a href="https://www.narzedzia.pl/kosiarka-elektryczna-stiga-collector-39-el,6635.html ">Stiga</a></td>
         <td>Collector 39 E</td>
         <td rowspan="2">25-55</td>
