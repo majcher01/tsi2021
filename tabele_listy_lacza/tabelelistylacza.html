@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Tabele, listy, łącza Jakub Majcherski 3M</title>
+
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  
+}
+
+table{
+  border-width: 3px;
+  
+}
+
+#tabela1{
+  background: white;
+  border-color: black;
+
+}
+
+#tabela2 td{
+  border-color: white;
+}
+
+#tabela3 th{
+  border-color: white;
+}
+
+#tabela3 th:hover{
+background-color: white;
+color: black;
+transition-duration: 0.4s;
+}
+#tabela2 td:hover{
+background-color: white;
+color: black;
+transition-duration: 0.4s;
+}
+
+.tab2img{
+  background-color: white;
+}
+
+.tab2img:hover{
+opacity: 60%;
+}
+
+#tabela1 img:hover{
+opacity: 40%;
+transition-duration: 0.4s;
+}
+
+#tabela1 tr:nth-child(even){
+  background-color: black;
+}
+
+td{
+width: 120px;
+height: auto;
+}
+
+th{
+width: 120px;
+height: auto;
+}
+
+img{
+  width: 150px;
+  height: auto;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  margin: 0px 0px 200px 0px;
+  
+  background-image: url('img/bg.webp');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+  color: white;
+
+}
+
+
+
+.srodek{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.tytul{
+  margin-top: 70px;
+  margin-bottom: 50px;
+  font-size: 24px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+table#tabela2 img{
+  width:100px;
+  height: auto;
+}
+
+.tlo{
+  
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+    </style>
+</head>
+<body>
+    
+<div class="tytul srodek">
+  Najlepsze kosiarki elektryczne w 2021. Według mojej subiektywnej opinii oczywiście.
+</div>
+<div class="tytul srodek" style="margin-top:10px; font-size: 18px; padding-left: 150px; padding-right: 150px;">
+  Kosiarka elektryczna jest urządzeniem ogrodniczym, które kosi trawę w ogrodach, która stała się zbyt wysoka. Narzędzie to może pracować w ogrodzie o powierzchni do 1000 m². Samojezdna kosiarka jest idealną maszyną do ogrodów, których powierzchnia nie jest zbyt duża. Modele elektryczne umożliwiają szybkie i wydajne koszenie, a jednocześnie są łatwe w użyciu.
+</div>
+
+
+
+  <div class='tabela srodek'>
+    
+    <table id="tabela1" >
+        
+          <tr>
+            <td> <a href="https://www.narzedzia.pl/kosiarka-elektryczna-stiga-collector-39-el,6635.html" > <img src="img/stiga_collector_39E.jpeg">    </a></td>
+            <td> <a href="https://www.narzedzia.pl/kosiarka-akumulatorowa-ryobi-rlm36x41h40,68813.html" >   <img style="transform: scaleX(-1);" src="img/Ryobi_RLM36X40H2.webp">  </a></td>
+            <td> <a href="https://www.ceneo.pl/36507599" >   <img style="transform: scaleX(-1);" src="img/NAC-LE18-40-PB-S.webp">  </a></td>
+            <td> <a href="https://riwall-pro.pl/product/kosiarka-elektryczna-riwall-3213/" >  <img src="img/Riwall-3213-1.webp">   </a></td>
+            <td> <a href="https://www.narzedzia.pl/kosiarka-elektryczna-makita-elm3320,83759.html" >   <img src="img/Makita-elm3320-1.webp">  </a></td>
+            <td> <a href=" https://www.obi.pl/kosiarki-elektryczne/lider-kosiarka-elektryczna-kc1800/p/6047310" >   <img style="transform: scaleX(-1);" src="img/handy-kc-210.webp">  </a></td>
+          </tr>
+        
+        
+          <tr>
+            <td> <a href="https://www.narzedzia.pl/kosiarka-elektryczna-stiga-collector-39-el,6635.html" >  Stiga Collector 39 E   </a></td>
+            <td> <a href="https://www.narzedzia.pl/kosiarka-akumulatorowa-ryobi-rlm36x41h40,68813.html" >   Ryobi RLM36X40H2  </a></td>
+            <td> <a href="https://www.ceneo.pl/36507599" >   NAC LE18-40-PB-S  </a></td>
+            <td> <a href="https://riwall-pro.pl/product/kosiarka-elektryczna-riwall-3213/" >   Riwall 3213 2500w  </a></td>
+            <td> <a href="https://www.narzedzia.pl/kosiarka-elektryczna-makita-elm3320,83759.html" >   Makita elm3320  </a></td>
+            <td> <a href="https://www.obi.pl/kosiarki-elektryczne/lider-kosiarka-elektryczna-kc1800/p/6047310 " >   Handy KC1800  </a></td>
+          </tr>
+          <tr>
+            <td> <a href="opis/kaercher_lmo1833.html" >   <img style="transform: scaleX(-1);" src="img/Karcher-akumulatorowa-LMO-18-33-1.webp">  </a></td>
+            <td> <a href="https://www.narzedzia.pl/kosiarka-elektryczna-makita-elm3720,83760.html " >   <img style="transform: scaleX(-1);" src="img/Makita-elm3720-1.webp">  </a></td>
+            <td> <a href="https://www.ceneo.pl/85176954#tab=spec " >   <img src="img/POWERMAT-PM-KSE-2500S-1.jpg">  </a></td>
+            <td> <a href="opis/hecht_1803.html" >   <img src="img/HECHT-1803-S.webp">  </a></td>
+            <td> <a href="https://www.ceneo.pl/36625008#tab=spec " >   <img src="img/rsz_riwall_3310i.webp">  </a></td>
+            <td> <a href="opis/bosch_arm32.html" >   <img src="img/Bosch-arm-32-1.webp">  </a></td>
+          </tr>
+          <tr>
+            <td> <a href="opis/kaercher_lmo1833.html" >   Karcher LMO 18-33  </a></td>
+            <td> <a href="https://www.narzedzia.pl/kosiarka-elektryczna-makita-elm3720,83760.html " >   Makita elm3720  </a></td>
+            <td> <a href="https://www.ceneo.pl/85176954#tab=spec " >   POWERMAT PM-KSE-2500S  </a></td>
+            <td> <a href="opis/hecht_1803.html" >   HECHT 1803 S   </a></td>
+            <td> <a href=" https://www.ceneo.pl/36625008#tab=spec" >   RIWALL 3310i  </a></td>
+            <td> <a href="opis/bosch_arm32.html" >  Bosch arm 32   </a></td>
+          </tr>
+          <tr>
+            <td> <a href=" https://www.gardena.com/pl/produkty/pielegnacja-trawnika/kosiarka/kosiarka-elektryczna-powermax-37-e/967249501/" >   <img style="transform: scaleX(-1);" src="img/kosiarka-elektryczna-sieciowa-263x300.jpg">  </a></td>
+            <td> <a href=" https://www.narzedzia.pl/elektryczna-kosiarka-do-trawy-makita-elm3311,45583.html" >   <img style="transform: scaleX(-1);" src="img/Makita-Elm-3311.webp">  </a></td>
+            <td> <a href="opis/hecht_1434.html" >  <img src="img/Kosiarki-Elektryczne-Hecht-1434.jpg">   </a></td>
+            <td> <a href="https://www.sklep-narzedzia.pl/nac-kosiarka-elektryczna-1000w-le10-32-pb-y,3,90239,115159 " >   <img src="img/Tania-Kosiarka-elektryczna-nac-zf6120-le10.jpg">  </a></td>
+            <td> <a href=" https://www.gardena.com/pl/produkty/pielegnacja-trawnika/kosiarka-bebnowa/elektryczna-kosiarka-bebnowa-380-ec/901058301/" >   <img style="transform: scaleX(-1);" src="img/kosiarka-bebnowa.jpg">  </a></td>
+            <td> <a href="opis/hecht_1233.html" >  <img style="transform: scaleX(-1);" src="img/HECHT-1233-ver-1.jpeg">   </a></td>
+          </tr>
+          <tr>
+            <td> <a href="https://www.gardena.com/pl/produkty/pielegnacja-trawnika/kosiarka/kosiarka-elektryczna-powermax-37-e/967249501/ " >   Gardena PowerMax 37 E  </a></td>
+            <td> <a href="https://www.narzedzia.pl/elektryczna-kosiarka-do-trawy-makita-elm3311,45583.html " >   makita elm3311  </a></td>
+            <td> <a href="opis/hecht_1434.html" >  Hecht 1434   </a></td>
+            <td> <a href=" https://www.sklep-narzedzia.pl/nac-kosiarka-elektryczna-1000w-le10-32-pb-y,3,90239,115159" >   Nac LE10-32-PB-Y  </a></td>
+            <td> <a href="https://www.gardena.com/pl/produkty/pielegnacja-trawnika/kosiarka-bebnowa/elektryczna-kosiarka-bebnowa-380-ec/901058301/ " >   Gardena 380 EC  </a></td>
+            <td> <a href="opis/hecht_1233.html" >   HECHT 1233  </a></td>
+          </tr>
+          <tr>
+            <td> <a href=" https://www.sklep-narzedzia.pl/makita-kosiarka-elektryczna-elm-3710-1300w,3,89379,34909" >  <img src="img/Makita-ELM3711.jpeg">   </a></td>
+            <td> <a href="https://www.ceneo.pl/50487213#tab=spec " >   <img style="transform: scaleX(-1);" src="img/Nac-le18-42-pb-kc-1.jpg">  </a></td>
+            <td> <a href="https://www.stiga.pl/sklep/koszenie-trawnika/kosiarki-elektryczne/kosiarka-elektryczna-combi-36-e " >  <img style="transform: scaleX(-1);" src="img/Combi36E.jpeg">   </a></td>
+            <td> <a href="https://www.ceneo.pl/36625007#tab=spec " >   <img src="img/Riwall-3813i1.jpeg">  </a></td>
+            <td> <a href=" https://www.ceneo.pl/37610952#tab=spec" >  <img style="transform: scaleX(-1);" src="img/KOSIARKA-ELEKTRYCZNA-NAC-LE12-32-PB-S.jpeg">   </a></td>
+            <td> <a href="opis/indego350.html" >  <img src="img/Bosch-Indego-350.jpeg">   </a></td>
+          </tr>
+          <tr>
+            <td> <a href="https://www.sklep-narzedzia.pl/makita-kosiarka-elektryczna-elm-3710-1300w,3,89379,34909 " >   Makita ELM3711  </a></td>
+            <td> <a href="https://www.ceneo.pl/50487213#tab=spec " >   Nac LE18-42-PB-KC  </a></td>
+            <td> <a href="https://www.stiga.pl/sklep/koszenie-trawnika/kosiarki-elektryczne/kosiarka-elektryczna-combi-36-e " >   Stiga Combi 36 E  </a></td>
+            <td> <a href="https://www.ceneo.pl/36625007#tab=spec " >   Riwall 3813i   </a></td>
+            <td> <a href=" https://www.ceneo.pl/37610952#tab=spec" >   NAC LE12-32-PB-S  </a></td>
+            <td> <a href="opis/indego350.html" >  Bosch Indego 350   </a></td>
+          </tr>
+        
+        </table>
+</div>
+
+
+<div style="display: flex; justify-content: center; margin-top: 70px;">
+
+  <script language="JavaScript">
+   
+  // origjnal code by Bill Trefzger 12/12/96
+  function go(){
+  if (document.selecter.select1.options[document.selecter.select1.selectedIndex].value != "none") {
+  location = document.selecter.select1.options[document.selecter.select1.selectedIndex].value
+  } 
+  }
+  //
+
+  </script>
+  <script>  
+
+  document.write('<form name="selecter"><select name="select1" size=1>');
+  document.write('<option value=none><b>Wybierz model</b>');
+  document.write('<optgroup label="szer. robocza <33 cm">');
+  document.write('<option value="https://www.narzedzia.pl/kosiarka-elektryczna-stiga-collector-39-el,6635.html">Stiga Collector 39E');
+  document.write('<option value="https://www.narzedzia.pl/kosiarka-elektryczna-makita-elm3320,83759.html ">Makita ELM 3320');
+  document.write('<option value="https://riwall-pro.pl/product/kosiarka-elektryczna-riwall-3213/">Riwall 3213');
+  document.write('<option value="opis/kaercher_lmo1833.html">Kaercher LMO 18-33');
+  document.write('<option value=" https://www.ceneo.pl/36625008#tab=spec">Riwall 3310i');
+  document.write('<option value="opis/bosch_arm32.html ">Bosch ARM 32');
+  document.write('<option value=" https://www.narzedzia.pl/elektryczna-kosiarka-do-trawy-makita-elm3311,45583.html">Makita ELM 3311');
+  document.write('<option value="opis/indego350.html ">Bosch Indego S+ 350');
+  document.write('<option value=" https://www.sklep-narzedzia.pl/nac-kosiarka-elektryczna-1000w-le10-32-pb-y,3,90239,115159">NAC LE10-32-PB-Y');
+  document.write('<option value="opis/hecht_1233.html">HECHT 1233');
+  document.write('<option value="  https://www.ceneo.pl/37610952#tab=spec">NAC LE12-32-PB-S');
+  
+
+  document.write('<optgroup label="szer. robocza 33-40 cm">');
+  document.write('<option value="  https://www.narzedzia.pl/kosiarka-akumulatorowa-ryobi-rlm36x41h40,68813.html ">Ryobi RLM36X40H2');
+  document.write('<option value=" https://www.ceneo.pl/36507599 ">NAC LE18-40-PB-S');
+  document.write('<option value=" https://www.narzedzia.pl/kosiarka-elektryczna-makita-elm3720,83760.html   ">Makita ELM 3720');
+  document.write('<option value=" https://www.ceneo.pl/85176954#tab=spec ">Powermat PM-KSE-2500S');
+  document.write('<option value=" https://www.gardena.com/pl/produkty/pielegnacja-trawnika/kosiarka/kosiarka-elektryczna-powermax-37-e/967249501/  ">Gardena PowerMax 37E');
+  document.write('<option value="opis/hecht_1434.html">Hecht 1434');
+  document.write('<option value=" https://www.gardena.com/pl/produkty/pielegnacja-trawnika/kosiarka-bebnowa/elektryczna-kosiarka-bebnowa-380-ec/901058301/">Gardena 380EC');
+  document.write('<option value="https://www.sklep-narzedzia.pl/makita-kosiarka-elektryczna-elm-3710-1300w,3,89379,34909 "> Makita ELM 3711');
+  document.write('<option value="https://www.ceneo.pl/36625007#tab=spec ">Riwall 3813i');
+  document.write('<option value=" https://www.stiga.pl/sklep/koszenie-trawnika/kosiarki-elektryczne/kosiarka-elektryczna-combi-36-e">Stiga Combi 36E');
+  document.write('<optgroup label="szer. robocza >40 cm">');
+  document.write('<option value=" https://www.ceneo.pl/50487213#tab=spec ">NAC LE18-42-PB-KC');
+  document.write('<option value="opis/hecht_1803.html">HECHT 1803S');
+  document.write('<option value="https://www.obi.pl/kosiarki-elektryczne/lider-kosiarka-elektryczna-kc1800/p/6047310">Handy KC1800');
+
+
+
+
+  document.write('</select>');
+  document.write('<INPUT TYPE="button" VALUE="Przejdź do" onclick="go()">');
+  document.write('</form>');
+
+  </script>
+<br><br>
+  </div>
+
+
+
+
+        
+<!--TABELA 2-->
+<div>
+  <div class='srodek' style='margin-top: 70px;'>
+  Przeszukiwanie tabeli: <input style="margin-left:20px;" type="text" id="search" placeholder="Wpisz aby wyszukać">
+  </div>
+  <div class="srodek" style="margin-top: 10px;"> 
+    <table id="tabela3" style="border-width: 4px; border-bottom-width: 1px; border-color: white;">
+      <thead >
+      <tr> 
+        <th>Lp.</th>
+        <th>Producent</th>
+        <th>Model</th>                            <!--Nagłówki celowo zrobiłem w osobnej tabeli, aby zostawały widoczne podczas przeszukiwania. Mam nadzieję, że to nie będzie błąd.-->
+        <th>Wysokość koszenia [mm]</th>
+        <th>Szerokość koszenia [cm]</th>
+        <th>Moc [W]</th>
+        <th>Masa [kg]</th>
+        <th>Cena [zł]</th>
+        <th>Pojemność kosza [l]</th>
+        <th>Zdjęcie</th>
+      </tr>
+    </thead>
+    </table>
+  </div>
+<div class="tabela srodek " >
+  <table id="tabela2" style="border-color: white;"> 
+    <thead>
+      
+    </thead>
+    <tbody>
+      <tr>
+        <td>1.</td>
+        <td><a href="https://www.narzedzia.pl/kosiarka-elektryczna-stiga-collector-39-el,6635.html ">Stiga</a></td>
+        <td>Collector 39 E</td>
+        <td rowspan="2">25-55</td>
+        <td rowspan="2">33</td>
+        <td>1100</td>
+        <td>11</td>
+        <td>450</td>
+        <td>27</td>
+        <td class="tab2img" style="border-color: black "><img src="img/stiga_collector_39E.jpeg"></td>
+      </tr>
+      <tr>
+        <td>2.</td>
+        <td><a href="https://www.narzedzia.pl/kosiarka-elektryczna-makita-elm3320,83759.html ">Makita</a></td>
+        <td>ELM3320</td>
+        
+        
+        <td>1200</td>
+        <td>10,2</td>
+        <td>413</td>
+        <td>30</td>
+        <td  class="tab2img" style="border-color: black" style="border-color: black"><img src="img/Makita-elm3320-1.webp"></td>
+      </tr>
+      <tr>
+        <td>3.</td>
+        <td><a href="https://www.narzedzia.pl/kosiarka-akumulatorowa-ryobi-rlm36x41h40,68813.html ">Ryobi</a></td>
+        <td>RLM36X40H2</td>
+        <td>20-70</td>
+        <td rowspan="2">40</td>
+        <td>1200</td>
+        <td>20</td>
+        <td>1649</td>
+        <td>50</td>
+        <td  class="tab2img" style="border-color: black"><img style="transform: scaleX(-1);" src="img/Ryobi_RLM36X40H2.webp"></td>
+      </tr>
+      <tr>
+        <td>4.</td>
+        <td><a href="https://www.ceneo.pl/36507599 ">NAC</a></td>
+        <td>LE18-40-PB-S</td>
+        <td>25-75</td>
+        
+        <td>1800</td>
+        <td>10,4</td>
+        <td>477</td>
+        <td>40</td>
+        <td  class="tab2img" style="border-color: black"><img style="transform: scaleX(-1);" src="img/NAC-LE18-40-PB-S.webp"></td>
+      </tr>
+      <tr>
+        <td>5.</td>
+        <td><a href="https://riwall-pro.pl/product/kosiarka-elektryczna-riwall-3213/ ">Riwall</a></td>
+        <td>3213</td>
+        <td>25-65</td>
+        <td>32</td>
+        <td>1300</td>
+        <td>7,8</td>
+        <td>383</td>
+        <td>25</td>
+        <td  class="tab2img" style="border-color: black"><img src="img/Riwall-3213-1.webp"></td>
+      </tr>
+      
+      <tr>
+        <td>6.</td>
+        <td><a href="https://www.obi.pl/kosiarki-elektryczne/lider-kosiarka-elektryczna-kc1800/p/6047310 ">Handy</a></td>
+        <td>KC1800</td>
+        <td>25-85</td>
+        <td>42</td>
+        <td>1800</td>
+        <td>19,2</td>
+        <td>409</td>
+        <td>50</td>
+        <td  class="tab2img" style="border-color: black"><img style="transform: scaleX(-1);" src="img/handy-kc-210.webp"></td>
+      </tr>
+      <tr>
+        <td>7.</td>
+        <td><a href="opis/kaercher_lmo1833.html">Karcher</a></td>
+        <td>LMO 18-33</td>
+        <td>35-65</td>
+        <td>33</td>
+        <td>1000</td>
+        <td rowspan="3">11,6</td>
+        <td>1389</td>
+        <td>35</td>
+        <td  class="tab2img" style="border-color: black"><img style="transform: scaleX(-1);" src="img/Karcher-akumulatorowa-LMO-18-33-1.webp"></td>
+      </tr>
+      <tr>
+        <td>8.</td>
+        <td><a href="https://www.narzedzia.pl/kosiarka-elektryczna-makita-elm3720,83760.html ">Makita</a></td>
+        <td>ELM3720</td>
+        <td>20-55</td>
+        <td>37</td>
+        <td>1400</td>
+        
+        <td>490</td>
+        <td>40</td>
+        <td  class="tab2img" style="border-color: black"><img style="transform: scaleX(-1);" src="img/Makita-elm3720-1.webp"></td>
+      </tr>
+      <tr>
+        <td>9.</td>
+        <td><a href="https://www.ceneo.pl/85176954#tab=spec ">POWERMAT</a></td>
+        <td>PM-KSE-2500S</td>
+        <td>
+          <ul type="dot">
+            <li>25</li>
+            <li>38</li>
+            <li>51</li>
+            <li>65</li>
+            <li>75</li>
+          </ul>
+        </td>
+        <td>38</td>
+        <td>2500</td>
+        
+        <td>309</td>
+        <td>35</td>
+        <td  class="tab2img" style="border-color: black"><img src="img/POWERMAT-PM-KSE-2500S-1.jpg"></td>
+      </tr>
+      <tr>
+        <td>10.</td>
+        <td><a href="opis/hecht_1803.html">HECHT</a></td>
+        <td>1803 S</td>
+        <td>30-75</td>
+        <td>46</td>
+        <td>1800</td>
+        <td>26,4</td>
+        <td>1389</td>
+        <td>60</td>
+        <td  class="tab2img" style="border-color: black"><img src="img/HECHT-1803-S.webp"></td>
+      </tr>
+      <tr>
+        <td>11.</td>
+        <td><a href="https://www.ceneo.pl/36625008#tab=spec">RIWALL</a></td>
+        <td>3310i</td>
+        <td><ul type="dot" >
+          <li>30</li>
+          <li>45</li>
+          <li>60</li>
+        </ul></td>
+        <td>33</td>
+        <td>2000</td>
+        <td>9</td>
+        <td>349</td>
+        <td>28</td>
+        <td  class="tab2img" style="border-color: black"><img src="img/rsz_riwall_3310i.webp"></td>
+      </tr>
+      <tr>
+        <td>12.</td>
+        <td><a href="opis/bosch_arm32.html">Bosch</a></td>
+        <td>ARM 32</td>
+        <td rowspan="2">20-60</td>
+        <td>32</td>
+        <td>1200</td>
+        <td>6,8</td>
+        <td>393</td>
+        <td>31</td>
+        <td  class="tab2img" style="border-color: black"><img src="img/Bosch-arm-32-1.webp"></td>
+      </tr>
+      <tr>
+        <td>13.</td>
+        <td><a href="https://www.gardena.com/pl/produkty/pielegnacja-trawnika/kosiarka/kosiarka-elektryczna-powermax-37-e/967249501/ ">Gardena</a></td>
+        <td>PowerMax 37 E</td>
+        
+        <td>37</td>
+        <td>1600</td>
+        <td>11,8</td>
+        <td>712</td>
+        <td>45</td>
+        <td  class="tab2img" style="border-color: black"><img style="transform: scaleX(-1);" src="img/kosiarka-elektryczna-sieciowa-263x300.jpg"></td>
+      </tr>
+      <tr>
+        <td>14.</td>
+        <td><a href="https://www.narzedzia.pl/elektryczna-kosiarka-do-trawy-makita-elm3311,45583.html  ">Makita</a></td>
+        <td>ELM 3311</td>
+        <td><ul type="dot" >
+          <li>20</li>
+          <li>40</li>
+          <li>55</li>
+        </ul></td>
+        <td>33</td>
+        <td>1100</td>
+        <td>13,1</td>
+        <td>385</td>
+        <td>27</td>
+        <td  class="tab2img" style="border-color: black"><img style="transform: scaleX(-1);" src="img/Makita-Elm-3311.webp"></td>
+      </tr>
+      <tr>
+        <td>15.</td>
+        <td><a href="opis/hecht_1434.html">Hecht</a></td>
+        <td>1434</td>
+        <td>25-65</td>
+        <td>34</td>
+        <td>1400</td>
+        <td>12</td>
+        <td>459</td>
+        <td>35</td>
+        <td  class="tab2img" style="border-color: black"><img src="img/Kosiarki-Elektryczne-Hecht-1434.jpg"></td>
+      </tr>
+      
+      <tr>
+        <td>16.</td>
+        <td><a href=" https://www.gardena.com/pl/produkty/pielegnacja-trawnika/kosiarka-bebnowa/elektryczna-kosiarka-bebnowa-380-ec/901058301/">Gardena</a></td>
+        <td>380 EC</td>
+        <td>12-42</td>
+        <td>38</td>
+        <td>N/A</td>
+        <td>11,9</td>
+        <td>1099</td>
+        <td rowspan="2">N/A</td>
+        <td  class="tab2img" style="border-color: black"><img style="transform: scaleX(-1);" src="img/kosiarka-bebnowa.jpg"></td>
+      </tr>
+      <tr>
+        <td>17.</td>
+        <td><a href="opis/indego350.html">Bosch</a></td>
+        <td>Indego 350</td>
+        <td>30-50</td>
+        <td>19</td>
+        <td>1000</td>
+        <td>7,6</td>
+        <td>1499</td>
+        
+        <td  class="tab2img" style="border-color: black"><img src="img/Bosch-Indego-350.jpeg"></td>
+      </tr>
+      <tr>
+        <td>18.</td>
+        <td><a href="https://www.sklep-narzedzia.pl/nac-kosiarka-elektryczna-1000w-le10-32-pb-y,3,90239,115159 ">NAC</a></td>
+        <td>LE10-32-PB-Y</td>
+        <td rowspan="2"><ul type="dot" >
+          <li>20</li>
+          <li>40</li>
+          <li>60</li>
+        </ul></td>
+        <td>32</td>
+        <td>1000</td>
+        <td>6,8</td>
+        <td>179</td>
+        <td>30</td>
+        <td  class="tab2img" style="border-color: black"><img src="img/Tania-Kosiarka-elektryczna-nac-zf6120-le10.jpg"></td>
+      </tr>
+      <tr>
+        <td>19.</td>
+        <td><a href="opis/hecht_1233.html">HECHT</a></td>
+        <td>1233</td>
+        
+        <td>33</td>
+        <td>1200</td>
+        <td>7,1</td>
+        <td>289</td>
+        <td>30</td>
+        <td  class="tab2img" style="border-color: black"><img style="transform: scaleX(-1);" src="img/HECHT-1233-ver-1.jpeg"></td>
+      </tr>
+      <tr>
+        <td>20.</td>
+        <td><a href=" https://www.sklep-narzedzia.pl/makita-kosiarka-elektryczna-elm-3710-1300w,3,89379,34909">Makita</a></td>
+        <td>ELM 3711</td>
+        <td>20-55</td>
+        <td>37</td>
+        <td>1300</td>
+        <td>14,2</td>
+        <td>456</td>
+        <td>35</td>
+        <td  class="tab2img" style="border-color: black"><img src="img/Makita-ELM3711.jpeg"></td>
+      </tr>
+      <tr>
+        <td>21.</td>
+        <td><a href="https://www.ceneo.pl/50487213#tab=spec  ">NAC</a></td>
+        <td>LE18-42-PB-KC</td>
+        <td>25-85</td>
+        <td>42</td>
+        <td>1800</td>
+        <td>15,5</td>
+        <td>529</td>
+        <td>45</td>
+        <td  class="tab2img" style="border-color: black"><img style="transform: scaleX(-1);" src="img/Nac-le18-42-pb-kc-1.jpg"></td>
+      </tr>
+      <tr>
+        <td>22.</td>
+        <td><a href=" https://www.ceneo.pl/36625007#tab=spec">Riwall</a></td>
+        <td>3813i</td>
+        <td>20-70</td>
+        <td>40</td>
+        <td>1500</td>
+        <td>19,9</td>
+        <td>1649</td>
+        <td>50</td>
+        <td  class="tab2img" style="border-color: black"><img src="img/Riwall-3813i1.jpeg"></td>
+      </tr>
+      <tr>
+        
+
+        <td>23.</td>
+        <td><a href="https://www.stiga.pl/sklep/koszenie-trawnika/kosiarki-elektryczne/kosiarka-elektryczna-combi-36-e ">Stiga</a></td>
+        <td>Combi 36 E</td>
+        <td>25-75</td>
+        <td>34</td>
+        <td>1400</td>
+        <td>11</td>
+        <td>733</td>
+        <td rowspan="2">35</td>
+        <td  class="tab2img" style="border-color: black"><img style="transform: scaleX(-1);" src="img/Combi36E.jpeg"></td>
+      </tr>
+      <tr>
+        <td>24.</td>
+        <td><a href="https://www.ceneo.pl/37610952#tab=spec ">NAC</a></td>
+        <td>LE12-32-PB-S</td>
+        <td><ul type="dot" >
+          <li>25</li>
+          <li>43</li>
+          <li>62</li>
+        </ul></td>
+        <td>32</td>
+        <td>1200</td>
+        <td>8</td>
+        <td>259</td>
+        
+        <td  class="tab2img" style="border-color: black"><img style="transform: scaleX(-1);" src="img/KOSIARKA-ELEKTRYCZNA-NAC-LE12-32-PB-S.jpeg"></td>
+      </tr>
+      
+    </tbody>
+    </table>
+</div>
+</div>
+
+
+
+
+
+
+<script>
+  var $rows = $('#tabela2 tr');
+$('#search').keyup(function() {
+    var val = $.trim($(this).val()).replace(/ +/g, ' ').toLowerCase();
+    
+    $rows.show().filter(function() {
+        var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();
+        return !~text.indexOf(val);
+    }).hide();
+});
+  </script>
+</body>
+</html>
