@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+body{
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    background-image: url("../img/tlo.png");
+
+}
+
 .formularz{
     border: 1px solid black;
     display: flex;
@@ -5,9 +14,16 @@
     width: 800px;
     padding: 15px 15px 15px 15px;
     margin-top:100px;
+    
 }
 
 .srodek{
     display: flex;
     justify-content: center;
+}
+
+.tlo{
+    background-image: url('../img/tlo2.png');
+    
+    
 }
