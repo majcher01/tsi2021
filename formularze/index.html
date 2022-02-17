@@ -53,7 +53,7 @@
                 <input type="email" name="email">
                 <br>
                 Województwo:
-                <select>
+                <select style="margin-left: 20px; margin-bottom: 20px;" name="woj">
                     <option value="dolnośląskie">dolnośląskie</option>
                     <option value="kujawsko-pomorskie">kujawsko-pomorskie</option>
                     <option value="lubelskie">lubelskie</option>
@@ -71,6 +71,22 @@
                     <option value="wielkopolskie">wielkopolskie</option>
                     <option value="zachodniopomorskie">zachodniopomorskie</option>
                 </select>
+                <br>
+                Miasto:
+                <input type="text" name="mst">
+                <br>
+                Ulica:
+                <input type="text" name="ul">
+                <br>
+                Kod pocztowy:
+                <input type="number" name="pcode">
+                <br>
+                Numer domu/mieszkania:
+                <input type="number" name="nr">
+            </fieldset>
+            <fieldset id="a-3" style="text-align: right;">
+                <legend style="text-align: left;">Wygląd</legend>
+                
             </fieldset>
         </fieldset>
         <fieldset id="b">
@@ -89,6 +105,8 @@
                 
             </fieldset>
         </fieldset>
+        <input type="submit">
+        <input type="reset">
     </form>
     </div>
     </div>

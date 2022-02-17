@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="css/style-result.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/getparam.js"></script>
+    <title>Formularze Jakub Majcherski 3M</title>
+</head>
+<body>
+    <div class="srodek">
+    <div class="formularz tlo">
+        <div>
+            <p style="font-size: 24px;"><b>Wprowadzone dane:</b></p>
+        <b>Imie:</b> <span id="im"></span>
+        <br>
+        <b>Nazwisko:</b> <span id="naz"></span>
+        <br>
+        <b>Przedział wiekowy:</b> <span id="wiek"></span>
+        <br>
+        <b>Data urodzenia:</b> <span id="ur"></span>
+        <br>
+        <b>Numer telefonu:</b> <span id="tel"></span>
+        <br>
+        <b>E-mail:</b> <span id="email"></span>
+        <br>
+        <b>Województwo:</b> <span id="woj"></span>
+        <br>
+        <b>Miasto:</b> <span id="mst"></span>
+        <br>
+        <b>Ulica:</b> <span id="ul"></span>
+        <br>
+        <b>Kod pocztowy:</b> <span id="pcode"></span>
+        <br>
+        <b>Numer domu:</b> <span id="nr"></span>
+        <br>
+
+        </div>
+    </div>
+    </div>
+
+    <script>
+        document.getElementById("im").innerHTML=params.im;
+        document.getElementById("naz").innerHTML=params.naz;
+        document.getElementById("wiek").innerHTML=params.wiek;
+        document.getElementById("ur").innerHTML=params.ur;
+        document.getElementById("tel").innerHTML=params.tel;
+        document.getElementById("email").innerHTML=decodeURIComponent(params.email);
+        document.getElementById("woj").innerHTML=decodeURIComponent(params.woj);
+        document.getElementById("mst").innerHTML=params.mst;
+        document.getElementById("ul").innerHTML=params.ul;
+        document.getElementById("pcode").innerHTML=params.pcode;
+        document.getElementById("nr").innerHTML=params.nr;
+
+
+    </script>
+</body>
+</html>
