@@ -10,9 +10,20 @@
 <body>
     <div class="srodek">
     <div class="formularz tlo">
-    <form action="result.html" method="get">
+    <form action="result.html" method="get" onSubmit = "return checkPassword(this)">
         <fieldset id="a">
             <legend>Dane</legend>
+            <fieldset id="a-4" style="text-align: right;">
+                <legend style="text-align: left;">Logowanie</legend>
+                Login:
+                <input type="text" name="login">
+                <br>
+                Hasło:
+                <input type="password" name="pass">
+                <br>
+                Powtórz hasło:
+                <input type="password" name="pass1">
+            </fieldset>
             <fieldset id="a-1" style="text-align: right;">
                 <legend style="text-align: left;">Dane osobowe</legend>
                 Imie:
@@ -86,7 +97,28 @@
             </fieldset>
             <fieldset id="a-3" style="text-align: right;">
                 <legend style="text-align: left;">Wygląd</legend>
-                
+                Kolor włosów:
+                <input type="text" name="wls">
+                <br>
+                Kolor oczu:
+                <select style="margin-left: 20px; margin-bottom: 20px;" name="ocz">
+                    <option value="czarnobrązowe">czarnobrązowe</option>
+                    <option value="ciemnobrązowe">ciemnobrązowe</option>
+                    <option value="brązowe">brązowe</option>
+                    <option value="jasnobrązowe">jasnobrązowe</option>
+                    <option value="zielonobrązowe">zielonobrązowe</option>
+                    <option value="jasnozielone">jasnozielone</option>
+                    <option value="ciemnoszare">ciemnoszare</option>
+                    <option value="jasnoszare">jasnoszare</option>
+                    <option value="niebieskie">niebieskie</option>
+                    <option value="jasnoniebieskie">jasnoniebieskie</option>
+                </select>
+                <br>
+                Płeć:
+                <input type="radio" name="plc" value="Mężczyzna" id="mn">
+                <label for="mn">Mężczyzna</label>
+                <input type="radio" name="plc" value="Kobieta" id="kb">
+                <label for="kb">Kobieta</label>
             </fieldset>
         </fieldset>
         <fieldset id="b">
@@ -110,5 +142,6 @@
     </form>
     </div>
     </div>
+    <script src="js/passvalid.js"></script>
 </body>
 </html>

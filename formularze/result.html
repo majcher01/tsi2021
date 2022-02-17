@@ -35,6 +35,12 @@
         <br>
         <b>Numer domu:</b> <span id="nr"></span>
         <br>
+        <b>Kolor włosów:</b> <span id="wls"></span>
+        <br>
+        <b>Kolor oczu:</b> <span id="ocz"></span>
+        <br>
+        <b>Płeć:</b> <span id="plc"></span>
+        <br>
 
         </div>
     </div>
@@ -52,6 +58,9 @@
         document.getElementById("ul").innerHTML=params.ul;
         document.getElementById("pcode").innerHTML=params.pcode;
         document.getElementById("nr").innerHTML=params.nr;
+        document.getElementById("wls").innerHTML=params.wls;
+        document.getElementById("ocz").innerHTML=decodeURIComponent(params.ocz);
+        document.getElementById("plc").innerHTML=decodeURIComponent(params.plc);
 
 
     </script>
