@@ -29,3 +29,12 @@ body{
 fieldset{
     margin-bottom: 10px;
 }
+
+input{
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+#a-2{
+    text-align: right;
+}

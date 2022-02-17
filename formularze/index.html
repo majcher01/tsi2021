@@ -11,28 +11,81 @@
     <div class="srodek">
     <div class="formularz tlo">
     <form action="result.html" method="get">
-        <fieldset id="1">
-            <legend>test</legend>
-            <fieldset id="1.1">
+        <fieldset id="a">
+            <legend>Dane</legend>
+            <fieldset id="a-1" style="text-align: right;">
+                <legend style="text-align: left;">Dane osobowe</legend>
+                Imie:
+                <input type="text" name="im" style="width: 200px;">
+                <br>
+                <p style="margin-top:0px; margin-bottom: 20px;">
+                Nazwisko:
+                <textarea style="height: 18px;width:200px; margin-left: 20px;" name="naz"></textarea>
+                </p>
+                Przedział wiekowy:
+                <input type="radio" name="wiek" value="0-13" id="w1">
+                <label for="w1">0-13</label>
 
+                <input type="radio" name="wiek" value="14-18" id="w2">
+                <label for="w1">14-18</label>
+
+                <input type="radio" name="wiek" value="19-25" id="w3">
+                <label for="w1">19-25</label>
+
+                <input type="radio" name="wiek" value="26-40" id="w4">
+                <label for="w1">26-40</label>
+
+                <input type="radio" name="wiek" value="41-60" id="w5">
+                <label for="w1">41-60</label>
+
+                <input type="radio" name="wiek" value=">60" id="w6">
+                <label for="w1">>60</label>
+                <br>
+                Data urodzenia:
+                <input type="date" name="ur" style="width: 200px;">
             </fieldset>
-            <fieldset id="1.2">
-
+            <fieldset id="a-2">
+                <legend style="text-align: left;">Dane kontaktowe</legend>
+                Numer telefonu:
+                <input type="tel" name="tel">
+                <br>
+                Adres e-mail:
+                <input type="email" name="email">
+                <br>
+                Województwo:
+                <select>
+                    <option value="dolnośląskie">dolnośląskie</option>
+                    <option value="kujawsko-pomorskie">kujawsko-pomorskie</option>
+                    <option value="lubelskie">lubelskie</option>
+                    <option value="lubuskie">lubuskie</option>
+                    <option value="łódzkie">łódzkie</option>
+                    <option value="małopolskie">małopolskie</option>
+                    <option value="mazowieckie">mazowieckie</option>
+                    <option value="opolskie">opolskie</option>
+                    <option value="podkarpackie">podkarpackie</option>
+                    <option value="podlaskie">podlaskie</option>
+                    <option value="pomorskie">pomorskie</option>
+                    <option value="śląskie">śląskie</option>
+                    <option value="świętokrzyskie">świętokrzyskie</option>
+                    <option value="warmińsko-mazurskie">warmińsko-mazurskie</option>
+                    <option value="wielkopolskie">wielkopolskie</option>
+                    <option value="zachodniopomorskie">zachodniopomorskie</option>
+                </select>
             </fieldset>
         </fieldset>
-        <fieldset id="2">
-            <fieldset id="2.1">
+        <fieldset id="b">
+            <fieldset id="b-1">
 
             </fieldset>
-            <fieldset id="2.2">
+            <fieldset id="b-2">
                 
             </fieldset>
         </fieldset>
-        <fieldset id="3">
-            <fieldset id="3.1">
+        <fieldset id="c">
+            <fieldset id="c-1">
                 
             </fieldset>
-            <fieldset id="3.2">
+            <fieldset id="c-2">
                 
             </fieldset>
         </fieldset>
