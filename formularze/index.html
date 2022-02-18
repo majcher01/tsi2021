@@ -11,7 +11,7 @@
     <div class="srodek">
     <div class="formularz tlo">
     <form action="result.html" method="get" onSubmit = "return checkPassword(this)">
-        <fieldset id="a">
+        <fieldset id="a" style="border-color:yellow;">
             <legend>Dane</legend>
             <fieldset id="a-4" style="text-align: right;">
                 <legend style="text-align: left;">Logowanie</legend>
@@ -124,7 +124,7 @@
                 <input type="number" name="wzr"> 
             </fieldset>
         </fieldset>
-        <fieldset id="b">
+        <fieldset id="b" style="border-color: blue;">
             <legend>Inne</legend>
             <fieldset id="b-1" style="text-align: right;">
                 <legend>Zainteresowania</legend>
@@ -160,22 +160,68 @@
                     <option value="wojenny">wojenny</option>
                     <option value="western">western</option>
                 </select>
+                <br>
+                Interesujesz sie sportem ?
+                <select style="margin-left: 20px; margin-bottom: 20px; margin-top: 20px;" name="spr">
+                    <option value="tak">Tak</option>
+                    <option value="nie">Nie</option>
+                    <option value="trochę">Trochę</option>
+                    <option value="bardzo">Bardzo</option>
+                    <option value="chyba">chyba</option>
+                </select>
 
             </fieldset>
-            <fieldset id="b-2">
+            <fieldset id="b-2" style="text-align: right;">
+                <legend>Urządzenie</legend>
+                Z jakiego urządzenia teraz korzystasz ?
+                <select style="margin-left: 20px; margin-bottom: 20px; margin-top: 20px;" name="dev">
+                    <option value="komputer stacjonarny">komputer stacjonarny</option>
+                    <option value="laptop">laptop</option>
+                    <option value="telefon">telefon</option>
+                    <option value="tablet">tablet</option>
+                </select>
+                <br>
+                Jaki jest twój ulubiony system operacyjny ?
+                <input type="text" name="oes">
+                <br>
                 
+
             </fieldset>
         </fieldset>
-        <fieldset id="c">
-            <fieldset id="c-1">
-                
+        <fieldset id="c" style="border-color: greenyellow;">
+            <legend>Wykształcenie</legend>
+            <fieldset id="c-1" style="text-align: right;">
+                <legend>Szkoła podstawowa</legend>
+                Do jakiej szkoły chodziłeś/aś ?
+                <input type="text" name="prmsch">
+                <br>
+                Do których klas chodziłeś/aś ?
+                <input type="checkbox" name="klpsch" value="1-3" id="13">
+                <label for="13">1-3</label>
+                <input type="checkbox" name="klpsch" value="4-6" id="46">
+                <label for="13">4-6</label>
+                <input type="checkbox" name="klpsch" value="7-8" id="78">
+                <label for="13">7-8</label>
             </fieldset>
-            <fieldset id="c-2">
-                
+            <fieldset id="c-2" style="text-align: right;">
+                <legend>Szkoła średnia</legend>
+                Do jakiej szkoły chodziłeś/aś ?
+                <input type="text" name="hghsch">
+                <br>
+                Do których klas chodziłeś/aś ?
+                <input type="checkbox" name="klhgh" value="1-2" id="12">
+                <label for="12">1-2</label>
+                <input type="checkbox" name="klhgh" value="3-4" id="34">
+                <label for="34">3-4</label>
+                <input type="checkbox" name="klhgh" value="5" id="5">
+                <label for="5">5</label>
             </fieldset>
         </fieldset>
-        <input type="submit">
-        <input type="reset">
+        <div style="display: flex; justify-content: center; margin-top: 20px;">
+        <input type="reset" value="Wyczyść" class="btn">
+        <input type="submit" value="Wyślij" class="btn">
+        <input type="button" value="Sprawdź" class="btn">
+        </div>
     </form>
     </div>
     </div>
