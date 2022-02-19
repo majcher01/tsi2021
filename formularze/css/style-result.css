@@ -30,3 +30,17 @@ span{
     margin-left: 20px;
 }
 
+.btn{
+    height: 35px;
+    width: 80px;
+    font-size: 14px;
+    background: white;
+    opacity: 80%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color: transparent;
+    opacity: 100%;
+    transition-duration: 0.4s;
+}
