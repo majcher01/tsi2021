@@ -13,6 +13,10 @@
     <div class="formularz tlo">
         <div>
             <p style="font-size: 24px;"><b>Wprowadzone dane:</b></p>
+        <b>Login:</b> <span id="login"></span>
+        <br>
+        <b>Hasło:</b> <span id="pass"></span>
+        <br>
         <b>Imie:</b> <span id="im"></span>
         <br>
         <b>Nazwisko:</b> <span id="naz"></span>
@@ -47,32 +51,27 @@
         <br>
         <b>Gatunek filmowy:</b> <span id="flm"></span>
         <br>
+        <b>Sport:</b> <span id="spr"></span>
+        <br>
+        <b>Urządzenie:</b> <span id="dev"></span>
+        <br>
+        <b>System Operacyjny:</b> <span id="oes"></span>
+        <br>
+        <b>Szkoła podstawowa:</b> <span id="prmsch"></span>
+        <br>
+        <b>Klasy :</b> <span id="klpsch"></span>
+        <br>
+        <b>Szkoła średnia:</b> <span id="hghsch"></span>
+        <br>
+        <b>Klasy:</b> <span id="klhsch"></span>
+        <br>
+        
+
 
         </div>
     </div>
     </div>
 
-    <script>
-        document.getElementById("im").innerHTML=params.im;
-        document.getElementById("naz").innerHTML=params.naz;
-        document.getElementById("wiek").innerHTML=params.wiek;
-        document.getElementById("ur").innerHTML=params.ur;
-        document.getElementById("tel").innerHTML=params.tel;
-        document.getElementById("email").innerHTML=decodeURIComponent(params.email);
-        document.getElementById("woj").innerHTML=decodeURIComponent(params.woj);
-        document.getElementById("mst").innerHTML=params.mst;
-        document.getElementById("ul").innerHTML=params.ul;
-        document.getElementById("pcode").innerHTML=params.pcode;
-        document.getElementById("nr").innerHTML=params.nr;
-        document.getElementById("wls").innerHTML=params.wls;
-        document.getElementById("ocz").innerHTML=decodeURIComponent(params.ocz);
-        document.getElementById("plc").innerHTML=decodeURIComponent(params.plc);
-        document.getElementById("wzr").innerHTML=decodeURIComponent(params.wzr);
-        document.getElementById("muz").innerHTML=decodeURIComponent(params.muz);
-        document.getElementById("flm").innerHTML=decodeURIComponent(params.flm);
-        
-
-
-    </script>
+    <script src="js/paramtosite.js"></script>
 </body>
 </html>
