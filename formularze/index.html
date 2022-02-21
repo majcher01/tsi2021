@@ -15,25 +15,25 @@
             <legend class="header" style="color: yellow;">Dane</legend>
             <fieldset id="a-4" style="text-align: right;">
                 <legend style="text-align: left;">Logowanie</legend>
-                Login:
+                Login
                 <input type="text" name="login">
                 <br>
-                Hasło:
+                Hasło
                 <input type="password" name="pass">
                 <br>
-                Powtórz hasło:
+                Powtórz hasło
                 <input type="password" name="pass1">
             </fieldset>
             <fieldset id="a-1" style="text-align: right;">
                 <legend style="text-align: left;">Dane osobowe</legend>
-                Imie:
+                Imie
                 <input type="text" name="im" style="width: 200px;">
                 <br>
                 <p style="margin-top:0px; margin-bottom: 20px;">
-                Nazwisko:
+                Nazwisko
                 <textarea style="height: 18px;width:200px; margin-left: 20px;" name="naz"></textarea>
                 </p>
-                Przedział wiekowy:
+                Przedział wiekowy
                 <input type="radio" name="wiek" value="0-13" id="w1">
                 <label for="w1">0-13</label>
 
@@ -52,19 +52,20 @@
                 <input type="radio" name="wiek" value=">60" id="w6">
                 <label for="w1">>60</label>
                 <br>
-                Data urodzenia:
+                Data urodzenia
                 <input type="date" name="ur" style="width: 200px;">
             </fieldset>
             <fieldset id="a-2">
                 <legend style="text-align: left;">Dane kontaktowe</legend>
-                Numer telefonu:
+                Numer telefonu
                 <input type="tel" name="tel" maxlength="9">
                 <br>
-                Adres e-mail:
+                Adres e-mail
                 <input type="email" name="email">
                 <br>
-                Województwo:
+                Województwo
                 <select style="margin-left: 20px; margin-bottom: 20px;" name="woj">
+                    <option value="none">Wybierz Województwo</option>
                     <option value="dolnośląskie">dolnośląskie</option>
                     <option value="kujawsko-pomorskie">kujawsko-pomorskie</option>
                     <option value="lubelskie">lubelskie</option>
@@ -83,24 +84,28 @@
                     <option value="zachodniopomorskie">zachodniopomorskie</option>
                 </select>
                 <br>
-                Miasto:
+                Miasto
                 <input type="text" name="mst">
                 <br>
-                Ulica:
+                Ulica
                 <input type="text" name="ul">
                 <br>
-                Kod pocztowy:
-                <input type="number" name="pcode">
+                Kod pocztowy
+                <input type="number" name="pcode" maxlength="2" style="margin-right: 10px; width: 68px;">
+                -
+                <input type="number" name="pcode2" maxlength="3" style="margin-left: 10px; width: 67px;">
                 <br>
-                Numer domu/mieszkania:
-                <input type="number" name="nr">
+                Numer domu/mieszkania
+                <input type="number" name="nr" maxlength="2" style="margin-right: 10px; width: 68px;">
+                /
+                <input type="number" name="nr2" maxlength="2" style="margin-left: 10px; width: 67px;">
             </fieldset>
             <fieldset id="a-3" style="text-align: right;">
                 <legend style="text-align: left;">Wygląd</legend>
-                Kolor włosów:
+                Kolor włosów
                 <input type="text" name="wls">
                 <br>
-                Kolor oczu:
+                Kolor oczu
                 <select style="margin-left: 20px; margin-bottom: 20px;" name="ocz">
                     <option value="czarnobrązowe">czarnobrązowe</option>
                     <option value="ciemnobrązowe">ciemnobrązowe</option>
@@ -114,13 +119,13 @@
                     <option value="jasnoniebieskie">jasnoniebieskie</option>
                 </select>
                 <br>
-                Płeć:
+                Płeć
                 <input type="radio" name="plc" value="Mężczyzna" id="mn">
                 <label for="mn">Mężczyzna</label>
                 <input type="radio" name="plc" value="Kobieta" id="kb">
                 <label for="kb">Kobieta</label>
                 <br>
-                Wzrost:
+                Wzrost
                 <input type="number" name="wzr"> 
             </fieldset>
         </fieldset>
