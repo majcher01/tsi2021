@@ -42,3 +42,4 @@
         document.getElementById("prmsch").innerHTML=decodeURIComponent(params.prmsch);
         document.getElementById("klpsch").innerHTML=decodeURIComponent(params.klpsch1)+" "+decodeURIComponent(params.klpsch2)+" "+decodeURIComponent(params.klpsch3);
         document.getElementById("hghsch").innerHTML=decodeURIComponent(params.hghsch);
+        document.getElementById("ocena").innerHTML=decodeURIComponent(params.ocena);
