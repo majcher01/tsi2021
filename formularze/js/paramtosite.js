@@ -16,6 +16,19 @@
         if(params.klpsch3==undefined){
                 params.klpsch3="";
         }
+        if(params.os1==undefined){
+                params.os1="";
+        }
+        if(params.os2==undefined){
+                params.os2="";
+        }
+        if(params.os3==undefined){
+                params.os3="";
+        }
+        if(params.os4==undefined){
+                params.os4="";
+        }
+
         document.getElementById("login").innerHTML=decodeURIComponent(params.login);
         document.getElementById("pass").innerHTML=decodeURIComponent(params.pass);
         document.getElementById("im").innerHTML=decodeURIComponent(params.im);
@@ -43,3 +56,5 @@
         document.getElementById("klpsch").innerHTML=decodeURIComponent(params.klpsch1)+" "+decodeURIComponent(params.klpsch2)+" "+decodeURIComponent(params.klpsch3);
         document.getElementById("hghsch").innerHTML=decodeURIComponent(params.hghsch);
         document.getElementById("ocena").innerHTML=decodeURIComponent(params.ocena);
+        document.getElementById("sprt").innerHTML=decodeURIComponent(params.sprt);
+        document.getElementById("systemy").innerHTML=decodeURIComponent(params.os1)+" "+decodeURIComponent(params.os2)+" "+decodeURIComponent(params.os3)+" "+decodeURIComponent(params.os4);
