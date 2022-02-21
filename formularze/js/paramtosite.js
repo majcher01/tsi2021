@@ -28,7 +28,7 @@
         document.getElementById("mst").innerHTML=decodeURIComponent(params.mst);
         document.getElementById("ul").innerHTML=decodeURIComponent(params.ul);
         document.getElementById("pcode").innerHTML=decodeURIComponent(params.pcode)+" - "+decodeURIComponent(params.pcode2);
-        document.getElementById("nr").innerHTML=decodeURIComponent(params.nr)+" - "+decodeURIComponent(params.nr2);
+        document.getElementById("nr").innerHTML=decodeURIComponent(params.nr)+" / "+decodeURIComponent(params.nr2);
         document.getElementById("wls").innerHTML=decodeURIComponent(params.wls);
         document.getElementById("ocz").innerHTML=decodeURIComponent(params.ocz);
         document.getElementById("plc").innerHTML=decodeURIComponent(params.plc);
