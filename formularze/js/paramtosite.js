@@ -1,4 +1,22 @@
-document.getElementById("login").innerHTML=decodeURIComponent(params.login);
+        if(params.klhgh1==undefined){
+                params.klhgh1="";
+        }
+        if(params.klhgh2==undefined){
+                params.klhgh2="";
+        }
+        if(params.klhgh3==undefined){
+                params.klhgh3="";
+        }
+        if(params.klpsch1==undefined){
+                params.klpsch1="";
+        }
+        if(params.klpsch2==undefined){
+                params.klpsch2="";
+        }
+        if(params.klpsch3==undefined){
+                params.klpsch3="";
+        }
+        document.getElementById("login").innerHTML=decodeURIComponent(params.login);
         document.getElementById("pass").innerHTML=decodeURIComponent(params.pass);
         document.getElementById("im").innerHTML=decodeURIComponent(params.im);
         document.getElementById("naz").innerHTML=decodeURIComponent(params.naz);
@@ -9,8 +27,8 @@ document.getElementById("login").innerHTML=decodeURIComponent(params.login);
         document.getElementById("woj").innerHTML=decodeURIComponent(params.woj);
         document.getElementById("mst").innerHTML=decodeURIComponent(params.mst);
         document.getElementById("ul").innerHTML=decodeURIComponent(params.ul);
-        document.getElementById("pcode").innerHTML=decodeURIComponent(params.pcode);
-        document.getElementById("nr").innerHTML=decodeURIComponent(params.nr);
+        document.getElementById("pcode").innerHTML=decodeURIComponent(params.pcode)+" - "+decodeURIComponent(params.pcode2);
+        document.getElementById("nr").innerHTML=decodeURIComponent(params.nr)+" - "+decodeURIComponent(params.nr2);
         document.getElementById("wls").innerHTML=decodeURIComponent(params.wls);
         document.getElementById("ocz").innerHTML=decodeURIComponent(params.ocz);
         document.getElementById("plc").innerHTML=decodeURIComponent(params.plc);
