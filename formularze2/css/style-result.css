@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+body{
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    background-image: url("../img/tlo.png");
+
+}
+
+.formularz{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    padding: 15px 15px 15px 15px;
+    margin-top:100px;    
+}
+
+.srodek{
+    display: flex;
+    justify-content: center;
+}
+
+.tlo{
+    background-image: url('../img/tlo2.png');
+    
+}
+
+span{
+    margin-left: 20px;
+}
+
+.btn{
+    height: 35px;
+    width: 80px;
+    font-size: 14px;
+    background: white;
+    opacity: 80%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color: transparent;
+    opacity: 100%;
+    transition-duration: 0.4s;
+}
