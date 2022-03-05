@@ -43,9 +43,7 @@ input[type="radio"]{
     text-align: right;
 }
 
-.fieldset{
-    width:700px;
-}
+
 
 label{
     border: 1px solid black;
