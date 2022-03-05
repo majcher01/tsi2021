@@ -54,6 +54,11 @@ label{
     display: flex;
 }
 
+label:hover{
+    background-color: lightskyblue;
+    transition-duration: 0.4s;
+}
+
 .btn{
     height: 35px;
     width: 80px;
