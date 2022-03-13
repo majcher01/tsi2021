@@ -6,3 +6,11 @@ Repo containing code for school project.
 Tabele, listy, łącza: https://majcher01.github.io/tsi2021/tabele_listy_lacza/
 
 Tabela z kolorami: https://majcher01.github.io/tsi2021/Tabela-z-kolorami/
+
+Formularze: https://majcher01.github.io/tsi2021/formularze/
+
+Formularze 2: https://majcher01.github.io/tsi2021/formularze2/
+
+Sprawdzian: https://majcher01.github.io/tsi2021/sprawdzian/
+
+Lista: https://majcher01.github.io/tsi2021/lista/
