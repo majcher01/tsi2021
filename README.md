@@ -17,4 +17,4 @@ Lista: https://majcher01.github.io/tsi2021/lista/
 
 ## Demo links in case you're viewing this as a website
 
-<button href="https://majcher01.github.io/tsi2021/tabele_listy_lacza/">Tabele, listy, łącza</button>
+<a href="https://majcher01.github.io/tsi2021/tabele_listy_lacza/"><button>Tabele, listy, łącza</button></a>
