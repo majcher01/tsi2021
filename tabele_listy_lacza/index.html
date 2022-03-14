@@ -36,6 +36,7 @@ table{
 
 #tabela3 th{
   border-color: black;
+  border-bottom-color: white;
 }
 
 #tabela3 th:hover{
@@ -296,12 +297,12 @@ ul{
   Przeszukiwanie tabeli: <input style="margin-left:20px;" type="text" id="search" placeholder="Wpisz aby wyszukać">
   </div>
   <div class="srodek" style="margin-top: 10px;"> 
-    <table id="tabela3" style="border-width: 4px; border-bottom-width: 1px; border-color: black; background-color: white; color: black;">
+    <table id="tabela3" style="border-bottom-width: 1px; border-color: white; background-color: white; color: black;">
       <thead >
       <tr> 
         <th style="width: auto;" rowspan="2">Lp.</th>
         <th rowspan="2">Kosiarka</th>                            <!--Nagłówki celowo zrobiłem w osobnej tabeli, aby zostawały widoczne podczas przeszukiwania. Mam nadzieję, że to nie będzie błąd.-->
-        <th colspan="2">Wymiary koszenia </th>
+        <th colspan="2" style="border-bottom-color: black;">Wymiary koszenia </th>
         <th rowspan="2">Moc [<abbr title="Wat - jednostka mocy i strumienia energii w układzie SI.">W</abbr>]</th>
         <th rowspan="2">Waga [<abbr title="Kilogram -  jednostka masy, jednostka podstawowa układu SI">kg</abbr>]</th>
         <th rowspan="2">Cena [<abbr title="Złotówka - waluta obowiązująca w Polsce.">zł</abbr>]</th>
@@ -316,7 +317,7 @@ ul{
     </table>
   </div>
 <div class="tabela srodek " >
-  <table id="tabela2" style="border-color: white; border-top-color: black;"> 
+  <table id="tabela2" style="border-color: white; border-top-color: white;"> 
     <thead>
       
     </thead>
