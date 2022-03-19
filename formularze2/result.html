@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" type="text/css" href="css/style-result.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/getparam.js"></script>
     <title>Formularze 2 Jakub Majcherski 3M</title>
 </head>
 <body style="margin-top:100px;">
@@ -12,7 +13,13 @@
     <div class="formularz tlo">
         <div>
         <div style="margin-top: 40px; display: flex; justify-content: center; margin-bottom: 40px; font-size: 24px;">
-            Dziękuję za wypełnienie.
+            <div style="text-align: center;">
+            Dziękuję za wypełnienie, wyniki zostały wysłane na podany adres e-mail.
+            <br><br>
+            Aby wysłać ręcznie należy nacisnąć przycisk poniżej.
+            <br><br>
+            <p id="send"></p>
+            </div>
         </div>
 
         </div>
@@ -22,6 +29,11 @@
     </div>
     
 
-    
+    <script>
+let usermail=decodeURIComponent(params.usrmail);
+document.getElementById("send").innerHTML="<a href='mailto:"+usermail+"?subject=Odpowiedzi&body=gdyby_to_byla_prawdziwa_aplikacja_to_tutaj_faktycznie_byłyby_podane_odpowiedzi'><button class='btn'>Wyślij</button</a>";
+
+
+    </script>
 </body>
 </html>
