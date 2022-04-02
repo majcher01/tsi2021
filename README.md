@@ -15,6 +15,8 @@ Sprawdzian: https://majcher01.github.io/tsi2021/sprawdzian/
 
 Lista: https://majcher01.github.io/tsi2021/lista/
 
+Multimedia: https://majcher01.github.io/tsi2021/multimedia
+
 ## Demo links in case you're viewing this as a website
 
 <a href="https://majcher01.github.io/tsi2021/tabele_listy_lacza/"><button>Tabele, listy, łącza</button></a>
@@ -24,3 +26,4 @@ Lista: https://majcher01.github.io/tsi2021/lista/
 <br><br>
 <a href="https://majcher01.github.io/tsi2021/sprawdzian/"><button>Sprawdzian</button></a>
 <a href="https://majcher01.github.io/tsi2021/lista/" style="margin-left: 20px;"><button>Lista</button></a>
+<a href="https://majcher01.github.io/tsi2021/multimedia/" style="margin-left: 20px;"><button>Multimedia</button></a>
