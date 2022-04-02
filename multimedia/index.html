@@ -4,74 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
     <title>Multimedia</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
-
-
-
-        
-        body {
-            margin: 0px;
-            margin-top: 50px;
-            margin-bottom: 100px;
-            font-family: 'Oxygen', sans-serif;
-            color: white;
-            background: rgb(1,0,24);
-background: linear-gradient(90deg, rgba(1,0,24,1) 0%, rgba(85,84,102,1) 100%);
-        }
-
-        .srodek{
-            display: flex;
-            justify-content: center;
-        }
-
-        .content{
-            font-size: 30px;
-            text-align: center;
-            margin-top: 60px;
-        }
-        
-        .vid{
-            background-color: #48046894;
-            width: 700px;
-            padding-top: 10px;
-            padding-bottom: 30px;
-        }
-
-        .aud{
-            background-color: #084e0294;
-            width: 700px;
-            padding-top: 10px;
-            padding-bottom: 30px;
-            margin-top:50px;
-        }
-
-        .map{
-            background-color: #7c1426f8;
-            width: 700px;
-            padding-top: 10px;
-            padding-bottom: 30px;
-            margin-top:50px;
-        }
-
-        .code{
-            background-color: white;
-            width: 500px;
-            height: 150px;
-            color: black;
-            border: 1px solid black;
-            padding:10px 10px 10px 10px;
-            margin-top: 20px;
-            font-size: 20px;
-        }
-
-    </style>
 </head>
 <body>
+
+    <div class="right-corder-container">
+        <button class="right-corder-container-button">
+            <span class="short-text">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+            </span>
+            <span class="long-text">
+                <a href="#video">Wideo</a>
+                <br>
+                <a href="#audio">Audio</a>
+                <br>
+                <a href="#maps">Mapy</a>
+                
+                
+            </span>
+        </button>
+    </div>
+
+
+
+
     <div class="srodek">
         <div>
-        <div class="vid">
+        <div class="vid" id="video">
         <div class="content">Plik wideo wstawiony z dysku
             <br>
             <video width="560" height="315" controls style="margin: 40px;">
@@ -142,7 +105,7 @@ background: linear-gradient(90deg, rgba(1,0,24,1) 0%, rgba(85,84,102,1) 100%);
 
     </div>
 
-    <div class="aud">
+    <div class="aud" id="audio">
         <div class="content">Plik audio wstawiony z dysku
             <br>
             <audio controls style="margin-top: 40px; width: 500px;">
@@ -215,7 +178,7 @@ background: linear-gradient(90deg, rgba(1,0,24,1) 0%, rgba(85,84,102,1) 100%);
 
     </div>
 
-    <div class="map">
+    <div class="map" id="maps">
         <div class="content">Mapa Odznak Turystyczno-Krajoznowczych PTTK
             <br>
             <iframe style="margin-top: 20px;" src="https://www.google.com/maps/d/embed?mid=1bUuMfghZmLfo9CRsbGJtAVWvo0kNN2jq&ehbc=2E312F" width="640" height="480"></iframe>
@@ -298,5 +261,31 @@ background: linear-gradient(90deg, rgba(1,0,24,1) 0%, rgba(85,84,102,1) 100%);
 
     </div>
     </div>
+
+
+    <script>
+
+        $(".right-corder-container-button").hover(function() {
+            $(".long-text").addClass("show-long-text");   
+        }, function () {
+            $(".long-text").removeClass("show-long-text");
+        });
+        
+        $(document).ready(function() {
+          
+          $("li").delay(1000).each(function(i) {
+            $(this).delay(400 * i).queue(function() {
+              $(this).addClass("show");
+            })
+          })
+        });
+        
+        
+        
+        
+        
+        
+        
+        </script>
 </body>
 </html>
