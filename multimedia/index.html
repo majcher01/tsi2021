@@ -14,7 +14,11 @@
         body {
             margin: 0px;
             margin-top: 50px;
+            margin-bottom: 100px;
             font-family: 'Oxygen', sans-serif;
+            color: white;
+            background: rgb(1,0,24);
+background: linear-gradient(90deg, rgba(1,0,24,1) 0%, rgba(85,84,102,1) 100%);
         }
 
         .srodek{
@@ -22,15 +26,80 @@
             justify-content: center;
         }
 
-        .naglowek{
+        .content{
             font-size: 30px;
+            text-align: center;
+            margin-top: 60px;
         }
+        
+        .vid{
+            background-color: #48046894;
+            width: 700px;
+            padding-top: 10px;
+            padding-bottom: 30px;
+        }
+
+        .aud{
+            background-color: #084e0294;
+            width: 700px;
+            padding-top: 10px;
+            padding-bottom: 30px;
+            margin-top:50px;
+        }
+
     </style>
 </head>
 <body>
     <div class="srodek">
-        <p class="naglowek">Wideo z dysku</p>
+        <div>
+        <div class="vid">
+        <div class="content">Plik wideo wstawiony z dysku
+            <br>
+            <video width="560" height="315" controls style="margin: 40px;">
+                <source src="media/video/serwerki.mp4" type="video/mp4">
+              Twoja przeglądarka nie obsługuje wideo.
+              </video>
+            </div>
 
+        <div class="content">Plik wideo wstawiony z zewnętrznego serwera
+            <br>
+            <video width="560" height="315" controls style="margin: 40px;">
+                <source src="https://majcherski.com/files/Chorwacja-2020-720websample.mp4" type="video/mp4">
+              Twoja przeglądarka nie obsługuje wideo.
+              </video>
+            </div>
+
+            <div class="content">Plik wideo wstawiony z serwisu YouTube
+                <br>
+                <iframe width="560" height="315" style="margin-top: 40px;" src="https://www.youtube.com/embed/8f_-5fgpvX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+
+    </div>
+
+    <div class="aud">
+        <div class="content">Plik audio wstawiony z dysku
+            <br>
+            
+            </div>
+
+        <div class="content">Plik audio wstawiony z zewnętrznego serwera
+            <br>
+            
+            </div>
+
+            <div class="content" style="margin-bottom: 40px;">Plik audio wstawiony z serwisu Spotify
+                <br>
+                
+                </div>
+
+
+    </div>
+
+
+
+
+    </div>
     </div>
 </body>
 </html>
