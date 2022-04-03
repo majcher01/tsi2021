@@ -5,8 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini Kurs HTML Jakub Majcherski</title>
+
+    <style>
+        html {
+    height: 100%;
+}
+        body{
+            margin: 0px 0px 0px 0px;
+            height: 100%;
+            width: 100%;
+            
+            
+        }
+
+        iframe{
+            border: 0px;
+            width: 100%;
+            height: 100%;
+        }
+
+       
+
+        
+    </style>
 </head>
 <body>
-    <iframe src="nav.html"></iframe>
+   <div style="height: 10%;">
+    <iframe src="sub/banner.html" style="width: 100%; height: 100px;"></iframe>
+   </div>
+   <div style="height: 90%;">
+       <div style="width: 15%;height: 100%;  float: left;">
+            <iframe src="sub/nav.html" style="padding-left:30px;"></iframe>
+       </div>
+       <div style="height: 100%;  float: left; width: 85%;">
+        <iframe name="content"></iframe>
+   </div>
+   </div>
+   
+   
 </body>
 </html>
