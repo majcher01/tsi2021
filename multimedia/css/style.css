@@ -184,3 +184,8 @@ background: linear-gradient(90deg, rgba(1,0,24,1) 0%, rgba(85,84,102,1) 100%);
         html {
   scroll-behavior: smooth;
 }
+
+.fxdif{
+    width: 644px;
+    height: 484px;
+}
