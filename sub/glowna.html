@@ -1,1 +1,44 @@
-<div style="text-align: center;">tu bedzie glowna</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+        body{
+            font-family: 'Oxygen', sans-serif;
+            margin: 0px 0px 0px 0px;
+            color: white;
+        }
+
+        .main{
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div  class="main">
+        <div>
+        <p id="tytul"></p>
+        
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/typeit@8.1.0/dist/index.umd.js"></script>
+    <script>
+        new TypeIt("#tytul", {
+        speed: 50,
+        startDelay:1000,
+        afterComplete: function(instance1){
+      instance1.destroy();
+  }
+    })
+    .type("Witaj przybyszu!<br> Znajdziesz tutaj poradnik do htmla i cssa tylko jeszcze nie wiem co ma się znaleźć na stronie głównej więc nic tu nie ma.")
+    .go();
+    </script>
+</body>
+</html>

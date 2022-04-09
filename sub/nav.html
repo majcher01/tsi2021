@@ -1,16 +1,135 @@
 <head>
+    <script>
+        /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+    </script>
     <style>
 
+
+        
+    
+
         .navbtn{
-            height: 40px;
-            width: 150px;
-            margin-top: 10px;
+            height: 50px;
+            width: 100%;
+            
+            border: 0px solid white;
+            background-color: transparent;
+            color: white;
+            font-size: 18px;
+
+            -webkit-transition: all 0.5s ease-out;
+   -moz-transition: all 0.5s ease-out;
+   -o-transition: all 0.5s ease-out;
+   -ms-transition: all 0.5s ease-out;
+   transition: all 0.5s ease-out;
         }
+
+        .navbtn:hover{
+            -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+    background-color: white;
+    color: #15142b;
+        }
+
+        .dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  width: 100%;
+  -webkit-transition: all 0.5s ease-out;
+   -moz-transition: all 0.5s ease-out;
+   -o-transition: all 0.5s ease-out;
+   -ms-transition: all 0.5s ease-out;
+   transition: all 0.5s ease-out;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: white;
+  color: #15142b;
+
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.drop{
+    -webkit-transition: all 0.5s ease-out;
+   -moz-transition: all 0.5s ease-out;
+   -o-transition: all 0.5s ease-out;
+   -ms-transition: all 0.5s ease-out;
+   transition: all 0.5s ease-out;
+}
+
+.drop:hover{
+    background-color: #15142b;
+    color: white;
+
+
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
 
     </style>
 </head>
 
-
+<div style="width: 150px; background-color: #f5f5f517;">
 <a target="content" href="glowna.html"><button class="navbtn">Główna</button></a>
 <br>
 <a target="content" href="href"><button class="navbtn">HTML</button></a>
@@ -25,7 +144,13 @@
 <br>
 <a target="content" href="../tabele_listy_lacza/index.html"><button class="navbtn">Tabele, listy, łącza</button></a>
 <br>
-<a target="content" href="../formularze/index.html"><button class="navbtn">Formularze</button></a>
+<!--<a target="content" href="../formularze/index.html"><button class="navbtn">Formularze</button></a>-->
+<button onclick="myFunction()" class="dropbtn">Formularze</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="../formularze/index.html" target="content" class="drop">Formularz 1</a>
+    <a href="../formularze2/index.html" target="content" class="drop">Formularz 2</a>
+  </div>
+
 <br>
 <a target="content" href="../multimedia/index.html"><button class="navbtn">Multimedia</button></a>
 <br>
@@ -34,3 +159,5 @@
 <a target="content" href="href"><button class="navbtn">Linki</button></a>
 <br>
 <a target="content" href="kontakt.html"><button class="navbtn">Kontakt</button></a>
+
+</div>

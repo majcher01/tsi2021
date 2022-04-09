@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Mini Kurs HTML Jakub Majcherski</title>
 
     <style>
@@ -14,9 +15,25 @@
             margin: 0px 0px 0px 0px;
             height: 100%;
             width: 100%;
+
+            animation: fadeInAnimation ease 4s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+
+            background: rgb(1,0,24);
+            background: linear-gradient(90deg, rgba(1,0,24,1) 0%, rgba(85,84,102,1) 100%);
             
             
         }
+
+        @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
 
         iframe{
             border: 0px;
@@ -35,13 +52,14 @@
    </div>
    <div style="height: 90%;">
        <div style="width: 15%;height: 100%;  float: left;">
-            <iframe src="sub/nav.html" style="padding-left:30px;"></iframe>
+            <iframe src="sub/nav.html" style="padding-left:20px;"></iframe>
        </div>
        <div style="height: 100%;  float: left; width: 85%;">
-        <iframe name="content"></iframe>
+        <iframe name="content" src="sub/glowna.html"></iframe>
    </div>
    </div>
    
    
+
 </body>
 </html>
