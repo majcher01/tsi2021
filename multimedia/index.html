@@ -36,21 +36,25 @@
         <div>
             <div style="text-align: center; font-size: 30px; font-weight: 500;">
                 <p>
-                    Multimedia Jakub Majcherski 3M
+                    Multimedia
                 </p>
             </div>
         <div class="vid" id="video">
         <div class="content">Plik wideo wstawiony z dysku
             <br>
-            <video width="560" height="315" controls style="margin: 40px;">
+            <video width="560" height="315" controls style="margin: 40px; margin-bottom: 5px;">
                 <source src="media/video/serwerki.mp4" type="video/mp4">
               Twoja przeglądarka nie obsługuje wideo.
               </video>
+              <p style="margin-top: 0px; font-size: 15px; margin-bottom: 40px; padding-left: 70px; padding-right: 70px;">
+                Jeżeli nie możesz odtworzyć filmu, kliknij prawym przyciskiem myszy na obszar odtwarzacza i włącz pokazywanie kontrolek.
+              </p>
               <div class="srodek">
                   <div>
                   Kod:
 
-                  <p class="code">
+                  <p class="code" style="    padding-top: 20px;
+                  height: 85px;">
                     <code>
                         &ltvideo width="560" height="315" controls style="margin: 40px;"&gt
                             &ltsource src="media/video/serwerki.mp4" type="video/mp4"&gt
@@ -75,7 +79,8 @@
                 <div>
                 Kod:
 
-                <p class="code">
+                <p class="code" style="    padding-top: 20px;
+                height: 100px;">
                   <code>
                     &ltvideo width="560" height="315" controls style="margin: 40px;"&gt
                         &ltsource src="https://majcherski.com/files/Chorwacja-2020-720websample.mp4" type="video/mp4"&gt
@@ -97,7 +102,8 @@
                     <div>
                     Kod:
   
-                    <p class="code" style="height: 210px;">
+                    <p class="code" style="    height: 120px;
+                    padding-top: 20px;">
                       <code >
                         &ltiframe width="560" height="315" style="margin-top: 40px;" src="https://www.youtube.com/embed/<br>8f_-5fgpvX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt&lt/iframe&gt
                       </code>
@@ -106,6 +112,27 @@
                 </div>
                 </div>
                 </div>
+
+                <hr>
+
+                <div class="content">Film pełnometrażowy z serwisu YouTube
+                  <br>
+                  
+                  <iframe width="560" height="315" style="margin-top: 40px;" src="https://www.youtube.com/embed/iLW3ivu8IiI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <div class="srodek" style="margin-top: 20px;">
+                      <div>
+                      Kod:
+    
+                      <p class="code" style="    height: 120px;
+                      padding-top: 20px;">
+                        <code >
+                          &ltiframe width="560" height="315" style="margin-top: 40px;" src="https://www.youtube.com/embed/<br>iLW3ivu8IiI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt&lt/iframe&gt
+                        </code>
+                      </p>
+                    
+                  </div>
+                  </div>
+                  </div>
 
 
     </div>
@@ -121,7 +148,8 @@
                 <div>
                 Kod:
 
-                <p class="code">
+                <p class="code" style="    padding-top: 20px;
+                height: 90px;">
                   <code>
                     &ltaudio controls style="margin-top: 40px; width: 500px;"&gt
                         &ltsource src="media/audio/116_short3_one-last-time_0061_preview0 (2).mp3" type="audio/mpeg"&gt
@@ -146,7 +174,7 @@
                 <div>
                 Kod:
 
-                <p class="code">
+                <p class="code" style="padding-top: 20px; height: 85px;">
                   <code>
                     &ltaudio controls style="margin-top: 40px; width: 500px;"&gt
                         &ltsource src="https://majcherski.com/files/CleanBandit-DustClears.mp3" type="audio/mpeg"&gt
@@ -169,7 +197,7 @@
                     <div>
                     Kod:
     
-                    <p class="code" style="height: 230px;">
+                    <p class="code" style="height: 150px; padding-top: 20px;">
                       <code>
                         &ltiframe style="border-radius:12px; width: 500px; margin-top:40px;" src="https://open.spotify.com/embed/<br>track/5jFlj0Gzkk7mxdi8e4IlXx?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"&gt&lt/iframe&gt
                       </code>
@@ -177,21 +205,64 @@
                   
                 </div>
                 </div>
-                
                 </div>
+
+                <hr>
+
+                <div class="content" style="margin-bottom: 40px;">Częste błędy przy umieszczaniu plików audio.
+                  <p class="" style="padding-top: 0px; font-size: 16px; margin-top: 20px; margin-bottom: 20px; padding-left: 20px; padding-right: 20px;">
+                    Popularnym błędem przy wstawianiu plików audio jest brak widoczności elementów sterujących. Tak jak na zamieszczonym poniżej przykładzie.
+                  </p>
+                  <audio controls style="margin-top: 40px; width: 50px;">
+                    <source src="media/audio/116_short3_one-last-time_0061_preview0 (2).mp3" type="audio/mpeg">
+                  Twoja przeglądarka nie obsługuje audio.
+                  </audio>
+                  <p class="" style="padding-top: 0px; font-size: 16px; margin-top: 20px; margin-bottom: 20px; padding-left: 20px; padding-right: 20px;">
+                    Jest to spowodowane nieokreśleniem szerokości elementu. Aby naprawić bład należy w znaczniku <b>&ltaudio&gt</b> dodać parametr <b>width</b> i określić szerokość.
+                  </p>
+                  <audio controls style="margin-top: 40px;" width="200px;">
+                    <source src="media/audio/116_short3_one-last-time_0061_preview0 (2).mp3" type="audio/mpeg">
+                  Twoja przeglądarka nie obsługuje audio.
+                  </audio>
+                  <br>
+                  
+                  
+                  <div class="srodek" style="margin-top: 20px;">
+                      <div>
+                      Rozwiązanie:
+      
+                      <p class="code" style="height: 100px; padding-top: 30px;">
+                        <code>
+                          &ltaudio controls style="margin-top: 40px;" <span style="color: #00a128"><b>width="200px;"</b></span>  &gt
+                            &ltsource src="media/audio/116_short3_one-last-time_0061_preview0 (2).mp3" type="audio/mpeg"&gt
+                          Twoja przeglądarka nie obsługuje audio.
+                          &lt/audio&gt
+                        </code>
+                      </p>
+                    
+                  </div>
+                  </div>
+                  </div>
+
+
 
 
     </div>
 
     <div class="map" id="maps">
-        <div class="content">Mapa Odznak Turystyczno-Krajoznowczych PTTK
+        <div class="content">Mapa do <abbr title="Odznaki Turystyczno-Krajoznawczej">OTK</abbr> PTTK Polskie „Naj”
             <br>
             <iframe style="margin-top: 20px;" src="https://www.google.com/maps/d/embed?mid=1bUuMfghZmLfo9CRsbGJtAVWvo0kNN2jq&ehbc=2E312F" width="640" height="480"></iframe>
               <div class="srodek" style="margin-top: 20px;">
+                
                   <div>
+                    <p style="margin-top: 0px; font-size: 15px; text-align: center; margin-bottom: 20px; padding-left: 30px; padding-right: 30px;">
+                      Pomysł, opracowanie i wykonanie mapy – <a href="mailto: romi@o2.pl">Roman Henryk Orlicz</a>
+                      Oddział Wolski PTTK im. gen. Józefa Sowińskiego w Warszawie.
+                    </p>
                   Kod:
 
-                  <p class="code">
+                  <p class="code" style="padding-top: 20px; height: 110px;">
                     <code>
                         &ltiframe style="margin-top: 20px;" src="https://www.google.com/maps/d/embed?mid=1bUuMfghZmLfo9CRsbGJtAVWvo0kNN2jq&ehbc<br>=2E312F" width="640" height="480"&gt&lt/iframe&gt
                     </code>
@@ -203,18 +274,50 @@
 
             <hr>
 
+            <div class="content">Osadzanie Map z Google Maps
+              <br>
+              <span style="font-size: 16px; display: inline-block; width: 400px; margin-top: 40px; margin-left: 15px;;">
+              Mapy Google, Google Maps – serwis internetowy umożliwiający wyszukiwanie obiektów, oglądanie map, zdjęć lotniczych powierzchni Ziemi, 360° panoramiczne widoki z poziomu ulic (Street view), natężenie ruchu ulicznego w czasie rzeczywistym, planowanie tras podróży samochodem, transportem publicznym, rowerem, pieszo lub samolotem oraz tworzenie „wizytówek” firm. Został stworzony przez Google i uruchomiony 8 lutego 2005. Jest darmowy dla niekomercyjnych użytkowników.
+              </span>
+              <span style="display: inline-block; width: 270px; margin-top: 40px;">
+                <img src="media/img/Google_Maps_Logo_2020.svg.png" style="width: 200px; height:auto">
+              </span>
+
+                <div class="srodek" style="margin-top: 40px; margin-bottom: 20px; padding-left: 15px; padding-right: 15px;">
+                  <div>
+                  Jak osadzić mapę ?
+  
+                  <p class="" style="padding-top: 0px; width: 100%; font-size: 16px; margin-top: 20px; margin-bottom: 20px;">
+                    Aby umieścić mapę Google na stronie należy wyszukać obiekt lub trasę na stronie map, wybrać opcję "udostępnij", a później "Umieszczanie mapy", skopiować kod html i wkleić na swoją stronę.
+                  </p>
+                
+              </div>
+              </div>
+              </div>
+  
+              <hr>
+
         <div class="content">Trasa z Blue City do Galerii Mokotów
             <br>
-            <iframe style="margin-top: 20px;" src="https://www.google.com/maps/embed?pb=!1m27!1m12!1m3!1d39130.342219418984!2d20.93271576910381!3d52.19530002926909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m12!3e6!4m4!1s0x471eccf30d8d5ef7%3A0x23b86eb563b8bbf6!3m2!1d52.1792732!2d21.0037843!4m5!1s0x471ecb57a156bd51%3A0x64ee744a4f4b14fe!2sBlue%20City%2C%20Opaczewska%2C%2002-222%20Warszawa!3m2!1d52.2124879!2d20.9556634!5e0!3m2!1spl!2spl!4v1648918255233!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="fxdif" style="margin-top: 20px;" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d19564.916160231962!2d20.962214292045445!3d52.19587925425158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x471eccf30d8d5ef7%3A0x23b86eb563b8bbf6!2sGaleria%20Mokot%C3%B3w%2C%20Wo%C5%82oska%2012%2C%2002-675%20Warszawa!3m2!1d52.1792732!2d21.0037843!4m5!1s0x471ecb57a156bd51%3A0x64ee744a4f4b14fe!2sBlue%20City%2C%20Opaczewska%2C%2002-222%20Warszawa!3m2!1d52.2124879!2d20.9556634!5e0!3m2!1spl!2spl!4v1649436695500!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               <div class="srodek" style="margin-top: 20px;">
                 <div>
                 Kod:
 
-                <p class="code" style="height: 380px; font-size: 18px;">
+                <p class="code" style="height: 350px; padding-top:30px;">
                   <code>
                     &ltiframe src="https://www.google.com/maps/embed?pb=!1m27!1m12!1m3!1d39130.342219418984!2d20.9<br>3271576910381!3d52.19530002926909!2m<br>3!1f0!2f0!3f0!3m2!1i1024!2i768!4<br>f13.1!4m12!3e6!4m4!1s0x471ec<br>cf30d8d5ef7%3A0x23b86eb563b8bbf6!3m2!1<br>d52.1792732!2d21.0037843!4m5!1<br>s0x471ecb57a156bd51%3A0x64ee744a4f4<br>b14fe!2sBlue%20City%2C%20Opaczewska%2C%2002-222%20Warszawa!3m2!1d52.2124879!<br>2d20.9556634!5e0!<br>3m2!1spl!2spl!4v1648918255233!5m2!1spl!2spl"<br> width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"&gt&lt/iframe&gt
                   </code>
                 </p>
+
+                <div style="margin-top:50px; margin-bottom: 50px;">
+                  Co zawiera kod ?
+  
+                  <p class="" style="padding-top: 0px; width: 100%; font-size: 16px; margin-top: 20px; margin-bottom: 20px;">
+                    Do wklejenia mapy użyłem znacznika <b>&ltiframe&gt</b>, który służy do umieszczania stron na innych stronach. Znacznik wymaga parametru <b>src</b>, który określa jaką stronę chcemy wkleić. W moim przypadku jest to <i>www.google.com/maps</i> . Dodatkowo, użyłem parametrów takich jak <b>width</b> i <b>height</b>, które pozwalają określić szerokość i wysokość wstawianej strony.
+                  </p>
+                
+              </div>
               
             </div>
             </div>
@@ -224,18 +327,9 @@
 
             <div class="content">Trasa rowerowa między "Kasprzakiem" a moim <br>miejscem zamieszkania
                 <br>
-                <iframe style="margin-top: 20px;" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d19548.56987645231!2d20.974334499377548!3d52.23300723839798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e1!4m5!1s0x471ecb61f83e4b81%3A0x326f47958eb8ca46!2sTechnikum%20Elektroniczne%20nr%201%2C%20Marcina%20Kasprzaka%2C%20Warszawa!3m2!1d52.2284753!2d20.9706396!4m5!1s0x471ecc8a9f462901%3A0xd64abcb596d8e804!2sMazowiecka%2011%2C%20Warszawa!3m2!1d52.2374666!2d21.0128699!5e0!3m2!1spl!2spl!4v1648918566796!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="fxdif" style="margin-top: 20px;" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d19548.56987645231!2d20.974334499377548!3d52.23300723839798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e1!4m5!1s0x471ecb61f83e4b81%3A0x326f47958eb8ca46!2sTechnikum%20Elektroniczne%20nr%201%2C%20Marcina%20Kasprzaka%2C%20Warszawa!3m2!1d52.2284753!2d20.9706396!4m5!1s0x471ecc8a9f462901%3A0xd64abcb596d8e804!2sMazowiecka%2011%2C%20Warszawa!3m2!1d52.2374666!2d21.0128699!5e0!3m2!1spl!2spl!4v1648918566796!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="srodek" style="margin-top: 20px;">
-                    <div>
-                    Kod:
-  
-                    <p class="code" style="height: 450px;" style="margin-top: 20px;">
-                      <code >
-                        &ltiframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d19548.569876452<br>31!2d20.974334499377548!3d52.23300723839798!<br>2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!<br>4m13!3e1!4m5!1s0x471ecb61f83e4b81%3A0x3<br>26f47958eb8ca46!2sTechnikum%20Elektroniczne%<br>20nr%201%2C%20Marcina%20Kasprzaka%2C%20Wars<br>zawa!3m2!1d52.2284753!2d20.9706396!4m5!1s0x471<br>ecc8a9f462901%3A0xd64abcb596d8e804!2sMazowi<br>ecka%2011%2C%20Warszawa!3m2<br>!1d52.2374666!2d21.0128699!5e0!3m2!1spl<br>!2spl!4v1648918566796!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"&gt&lt/iframe&gt
-                      </code>
-                    </p>
-                  
-                </div>
+                    
                 </div>
                 </div>
 
@@ -243,18 +337,9 @@
 
                 <div class="content">Zamek Królewski w Warszawie
                     <br>
-                    <iframe style="margin-top: 20px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16437.325800170693!2d21.003242177760765!3d52.23569824175762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc661b455407%3A0x2019a146fb49c9be!2sZamek%20Kr%C3%B3lewski%20w%20Warszawie!5e0!3m2!1spl!2spl!4v1648918758321!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe class="fxdif" style="margin-top: 20px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16437.325800170693!2d21.003242177760765!3d52.23569824175762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc661b455407%3A0x2019a146fb49c9be!2sZamek%20Kr%C3%B3lewski%20w%20Warszawie!5e0!3m2!1spl!2spl!4v1648918758321!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <div class="srodek" style="margin-top: 20px;">
-                        <div>
-                        Kod:
-      
-                        <p class="code" style="height: 370px;" style="margin-top: 20px;">
-                          <code >
-                            &ltiframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!<br>1d16437.325800170693!2d21.003242177760765!3d<br>52.23569824175762!2m3!1f0<br>!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m<br>3!1m2!1s0x471ecc661b455407%3A0x2019a14<br>6fb49c9be!2sZamek%20Kr%C3%B3lewski%20w%20W<br>arszawie!5e0!3m2!1spl!2spl!4v1648918758321!<br>5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"&gt&lt/iframe&gt
-                          </code>
-                        </p>
-                      
-                    </div>
+                        
                     </div>
                     </div>
 
