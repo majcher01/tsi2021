@@ -13,9 +13,22 @@
             font-family: 'Oxygen', sans-serif;
             color: white;
             background: rgb(1,0,24);
-background: linear-gradient(90deg, rgba(1,0,24,1) 0%, rgba(85,84,102,1) 100%);
+            background: linear-gradient(90deg, rgba(1,0,24,1) 0%, rgba(85,84,102,1) 100%);
+
+            animation: fadeInAnimation ease 4s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
 
         }
+
+        @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
 
         .srodek{
             display: flex;
@@ -29,11 +42,25 @@ background: linear-gradient(90deg, rgba(1,0,24,1) 0%, rgba(85,84,102,1) 100%);
             background-color: transparent;
             border: 2px solid white;
             color: white;
+
+            -webkit-transition: all 0.5s ease-out;
+   -moz-transition: all 0.5s ease-out;
+   -o-transition: all 0.5s ease-out;
+   -ms-transition: all 0.5s ease-out;
+   transition: all 0.5s ease-out;
         }
 
         .btn:hover{
-            background-color: #15142b;
-            transition-duration: 0.4s;
+            color: #15142b;
+            background-color: white;
+            border-radius: 20px;
+            /*transition-duration: 0.4s;*/
+
+            -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
         }
 
     </style>
@@ -42,9 +69,9 @@ background: linear-gradient(90deg, rgba(1,0,24,1) 0%, rgba(85,84,102,1) 100%);
     <div class="srodek">
         <div style="margin-top: 50px;">
             <div style="text-align: center; margin-top: 100px; font-size:50px; font-weight: 500;">
-                Mini Kurs HTML
+                Minikurs HTML5 i CSS3
             </div>
-            <div style="margin-top: 60px;">
+            <div style="margin-top: 60px; display: flex; justify-content: center;">
                 <img src="img/CSS3_and_HTML5.png" style="height: auto; width: 400px;">
             </div>
             <div style="margin-top: 60px; text-align: center;">
