@@ -43,7 +43,6 @@ th{
 
 a{
     text-decoration: none;
-    color: white;
 }
 
 button{
@@ -51,4 +50,25 @@ button{
     border-radius: 5px;
     background-color: transparent;
     color: white;
+    height: 23px;
+    width: 70px;
+    font-size: 14px;
+
+
+    -webkit-transition: all 0.5s ease-out;
+   -moz-transition: all 0.5s ease-out;
+   -o-transition: all 0.5s ease-out;
+   -ms-transition: all 0.5s ease-out;
+   transition: all 0.5s ease-out;
+}
+
+button:hover{
+    background-color: white;
+    color: #15142b;
+
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
