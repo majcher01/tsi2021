@@ -5,6 +5,7 @@ body{
     font-family: 'Oxygen', sans-serif;
     color: white;
     margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 .srodek{
@@ -24,4 +25,30 @@ img{
 
 tr{
     height: 30px;
+    text-align: center;
+}
+
+th{
+    text-align: center;
+}
+
+.tabela{
+    display: flex;
+    justify-content: center;
+}
+
+.linki{
+    width: 600px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+button{
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
 }
