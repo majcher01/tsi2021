@@ -1,21 +1,9 @@
 # tsi2021
-Repo containing code for school project.
+Welcome to my HTML & CSS 'tutorial'. Repo containing code for school project.
 
-## Live demo:
+## Stable release:
 
-Tabele, listy, łącza: https://majcher01.github.io/tsi2021/tabele_listy_lacza/
-
-Tabela z kolorami: https://majcher01.github.io/tsi2021/Tabela-z-kolorami/
-
-Formularze: https://majcher01.github.io/tsi2021/formularze/
-
-Formularze 2: https://majcher01.github.io/tsi2021/formularze2/
-
-Sprawdzian: https://majcher01.github.io/tsi2021/sprawdzian/
-
-Lista: https://majcher01.github.io/tsi2021/lista/
-
-Multimedia: https://majcher01.github.io/tsi2021/multimedia
+[Here](https://tsi2021.pages.dev)
 
 ## Demo links in case you're viewing this as a website
 
