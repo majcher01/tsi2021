@@ -14,7 +14,9 @@
 
             
             <p style="text-align: center; font-size: 24px; font-weight: 200; width: 800px; ">
-                Ciekawostki o mnie.
+                Ciekawostki i moje zainteresowania.
+                <br>
+                <span style="font-size: 10px;">Uwaga, one w ogóle nie są ciekawe.</span>
             </p>
             
             
@@ -23,7 +25,7 @@
             <div style="margin-top: 40px;">
                 
                 <span style=" display:inline-block; width: 600px;margin-right: -4px; ">
-                    dupa 
+                    Nazywam sie Jakub Majcherski, mam <span id="wiek"></span> lat
                 </span>
                 <span style="display:inline-block; width: 200px; ">
                     dupa2
@@ -35,5 +37,15 @@
 
         
     </div>
+
+
+    <script>
+
+        let rok = new Date().getFullYear() ; // returns the current year
+        document.getElementById("wiek").innerHTML=(rok-2004);
+
+        
+
+    </script>
 </body>
 </html>
