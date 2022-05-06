@@ -13,4 +13,43 @@ body{
     justify-content: center;
 }
 
+.modalbtn{
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    height: 23px;
+    width: 250px;
+    font-size: 14px;
 
+
+    -webkit-transition: all 0.5s ease-out;
+   -moz-transition: all 0.5s ease-out;
+   -o-transition: all 0.5s ease-out;
+   -ms-transition: all 0.5s ease-out;
+   transition: all 0.5s ease-out;
+}
+
+.modalbtn:hover{
+    background-color: white;
+    color: #15142b;
+
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    color: black;
+    margin-bottom: 10px;
+}
+
+li a{
+    color: black;
+}
