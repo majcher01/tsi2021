@@ -26,11 +26,22 @@ img{
 tr{
     height: 30px;
     text-align: center;
+
+    -webkit-transition: all 0.2s ease-out;
+   -moz-transition: all 0.2s ease-out;
+   -o-transition: all 0.2s ease-out;
+   -ms-transition: all 0.2s ease-out;
+   transition: all 0.2s ease-out;
 }
 
 th{
     text-align: center;
 }
+
+table, th, td {
+    border: 0px solid black;
+    border-collapse: collapse;
+  }
 
 .tabela{
     display: flex;
@@ -72,3 +83,54 @@ button:hover{
     -ms-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 250px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px 5px 5px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -125px;
+    margin-top: 10px;
+  
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  tr:hover{
+      background-color: #ffffff22;
+
+      -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }

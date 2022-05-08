@@ -1,14 +1,66 @@
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <style>
         body{
             margin: 0px 0px 0px 0px;
         }
+        .jeden{
+            display: inline-block;
+        }
+
+        .vcent{
+            display: flex;
+  justify-content: center;
+  align-items: center;
+        }
+        a{
+            text-decoration: none;
+            text-align: center;
+        }
+
+        /* Style all font awesome icons */
+.fa {
+  padding: 8px;
+  font-size: 28px;
+  width: 28px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  border-radius: 50%;
+}
+
+/* Twitter */
+.fa-instagram {
+  background: #da004f;
+  color: white;
+  border-radius: 50%;
+}
     </style>
 
 </head>
 
 
 
-<span style="display: flex; justify-content: center;">
-<img src="../img/baner.png" height="80px" width="auto" style="margin-top: 0px;">
-</span>
+<div style="display: flex; justify-content: center;">
+    <span class="jeden" style="margin-right: 30px;">
+        <img src="../img/baner.png" height="80px" width="auto" style="margin-top: 0px;">
+    </span>
+    <span class="jeden vcent">
+        <a href="https://www.facebook.com/jakub.majcherski.37" target="_blank" class="fa fa-facebook" style="margin-right: 15px;"></a>
+        <a href="https://www.instagram.com/jmajcherski/" target="_blank" class="fa fa-instagram" style="margin-right: 15px;"></a>
+        <a href="https://github.com/majcher01/tsi2021" target="_blank" style="color: white; background-color: #333; border-radius: 50%;" class="fa fa-github"></a>
+    </span>
+</div>
