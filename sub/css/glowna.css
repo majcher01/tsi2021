@@ -3,6 +3,10 @@
             font-family: 'Oxygen', sans-serif;
             margin: 0px 0px 0px 0px;
             color: white;
+            margin-bottom: 200px;
+        }
+
+        html{
             scroll-behavior: smooth;
         }
 
@@ -32,4 +36,14 @@
 
         #arrow{
             display: none;
+        }
+
+        a{
+            color: white;
+            text-decoration: dotted;
+        }
+
+        p{
+            padding-left: 25px;
+            padding-right: 25px;
         }

@@ -19,9 +19,19 @@
                 <span id="arrow"><a href="#main"><img src="../img/arrowdown.png"></a></span>
             </p>
 
-            <div style="margin-top: 400px;">
-                <p>Co to jest HTML?</p>
-                <p>dupa</p>
+            <div style="margin-top: 200px;" >
+                <p style="text-align: center; font-size:24px;">Co to jest HTML?</p>
+                <p style="text-align: left; font-size: 20px;" >
+                    <b>HTML (HyperText Markup Language)</b> jest językiem używanym do tworzenia stron internetowych. Jest to także język znaczników, czyli oprócz głównego tekstu dokument zawiera w sobie informację opisujące go. Te dodatkowe informacje wplotywane są za pomocą znaczników, onegdaj wykorzystywanych w przemyśle wydawniczym. Dzięki językowi HTML możemy dodawać do tekstu akapity, hiperłącza, nagłówki, pliki graficzne czy multimedialne czy formularze. HTML określa także jak dokument będzie wyglądał w przeglądarce internetowej. Język ten używa znaczników występujących w parach, np: &lt;body&gt; &lt;/body&gt;, &lt;title&gt; &lt;/title&gt;. Dzięki nim w dokumencie wpleść również można język skryptowy, służacy do kontrolowania aplikacji. <a style="margin-left: 10px;" href="https://stronymalowane.pl/html/" target="_blank">źródło</a>
+                </p>
+                <p style="text-align: center; margin-top:70px;" id="main">
+                    <video width="560" height="315" controls style="margin-bottom: 15px;">
+                        <source src="../img/kurs-html.mp4" type="video/mp4">
+                      Twoja przeglądarka nie obsługuje wideo.
+                      </video>
+                      <br>
+                      <span style="font-size:16px;">Były to pierwsze 3 minuty kursu video HTML autorstwa <a target="_blank" href="https://miroslawzelent.pl/">Mirosława Zelenta</a> , cały film dostępny <a target="_blank" href="https://www.youtube.com/watch?v=k2IydkL3EOs">tutaj.</a></span>
+                </p>
             </div>
 
             
@@ -44,7 +54,7 @@
     <script src="https://unpkg.com/typeit@8.1.0/dist/index.umd.js"></script>
     <script>
         new TypeIt("#tytul", {
-        speed: 20,
+        speed: 0.1, //TODO zmien na 20
         startDelay:1000,
         afterComplete: function(instance1){
       instance1.destroy();
