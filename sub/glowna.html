@@ -5,26 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/glowna.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title></title>
 </head>
 <body>
-    <div  class="main">
-        <div>
-        <p id="tytul"></p>
-        
+    <div class="srodek">
+        <div style="width: 100%;">
+            <p id="tytul" style="text-align: left;">
+                
+            </p>
+
+            <p style="text-align: center; margin-top: 300px;">
+                <img src="../img/arrowdown.png">
+            </p>
+            
+            
+
+
+
+
+
+
+
         </div>
     </div>
+
+
+
+
+
 
     <script src="https://unpkg.com/typeit@8.1.0/dist/index.umd.js"></script>
     <script>
         new TypeIt("#tytul", {
-        speed: 50,
+        speed: 20,
         startDelay:1000,
         afterComplete: function(instance1){
       instance1.destroy();
   }
     })
-    .type("Witaj przybyszu!<br> Znajdziesz tutaj poradnik do htmla i cssa tylko jeszcze nie wiem co ma się znaleźć na stronie głównej więc nic tu nie ma.")
+    .type("Witaj! Znajdujesz się na stronie z poradnikiem do HTMLa i CSSa.")
+    .type("<br>")
+    .type("Dowiesz się tutaj czym jest język znaczników HTML, do czego jest wykorzystywany i jak stworzyć w nim prostą stronę WWW.")
+    .type("<br>")
+    .type("Dodatkowo nauczysz się stosować arkusze stylów CSS do określenia wyglądu elementów na Twojej stronie.")
+    .type("<br>Przewiń w dół aby zacząć zabawę.")
     .go();
     </script>
 </body>

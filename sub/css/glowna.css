@@ -10,3 +10,21 @@
             display: flex;
             justify-content: center;
         }
+
+        .srodek{
+            display: flex;
+            justify-content: center;
+        }
+
+        #tytul{
+            font-size:24px;
+            margin-top: 60px;
+            text-align: left;
+            display: flex;
+            justify-content: left;
+            line-height: 1.8;
+        }
+
+        .ti-cursor{
+            display: none !important;
+        }
