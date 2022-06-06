@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+        body{
+            font-family: 'Oxygen', sans-serif;
+            margin: 0px 0px 0px 0px;
+            color: white;
+        }
+
+        .main{
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+        }
