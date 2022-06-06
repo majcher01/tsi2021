@@ -11,13 +11,19 @@
 <body>
     <div class="srodek">
         <div style="width: 100%;">
-            <p id="tytul" style="text-align: left;">
+            <p id="tytul" style="text-align: left; height: 260px;;">
                 
             </p>
 
-            <p style="text-align: center; margin-top: 300px;">
-                <img src="../img/arrowdown.png">
+            <p style="text-align: center; margin-top: 260px; height: 104px;">
+                <span id="arrow"><a href="#main"><img src="../img/arrowdown.png"></a></span>
             </p>
+
+            <div style="margin-top: 400px;">
+                <p>Co to jest HTML?</p>
+                <p>dupa</p>
+            </div>
+
             
             
 
@@ -42,6 +48,7 @@
         startDelay:1000,
         afterComplete: function(instance1){
       instance1.destroy();
+      fadein();
   }
     })
     .type("Witaj! Znajdujesz się na stronie z poradnikiem do HTMLa i CSSa.")
@@ -51,6 +58,10 @@
     .type("Dodatkowo nauczysz się stosować arkusze stylów CSS do określenia wyglądu elementów na Twojej stronie.")
     .type("<br>Przewiń w dół aby zacząć zabawę.")
     .go();
+
+    function fadein(){
+        $("#arrow").fadeIn(1000);
+    }
     </script>
 </body>
 </html>

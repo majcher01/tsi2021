@@ -3,6 +3,7 @@
             font-family: 'Oxygen', sans-serif;
             margin: 0px 0px 0px 0px;
             color: white;
+            scroll-behavior: smooth;
         }
 
         .main{
@@ -27,4 +28,8 @@
 
         .ti-cursor{
             display: none !important;
+        }
+
+        #arrow{
+            display: none;
         }
