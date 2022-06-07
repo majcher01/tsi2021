@@ -4,41 +4,156 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
-        body{
-            font-family: 'Oxygen', sans-serif;
-            margin: 0px 0px 0px 0px;
-            color: white;
-        }
-
-        .main{
-            margin-top: 30px;
-            display: flex;
-            justify-content: center;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/glowna.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title></title>
 </head>
 <body>
-    <div  class="main">
-        <div>
-        <p id="tytul"></p>
-        
+    <div class="srodek">
+        <div style="width: 100%;">
+            <p id="tytul" style="text-align: left; height: 260px;;">
+                
+            </p>
+
+            <p style="text-align: center; margin-top: 260px; height: 104px;">
+                <span id="arrow"><a href="#main"><img src="../img/arrowdown.png"></a></span>
+            </p>
+
+            <div style="margin-top: 200px;" >
+                <p style="text-align: center; font-size:24px;" id="main">Co to jest HTML?</p>
+                <p style="text-align: left; font-size: 20px;" >
+                    <b>HTML (HyperText Markup Language)</b> jest językiem używanym do tworzenia stron internetowych. Jest to także język znaczników, czyli oprócz głównego tekstu dokument zawiera w sobie informację opisujące go. Te dodatkowe informacje wplotywane są za pomocą znaczników, onegdaj wykorzystywanych w przemyśle wydawniczym. Dzięki językowi HTML możemy dodawać do tekstu akapity, hiperłącza, nagłówki, pliki graficzne czy multimedialne czy formularze. HTML określa także jak dokument będzie wyglądał w przeglądarce internetowej. Język ten używa znaczników występujących w parach, np: &lt;body&gt; &lt;/body&gt;, &lt;title&gt; &lt;/title&gt;. Dzięki nim w dokumencie wpleść również można język skryptowy, służacy do kontrolowania aplikacji. <a style="margin-left: 10px;" href="https://stronymalowane.pl/html/" target="_blank">źródło</a>
+                </p>
+                <p style="text-align: center; margin-top:70px;" >
+                    <video width="560" height="315" controls style="margin-bottom: 15px;">
+                        <source src="../img/kurs-html.mp4" type="video/mp4">
+                      Twoja przeglądarka nie obsługuje wideo.
+                      </video>
+                      <br>
+                      <span style="font-size:16px;">Były to pierwsze 3 minuty kursu video HTML autorstwa <a target="_blank" href="https://miroslawzelent.pl/">Mirosława Zelenta</a> , cały film dostępny <a target="_blank" href="https://www.youtube.com/watch?v=k2IydkL3EOs">tutaj.</a></span>
+                </p>
+            </div>
+
+            <div style="margin-top: 100px;" >
+                <p style="text-align: center; font-size:24px;">Co to jest CSS?</p>
+                <p style="text-align: left; font-size: 20px;" >
+                    <b>CSS</b>, czyli kaskadowe arkusze stylów (od ang. Cascading Style Sheets) to język używany do opisu układu elementów na stronie WWW. Można za jego pomocą zdefiniować wiele parametrów, takich jak rodzaj czcionek, kolor tła, wyrównanie elementów na stronie itp. Powstał w 1996 roku w celu odseparowania struktury dokumentu od formy jego prezentacji. Jest kilka sposobów stosowania CSS, przykładowo: użycie wewnątrz danego dokumentu znacznika „style”, jednak najbardziej użyteczną jest posłużenie się osobnym arkuszem stylów, w którym zawrzemy wszystkie informacje dotyczące układu graficznego strony. <a target="_blank" href="http://stronymalowane.pl/css/" style="margin-left: 10px;">źródło</a>
+                </p>
+                <p style="text-align: center; margin-top:70px;" >
+                    <video width="560" height="315" controls style="margin-bottom: 15px;">
+                        <source src="../img/kurs-css.mp4" type="video/mp4">
+                      Twoja przeglądarka nie obsługuje wideo.
+                      </video>
+                      <br>
+                      <span style="font-size:16px;">Były to pierwsze 3 minuty kursu video CSS autorstwa <a target="_blank" href="https://miroslawzelent.pl/">Mirosława Zelenta</a> , cały film dostępny <a target="_blank" href="https://www.youtube.com/watch?v=RJEKMbD_kEk">tutaj.</a></span>
+                </p>
+            </div>
+
+            <hr style="margin-top: 80px; width: 80%;">
+
+            <div style="margin-top: 70px;" >
+                <p style="text-align: center; font-size:24px;">Sprawdź co możesz tu znaleźć.</p>
+                <p class="x1" style="margin-top: 35px;">
+                    Formatowanie tekstu
+                    <br>
+                    <span class="v1">
+                        Aby utrakcyjnić treść na naszej stronie, powinniśmy sformatować tekst oraz inne elementy wizualne tj. zmienić kolor czcionki, krój czcionki, kolor tła, ulokowanie tekstu na ekranie oraz zastowanie dodatkowych elementów takich jak: listy, łącza, pola tekstowe itd.
+                    </span>
+                </p>
+                <p style="text-align:center; margin-top: 30px;">
+                    <img src="../img/sprawdzian.png" style="width:650px; height: auto; border-radius: 3%;">
+                </p>
+
+
+                <p class="x1">
+                    Listy
+                    <br>
+                    <span class="v1">
+                        Aby pogrupować treśc, należy zastosować listę. Może być ona uporządkowana, nieuporządkowana, prosta, z podpunktami, zagnieżdżona. Pełna dowolność.
+                    </span>
+                </p>
+                <p style="text-align:center; margin-top: 30px;">
+                    <img src="../img/lista.png" style="width:650px; height: auto; border-radius: 3%;">
+                </p>
+
+
+                <p class="x1">
+                    Tabela z kolorami
+                    <br>
+                    <span class="v1">
+                        Innym sposobem na grupowanie treści jest tabela. Sposób prezentowania danych w tabeli utworzonej w języku HTML jest taki sam jak w każdej innej tabeli, znanej z życia codziennego.
+                    </span>
+                </p>
+                <p style="text-align:center; margin-top: 30px;">
+                    <img src="../img/kolory.png" style="width:650px; height: auto; border-radius: 3%;">
+                </p>
+
+
+                <p class="x1">
+                    Tabele, listy, łącza
+                    <br>
+                    <span class="v1">
+                        Często na jedej stronie zachodzi potrzeba użycia różnych sposobów grupowania treści. Można wtedy zrobić mix wszystkich znanych sposobów i połączyć np. tabelę z listą.
+                    </span>
+                </p>
+                <p style="text-align:center; margin-top: 30px;">
+                    <img src="../img/tabelelistylacza.png" style="width:650px; height: auto; border-radius: 3%;">
+                </p>
+
+                <p class="x1">
+                    Formularze
+                    <br>
+                    <span class="v1">
+                        Gdy potrzebujemy uzyskać dane od użytkowników musimy użyć formualarza. Służą one do pobrania danych i przekazania ich serwerowi. Oferują przy tym dużą ilość i różnorodność pół do wprowadzania informacji.
+                    </span>
+                </p>
+                <p style="text-align:center; margin-top: 30px;">
+                    <img src="../img/formualrz.png" style="width:650px; height: auto; border-radius: 3%;">
+                </p>
+
+                <p style="margin-top: 200px; text-align: center;">&copy; Jakub Majcherski</p>
+
+            </div>
+
+            
+            
+            
+
+
+
+
+
+
+
         </div>
     </div>
+
+
+
+
+
 
     <script src="https://unpkg.com/typeit@8.1.0/dist/index.umd.js"></script>
     <script>
         new TypeIt("#tytul", {
-        speed: 50,
+        speed: 20,
         startDelay:1000,
         afterComplete: function(instance1){
       instance1.destroy();
+      fadein();
   }
     })
-    .type("Witaj przybyszu!<br> Znajdziesz tutaj poradnik do htmla i cssa tylko jeszcze nie wiem co ma się znaleźć na stronie głównej więc nic tu nie ma.")
+    .type("Witaj! Znajdujesz się na stronie z poradnikiem do HTMLa i CSSa.")
+    .type("<br>")
+    .type("Dowiesz się tutaj czym jest język znaczników HTML, do czego jest wykorzystywany i jak stworzyć w nim prostą stronę WWW.")
+    .type("<br>")
+    .type("Dodatkowo nauczysz się stosować arkusze stylów CSS do określenia wyglądu elementów na Twojej stronie.")
+    .type("<br>Przewiń w dół aby zacząć zabawę.")
     .go();
+
+    function fadein(){
+        $("#arrow").fadeIn(1000);
+    }
     </script>
 </body>
 </html>

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+        body{
+            font-family: 'Oxygen', sans-serif;
+            margin: 0px 0px 0px 0px;
+            color: white;
+            margin-bottom: 200px;
+        }
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+        .main{
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .srodek{
+            display: flex;
+            justify-content: center;
+        }
+
+        #tytul{
+            font-size:24px;
+            margin-top: 60px;
+            text-align: left;
+            display: flex;
+            justify-content: left;
+            line-height: 1.8;
+        }
+
+        .ti-cursor{
+            display: none !important;
+        }
+
+        #arrow{
+            display: none;
+        }
+
+        a{
+            color: white;
+            text-decoration: dotted;
+        }
+
+        p{
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .x1{
+            font-size: 20px;
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        .v1{
+            font-size: 18px;
+            margin-top:30px;
+            display: block;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        
