@@ -37,38 +37,90 @@
             color: white;
             text-decoration: none;
         }
+
+        .flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 100px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: transparent;
+  color: black;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.flip-card-back {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  transform: rotateY(180deg);
+}
     </style>
 </head>
 <body>
     <div class="srodek">
         <div>
             <p class="hd1">
-                Mini kurs <abbr title="HyperText Markup Language">HTML</abbr>
+                TEKST
             </p>
             <p class="hd1" style="margin-top: 10px; font-size:30px;">
-                Czym jest HTML?
-                <bR>
-                <br>
+                
                 <span style="font-size: 22px;">
-                   <b> HTML </b>(ang. HyperText Markup Language, hipertekstowy język znaczników) – język znaczników stosowany do tworzenia stron internetowych. HTML pozwala opisać strukturę informacji zawartych wewnątrz strony internetowej, nadając odpowiednie znaczenie poszczególnym fragmentom tekstu – formując hiperłącza, akapity, nagłówki, listy – oraz osadza w tekście dokumentu obiekty plikowe, na przykład multimedia, lub elementy baz danych, na przykład interaktywne formularze danych.
-                    <br>
-                   HTML umożliwia określenie wyglądu dokumentu w przeglądarce internetowej. Do szczegółowego opisu formatowania akapitów, nagłówków, użytych czcionek i kolorów, zalecane jest wykorzystywanie kaskadowych arkuszy stylów (CSS). 
+                   Aby strona wyglądała lepiej, nie powinniśmy zostawiać domyślnych stylów, zalecana jest ich zmiana. Dzięki temu można określić np. wybraną czcionkę, kolor, rozmiar i formatowanie tekstu oraz innych elementów na stronie.
                 </span>
             </p>
 
             <div class="hd1" style="margin-top: 10px; font-size:30px;">
-                Wersje HTMLa
+                Rozmiar tekstu
                 <bR>
                 <br>
-                <div style="font-size: 22px; display: flex; justify-content: center;">
-                   <ul style="font-size: 22px; text-align: left;">
-                       <li>2014 r. - HTML 5.0</li>
-                       <li><abbr title="początkowo wersja została wydana w 1997, ale w '98 wyszła poprawka, niektórzy uznają różne daty">1997/98 r.</abbr> - HTML 4.0</li>
-                       <li>1997 r. - HTML 3.2</li>
-                       <li>1995 r. - HTML 3.0</li>
-                       <li>1993 r. - Zarys opublikowany przez IETF</li>
-                   </ul>
+                <div style="font-size: 22px;">
+                    Aby określić rozmiar tekstu należy umieścić go między znacznikami:
                 </div>
+
+                <div style="display: flex; justify-content: center; margin-top: 30px;">
+                <div class="flip-card" >
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <p style="color: white;">
+                       <b> &lt;font size="X"&gt;&lt;/font&gt; </b>
+                        </p>
+                      </div>
+                      <div class="flip-card-back">
+                        <p style="font-size: 16pt; color: white; padding-top: 15px;">
+                            Czcionka o rozmiarze 16pt
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
             </div>
 
             <div class="hd1" style="margin-top: 10px; font-size:30px;">
