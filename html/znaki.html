@@ -4,8 +4,944 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+        body{
+            font-family: 'Oxygen', sans-serif;
+            margin: 0px 0px 0px 0px;
+            color: white;
+            margin-bottom: 200px;
+        }
+        .srodek{
+            display: flex;
+            justify-content: center;
+        }
+
+        .hd1{
+            font-size: 34px;
+            margin-top: 20px;
+            border: 1px solid white;
+            padding: 15px 30px 15px 30px;
+            border-radius: 10px;
+            width: 1000px;
+            text-align: center;
+            background-color: #68686825;
+            margin-bottom: 0px;
+        }
+
+        abbr{
+            text-decoration: none;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+        }
+
+        .flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 100px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: transparent;
+  color: black;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: #08004e;
+}
+
+.flip-card-back {
+  background-color: #08004e;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+mark {
+  background-color: yellow;
+  color: black;
+}
+
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+    </style>
 </head>
 <body>
-    znaki
+    <div class="srodek">
+        <div>
+            <p class="hd1">
+                ZNAKI SPECJALNE
+            </p>
+            <p class="hd1" style="margin-top: 10px; font-size:30px;">
+                
+                <span style="font-size: 22px;">
+                   Na stronę możemy wstawić znak specjalny - taki którego nie ma na klawiaturze, aby go wstawić należy wpisać odpowiadającą mu encję.<br> Poniżej znajdziesz tabelę znaków specjalnych.
+                </span>
+            </p>
+
+            <div class="hd1" style="margin-top: 10px; font-size:22px;">
+                <div style="display: flex; justify-content: center;">
+                <div class="tabelaznakow">
+                    <figure><table><tbody><tr class="naglowek"><td>Podgląd</td><td>Unicode</td><td>Encja</td><td>Kod HTML</td></tr>
+                       <tr><td class="kol1">←</td><td>U+02190</td><td>&amp;larr;</td><td>&amp;#8592;</td></tr>
+                       <tr><td class="kol1">↑</td><td>U+02191</td><td>&amp;uarr;</td><td>&amp;#8593;</td></tr>
+                       <tr><td class="kol1">→</td><td>U+02192</td><td>&amp;rarr;</td><td>&amp;#8594;</td></tr>
+                       <tr><td class="kol1">↓</td><td>U+02193</td><td>&amp;darr;</td><td>&amp;#8595;</td></tr>
+                       <tr><td class="kol1">↔</td><td>U+02194</td><td>&amp;harr;</td><td>&amp;#8596;</td></tr>
+                       <tr><td class="kol1">↕</td><td>U+02195</td><td>&amp;varr;</td><td>&amp;#8597;</td></tr>
+                       <tr><td class="kol1">↖</td><td>U+02196</td><td>&amp;nwarr;</td><td>&amp;#8598;</td></tr>
+                       <tr><td class="kol1">↗</td><td>U+02197</td><td>&amp;nearr;</td><td>&amp;#8599;</td></tr>
+                       <tr><td class="kol1">↘</td><td>U+02198</td><td>&amp;searr;</td><td>&amp;#8600;</td></tr>
+                       <tr><td class="kol1">↙</td><td>U+02199</td><td>&amp;swarr;</td><td>&amp;#8601;</td></tr>
+                       <tr><td class="kol1">↚</td><td>U+0219A</td><td>&amp;nlarr;</td><td>&amp;#8602;</td></tr>
+                       <tr><td class="kol1">↛</td><td>U+0219B</td><td>&amp;nrarr;</td><td>&amp;#8603;</td></tr>
+                       <tr><td class="kol1">↜</td><td>U+0219C</td><td>&amp;larrw;</td><td>&amp;#8604;</td></tr>
+                       <tr><td class="kol1">↝</td><td>U+0219D</td><td>&amp;rarrw;</td><td>&amp;#8605;</td></tr>
+                       <tr><td class="kol1">↞</td><td>U+0219E</td><td>&amp;Larr;</td><td>&amp;#8606;</td></tr>
+                       <tr><td class="kol1">↟</td><td>U+0219F</td><td>&amp;Uarr;</td><td>&amp;#8607;</td></tr>
+                       <tr><td class="kol1">↠</td><td>U+021A0</td><td>&amp;Rarr;</td><td>&amp;#8608;</td></tr>
+                       <tr><td class="kol1">↡</td><td>U+021A1</td><td>&amp;Darr;</td><td>&amp;#8609;</td></tr>
+                       <tr><td class="kol1">↢</td><td>U+021A2</td><td>&amp;larrtl;</td><td>&amp;#8610;</td></tr>
+                       <tr><td class="kol1">↣</td><td>U+021A3</td><td>&amp;rarrtl;</td><td>&amp;#8611;</td></tr>
+                       <tr><td class="kol1">↤</td><td>U+021A4</td><td>&amp;mapstoleft;</td><td>&amp;#8612;</td></tr>
+                       <tr><td class="kol1">↥</td><td>U+021A5</td><td>&amp;mapstoup;</td><td>&amp;#8613;</td></tr>
+                       <tr><td class="kol1">↦</td><td>U+021A6</td><td>&amp;mapstoright;</td><td>&amp;#8614;</td></tr>
+                       <tr><td class="kol1">↧</td><td>U+021A7</td><td>&amp;mapstodown;</td><td>&amp;#8615;</td></tr>
+                       <tr><td class="kol1">↨</td><td>U+021A8</td><td>&nbsp;</td><td>&amp;#8616;</td></tr>
+                       <tr><td class="kol1">↩</td><td>U+021A9</td><td>&amp;larrhk;</td><td>&amp;#8617;</td></tr>
+                       <tr><td class="kol1">↪</td><td>U+021AA</td><td>&amp;rarrhk;</td><td>&amp;#8618;</td></tr>
+                       <tr><td class="kol1">↫</td><td>U+021AB</td><td>&amp;larrlp;</td><td>&amp;#8619;</td></tr>
+                       <tr><td class="kol1">↬</td><td>U+021AC</td><td>&amp;rarrlp;</td><td>&amp;#8620;</td></tr>
+                       <tr><td class="kol1">↭</td><td>U+021AD</td><td>&amp;harrw;</td><td>&amp;#8621;</td></tr>
+                       <tr><td class="kol1">↮</td><td>U+021AE</td><td>&amp;nharr;</td><td>&amp;#8622;</td></tr>
+                       <tr><td class="kol1">↯</td><td>U+021AF</td><td>&nbsp;</td><td>&amp;#8623;</td></tr>
+                       <tr><td class="kol1">↰</td><td>U+021B0</td><td>&amp;lsh;</td><td>&amp;#8624;</td></tr>
+                       <tr><td class="kol1">↱</td><td>U+021B1</td><td>&amp;rsh;</td><td>&amp;#8625;</td></tr>
+                       <tr><td class="kol1">↲</td><td>U+021B2</td><td>&amp;ldsh;</td><td>&amp;#8626;</td></tr>
+                       <tr><td class="kol1">↳</td><td>U+021B3</td><td>&amp;rdsh;</td><td>&amp;#8627;</td></tr>
+                       <tr><td class="kol1">↴</td><td>U+021B4</td><td>&nbsp;</td><td>&amp;#8628;</td></tr>
+                       <tr><td class="kol1">↵</td><td>U+021B5</td><td>&amp;crarr;</td><td>&amp;#8629;</td></tr>
+                       <tr><td class="kol1">↶</td><td>U+021B6</td><td>&amp;cularr;</td><td>&amp;#8630;</td></tr>
+                       <tr><td class="kol1">↷</td><td>U+021B7</td><td>&amp;curarr;</td><td>&amp;#8631;</td></tr>
+                       <tr><td class="kol1">↸</td><td>U+021B8</td><td>&nbsp;</td><td>&amp;#8632;</td></tr>
+                       <tr><td class="kol1">↹</td><td>U+021B9</td><td>&nbsp;</td><td>&amp;#8633;</td></tr>
+                       <tr><td class="kol1">↺</td><td>U+021BA</td><td>&amp;olarr;</td><td>&amp;#8634;</td></tr>
+                       <tr><td class="kol1">↻</td><td>U+021BB</td><td>&amp;orarr;</td><td>&amp;#8635;</td></tr>
+                       <tr><td class="kol1">↼</td><td>U+021BC</td><td>&amp;lharu;</td><td>&amp;#8636;</td></tr>
+                       <tr><td class="kol1">↽</td><td>U+021BD</td><td>&amp;lhard;</td><td>&amp;#8637;</td></tr>
+                       <tr><td class="kol1">↾</td><td>U+021BE</td><td>&amp;uharr;</td><td>&amp;#8638;</td></tr>
+                       <tr><td class="kol1">↿</td><td>U+021BF</td><td>&amp;uharl;</td><td>&amp;#8639;</td></tr>
+                       <tr><td class="kol1">⇀</td><td>U+021C0</td><td>&amp;rharu;</td><td>&amp;#8640;</td></tr>
+                       <tr><td class="kol1">⇁</td><td>U+021C1</td><td>&amp;rhard;</td><td>&amp;#8641;</td></tr>
+                       <tr><td class="kol1">⇂</td><td>U+021C2</td><td>&amp;dharr;</td><td>&amp;#8642;</td></tr>
+                       <tr><td class="kol1">⇃</td><td>U+021C3</td><td>&amp;dharl;</td><td>&amp;#8643;</td></tr>
+                       <tr><td class="kol1">⇄</td><td>U+021C4</td><td>&amp;rlarr;</td><td>&amp;#8644;</td></tr>
+                       <tr><td class="kol1">⇅</td><td>U+021C5</td><td>&amp;udarr;</td><td>&amp;#8645;</td></tr>
+                       <tr><td class="kol1">⇆</td><td>U+021C6</td><td>&amp;lrarr;</td><td>&amp;#8646;</td></tr>
+                       <tr><td class="kol1">⇇</td><td>U+021C7</td><td>&amp;llarr;</td><td>&amp;#8647;</td></tr>
+                       <tr><td class="kol1">⇈</td><td>U+021C8</td><td>&amp;uuarr;</td><td>&amp;#8648;</td></tr>
+                       <tr><td class="kol1">⇉</td><td>U+021C9</td><td>&amp;rrarr;</td><td>&amp;#8649;</td></tr>
+                       <tr><td class="kol1">⇊</td><td>U+021CA</td><td>&amp;ddarr;</td><td>&amp;#8650;</td></tr>
+                       <tr><td class="kol1">⇋</td><td>U+021CB</td><td>&amp;lrhar;</td><td>&amp;#8651;</td></tr>
+                       <tr><td class="kol1">⇌</td><td>U+021CC</td><td>&amp;rlhar;</td><td>&amp;#8652;</td></tr>
+                       <tr><td class="kol1">⇍</td><td>U+021CD</td><td>&amp;nlArr;</td><td>&amp;#8653;</td></tr>
+                       <tr><td class="kol1">⇎</td><td>U+021CE</td><td>&amp;nhArr;</td><td>&amp;#8654;</td></tr>
+                       <tr><td class="kol1">⇏</td><td>U+021CF</td><td>&amp;nrArr;</td><td>&amp;#8655;</td></tr>
+                       <tr><td class="kol1">⇐</td><td>U+021D0</td><td>&amp;lArr;</td><td>&amp;#8656;</td></tr>
+                       <tr><td class="kol1">⇑</td><td>U+021D1</td><td>&amp;uArr;</td><td>&amp;#8657;</td></tr>
+                       <tr><td class="kol1">⇒</td><td>U+021D2</td><td>&amp;rArr;</td><td>&amp;#8658;</td></tr>
+                       <tr><td class="kol1">⇓</td><td>U+021D3</td><td>&amp;dArr;</td><td>&amp;#8659;</td></tr>
+                       <tr><td class="kol1">⇔</td><td>U+021D4</td><td>&amp;hArr;</td><td>&amp;#8660;</td></tr>
+                       <tr><td class="kol1">⇕</td><td>U+021D5</td><td>&amp;vArr;</td><td>&amp;#8661;</td></tr>
+                       <tr><td class="kol1">⇖</td><td>U+021D6</td><td>&amp;nwArr;</td><td>&amp;#8662;</td></tr>
+                       <tr><td class="kol1">⇗</td><td>U+021D7</td><td>&amp;neArr;</td><td>&amp;#8663;</td></tr>
+                       <tr><td class="kol1">⇘</td><td>U+021D8</td><td>&amp;seArr;</td><td>&amp;#8664;</td></tr>
+                       <tr><td class="kol1">⇙</td><td>U+021D9</td><td>&amp;swArr;</td><td>&amp;#8665;</td></tr>
+                       <tr><td class="kol1">⇚</td><td>U+021DA</td><td>&amp;lAarr;</td><td>&amp;#8666;</td></tr>
+                       <tr><td class="kol1">⇛</td><td>U+021DB</td><td>&amp;rAarr;</td><td>&amp;#8667;</td></tr>
+                       <tr><td class="kol1">⇜</td><td>U+021DC</td><td>&amp;ziglarr;</td><td>&amp;#8668;</td></tr>
+                       <tr><td class="kol1">⇝</td><td>U+021DD</td><td>&amp;zigrarr;</td><td>&amp;#8669;</td></tr>
+                       <tr><td class="kol1">⇞</td><td>U+021DE</td><td>&nbsp;</td><td>&amp;#8670;</td></tr>
+                       <tr><td class="kol1">⇟</td><td>U+021DF</td><td>&nbsp;</td><td>&amp;#8671;</td></tr>
+                       <tr><td class="kol1">⇠</td><td>U+021E0</td><td>&nbsp;</td><td>&amp;#8672;</td></tr>
+                       <tr><td class="kol1">⇡</td><td>U+021E1</td><td>&nbsp;</td><td>&amp;#8673;</td></tr>
+                       <tr><td class="kol1">⇢</td><td>U+021E2</td><td>&nbsp;</td><td>&amp;#8674;</td></tr>
+                       <tr><td class="kol1">⇣</td><td>U+021E3</td><td>&nbsp;</td><td>&amp;#8675;</td></tr>
+                       <tr><td class="kol1">⇤</td><td>U+021E4</td><td>&amp;larrb;</td><td>&amp;#8676;</td></tr>
+                       <tr><td class="kol1">⇥</td><td>U+021E5</td><td>&amp;rarrb;</td><td>&amp;#8677;</td></tr>
+                       <tr><td class="kol1">⇥</td><td>U+021E5</td><td>&amp;rarrb;</td><td>&amp;#8677;</td></tr>
+                       <tr><td class="kol1">⇦</td><td>U+021E6</td><td>&nbsp;</td><td>&amp;#8678;</td></tr>
+                       <tr><td class="kol1">⇧</td><td>U+021E7</td><td>&nbsp;</td><td>&amp;#8679;</td></tr>
+                       <tr><td class="kol1">⇨</td><td>U+021E8</td><td>&nbsp;</td><td>&amp;#8680;</td></tr>
+                       <tr><td class="kol1">⇩</td><td>U+021E9</td><td>&nbsp;</td><td>&amp;#8681;</td></tr>
+                       <tr><td class="kol1">⇪</td><td>U+021EA</td><td>&nbsp;</td><td>&amp;#8682;</td></tr>
+                       <tr><td class="kol1">⇫</td><td>U+021EB</td><td>&nbsp;</td><td>&amp;#8683;</td></tr>
+                       <tr><td class="kol1">⇬</td><td>U+021EC</td><td>&nbsp;</td><td>&amp;#8684;</td></tr>
+                       <tr><td class="kol1">⇭</td><td>U+021ED</td><td>&nbsp;</td><td>&amp;#8685;</td></tr>
+                       <tr><td class="kol1">⇮</td><td>U+021EE</td><td>&nbsp;</td><td>&amp;#8686;</td></tr>
+                       <tr><td class="kol1">⇯</td><td>U+021EF</td><td>&nbsp;</td><td>&amp;#8687;</td></tr>
+                       <tr><td class="kol1">⇰</td><td>U+021F0</td><td>&nbsp;</td><td>&amp;#8688;</td></tr>
+                       <tr><td class="kol1">⇱</td><td>U+021F1</td><td>&nbsp;</td><td>&amp;#8689;</td></tr>
+                       <tr><td class="kol1">⇲</td><td>U+021F2</td><td>&nbsp;</td><td>&amp;#8690;</td></tr>
+                       <tr><td class="kol1">⇳</td><td>U+021F3</td><td>&nbsp;</td><td>&amp;#8691;</td></tr>
+                       <tr><td class="kol1">⇴</td><td>U+021F4</td><td>&nbsp;</td><td>&amp;#8692;</td></tr>
+                       <tr><td class="kol1">⇵</td><td>U+021F5</td><td>&amp;duarr;</td><td>&amp;#8693;</td></tr>
+                       <tr><td class="kol1">⇶</td><td>U+021F6</td><td>&nbsp;</td><td>&amp;#8694;</td></tr>
+                       <tr><td class="kol1">⇷</td><td>U+021F7</td><td>&nbsp;</td><td>&amp;#8695;</td></tr>
+                       <tr><td class="kol1">⇸</td><td>U+021F8</td><td>&nbsp;</td><td>&amp;#8696;</td></tr>
+                       <tr><td class="kol1">⇹</td><td>U+021F9</td><td>&nbsp;</td><td>&amp;#8697;</td></tr>
+                       <tr><td class="kol1">⇺</td><td>U+021FA</td><td>&nbsp;</td><td>&amp;#8698;</td></tr>
+                       <tr><td class="kol1">⇻</td><td>U+021FB</td><td>&nbsp;</td><td>&amp;#8699;</td></tr>
+                       <tr><td class="kol1">⇼</td><td>U+021FC</td><td>&nbsp;</td><td>&amp;#8700;</td></tr>
+                       <tr><td class="kol1">⇽</td><td>U+021FD</td><td>&amp;loarr;</td><td>&amp;#8701;</td></tr>
+                       <tr><td class="kol1">⇾</td><td>U+021FE</td><td>&amp;roarr;</td><td>&amp;#8702;</td></tr>
+                       <tr><td class="kol1">⇿</td><td>U+021FF</td><td>&amp;hoarr;</td><td>&amp;#8703;</td></tr>
+                       <tr><td class="kol1">⟰</td><td>U+027F0</td><td>&nbsp;</td><td>&amp;#10224;</td></tr>
+                       <tr><td class="kol1">⟱</td><td>U+027F1</td><td>&nbsp;</td><td>&amp;#10225;</td></tr>
+                       <tr><td class="kol1">⟲</td><td>U+027F2</td><td>&nbsp;</td><td>&amp;#10226;</td></tr>
+                       <tr><td class="kol1">⟳</td><td>U+027F3</td><td>&nbsp;</td><td>&amp;#10227;</td></tr>
+                       <tr><td class="kol1">⟴</td><td>U+027F4</td><td>&nbsp;</td><td>&amp;#10228;</td></tr>
+                       <tr><td class="kol1">⟵</td><td>U+027F5</td><td>&amp;xlarr;</td><td>&amp;#10229;</td></tr>
+                       <tr><td class="kol1">⟶</td><td>U+027F6</td><td>&amp;xrarr;</td><td>&amp;#10230;</td></tr>
+                       <tr><td class="kol1">⟷</td><td>U+027F7</td><td>&amp;xharr;</td><td>&amp;#10231;</td></tr>
+                       <tr><td class="kol1">⟸</td><td>U+027F8</td><td>&amp;xlArr;</td><td>&amp;#10232;</td></tr>
+                       <tr><td class="kol1">⟹</td><td>U+027F9</td><td>&amp;xrArr;</td><td>&amp;#10233;</td></tr>
+                       <tr><td class="kol1">⟺</td><td>U+027FA</td><td>&amp;xhArr;</td><td>&amp;#10234;</td></tr>
+                       <tr><td class="kol1">⟻</td><td>U+027FB</td><td>&nbsp;</td><td>&amp;#10235;</td></tr>
+                       <tr><td class="kol1">⟼</td><td>U+027FC</td><td>&amp;xmap;</td><td>&amp;#10236;</td></tr>
+                       <tr><td class="kol1">⟽</td><td>U+027FD</td><td>&nbsp;</td><td>&amp;#10237;</td></tr>
+                       <tr><td class="kol1">⟾</td><td>U+027FE</td><td>&nbsp;</td><td>&amp;#10238;</td></tr>
+                       <tr><td class="kol1">⟿</td><td>U+027FF</td><td>&amp;dzigrarr;</td><td>&amp;#10239;</td></tr>
+                       <tr><td class="kol1">⤀</td><td>U+02900</td><td>&nbsp;</td><td>&amp;#10496;</td></tr>
+                       <tr><td class="kol1">⤁</td><td>U+02901</td><td>&nbsp;</td><td>&amp;#10497;</td></tr>
+                       <tr><td class="kol1">⤂</td><td>U+02902</td><td>&amp;nvlArr;</td><td>&amp;#10498;</td></tr>
+                       <tr><td class="kol1">⤃</td><td>U+02903</td><td>&amp;nvrArr;</td><td>&amp;#10499;</td></tr>
+                       <tr><td class="kol1">⤄</td><td>U+02904</td><td>&amp;nvHarr;</td><td>&amp;#10500;</td></tr>
+                       <tr><td class="kol1">⤅</td><td>U+02905</td><td>&amp;Map;</td><td>&amp;#10501;</td></tr>
+                       <tr><td class="kol1">⤆</td><td>U+02906</td><td>&nbsp;</td><td>&amp;#10502;</td></tr>
+                       <tr><td class="kol1">⤇</td><td>U+02907</td><td>&nbsp;</td><td>&amp;#10503;</td></tr>
+                       <tr><td class="kol1">⤈</td><td>U+02908</td><td>&nbsp;</td><td>&amp;#10504;</td></tr>
+                       <tr><td class="kol1">⤉</td><td>U+02909</td><td>&nbsp;</td><td>&amp;#10505;</td></tr>
+                       <tr><td class="kol1">⤊</td><td>U+0290A</td><td>&nbsp;</td><td>&amp;#10506;</td></tr>
+                       <tr><td class="kol1">⤋</td><td>U+0290B</td><td>&nbsp;</td><td>&amp;#10507;</td></tr>
+                       <tr><td class="kol1">⤌</td><td>U+0290C</td><td>&amp;lbarr;</td><td>&amp;#10508;</td></tr>
+                       <tr><td class="kol1">⤍</td><td>U+0290D</td><td>&amp;rbarr;</td><td>&amp;#10509;</td></tr>
+                       <tr><td class="kol1">⤎</td><td>U+0290E</td><td>&amp;lBarr;</td><td>&amp;#10510;</td></tr>
+                       <tr><td class="kol1">⤏</td><td>U+0290F</td><td>&amp;rBarr;</td><td>&amp;#10511;</td></tr>
+                       <tr><td class="kol1">⤐</td><td>U+02910</td><td>&amp;RBarr;</td><td>&amp;#10512;</td></tr>
+                       <tr><td class="kol1">⤑</td><td>U+02911</td><td>&amp;DDotrahd;</td><td>&amp;#10513;</td></tr>
+                       <tr><td class="kol1">⤒</td><td>U+02912</td><td>&amp;UpArrowBar;</td><td>&amp;#10514;</td></tr>
+                       <tr><td class="kol1">⤓</td><td>U+02913</td><td>&amp;DownArrowBar;</td><td>&amp;#10515;</td></tr>
+                       <tr><td class="kol1">⤔</td><td>U+02914</td><td>&nbsp;</td><td>&amp;#10516;</td></tr>
+                       <tr><td class="kol1">⤕</td><td>U+02915</td><td>&nbsp;</td><td>&amp;#10517;</td></tr>
+                       <tr><td class="kol1">⤖</td><td>U+02916</td><td>&amp;Rarrtl;</td><td>&amp;#10518;</td></tr>
+                       <tr><td class="kol1">⤗</td><td>U+02917</td><td>&nbsp;</td><td>&amp;#10519;</td></tr>
+                       <tr><td class="kol1">⤘</td><td>U+02918</td><td>&nbsp;</td><td>&amp;#10520;</td></tr>
+                       <tr><td class="kol1">⤙</td><td>U+02919</td><td>&amp;latail;</td><td>&amp;#10521;</td></tr>
+                       <tr><td class="kol1">⤚</td><td>U+0291A</td><td>&amp;ratail;</td><td>&amp;#10522;</td></tr>
+                       <tr><td class="kol1">⤛</td><td>U+0291B</td><td>&amp;lAtail;</td><td>&amp;#10523;</td></tr>
+                       <tr><td class="kol1">⤜</td><td>U+0291C</td><td>&amp;rAtail;</td><td>&amp;#10524;</td></tr>
+                       <tr><td class="kol1">⤝</td><td>U+0291D</td><td>&amp;larrfs;</td><td>&amp;#10525;</td></tr>
+                       <tr><td class="kol1">⤞</td><td>U+0291E</td><td>&amp;rarrfs;</td><td>&amp;#10526;</td></tr>
+                       <tr><td class="kol1">⤟</td><td>U+0291F</td><td>&amp;larrbfs;</td><td>&amp;#10527;</td></tr>
+                       <tr><td class="kol1">⤠</td><td>U+02920</td><td>&amp;rarrbfs;</td><td>&amp;#10528;</td></tr>
+                       <tr><td class="kol1">⤡</td><td>U+02921</td><td>&nbsp;</td><td>&amp;#10529;</td></tr>
+                       <tr><td class="kol1">⤢</td><td>U+02922</td><td>&nbsp;</td><td>&amp;#10530;</td></tr>
+                       <tr><td class="kol1">⤣</td><td>U+02923</td><td>&amp;nwarhk;</td><td>&amp;#10531;</td></tr>
+                       <tr><td class="kol1">⤤</td><td>U+02924</td><td>&amp;nearhk;</td><td>&amp;#10532;</td></tr>
+                       <tr><td class="kol1">⤥</td><td>U+02925</td><td>&amp;searhk;</td><td>&amp;#10533;</td></tr>
+                       <tr><td class="kol1">⤦</td><td>U+02926</td><td>&amp;swarhk;</td><td>&amp;#10534;</td></tr>
+                       <tr><td class="kol1">⤧</td><td>U+02927</td><td>&amp;nwnear;</td><td>&amp;#10535;</td></tr>
+                       <tr><td class="kol1">⤨</td><td>U+02928</td><td>&amp;nesear;</td><td>&amp;#10536;</td></tr>
+                       <tr><td class="kol1">⤩</td><td>U+02929</td><td>&amp;seswar;</td><td>&amp;#10537;</td></tr>
+                       <tr><td class="kol1">⤪</td><td>U+0292A</td><td>&amp;swnwar;</td><td>&amp;#10538;</td></tr>
+                       <tr><td class="kol1">⤫</td><td>U+0292B</td><td>&nbsp;</td><td>&amp;#10539;</td></tr>
+                       <tr><td class="kol1">⤬</td><td>U+0292C</td><td>&nbsp;</td><td>&amp;#10540;</td></tr>
+                       <tr><td class="kol1">⤭</td><td>U+0292D</td><td>&nbsp;</td><td>&amp;#10541;</td></tr>
+                       <tr><td class="kol1">⤮</td><td>U+0292E</td><td>&nbsp;</td><td>&amp;#10542;</td></tr>
+                       <tr><td class="kol1">⤯</td><td>U+0292F</td><td>&nbsp;</td><td>&amp;#10543;</td></tr>
+                       <tr><td class="kol1">⤰</td><td>U+02930</td><td>&nbsp;</td><td>&amp;#10544;</td></tr>
+                       <tr><td class="kol1">⤱</td><td>U+02931</td><td>&nbsp;</td><td>&amp;#10545;</td></tr>
+                       <tr><td class="kol1">⤲</td><td>U+02932</td><td>&nbsp;</td><td>&amp;#10546;</td></tr>
+                       <tr><td class="kol1">⤳</td><td>U+02933</td><td>&amp;rarrc;</td><td>&amp;#10547;</td></tr>
+                       <tr><td class="kol1">⤴</td><td>U+02934</td><td>&nbsp;</td><td>&amp;#10548;</td></tr>
+                       <tr><td class="kol1">⤵</td><td>U+02935</td><td>&amp;cudarrr;</td><td>&amp;#10549;</td></tr>
+                       <tr><td class="kol1">⤶</td><td>U+02936</td><td>&amp;ldca;</td><td>&amp;#10550;</td></tr>
+                       <tr><td class="kol1">⤷</td><td>U+02937</td><td>&amp;rdca;</td><td>&amp;#10551;</td></tr>
+                       <tr><td class="kol1">⤸</td><td>U+02938</td><td>&amp;cudarrl;</td><td>&amp;#10552;</td></tr>
+                       <tr><td class="kol1">⤹</td><td>U+02939</td><td>&amp;larrpl;</td><td>&amp;#10553;</td></tr>
+                       <tr><td class="kol1">⤺</td><td>U+0293A</td><td>&nbsp;</td><td>&amp;#10554;</td></tr>
+                       <tr><td class="kol1">⤻</td><td>U+0293B</td><td>&nbsp;</td><td>&amp;#10555;</td></tr>
+                       <tr><td class="kol1">⤼</td><td>U+0293C</td><td>&amp;curarrm;</td><td>&amp;#10556;</td></tr>
+                       <tr><td class="kol1">⤽</td><td>U+0293D</td><td>&amp;cularrp;</td><td>&amp;#10557;</td></tr>
+                       <tr><td class="kol1">⤾</td><td>U+0293E</td><td>&nbsp;</td><td>&amp;#10558;</td></tr>
+                       <tr><td class="kol1">⤿</td><td>U+0293F</td><td>&nbsp;</td><td>&amp;#10559;</td></tr>
+                       <tr><td class="kol1">⥀</td><td>U+02940</td><td>&nbsp;</td><td>&amp;#10560;</td></tr>
+                       <tr><td class="kol1">⥁</td><td>U+02941</td><td>&nbsp;</td><td>&amp;#10561;</td></tr>
+                       <tr><td class="kol1">⥂</td><td>U+02942</td><td>&nbsp;</td><td>&amp;#10562;</td></tr>
+                       <tr><td class="kol1">⥃</td><td>U+02943</td><td>&nbsp;</td><td>&amp;#10563;</td></tr>
+                       <tr><td class="kol1">⥄</td><td>U+02944</td><td>&nbsp;</td><td>&amp;#10564;</td></tr>
+                       <tr><td class="kol1">⥅</td><td>U+02945</td><td>&amp;rarrpl;</td><td>&amp;#10565;</td></tr>
+                       <tr><td class="kol1">⥆</td><td>U+02946</td><td>&nbsp;</td><td>&amp;#10566;</td></tr>
+                       <tr><td class="kol1">⥇</td><td>U+02947</td><td>&nbsp;</td><td>&amp;#10567;</td></tr>
+                       <tr><td class="kol1">⥈</td><td>U+02948</td><td>&amp;harrcir;</td><td>&amp;#10568;</td></tr>
+                       <tr><td class="kol1">⥉</td><td>U+02949</td><td>&amp;Uarrocir;</td><td>&amp;#10569;</td></tr>
+                       <tr><td class="kol1">⥊</td><td>U+0294A</td><td>&amp;lurdshar;</td><td>&amp;#10570;</td></tr>
+                       <tr><td class="kol1">⥋</td><td>U+0294B</td><td>&amp;ldrushar;</td><td>&amp;#10571;</td></tr>
+                       <tr><td class="kol1">⥌</td><td>U+0294C</td><td>&nbsp;</td><td>&amp;#10572;</td></tr>
+                       <tr><td class="kol1">⥍</td><td>U+0294D</td><td>&nbsp;</td><td>&amp;#10573;</td></tr>
+                       <tr><td class="kol1">⥎</td><td>U+0294E</td><td>&amp;LeftRightVector;</td><td>&amp;#10574;</td></tr>
+                       <tr><td class="kol1">⥏</td><td>U+0294F</td><td>&amp;RightUpDownVector;</td><td>&amp;#10575;</td></tr>
+                       <tr><td class="kol1">⥐</td><td>U+02950</td><td>&amp;DownLeftRightVector;</td><td>&amp;#10576;</td></tr>
+                       <tr><td class="kol1">⥑</td><td>U+02951</td><td>&amp;LeftUpDownVector;</td><td>&amp;#10577;</td></tr>
+                       <tr><td class="kol1">⥒</td><td>U+02952</td><td>&amp;LeftVectorBar;</td><td>&amp;#10578;</td></tr>
+                       <tr><td class="kol1">⥓</td><td>U+02953</td><td>&amp;RightVectorBar;</td><td>&amp;#10579;</td></tr>
+                       <tr><td class="kol1">⥔</td><td>U+02954</td><td>&amp;RightUpVectorBar;</td><td>&amp;#10580;</td></tr>
+                       <tr><td class="kol1">⥕</td><td>U+02955</td><td>&amp;RightDownVectorBar;</td><td>&amp;#10581;</td></tr>
+                       <tr><td class="kol1">⥖</td><td>U+02956</td><td>&amp;DownLeftVectorBar;</td><td>&amp;#10582;</td></tr>
+                       <tr><td class="kol1">⥗</td><td>U+02957</td><td>&amp;DownRightVectorBar;</td><td>&amp;#10583;</td></tr>
+                       <tr><td class="kol1">⥘</td><td>U+02958</td><td>&amp;LeftUpVectorBar;</td><td>&amp;#10584;</td></tr>
+                       <tr><td class="kol1">⥙</td><td>U+02959</td><td>&amp;LeftDownVectorBar;</td><td>&amp;#10585;</td></tr>
+                       <tr><td class="kol1">⥚</td><td>U+0295A</td><td>&amp;LeftTeeVector;</td><td>&amp;#10586;</td></tr>
+                       <tr><td class="kol1">⥛</td><td>U+0295B</td><td>&amp;RightTeeVector;</td><td>&amp;#10587;</td></tr>
+                       <tr><td class="kol1">⥜</td><td>U+0295C</td><td>&amp;RightUpTeeVector;</td><td>&amp;#10588;</td></tr>
+                       <tr><td class="kol1">⥝</td><td>U+0295D</td><td>&amp;RightDownTeeVector;</td><td>&amp;#10589;</td></tr>
+                       <tr><td class="kol1">⥞</td><td>U+0295E</td><td>&amp;DownLeftTeeVector;</td><td>&amp;#10590;</td></tr>
+                       <tr><td class="kol1">⥟</td><td>U+0295F</td><td>&amp;DownRightTeeVector;</td><td>&amp;#10591;</td></tr>
+                       <tr><td class="kol1">⥠</td><td>U+02960</td><td>&amp;LeftUpTeeVector;</td><td>&amp;#10592;</td></tr>
+                       <tr><td class="kol1">⥡</td><td>U+02961</td><td>&amp;LeftDownTeeVector;</td><td>&amp;#10593;</td></tr>
+                       <tr><td class="kol1">⥢</td><td>U+02962</td><td>&amp;lHar;</td><td>&amp;#10594;</td></tr>
+                       <tr><td class="kol1">⥣</td><td>U+02963</td><td>&amp;uHar;</td><td>&amp;#10595;</td></tr>
+                       <tr><td class="kol1">⥤</td><td>U+02964</td><td>&amp;rHar;</td><td>&amp;#10596;</td></tr>
+                       <tr><td class="kol1">⥥</td><td>U+02965</td><td>&amp;dHar;</td><td>&amp;#10597;</td></tr>
+                       <tr><td class="kol1">⥦</td><td>U+02966</td><td>&amp;luruhar;</td><td>&amp;#10598;</td></tr>
+                       <tr><td class="kol1">⥧</td><td>U+02967</td><td>&amp;ldrdhar;</td><td>&amp;#10599;</td></tr>
+                       <tr><td class="kol1">⥨</td><td>U+02968</td><td>&amp;ruluhar;</td><td>&amp;#10600;</td></tr>
+                       <tr><td class="kol1">⥩</td><td>U+02969</td><td>&amp;rdldhar;</td><td>&amp;#10601;</td></tr>
+                       <tr><td class="kol1">⥪</td><td>U+0296A</td><td>&amp;lharul;</td><td>&amp;#10602;</td></tr>
+                       <tr><td class="kol1">⥫</td><td>U+0296B</td><td>&amp;llhard;</td><td>&amp;#10603;</td></tr>
+                       <tr><td class="kol1">⥬</td><td>U+0296C</td><td>&amp;rharul;</td><td>&amp;#10604;</td></tr>
+                       <tr><td class="kol1">⥭</td><td>U+0296D</td><td>&amp;lrhard;</td><td>&amp;#10605;</td></tr>
+                       <tr><td class="kol1">⥮</td><td>U+0296E</td><td>&amp;udhar;</td><td>&amp;#10606;</td></tr>
+                       <tr><td class="kol1">⥯</td><td>U+0296F</td><td>&amp;duhar;</td><td>&amp;#10607;</td></tr>
+                       <tr><td class="kol1">⥰</td><td>U+02970</td><td>&amp;RoundImplies;</td><td>&amp;#10608;</td></tr>
+                       <tr><td class="kol1">⥱</td><td>U+02971</td><td>&amp;erarr;</td><td>&amp;#10609;</td></tr>
+                       <tr><td class="kol1">⥲</td><td>U+02972</td><td>&amp;simrarr;</td><td>&amp;#10610;</td></tr>
+                       <tr><td class="kol1">⥳</td><td>U+02973</td><td>&amp;larrsim;</td><td>&amp;#10611;</td></tr>
+                       <tr><td class="kol1">⥴</td><td>U+02974</td><td>&amp;rarrsim;</td><td>&amp;#10612;</td></tr>
+                       <tr><td class="kol1">⥵</td><td>U+02975</td><td>&amp;rarrap;</td><td>&amp;#10613;</td></tr>
+                       <tr><td class="kol1">⥶</td><td>U+02976</td><td>&amp;ltlarr;</td><td>&amp;#10614;</td></tr>
+                       <tr><td class="kol1">⥷</td><td>U+02977</td><td>&nbsp;</td><td>&amp;#10615;</td></tr>
+                       <tr><td class="kol1">⥸</td><td>U+02978</td><td>&amp;gtrarr;</td><td>&amp;#10616;</td></tr>
+                       <tr><td class="kol1">⥹</td><td>U+02979</td><td>&amp;subrarr;</td><td>&amp;#10617;</td></tr>
+                       <tr><td class="kol1">⥺</td><td>U+0297A</td><td>&nbsp;</td><td>&amp;#10618;</td></tr>
+                       <tr><td class="kol1">⥻</td><td>U+0297B</td><td>&amp;suplarr;</td><td>&amp;#10619;</td></tr>
+                       <tr><td class="kol1">⥼</td><td>U+0297C</td><td>&amp;lfisht;</td><td>&amp;#10620;</td></tr>
+                       <tr><td class="kol1">⥽</td><td>U+0297D</td><td>&amp;rfisht;</td><td>&amp;#10621;</td></tr>
+                       <tr><td class="kol1">⥾</td><td>U+0297E</td><td>&amp;ufisht;</td><td>&amp;#10622;</td></tr>
+                       <tr><td class="kol1">⥿</td><td>U+0297F</td><td>&amp;dfisht;</td><td>&amp;#10623;</td></tr>
+                       <tr><td class="kol1">➔</td><td>U+02794</td><td>&nbsp;</td><td>&amp;#10132;</td></tr>
+                       <tr><td class="kol1">➘</td><td>U+02798</td><td>&nbsp;</td><td>&amp;#10136;</td></tr>
+                       <tr><td class="kol1">➙</td><td>U+02799</td><td>&nbsp;</td><td>&amp;#10137;</td></tr>
+                       <tr><td class="kol1">➚</td><td>U+0279A</td><td>&nbsp;</td><td>&amp;#10138;</td></tr>
+                       <tr><td class="kol1">➛</td><td>U+0279B</td><td>&nbsp;</td><td>&amp;#10139;</td></tr>
+                       <tr><td class="kol1">➜</td><td>U+0279C</td><td>&nbsp;</td><td>&amp;#10140;</td></tr>
+                       <tr><td class="kol1">➝</td><td>U+0279D</td><td>&nbsp;</td><td>&amp;#10141;</td></tr>
+                       <tr><td class="kol1">➞</td><td>U+0279E</td><td>&nbsp;</td><td>&amp;#10142;</td></tr>
+                       <tr><td class="kol1">➟</td><td>U+0279F</td><td>&nbsp;</td><td>&amp;#10143;</td></tr>
+                       <tr><td class="kol1">➠</td><td>U+027A0</td><td>&nbsp;</td><td>&amp;#10144;</td></tr>
+                       <tr><td class="kol1">➡</td><td>U+027A1</td><td>&nbsp;</td><td>&amp;#10145;</td></tr>
+                       <tr><td class="kol1">➢</td><td>U+027A2</td><td>&nbsp;</td><td>&amp;#10146;</td></tr>
+                       <tr><td class="kol1">➣</td><td>U+027A3</td><td>&nbsp;</td><td>&amp;#10147;</td></tr>
+                       <tr><td class="kol1">➤</td><td>U+027A4</td><td>&nbsp;</td><td>&amp;#10148;</td></tr>
+                       <tr><td class="kol1">➥</td><td>U+027A5</td><td>&nbsp;</td><td>&amp;#10149;</td></tr>
+                       <tr><td class="kol1">➦</td><td>U+027A6</td><td>&nbsp;</td><td>&amp;#10150;</td></tr>
+                       <tr><td class="kol1">➧</td><td>U+027A7</td><td>&nbsp;</td><td>&amp;#10151;</td></tr>
+                       <tr><td class="kol1">➨</td><td>U+027A8</td><td>&nbsp;</td><td>&amp;#10152;</td></tr>
+                       <tr><td class="kol1">➩</td><td>U+027A9</td><td>&nbsp;</td><td>&amp;#10153;</td></tr>
+                       <tr><td class="kol1">➪</td><td>U+027AA</td><td>&nbsp;</td><td>&amp;#10154;</td></tr>
+                       <tr><td class="kol1">➫</td><td>U+027AB</td><td>&nbsp;</td><td>&amp;#10155;</td></tr>
+                       <tr><td class="kol1">➬</td><td>U+027AC</td><td>&nbsp;</td><td>&amp;#10156;</td></tr>
+                       <tr><td class="kol1">➭</td><td>U+027AD</td><td>&nbsp;</td><td>&amp;#10157;</td></tr>
+                       <tr><td class="kol1">➮</td><td>U+027AE</td><td>&nbsp;</td><td>&amp;#10158;</td></tr>
+                       <tr><td class="kol1">➯</td><td>U+027AF</td><td>&nbsp;</td><td>&amp;#10159;</td></tr>
+                       <tr><td class="kol1">➱</td><td>U+027B1</td><td>&nbsp;</td><td>&amp;#10161;</td></tr>
+                       <tr><td class="kol1">➲</td><td>U+027B2</td><td>&nbsp;</td><td>&amp;#10162;</td></tr>
+                       <tr><td class="kol1">➳</td><td>U+027B3</td><td>&nbsp;</td><td>&amp;#10163;</td></tr>
+                       <tr><td class="kol1">➴</td><td>U+027B4</td><td>&nbsp;</td><td>&amp;#10164;</td></tr>
+                       <tr><td class="kol1">➵</td><td>U+027B5</td><td>&nbsp;</td><td>&amp;#10165;</td></tr>
+                       <tr><td class="kol1">➶</td><td>U+027B6</td><td>&nbsp;</td><td>&amp;#10166;</td></tr>
+                       <tr><td class="kol1">➷</td><td>U+027B7</td><td>&nbsp;</td><td>&amp;#10167;</td></tr>
+                       <tr><td class="kol1">➸</td><td>U+027B8</td><td>&nbsp;</td><td>&amp;#10168;</td></tr>
+                       <tr><td class="kol1">➹</td><td>U+027B9</td><td>&nbsp;</td><td>&amp;#10169;</td></tr>
+                       <tr><td class="kol1">➺</td><td>U+027BA</td><td>&nbsp;</td><td>&amp;#10170;</td></tr>
+                       <tr><td class="kol1">➻</td><td>U+027BB</td><td>&nbsp;</td><td>&amp;#10171;</td></tr>
+                       <tr><td class="kol1">➼</td><td>U+027BC</td><td>&nbsp;</td><td>&amp;#10172;</td></tr>
+                       <tr><td class="kol1">➽</td><td>U+027BD</td><td>&nbsp;</td><td>&amp;#10173;</td></tr>
+                       <tr><td class="kol1">➾</td><td>U+027BE</td><td>&nbsp;</td><td>&amp;#10174;</td></tr>
+                       <tr><td class="kol1">©</td><td>U+000A9</td><td>&amp;copy;</td><td>&amp;#169;</td></tr>
+                       <tr><td class="kol1">®</td><td>U+000AE</td><td>&amp;reg;</td><td>&amp;#174;</td></tr>
+                       <tr><td class="kol1">™</td><td>U+02122</td><td>&amp;trade;</td><td>&amp;#8482;</td></tr>
+                       <tr><td class="kol1">@</td><td>U+00040</td><td>&amp;commat;</td><td>&amp;#64;</td></tr>
+                       <tr><td class="kol1">¶</td><td>U+000B6</td><td>&amp;para;</td><td>&amp;#182;</td></tr>
+                       <tr><td class="kol1">§</td><td>U+000A7</td><td>&amp;sect;</td><td>&amp;#167;</td></tr>
+                       <tr><td class="kol1">℀</td><td>U+02100</td><td>&nbsp;</td><td>&amp;#8448;</td></tr>
+                       <tr><td class="kol1">℁</td><td>U+02101</td><td>&nbsp;</td><td>&amp;#8449;</td></tr>
+                       <tr><td class="kol1">ℂ</td><td>U+02102</td><td>&amp;Copf;</td><td>&amp;#8450;</td></tr>
+                       <tr><td class="kol1">℃</td><td>U+02103</td><td>&nbsp;</td><td>&amp;#8451;</td></tr>
+                       <tr><td class="kol1">℄</td><td>U+02104</td><td>&nbsp;</td><td>&amp;#8452;</td></tr>
+                       <tr><td class="kol1">℅</td><td>U+02105</td><td>&amp;incare;</td><td>&amp;#8453;</td></tr>
+                       <tr><td class="kol1">℆</td><td>U+02106</td><td>&nbsp;</td><td>&amp;#8454;</td></tr>
+                       <tr><td class="kol1">ℇ</td><td>U+02107</td><td>&nbsp;</td><td>&amp;#8455;</td></tr>
+                       <tr><td class="kol1">℈</td><td>U+02108</td><td>&nbsp;</td><td>&amp;#8456;</td></tr>
+                       <tr><td class="kol1">℉</td><td>U+02109</td><td>&nbsp;</td><td>&amp;#8457;</td></tr>
+                       <tr><td class="kol1">ℊ</td><td>U+0210A</td><td>&amp;gscr;</td><td>&amp;#8458;</td></tr>
+                       <tr><td class="kol1">ℋ</td><td>U+0210B</td><td>&amp;hamilt;</td><td>&amp;#8459;</td></tr>
+                       <tr><td class="kol1">ℌ</td><td>U+0210C</td><td>&amp;Hfr;</td><td>&amp;#8460;</td></tr>
+                       <tr><td class="kol1">ℍ</td><td>U+0210D</td><td>&amp;Hopf;</td><td>&amp;#8461;</td></tr>
+                       <tr><td class="kol1">ℎ</td><td>U+0210E</td><td>&amp;planckh;</td><td>&amp;#8462;</td></tr>
+                       <tr><td class="kol1">ℏ</td><td>U+0210F</td><td>&amp;planck;</td><td>&amp;#8463;</td></tr>
+                       <tr><td class="kol1">ℐ</td><td>U+02110</td><td>&amp;Iscr;</td><td>&amp;#8464;</td></tr>
+                       <tr><td class="kol1">ℑ</td><td>U+02111</td><td>&amp;image;</td><td>&amp;#8465;</td></tr>
+                       <tr><td class="kol1">ℒ</td><td>U+02112</td><td>&amp;Lscr;</td><td>&amp;#8466;</td></tr>
+                       <tr><td class="kol1">ℓ</td><td>U+02113</td><td>&amp;ell;</td><td>&amp;#8467;</td></tr>
+                       <tr><td class="kol1">℔</td><td>U+02114</td><td>&nbsp;</td><td>&amp;#8468;</td></tr>
+                       <tr><td class="kol1">ℕ</td><td>U+02115</td><td>&amp;Nopf;</td><td>&amp;#8469;</td></tr>
+                       <tr><td class="kol1">№</td><td>U+02116</td><td>&amp;numero;</td><td>&amp;#8470;</td></tr>
+                       <tr><td class="kol1">℗</td><td>U+02117</td><td>&amp;copysr;</td><td>&amp;#8471;</td></tr>
+                       <tr><td class="kol1">℘</td><td>U+02118</td><td>&amp;weierp;</td><td>&amp;#8472;</td></tr>
+                       <tr><td class="kol1">ℙ</td><td>U+02119</td><td>&amp;Popf;</td><td>&amp;#8473;</td></tr>
+                       <tr><td class="kol1">ℚ</td><td>U+0211A</td><td>&amp;Qopf;</td><td>&amp;#8474;</td></tr>
+                       <tr><td class="kol1">ℛ</td><td>U+0211B</td><td>&amp;Rscr;</td><td>&amp;#8475;</td></tr>
+                       <tr><td class="kol1">ℜ</td><td>U+0211C</td><td>&amp;real;</td><td>&amp;#8476;</td></tr>
+                       <tr><td class="kol1">ℝ</td><td>U+0211D</td><td>&amp;Ropf;</td><td>&amp;#8477;</td></tr>
+                       <tr><td class="kol1">℞</td><td>U+0211E</td><td>&amp;rx;</td><td>&amp;#8478;</td></tr>
+                       <tr><td class="kol1">℟</td><td>U+0211F</td><td>&nbsp;</td><td>&amp;#8479;</td></tr>
+                       <tr><td class="kol1">℠</td><td>U+02120</td><td>&nbsp;</td><td>&amp;#8480;</td></tr>
+                       <tr><td class="kol1">℡</td><td>U+02121</td><td>&nbsp;</td><td>&amp;#8481;</td></tr>
+                       <tr><td class="kol1">℣</td><td>U+02123</td><td>&nbsp;</td><td>&amp;#8483;</td></tr>
+                       <tr><td class="kol1">ℤ</td><td>U+02124</td><td>&amp;Zopf;</td><td>&amp;#8484;</td></tr>
+                       <tr><td class="kol1">℥</td><td>U+02125</td><td>&nbsp;</td><td>&amp;#8485;</td></tr>
+                       <tr><td class="kol1">Ω</td><td>U+02126</td><td>&nbsp;</td><td>&amp;#8486;</td></tr>
+                       <tr><td class="kol1">℧</td><td>U+02127</td><td>&amp;mho;</td><td>&amp;#8487;</td></tr>
+                       <tr><td class="kol1">ℨ</td><td>U+02128</td><td>&amp;Zfr;</td><td>&amp;#8488;</td></tr>
+                       <tr><td class="kol1">℩</td><td>U+02129</td><td>&amp;iiota;</td><td>&amp;#8489;</td></tr>
+                       <tr><td class="kol1">K</td><td>U+0212A</td><td>&nbsp;</td><td>&amp;#8490;</td></tr>
+                       <tr><td class="kol1">Å</td><td>U+0212B</td><td>&nbsp;</td><td>&amp;#8491;</td></tr>
+                       <tr><td class="kol1">ℬ</td><td>U+0212C</td><td>&amp;bernou;</td><td>&amp;#8492;</td></tr>
+                       <tr><td class="kol1">ℭ</td><td>U+0212D</td><td>&amp;Cfr;</td><td>&amp;#8493;</td></tr>
+                       <tr><td class="kol1">℮</td><td>U+0212E</td><td>&nbsp;</td><td>&amp;#8494;</td></tr>
+                       <tr><td class="kol1">ℯ</td><td>U+0212F</td><td>&amp;escr;</td><td>&amp;#8495;</td></tr>
+                       <tr><td class="kol1">ℰ</td><td>U+02130</td><td>&amp;Escr;</td><td>&amp;#8496;</td></tr>
+                       <tr><td class="kol1">ℱ</td><td>U+02131</td><td>&amp;Fscr;</td><td>&amp;#8497;</td></tr>
+                       <tr><td class="kol1">Ⅎ</td><td>U+02132</td><td>&nbsp;</td><td>&amp;#8498;</td></tr>
+                       <tr><td class="kol1">ℳ</td><td>U+02133</td><td>&amp;Mscr;</td><td>&amp;#8499;</td></tr>
+                       <tr><td class="kol1">ℴ</td><td>U+02134</td><td>&amp;oscr;</td><td>&amp;#8500;</td></tr>
+                       <tr><td class="kol1">ℵ</td><td>U+02135</td><td>&amp;alefsym;</td><td>&amp;#8501;</td></tr>
+                       <tr><td class="kol1">ℶ</td><td>U+02136</td><td>&amp;beth;</td><td>&amp;#8502;</td></tr>
+                       <tr><td class="kol1">ℷ</td><td>U+02137</td><td>&amp;gimel;</td><td>&amp;#8503;</td></tr>
+                       <tr><td class="kol1">ℸ</td><td>U+02138</td><td>&amp;daleth;</td><td>&amp;#8504;</td></tr>
+                       <tr><td class="kol1">ℹ</td><td>U+02139</td><td>&nbsp;</td><td>&amp;#8505;</td></tr>
+                       <tr><td class="kol1">℺</td><td>U+0213A</td><td>&nbsp;</td><td>&amp;#8506;</td></tr>
+                       <tr><td class="kol1">℻</td><td>U+0213B</td><td>&nbsp;</td><td>&amp;#8507;</td></tr>
+                       <tr><td class="kol1">ℼ</td><td>U+0213C</td><td>&nbsp;</td><td>&amp;#8508;</td></tr>
+                       <tr><td class="kol1">ℽ</td><td>U+0213D</td><td>&nbsp;</td><td>&amp;#8509;</td></tr>
+                       <tr><td class="kol1">ℾ</td><td>U+0213E</td><td>&nbsp;</td><td>&amp;#8510;</td></tr>
+                       <tr><td class="kol1">ℿ</td><td>U+0213F</td><td>&nbsp;</td><td>&amp;#8511;</td></tr>
+                       <tr><td class="kol1">⅀</td><td>U+02140</td><td>&nbsp;</td><td>&amp;#8512;</td></tr>
+                       <tr><td class="kol1">⅁</td><td>U+02141</td><td>&nbsp;</td><td>&amp;#8513;</td></tr>
+                       <tr><td class="kol1">⅂</td><td>U+02142</td><td>&nbsp;</td><td>&amp;#8514;</td></tr>
+                       <tr><td class="kol1">⅃</td><td>U+02143</td><td>&nbsp;</td><td>&amp;#8515;</td></tr>
+                       <tr><td class="kol1">⅄</td><td>U+02144</td><td>&nbsp;</td><td>&amp;#8516;</td></tr>
+                       <tr><td class="kol1">ⅅ</td><td>U+02145</td><td>&amp;DD;</td><td>&amp;#8517;</td></tr>
+                       <tr><td class="kol1">ⅆ</td><td>U+02146</td><td>&amp;dd;</td><td>&amp;#8518;</td></tr>
+                       <tr><td class="kol1">ⅇ</td><td>U+02147</td><td>&amp;ee;</td><td>&amp;#8519;</td></tr>
+                       <tr><td class="kol1">ⅈ</td><td>U+02148</td><td>&amp;ii;</td><td>&amp;#8520;</td></tr>
+                       <tr><td class="kol1">ⅉ</td><td>U+02149</td><td>&nbsp;</td><td>&amp;#8521;</td></tr>
+                       <tr><td class="kol1">⅊</td><td>U+0214A</td><td>&nbsp;</td><td>&amp;#8522;</td></tr>
+                       <tr><td class="kol1">⅋</td><td>U+0214B</td><td>&nbsp;</td><td>&amp;#8523;</td></tr>
+                       <tr><td class="kol1">⅍</td><td>U+0214D</td><td>&nbsp;</td><td>&amp;#8525;</td></tr>
+                       <tr><td class="kol1">ⅎ</td><td>U+0214E</td><td>&nbsp;</td><td>&amp;#8526;</td></tr>
+                       <tr><td class="kol1">☀</td><td>U+02600</td><td>&nbsp;</td><td>&amp;#9728;</td></tr>
+                       <tr><td class="kol1">☁</td><td>U+02601</td><td>&nbsp;</td><td>&amp;#9729;</td></tr>
+                       <tr><td class="kol1">☂</td><td>U+02602</td><td>&nbsp;</td><td>&amp;#9730;</td></tr>
+                       <tr><td class="kol1">☃</td><td>U+02603</td><td>&nbsp;</td><td>&amp;#9731;</td></tr>
+                       <tr><td class="kol1">☄</td><td>U+02604</td><td>&nbsp;</td><td>&amp;#9732;</td></tr>
+                       <tr><td class="kol1">★</td><td>U+02605</td><td>&amp;starf;</td><td>&amp;#9733;</td></tr>
+                       <tr><td class="kol1">☆</td><td>U+02606</td><td>&amp;star;</td><td>&amp;#9734;</td></tr>
+                       <tr><td class="kol1">☇</td><td>U+02607</td><td>&nbsp;</td><td>&amp;#9735;</td></tr>
+                       <tr><td class="kol1">☈</td><td>U+02608</td><td>&nbsp;</td><td>&amp;#9736;</td></tr>
+                       <tr><td class="kol1">☉</td><td>U+02609</td><td>&nbsp;</td><td>&amp;#9737;</td></tr>
+                       <tr><td class="kol1">☊</td><td>U+0260A</td><td>&nbsp;</td><td>&amp;#9738;</td></tr>
+                       <tr><td class="kol1">☋</td><td>U+0260B</td><td>&nbsp;</td><td>&amp;#9739;</td></tr>
+                       <tr><td class="kol1">☌</td><td>U+0260C</td><td>&nbsp;</td><td>&amp;#9740;</td></tr>
+                       <tr><td class="kol1">☍</td><td>U+0260D</td><td>&nbsp;</td><td>&amp;#9741;</td></tr>
+                       <tr><td class="kol1">☎</td><td>U+0260E</td><td>&amp;phone;</td><td>&amp;#9742;</td></tr>
+                       <tr><td class="kol1">☏</td><td>U+0260F</td><td>&nbsp;</td><td>&amp;#9743;</td></tr>
+                       <tr><td class="kol1">☐</td><td>U+02610</td><td>&nbsp;</td><td>&amp;#9744;</td></tr>
+                       <tr><td class="kol1">☑</td><td>U+02611</td><td>&nbsp;</td><td>&amp;#9745;</td></tr>
+                       <tr><td class="kol1">☒</td><td>U+02612</td><td>&nbsp;</td><td>&amp;#9746;</td></tr>
+                       <tr><td class="kol1">☓</td><td>U+02613</td><td>&nbsp;</td><td>&amp;#9747;</td></tr>
+                       <tr><td class="kol1">☖</td><td>U+02616</td><td>&nbsp;</td><td>&amp;#9750;</td></tr>
+                       <tr><td class="kol1">☗</td><td>U+02617</td><td>&nbsp;</td><td>&amp;#9751;</td></tr>
+                       <tr><td class="kol1">☘</td><td>U+02618</td><td>&nbsp;</td><td>&amp;#9752;</td></tr>
+                       <tr><td class="kol1">☙</td><td>U+02619</td><td>&nbsp;</td><td>&amp;#9753;</td></tr>
+                       <tr><td class="kol1">☚</td><td>U+0261A</td><td>&nbsp;</td><td>&amp;#9754;</td></tr>
+                       <tr><td class="kol1">☛</td><td>U+0261B</td><td>&nbsp;</td><td>&amp;#9755;</td></tr>
+                       <tr><td class="kol1">☜</td><td>U+0261C</td><td>&nbsp;</td><td>&amp;#9756;</td></tr>
+                       <tr><td class="kol1">☝</td><td>U+0261D</td><td>&nbsp;</td><td>&amp;#9757;</td></tr>
+                       <tr><td class="kol1">☞</td><td>U+0261E</td><td>&nbsp;</td><td>&amp;#9758;</td></tr>
+                       <tr><td class="kol1">☟</td><td>U+0261F</td><td>&nbsp;</td><td>&amp;#9759;</td></tr>
+                       <tr><td class="kol1">☠</td><td>U+02620</td><td>&nbsp;</td><td>&amp;#9760;</td></tr>
+                       <tr><td class="kol1">☡</td><td>U+02621</td><td>&nbsp;</td><td>&amp;#9761;</td></tr>
+                       <tr><td class="kol1">☢</td><td>U+02622</td><td>&nbsp;</td><td>&amp;#9762;</td></tr>
+                       <tr><td class="kol1">☣</td><td>U+02623</td><td>&nbsp;</td><td>&amp;#9763;</td></tr>
+                       <tr><td class="kol1">☤</td><td>U+02624</td><td>&nbsp;</td><td>&amp;#9764;</td></tr>
+                       <tr><td class="kol1">☥</td><td>U+02625</td><td>&nbsp;</td><td>&amp;#9765;</td></tr>
+                       <tr><td class="kol1">☦</td><td>U+02626</td><td>&nbsp;</td><td>&amp;#9766;</td></tr>
+                       <tr><td class="kol1">☧</td><td>U+02627</td><td>&nbsp;</td><td>&amp;#9767;</td></tr>
+                       <tr><td class="kol1">☨</td><td>U+02628</td><td>&nbsp;</td><td>&amp;#9768;</td></tr>
+                       <tr><td class="kol1">☩</td><td>U+02629</td><td>&nbsp;</td><td>&amp;#9769;</td></tr>
+                       <tr><td class="kol1">☪</td><td>U+0262A</td><td>&nbsp;</td><td>&amp;#9770;</td></tr>
+                       <tr><td class="kol1">☫</td><td>U+0262B</td><td>&nbsp;</td><td>&amp;#9771;</td></tr>
+                       <tr><td class="kol1">☬</td><td>U+0262C</td><td>&nbsp;</td><td>&amp;#9772;</td></tr>
+                       <tr><td class="kol1">☭</td><td>U+0262D</td><td>&nbsp;</td><td>&amp;#9773;</td></tr>
+                       <tr><td class="kol1">☮</td><td>U+0262E</td><td>&nbsp;</td><td>&amp;#9774;</td></tr>
+                       <tr><td class="kol1">☯</td><td>U+0262F</td><td>&nbsp;</td><td>&amp;#9775;</td></tr>
+                       <tr><td class="kol1">☰</td><td>U+02630</td><td>&nbsp;</td><td>&amp;#9776;</td></tr>
+                       <tr><td class="kol1">☱</td><td>U+02631</td><td>&nbsp;</td><td>&amp;#9777;</td></tr>
+                       <tr><td class="kol1">☲</td><td>U+02632</td><td>&nbsp;</td><td>&amp;#9778;</td></tr>
+                       <tr><td class="kol1">☳</td><td>U+02633</td><td>&nbsp;</td><td>&amp;#9779;</td></tr>
+                       <tr><td class="kol1">☴</td><td>U+02634</td><td>&nbsp;</td><td>&amp;#9780;</td></tr>
+                       <tr><td class="kol1">☵</td><td>U+02635</td><td>&nbsp;</td><td>&amp;#9781;</td></tr>
+                       <tr><td class="kol1">☶</td><td>U+02636</td><td>&nbsp;</td><td>&amp;#9782;</td></tr>
+                       <tr><td class="kol1">☷</td><td>U+02637</td><td>&nbsp;</td><td>&amp;#9783;</td></tr>
+                       <tr><td class="kol1">☸</td><td>U+02638</td><td>&nbsp;</td><td>&amp;#9784;</td></tr>
+                       <tr><td class="kol1">☹</td><td>U+02639</td><td>&nbsp;</td><td>&amp;#9785;</td></tr>
+                       <tr><td class="kol1">☺</td><td>U+0263A</td><td>&nbsp;</td><td>&amp;#9786;</td></tr>
+                       <tr><td class="kol1">☻</td><td>U+0263B</td><td>&nbsp;</td><td>&amp;#9787;</td></tr>
+                       <tr><td class="kol1">☼</td><td>U+0263C</td><td>&nbsp;</td><td>&amp;#9788;</td></tr>
+                       <tr><td class="kol1">☽</td><td>U+0263D</td><td>&nbsp;</td><td>&amp;#9789;</td></tr>
+                       <tr><td class="kol1">☾</td><td>U+0263E</td><td>&nbsp;</td><td>&amp;#9790;</td></tr>
+                       <tr><td class="kol1">☿</td><td>U+0263F</td><td>&nbsp;</td><td>&amp;#9791;</td></tr>
+                       <tr><td class="kol1">♀</td><td>U+02640</td><td>&amp;female;</td><td>&amp;#9792;</td></tr>
+                       <tr><td class="kol1">♁</td><td>U+02641</td><td>&nbsp;</td><td>&amp;#9793;</td></tr>
+                       <tr><td class="kol1">♂</td><td>U+02642</td><td>&amp;male;</td><td>&amp;#9794;</td></tr>
+                       <tr><td class="kol1">♃</td><td>U+02643</td><td>&nbsp;</td><td>&amp;#9795;</td></tr>
+                       <tr><td class="kol1">♄</td><td>U+02644</td><td>&nbsp;</td><td>&amp;#9796;</td></tr>
+                       <tr><td class="kol1">♅</td><td>U+02645</td><td>&nbsp;</td><td>&amp;#9797;</td></tr>
+                       <tr><td class="kol1">♆</td><td>U+02646</td><td>&nbsp;</td><td>&amp;#9798;</td></tr>
+                       <tr><td class="kol1">♇</td><td>U+02647</td><td>&nbsp;</td><td>&amp;#9799;</td></tr>
+                       <tr><td class="kol1">♔</td><td>U+02654</td><td>&nbsp;</td><td>&amp;#9812;</td></tr>
+                       <tr><td class="kol1">♕</td><td>U+02655</td><td>&nbsp;</td><td>&amp;#9813;</td></tr>
+                       <tr><td class="kol1">♖</td><td>U+02656</td><td>&nbsp;</td><td>&amp;#9814;</td></tr>
+                       <tr><td class="kol1">♗</td><td>U+02657</td><td>&nbsp;</td><td>&amp;#9815;</td></tr>
+                       <tr><td class="kol1">♘</td><td>U+02658</td><td>&nbsp;</td><td>&amp;#9816;</td></tr>
+                       <tr><td class="kol1">♙</td><td>U+02659</td><td>&nbsp;</td><td>&amp;#9817;</td></tr>
+                       <tr><td class="kol1">♚</td><td>U+0265A</td><td>&nbsp;</td><td>&amp;#9818;</td></tr>
+                       <tr><td class="kol1">♛</td><td>U+0265B</td><td>&nbsp;</td><td>&amp;#9819;</td></tr>
+                       <tr><td class="kol1">♜</td><td>U+0265C</td><td>&nbsp;</td><td>&amp;#9820;</td></tr>
+                       <tr><td class="kol1">♝</td><td>U+0265D</td><td>&nbsp;</td><td>&amp;#9821;</td></tr>
+                       <tr><td class="kol1">♞</td><td>U+0265E</td><td>&nbsp;</td><td>&amp;#9822;</td></tr>
+                       <tr><td class="kol1">♟</td><td>U+0265F</td><td>&nbsp;</td><td>&amp;#9823;</td></tr>
+                       <tr><td class="kol1">♠</td><td>U+02660</td><td>&amp;spades;</td><td>&amp;#9824;</td></tr>
+                       <tr><td class="kol1">♡</td><td>U+02661</td><td>&nbsp;</td><td>&amp;#9825;</td></tr>
+                       <tr><td class="kol1">♢</td><td>U+02662</td><td>&nbsp;</td><td>&amp;#9826;</td></tr>
+                       <tr><td class="kol1">♣</td><td>U+02663</td><td>&amp;clubs;</td><td>&amp;#9827;</td></tr>
+                       <tr><td class="kol1">♤</td><td>U+02664</td><td>&nbsp;</td><td>&amp;#9828;</td></tr>
+                       <tr><td class="kol1">♥</td><td>U+02665</td><td>&amp;hearts;</td><td>&amp;#9829;</td></tr>
+                       <tr><td class="kol1">♦</td><td>U+02666</td><td>&amp;diams;</td><td>&amp;#9830;</td></tr>
+                       <tr><td class="kol1">♧</td><td>U+02667</td><td>&nbsp;</td><td>&amp;#9831;</td></tr>
+                       <tr><td class="kol1">♨</td><td>U+02668</td><td>&nbsp;</td><td>&amp;#9832;</td></tr>
+                       <tr><td class="kol1">♩</td><td>U+02669</td><td>&nbsp;</td><td>&amp;#9833;</td></tr>
+                       <tr><td class="kol1">♪</td><td>U+0266A</td><td>&amp;sung;</td><td>&amp;#9834;</td></tr>
+                       <tr><td class="kol1">♫</td><td>U+0266B</td><td>&nbsp;</td><td>&amp;#9835;</td></tr>
+                       <tr><td class="kol1">♬</td><td>U+0266C</td><td>&nbsp;</td><td>&amp;#9836;</td></tr>
+                       <tr><td class="kol1">♭</td><td>U+0266D</td><td>&amp;flat;</td><td>&amp;#9837;</td></tr>
+                       <tr><td class="kol1">♮</td><td>U+0266E</td><td>&amp;natural;</td><td>&amp;#9838;</td></tr>
+                       <tr><td class="kol1">♯</td><td>U+0266F</td><td>&amp;sharp;</td><td>&amp;#9839;</td></tr>
+                       <tr><td class="kol1">♰</td><td>U+02670</td><td>&nbsp;</td><td>&amp;#9840;</td></tr>
+                       <tr><td class="kol1">♱</td><td>U+02671</td><td>&nbsp;</td><td>&amp;#9841;</td></tr>
+                       <tr><td class="kol1">♲</td><td>U+02672</td><td>&nbsp;</td><td>&amp;#9842;</td></tr>
+                       <tr><td class="kol1">♳</td><td>U+02673</td><td>&nbsp;</td><td>&amp;#9843;</td></tr>
+                       <tr><td class="kol1">♴</td><td>U+02674</td><td>&nbsp;</td><td>&amp;#9844;</td></tr>
+                       <tr><td class="kol1">♵</td><td>U+02675</td><td>&nbsp;</td><td>&amp;#9845;</td></tr>
+                       <tr><td class="kol1">♶</td><td>U+02676</td><td>&nbsp;</td><td>&amp;#9846;</td></tr>
+                       <tr><td class="kol1">♷</td><td>U+02677</td><td>&nbsp;</td><td>&amp;#9847;</td></tr>
+                       <tr><td class="kol1">♸</td><td>U+02678</td><td>&nbsp;</td><td>&amp;#9848;</td></tr>
+                       <tr><td class="kol1">♹</td><td>U+02679</td><td>&nbsp;</td><td>&amp;#9849;</td></tr>
+                       <tr><td class="kol1">♺</td><td>U+0267A</td><td>&nbsp;</td><td>&amp;#9850;</td></tr>
+                       <tr><td class="kol1">♻</td><td>U+0267B</td><td>&nbsp;</td><td>&amp;#9851;</td></tr>
+                       <tr><td class="kol1">♼</td><td>U+0267C</td><td>&nbsp;</td><td>&amp;#9852;</td></tr>
+                       <tr><td class="kol1">♽</td><td>U+0267D</td><td>&nbsp;</td><td>&amp;#9853;</td></tr>
+                       <tr><td class="kol1">♾</td><td>U+0267E</td><td>&nbsp;</td><td>&amp;#9854;</td></tr>
+                       <tr><td class="kol1">⚀</td><td>U+02680</td><td>&nbsp;</td><td>&amp;#9856;</td></tr>
+                       <tr><td class="kol1">⚁</td><td>U+02681</td><td>&nbsp;</td><td>&amp;#9857;</td></tr>
+                       <tr><td class="kol1">⚂</td><td>U+02682</td><td>&nbsp;</td><td>&amp;#9858;</td></tr>
+                       <tr><td class="kol1">⚃</td><td>U+02683</td><td>&nbsp;</td><td>&amp;#9859;</td></tr>
+                       <tr><td class="kol1">⚄</td><td>U+02684</td><td>&nbsp;</td><td>&amp;#9860;</td></tr>
+                       <tr><td class="kol1">⚅</td><td>U+02685</td><td>&nbsp;</td><td>&amp;#9861;</td></tr>
+                       <tr><td class="kol1">⚆</td><td>U+02686</td><td>&nbsp;</td><td>&amp;#9862;</td></tr>
+                       <tr><td class="kol1">⚇</td><td>U+02687</td><td>&nbsp;</td><td>&amp;#9863;</td></tr>
+                       <tr><td class="kol1">⚈</td><td>U+02688</td><td>&nbsp;</td><td>&amp;#9864;</td></tr>
+                       <tr><td class="kol1">⚉</td><td>U+02689</td><td>&nbsp;</td><td>&amp;#9865;</td></tr>
+                       <tr><td class="kol1">⚊</td><td>U+0268A</td><td>&nbsp;</td><td>&amp;#9866;</td></tr>
+                       <tr><td class="kol1">⚋</td><td>U+0268B</td><td>&nbsp;</td><td>&amp;#9867;</td></tr>
+                       <tr><td class="kol1">⚌</td><td>U+0268C</td><td>&nbsp;</td><td>&amp;#9868;</td></tr>
+                       <tr><td class="kol1">⚍</td><td>U+0268D</td><td>&nbsp;</td><td>&amp;#9869;</td></tr>
+                       <tr><td class="kol1">⚎</td><td>U+0268E</td><td>&nbsp;</td><td>&amp;#9870;</td></tr>
+                       <tr><td class="kol1">⚏</td><td>U+0268F</td><td>&nbsp;</td><td>&amp;#9871;</td></tr>
+                       <tr><td class="kol1">⚐</td><td>U+02690</td><td>&nbsp;</td><td>&amp;#9872;</td></tr>
+                       <tr><td class="kol1">⚑</td><td>U+02691</td><td>&nbsp;</td><td>&amp;#9873;</td></tr>
+                       <tr><td class="kol1">⚒</td><td>U+02692</td><td>&nbsp;</td><td>&amp;#9874;</td></tr>
+                       <tr><td class="kol1">⚔</td><td>U+02694</td><td>&nbsp;</td><td>&amp;#9876;</td></tr>
+                       <tr><td class="kol1">⚕</td><td>U+02695</td><td>&nbsp;</td><td>&amp;#9877;</td></tr>
+                       <tr><td class="kol1">⚖</td><td>U+02696</td><td>&nbsp;</td><td>&amp;#9878;</td></tr>
+                       <tr><td class="kol1">⚗</td><td>U+02697</td><td>&nbsp;</td><td>&amp;#9879;</td></tr>
+                       <tr><td class="kol1">⚘</td><td>U+02698</td><td>&nbsp;</td><td>&amp;#9880;</td></tr>
+                       <tr><td class="kol1">⚙</td><td>U+02699</td><td>&nbsp;</td><td>&amp;#9881;</td></tr>
+                       <tr><td class="kol1">⚚</td><td>U+0269A</td><td>&nbsp;</td><td>&amp;#9882;</td></tr>
+                       <tr><td class="kol1">⚛</td><td>U+0269B</td><td>&nbsp;</td><td>&amp;#9883;</td></tr>
+                       <tr><td class="kol1">⚜</td><td>U+0269C</td><td>&nbsp;</td><td>&amp;#9884;</td></tr>
+                       <tr><td class="kol1">⚝</td><td>U+0269D</td><td>&nbsp;</td><td>&amp;#9885;</td></tr>
+                       <tr><td class="kol1">⚞</td><td>U+0269E</td><td>&nbsp;</td><td>&amp;#9886;</td></tr>
+                       <tr><td class="kol1">⚟</td><td>U+0269F</td><td>&nbsp;</td><td>&amp;#9887;</td></tr>
+                       <tr><td class="kol1">⚠</td><td>U+026A0</td><td>&nbsp;</td><td>&amp;#9888;</td></tr>
+                       <tr><td class="kol1">⚢</td><td>U+026A2</td><td>&nbsp;</td><td>&amp;#9890;</td></tr>
+                       <tr><td class="kol1">⚣</td><td>U+026A3</td><td>&nbsp;</td><td>&amp;#9891;</td></tr>
+                       <tr><td class="kol1">⚤</td><td>U+026A4</td><td>&nbsp;</td><td>&amp;#9892;</td></tr>
+                       <tr><td class="kol1">⚥</td><td>U+026A5</td><td>&nbsp;</td><td>&amp;#9893;</td></tr>
+                       <tr><td class="kol1">⚦</td><td>U+026A6</td><td>&nbsp;</td><td>&amp;#9894;</td></tr>
+                       <tr><td class="kol1">⚧</td><td>U+026A7</td><td>&nbsp;</td><td>&amp;#9895;</td></tr>
+                       <tr><td class="kol1">⚨</td><td>U+026A8</td><td>&nbsp;</td><td>&amp;#9896;</td></tr>
+                       <tr><td class="kol1">⚩</td><td>U+026A9</td><td>&nbsp;</td><td>&amp;#9897;</td></tr>
+                       <tr><td class="kol1">⚬</td><td>U+026AC</td><td>&nbsp;</td><td>&amp;#9900;</td></tr>
+                       <tr><td class="kol1">⚭</td><td>U+026AD</td><td>&nbsp;</td><td>&amp;#9901;</td></tr>
+                       <tr><td class="kol1">⚮</td><td>U+026AE</td><td>&nbsp;</td><td>&amp;#9902;</td></tr>
+                       <tr><td class="kol1">⚯</td><td>U+026AF</td><td>&nbsp;</td><td>&amp;#9903;</td></tr>
+                       <tr><td class="kol1">⚰</td><td>U+026B0</td><td>&nbsp;</td><td>&amp;#9904;</td></tr>
+                       <tr><td class="kol1">⚱</td><td>U+026B1</td><td>&nbsp;</td><td>&amp;#9905;</td></tr>
+                       <tr><td class="kol1">⚲</td><td>U+026B2</td><td>&nbsp;</td><td>&amp;#9906;</td></tr>
+                       <tr><td class="kol1">⚾</td><td>U+026BE</td><td>&nbsp;</td><td>&amp;#9918;</td></tr>
+                       <tr><td class="kol1">⛢</td><td>U+026E2</td><td>&nbsp;</td><td>&amp;#9954;</td></tr>
+                       <tr><td class="kol1">✁</td><td>U+02701</td><td>&nbsp;</td><td>&amp;#9985;</td></tr>
+                       <tr><td class="kol1">✂</td><td>U+02702</td><td>&nbsp;</td><td>&amp;#9986;</td></tr>
+                       <tr><td class="kol1">✃</td><td>U+02703</td><td>&nbsp;</td><td>&amp;#9987;</td></tr>
+                       <tr><td class="kol1">✄</td><td>U+02704</td><td>&nbsp;</td><td>&amp;#9988;</td></tr>
+                       <tr><td class="kol1">✆</td><td>U+02706</td><td>&nbsp;</td><td>&amp;#9990;</td></tr>
+                       <tr><td class="kol1">✇</td><td>U+02707</td><td>&nbsp;</td><td>&amp;#9991;</td></tr>
+                       <tr><td class="kol1">✈</td><td>U+02708</td><td>&nbsp;</td><td>&amp;#9992;</td></tr>
+                       <tr><td class="kol1">✉</td><td>U+02709</td><td>&nbsp;</td><td>&amp;#9993;</td></tr>
+                       <tr><td class="kol1">✌</td><td>U+0270C</td><td>&nbsp;</td><td>&amp;#9996;</td></tr>
+                       <tr><td class="kol1">✍</td><td>U+0270D</td><td>&nbsp;</td><td>&amp;#9997;</td></tr>
+                       <tr><td class="kol1">✎</td><td>U+0270E</td><td>&nbsp;</td><td>&amp;#9998;</td></tr>
+                       <tr><td class="kol1">✏</td><td>U+0270F</td><td>&nbsp;</td><td>&amp;#9999;</td></tr>
+                       <tr><td class="kol1">✐</td><td>U+02710</td><td>&nbsp;</td><td>&amp;#10000;</td></tr>
+                       <tr><td class="kol1">✑</td><td>U+02711</td><td>&nbsp;</td><td>&amp;#10001;</td></tr>
+                       <tr><td class="kol1">✒</td><td>U+02712</td><td>&nbsp;</td><td>&amp;#10002;</td></tr>
+                       <tr><td class="kol1">✓</td><td>U+02713</td><td>&amp;check;</td><td>&amp;#10003;</td></tr>
+                       <tr><td class="kol1">✔</td><td>U+02714</td><td>&nbsp;</td><td>&amp;#10004;</td></tr>
+                       <tr><td class="kol1">✕</td><td>U+02715</td><td>&nbsp;</td><td>&amp;#10005;</td></tr>
+                       <tr><td class="kol1">✖</td><td>U+02716</td><td>&nbsp;</td><td>&amp;#10006;</td></tr>
+                       <tr><td class="kol1">✗</td><td>U+02717</td><td>&amp;cross;</td><td>&amp;#10007;</td></tr>
+                       <tr><td class="kol1">✘</td><td>U+02718</td><td>&nbsp;</td><td>&amp;#10008;</td></tr>
+                       <tr><td class="kol1">✙</td><td>U+02719</td><td>&nbsp;</td><td>&amp;#10009;</td></tr>
+                       <tr><td class="kol1">✚</td><td>U+0271A</td><td>&nbsp;</td><td>&amp;#10010;</td></tr>
+                       <tr><td class="kol1">✛</td><td>U+0271B</td><td>&nbsp;</td><td>&amp;#10011;</td></tr>
+                       <tr><td class="kol1">✜</td><td>U+0271C</td><td>&nbsp;</td><td>&amp;#10012;</td></tr>
+                       <tr><td class="kol1">✝</td><td>U+0271D</td><td>&nbsp;</td><td>&amp;#10013;</td></tr>
+                       <tr><td class="kol1">✞</td><td>U+0271E</td><td>&nbsp;</td><td>&amp;#10014;</td></tr>
+                       <tr><td class="kol1">✟</td><td>U+0271F</td><td>&nbsp;</td><td>&amp;#10015;</td></tr>
+                       <tr><td class="kol1">✠</td><td>U+02720</td><td>&amp;malt;</td><td>&amp;#10016;</td></tr>
+                       <tr><td class="kol1">✡</td><td>U+02721</td><td>&nbsp;</td><td>&amp;#10017;</td></tr>
+                       <tr><td class="kol1">✢</td><td>U+02722</td><td>&nbsp;</td><td>&amp;#10018;</td></tr>
+                       <tr><td class="kol1">✣</td><td>U+02723</td><td>&nbsp;</td><td>&amp;#10019;</td></tr>
+                       <tr><td class="kol1">✤</td><td>U+02724</td><td>&nbsp;</td><td>&amp;#10020;</td></tr>
+                       <tr><td class="kol1">✥</td><td>U+02725</td><td>&nbsp;</td><td>&amp;#10021;</td></tr>
+                       <tr><td class="kol1">✦</td><td>U+02726</td><td>&nbsp;</td><td>&amp;#10022;</td></tr>
+                       <tr><td class="kol1">✧</td><td>U+02727</td><td>&nbsp;</td><td>&amp;#10023;</td></tr>
+                       <tr><td class="kol1">✩</td><td>U+02729</td><td>&nbsp;</td><td>&amp;#10025;</td></tr>
+                       <tr><td class="kol1">✪</td><td>U+0272A</td><td>&nbsp;</td><td>&amp;#10026;</td></tr>
+                       <tr><td class="kol1">✫</td><td>U+0272B</td><td>&nbsp;</td><td>&amp;#10027;</td></tr>
+                       <tr><td class="kol1">✬</td><td>U+0272C</td><td>&nbsp;</td><td>&amp;#10028;</td></tr>
+                       <tr><td class="kol1">✭</td><td>U+0272D</td><td>&nbsp;</td><td>&amp;#10029;</td></tr>
+                       <tr><td class="kol1">✮</td><td>U+0272E</td><td>&nbsp;</td><td>&amp;#10030;</td></tr>
+                       <tr><td class="kol1">✯</td><td>U+0272F</td><td>&nbsp;</td><td>&amp;#10031;</td></tr>
+                       <tr><td class="kol1">✰</td><td>U+02730</td><td>&nbsp;</td><td>&amp;#10032;</td></tr>
+                       <tr><td class="kol1">✱</td><td>U+02731</td><td>&nbsp;</td><td>&amp;#10033;</td></tr>
+                       <tr><td class="kol1">✲</td><td>U+02732</td><td>&nbsp;</td><td>&amp;#10034;</td></tr>
+                       <tr><td class="kol1">✳</td><td>U+02733</td><td>&nbsp;</td><td>&amp;#10035;</td></tr>
+                       <tr><td class="kol1">✴</td><td>U+02734</td><td>&nbsp;</td><td>&amp;#10036;</td></tr>
+                       <tr><td class="kol1">✵</td><td>U+02735</td><td>&nbsp;</td><td>&amp;#10037;</td></tr>
+                       <tr><td class="kol1">✶</td><td>U+02736</td><td>&amp;sext;</td><td>&amp;#10038;</td></tr>
+                       <tr><td class="kol1">✷</td><td>U+02737</td><td>&nbsp;</td><td>&amp;#10039;</td></tr>
+                       <tr><td class="kol1">✸</td><td>U+02738</td><td>&nbsp;</td><td>&amp;#10040;</td></tr>
+                       <tr><td class="kol1">✹</td><td>U+02739</td><td>&nbsp;</td><td>&amp;#10041;</td></tr>
+                       <tr><td class="kol1">✺</td><td>U+0273A</td><td>&nbsp;</td><td>&amp;#10042;</td></tr>
+                       <tr><td class="kol1">✻</td><td>U+0273B</td><td>&nbsp;</td><td>&amp;#10043;</td></tr>
+                       <tr><td class="kol1">✼</td><td>U+0273C</td><td>&nbsp;</td><td>&amp;#10044;</td></tr>
+                       <tr><td class="kol1">✽</td><td>U+0273D</td><td>&nbsp;</td><td>&amp;#10045;</td></tr>
+                       <tr><td class="kol1">✾</td><td>U+0273E</td><td>&nbsp;</td><td>&amp;#10046;</td></tr>
+                       <tr><td class="kol1">✿</td><td>U+0273F</td><td>&nbsp;</td><td>&amp;#10047;</td></tr>
+                       <tr><td class="kol1">❀</td><td>U+02740</td><td>&nbsp;</td><td>&amp;#10048;</td></tr>
+                       <tr><td class="kol1">❁</td><td>U+02741</td><td>&nbsp;</td><td>&amp;#10049;</td></tr>
+                       <tr><td class="kol1">❂</td><td>U+02742</td><td>&nbsp;</td><td>&amp;#10050;</td></tr>
+                       <tr><td class="kol1">❃</td><td>U+02743</td><td>&nbsp;</td><td>&amp;#10051;</td></tr>
+                       <tr><td class="kol1">❄</td><td>U+02744</td><td>&nbsp;</td><td>&amp;#10052;</td></tr>
+                       <tr><td class="kol1">❅</td><td>U+02745</td><td>&nbsp;</td><td>&amp;#10053;</td></tr>
+                       <tr><td class="kol1">❆</td><td>U+02746</td><td>&nbsp;</td><td>&amp;#10054;</td></tr>
+                       <tr><td class="kol1">❇</td><td>U+02747</td><td>&nbsp;</td><td>&amp;#10055;</td></tr>
+                       <tr><td class="kol1">❈</td><td>U+02748</td><td>&nbsp;</td><td>&amp;#10056;</td></tr>
+                       <tr><td class="kol1">❉</td><td>U+02749</td><td>&nbsp;</td><td>&amp;#10057;</td></tr>
+                       <tr><td class="kol1">❊</td><td>U+0274A</td><td>&nbsp;</td><td>&amp;#10058;</td></tr>
+                       <tr><td class="kol1">❋</td><td>U+0274B</td><td>&nbsp;</td><td>&amp;#10059;</td></tr>
+                       <tr><td class="kol1">❍</td><td>U+0274D</td><td>&nbsp;</td><td>&amp;#10061;</td></tr>
+                       <tr><td class="kol1">❏</td><td>U+0274F</td><td>&nbsp;</td><td>&amp;#10063;</td></tr>
+                       <tr><td class="kol1">❐</td><td>U+02750</td><td>&nbsp;</td><td>&amp;#10064;</td></tr>
+                       <tr><td class="kol1">❑</td><td>U+02751</td><td>&nbsp;</td><td>&amp;#10065;</td></tr>
+                       <tr><td class="kol1">❒</td><td>U+02752</td><td>&nbsp;</td><td>&amp;#10066;</td></tr>
+                       <tr><td class="kol1">❖</td><td>U+02756</td><td>&nbsp;</td><td>&amp;#10070;</td></tr>
+                       <tr><td class="kol1">❘</td><td>U+02758</td><td>&amp;VerticalSeparator;</td><td>&amp;#10072;</td></tr>
+                       <tr><td class="kol1">❙</td><td>U+02759</td><td>&nbsp;</td><td>&amp;#10073;</td></tr>
+                       <tr><td class="kol1">❚</td><td>U+0275A</td><td>&nbsp;</td><td>&amp;#10074;</td></tr>
+                       <tr><td class="kol1">❛</td><td>U+0275B</td><td>&nbsp;</td><td>&amp;#10075;</td></tr>
+                       <tr><td class="kol1">❜</td><td>U+0275C</td><td>&nbsp;</td><td>&amp;#10076;</td></tr>
+                       <tr><td class="kol1">❝</td><td>U+0275D</td><td>&nbsp;</td><td>&amp;#10077;</td></tr>
+                       <tr><td class="kol1">❞</td><td>U+0275E</td><td>&nbsp;</td><td>&amp;#10078;</td></tr>
+                       <tr><td class="kol1">❡</td><td>U+02761</td><td>&nbsp;</td><td>&amp;#10081;</td></tr>
+                       <tr><td class="kol1">❢</td><td>U+02762</td><td>&nbsp;</td><td>&amp;#10082;</td></tr>
+                       <tr><td class="kol1">❣</td><td>U+02763</td><td>&nbsp;</td><td>&amp;#10083;</td></tr>
+                       <tr><td class="kol1">❤</td><td>U+02764</td><td>&nbsp;</td><td>&amp;#10084;</td></tr>
+                       <tr><td class="kol1">❥</td><td>U+02765</td><td>&nbsp;</td><td>&amp;#10085;</td></tr>
+                       <tr><td class="kol1">❦</td><td>U+02766</td><td>&nbsp;</td><td>&amp;#10086;</td></tr>
+                       <tr><td class="kol1">❧</td><td>U+02767</td><td>&nbsp;</td><td>&amp;#10087;</td></tr>
+                       <tr><td class="kol1">❨</td><td>U+02768</td><td>&nbsp;</td><td>&amp;#10088;</td></tr>
+                       <tr><td class="kol1">❩</td><td>U+02769</td><td>&nbsp;</td><td>&amp;#10089;</td></tr>
+                       <tr><td class="kol1">❪</td><td>U+0276A</td><td>&nbsp;</td><td>&amp;#10090;</td></tr>
+                       <tr><td class="kol1">❫</td><td>U+0276B</td><td>&nbsp;</td><td>&amp;#10091;</td></tr>
+                       <tr><td class="kol1">❬</td><td>U+0276C</td><td>&nbsp;</td><td>&amp;#10092;</td></tr>
+                       <tr><td class="kol1">❭</td><td>U+0276D</td><td>&nbsp;</td><td>&amp;#10093;</td></tr>
+                       <tr><td class="kol1">❮</td><td>U+0276E</td><td>&nbsp;</td><td>&amp;#10094;</td></tr>
+                       <tr><td class="kol1">❯</td><td>U+0276F</td><td>&nbsp;</td><td>&amp;#10095;</td></tr>
+                       <tr><td class="kol1">❰</td><td>U+02770</td><td>&nbsp;</td><td>&amp;#10096;</td></tr>
+                       <tr><td class="kol1">❱</td><td>U+02771</td><td>&nbsp;</td><td>&amp;#10097;</td></tr>
+                       <tr><td class="kol1">❲</td><td>U+02772</td><td>&amp;lbbrk;</td><td>&amp;#10098;</td></tr>
+                       <tr><td class="kol1">❳</td><td>U+02773</td><td>&amp;rbbrk;</td><td>&amp;#10099;</td></tr>
+                       <tr><td class="kol1">❴</td><td>U+02774</td><td>&nbsp;</td><td>&amp;#10100;</td></tr>
+                       <tr><td class="kol1">❵</td><td>U+02775</td><td>&nbsp;</td><td>&amp;#10101;</td></tr>
+                       <tr><td class="kol1">❶</td><td>U+02776</td><td>&nbsp;</td><td>&amp;#10102;</td></tr>
+                       <tr><td class="kol1">❷</td><td>U+02777</td><td>&nbsp;</td><td>&amp;#10103;</td></tr>
+                       <tr><td class="kol1">❸</td><td>U+02778</td><td>&nbsp;</td><td>&amp;#10104;</td></tr>
+                       <tr><td class="kol1">❹</td><td>U+02779</td><td>&nbsp;</td><td>&amp;#10105;</td></tr>
+                       <tr><td class="kol1">❺</td><td>U+0277A</td><td>&nbsp;</td><td>&amp;#10106;</td></tr>
+                       <tr><td class="kol1">❻</td><td>U+0277B</td><td>&nbsp;</td><td>&amp;#10107;</td></tr>
+                       <tr><td class="kol1">❼</td><td>U+0277C</td><td>&nbsp;</td><td>&amp;#10108;</td></tr>
+                       <tr><td class="kol1">❽</td><td>U+0277D</td><td>&nbsp;</td><td>&amp;#10109;</td></tr>
+                       <tr><td class="kol1">❾</td><td>U+0277E</td><td>&nbsp;</td><td>&amp;#10110;</td></tr>
+                       <tr><td class="kol1">❿</td><td>U+0277F</td><td>&nbsp;</td><td>&amp;#10111;</td></tr>
+                       <tr><td class="kol1">➀</td><td>U+02780</td><td>&nbsp;</td><td>&amp;#10112;</td></tr>
+                       <tr><td class="kol1">➁</td><td>U+02781</td><td>&nbsp;</td><td>&amp;#10113;</td></tr>
+                       <tr><td class="kol1">➂</td><td>U+02782</td><td>&nbsp;</td><td>&amp;#10114;</td></tr>
+                       <tr><td class="kol1">➃</td><td>U+02783</td><td>&nbsp;</td><td>&amp;#10115;</td></tr>
+                       <tr><td class="kol1">➄</td><td>U+02784</td><td>&nbsp;</td><td>&amp;#10116;</td></tr>
+                       <tr><td class="kol1">➅</td><td>U+02785</td><td>&nbsp;</td><td>&amp;#10117;</td></tr>
+                       <tr><td class="kol1">➆</td><td>U+02786</td><td>&nbsp;</td><td>&amp;#10118;</td></tr>
+                       <tr><td class="kol1">➇</td><td>U+02787</td><td>&nbsp;</td><td>&amp;#10119;</td></tr>
+                       <tr><td class="kol1">➈</td><td>U+02788</td><td>&nbsp;</td><td>&amp;#10120;</td></tr>
+                       <tr><td class="kol1">➉</td><td>U+02789</td><td>&nbsp;</td><td>&amp;#10121;</td></tr>
+                       <tr><td class="kol1">➊</td><td>U+0278A</td><td>&nbsp;</td><td>&amp;#10122;</td></tr>
+                       <tr><td class="kol1">➋</td><td>U+0278B</td><td>&nbsp;</td><td>&amp;#10123;</td></tr>
+                       <tr><td class="kol1">➌</td><td>U+0278C</td><td>&nbsp;</td><td>&amp;#10124;</td></tr>
+                       <tr><td class="kol1">➍</td><td>U+0278D</td><td>&nbsp;</td><td>&amp;#10125;</td></tr>
+                       <tr><td class="kol1">➎</td><td>U+0278E</td><td>&nbsp;</td><td>&amp;#10126;</td></tr>
+                       <tr><td class="kol1">➏</td><td>U+0278F</td><td>&nbsp;</td><td>&amp;#10127;</td></tr>
+                       <tr><td class="kol1">➐</td><td>U+02790</td><td>&nbsp;</td><td>&amp;#10128;</td></tr>
+                       <tr><td class="kol1">➑</td><td>U+02791</td><td>&nbsp;</td><td>&amp;#10129;</td></tr>
+                       <tr><td class="kol1">➒</td><td>U+02792</td><td>&nbsp;</td><td>&amp;#10130;</td></tr>
+                       <tr><td class="kol1">➓</td><td>U+02793</td><td>&nbsp;</td><td>&amp;#10131;</td></tr>
+                       <tr><td class="kol1">$</td><td>U+00024</td><td>&amp;dollar;</td><td>&amp;#36;</td></tr>
+                       <tr><td class="kol1">¢</td><td>U+000A2</td><td>&amp;cent;</td><td>&amp;#162;</td></tr>
+                       <tr><td class="kol1">£</td><td>U+000A3</td><td>&amp;pound;</td><td>&amp;#163;</td></tr>
+                       <tr><td class="kol1">€</td><td>U+020AC</td><td>&amp;euro;</td><td>&amp;#8364;</td></tr>
+                       <tr><td class="kol1">¥</td><td>U+000A5</td><td>&amp;yen;</td><td>&amp;#165;</td></tr>
+                       <tr><td class="kol1">₹</td><td>U+020B9</td><td>&nbsp;</td><td>&amp;#8377;</td></tr>
+                       <tr><td class="kol1">₽</td><td>U+020BD</td><td>&nbsp;</td><td>&amp;#8381;</td></tr>
+                       <tr><td class="kol1">元</td><td>U+05143</td><td>&nbsp;</td><td>&amp;#20803;</td></tr>
+                       <tr><td class="kol1">¤</td><td>U+000A4</td><td>&amp;curren;</td><td>&amp;#164;</td></tr>
+                       <tr><td class="kol1">₠</td><td>U+020A0</td><td>&nbsp;</td><td>&amp;#8352;</td></tr>
+                       <tr><td class="kol1">₡</td><td>U+020A1</td><td>&nbsp;</td><td>&amp;#8353;</td></tr>
+                       <tr><td class="kol1">₢</td><td>U+020A2</td><td>&nbsp;</td><td>&amp;#8354;</td></tr>
+                       <tr><td class="kol1">₣</td><td>U+020A3</td><td>&nbsp;</td><td>&amp;#8355;</td></tr>
+                       <tr><td class="kol1">₤</td><td>U+020A4</td><td>&nbsp;</td><td>&amp;#8356;</td></tr>
+                       <tr><td class="kol1">₥</td><td>U+020A5</td><td>&nbsp;</td><td>&amp;#8357;</td></tr>
+                       <tr><td class="kol1">₦</td><td>U+020A6</td><td>&nbsp;</td><td>&amp;#8358;</td></tr>
+                       <tr><td class="kol1">₧</td><td>U+020A7</td><td>&nbsp;</td><td>&amp;#8359;</td></tr>
+                       <tr><td class="kol1">₨</td><td>U+020A8</td><td>&nbsp;</td><td>&amp;#8360;</td></tr>
+                       <tr><td class="kol1">₩</td><td>U+020A9</td><td>&nbsp;</td><td>&amp;#8361;</td></tr>
+                       <tr><td class="kol1">₪</td><td>U+020AA</td><td>&nbsp;</td><td>&amp;#8362;</td></tr>
+                       <tr><td class="kol1">₫</td><td>U+020AB</td><td>&nbsp;</td><td>&amp;#8363;</td></tr>
+                       <tr><td class="kol1">₭</td><td>U+020AD</td><td>&nbsp;</td><td>&amp;#8365;</td></tr>
+                       <tr><td class="kol1">₮</td><td>U+020AE</td><td>&nbsp;</td><td>&amp;#8366;</td></tr>
+                       <tr><td class="kol1">₯</td><td>U+020AF</td><td>&nbsp;</td><td>&amp;#8367;</td></tr>
+                       <tr><td class="kol1">₰</td><td>U+020B0</td><td>&nbsp;</td><td>&amp;#8368;</td></tr>
+                       <tr><td class="kol1">₱</td><td>U+020B1</td><td>&nbsp;</td><td>&amp;#8369;</td></tr>
+                       <tr><td class="kol1">₲</td><td>U+020B2</td><td>&nbsp;</td><td>&amp;#8370;</td></tr>
+                       <tr><td class="kol1">₳</td><td>U+020B3</td><td>&nbsp;</td><td>&amp;#8371;</td></tr>
+                       <tr><td class="kol1">₴</td><td>U+020B4</td><td>&nbsp;</td><td>&amp;#8372;</td></tr>
+                       <tr><td class="kol1">₵</td><td>U+020B5</td><td>&nbsp;</td><td>&amp;#8373;</td></tr>
+                       <tr><td class="kol1">₶</td><td>U+020B6</td><td>&nbsp;</td><td>&amp;#8374;</td></tr>
+                       <tr><td class="kol1">₸</td><td>U+020B8</td><td>&nbsp;</td><td>&amp;#8376;</td></tr>
+                       <tr><td class="kol1">₺</td><td>U+020BA</td><td>&nbsp;</td><td>&amp;#8378;</td></tr>
+                       <tr><td class="kol1">₼</td><td>U+020BC</td><td>&nbsp;</td><td>&amp;#8380;</td></tr>
+                       <tr><td class="kol1">৲</td><td>U+009F2</td><td>&nbsp;</td><td>&amp;#2546;</td></tr>
+                       <tr><td class="kol1">৳</td><td>U+009F3</td><td>&nbsp;</td><td>&amp;#2547;</td></tr>
+                       <tr><td class="kol1">૱</td><td>U+00AF1</td><td>&nbsp;</td><td>&amp;#2801;</td></tr>
+                       <tr><td class="kol1">௹</td><td>U+00BF9</td><td>&nbsp;</td><td>&amp;#3065;</td></tr>
+                       <tr><td class="kol1">฿</td><td>U+00E3F</td><td>&nbsp;</td><td>&amp;#3647;</td></tr>
+                       <tr><td class="kol1">៛</td><td>U+017DB</td><td>&nbsp;</td><td>&amp;#6107;</td></tr>
+                       <tr><td class="kol1">㍐</td><td>U+03350</td><td>&nbsp;</td><td>&amp;#13136;</td></tr>
+                       <tr><td class="kol1">円</td><td>U+05186</td><td>&nbsp;</td><td>&amp;#20870;</td></tr>
+                       <tr><td class="kol1">圆</td><td>U+05706</td><td>&nbsp;</td><td>&amp;#22278;</td></tr>
+                       <tr><td class="kol1">圎</td><td>U+0570E</td><td>&nbsp;</td><td>&amp;#22286;</td></tr>
+                       <tr><td class="kol1">圓</td><td>U+05713</td><td>&nbsp;</td><td>&amp;#22291;</td></tr>
+                       <tr><td class="kol1">圜</td><td>U+0571C</td><td>&nbsp;</td><td>&amp;#22300;</td></tr>
+                       <tr><td class="kol1">원</td><td>U+0C6D0</td><td>&nbsp;</td><td>&amp;#50896;</td></tr>
+                       <tr><td class="kol1">﷼</td><td>U+0FDFC</td><td>&nbsp;</td><td>&amp;#65020;</td></tr>
+                       <tr><td class="kol1">＄</td><td>U+0FF04</td><td>&nbsp;</td><td>&amp;#65284;</td></tr>
+                       <tr><td class="kol1">￠</td><td>U+0FFE0</td><td>&nbsp;</td><td>&amp;#65504;</td></tr>
+                       <tr><td class="kol1">￡</td><td>U+0FFE1</td><td>&nbsp;</td><td>&amp;#65505;</td></tr>
+                       <tr><td class="kol1">￥</td><td>U+0FFE5</td><td>&nbsp;</td><td>&amp;#65509;</td></tr>
+                       <tr><td class="kol1">￦</td><td>U+0FFE6</td><td>&nbsp;</td><td>&amp;#65510;</td></tr></tbody></table></figure>
+                 
+                       
+                 <br><br><br>
+                     
+                     
+                 
+                 </div>
+                 </div>
+                 </div>
+
+                 <div class="hd1" style="margin-top: 10px; font-size:30px; height: 1100px;">
+                    EMOTIKONY
+                    <bR>
+                    <br>
+                    <div style="font-size: 22px;">
+                        Emotikon to znak przedstawiający piktogram, można wstawić go tam gdzie jest zwykły tekst, aby to zrobić też należy wpisać odpowiednie odwołanie.
+                        <br>
+                        Poniżej tabelka z przykładami.
+                        <br>
+                    </div>
+    
+                    <div style="display: flex; justify-content: center; margin-top: 30px;">
+                        <div class="tabelaznakow" style="font-size: 22px;">
+                            <table>
+                             <tbody>
+                                <tr><td class="kolumna1">😀</td><td class="kolumna2">&amp;#128512;</td></tr>
+                                <tr><td class="kolumna1">😂</td><td class="kolumna2">&amp;#128514;</td></tr>
+                                <tr><td class="kolumna1">😇</td><td class="kolumna2">&amp;#128519;</td></tr>
+                                <tr><td class="kolumna1">🤪</td><td class="kolumna2">&amp;#129322;</td></tr>
+                                <tr><td class="kolumna1">🤑</td><td class="kolumna2">&amp;#129297;</td></tr>
+                                <tr><td class="kolumna1">🤐</td><td class="kolumna2">&amp;#129296;</td></tr>
+                                <tr><td class="kolumna1">😐</td><td class="kolumna2">&amp;#128528;</td></tr>
+                                <tr><td class="kolumna1">😬</td><td class="kolumna2">&amp;#128556;</td></tr>
+                                <tr><td class="kolumna1">😴</td><td class="kolumna2">&amp;#128564;</td></tr>
+                                <tr><td class="kolumna1">🤧</td><td class="kolumna2">&amp;#129319;</td></tr>
+                                <tr><td class="kolumna1">🥵</td><td class="kolumna2">&amp;#129397;</td></tr>
+                                <tr><td class="kolumna1">🤠</td><td class="kolumna2">&amp;#129312;</td></tr>
+                                <tr><td class="kolumna1">🐵</td><td class="kolumna2">&amp;#128053;</td></tr>
+                                <tr><td class="kolumna1">🐶</td><td class="kolumna2">&amp;#128054;</td></tr>
+                                <tr><td class="kolumna1">🦊</td><td class="kolumna2">&amp;#129418;</td></tr>
+                                <tr><td class="kolumna1">🐴</td><td class="kolumna2">&amp;#128052;</td></tr>
+                                <tr><td class="kolumna1">🐮</td><td class="kolumna2">&amp;#128046;</td></tr>
+                                <tr><td class="kolumna1">🐏</td><td class="kolumna2">&amp;#128015;</td></tr>
+                                <tr><td class="kolumna1">🎃</td><td class="kolumna2">&amp;#127875;</td></tr>
+                                <tr><td class="kolumna1">🧨</td><td class="kolumna2">&amp;#129512;</td></tr>
+                                <tr><td class="kolumna1">🎁</td><td class="kolumna2">&amp;#127873;</td></tr>
+                                <tr><td class="kolumna1">⚽</td><td class="kolumna2">&amp;#9917;</td></tr>
+                                <tr><td class="kolumna1">⚾</td><td class="kolumna2">&amp;#9918;</td></tr>
+                                <tr><td class="kolumna1">🥎</td><td class="kolumna2">&amp;#129358;</td></tr>
+                             </tbody></table>
+
+                            
+                             
+                             </div>
+                             
+                      </div>
+                      <div style="margin-top:20px; font-size:22px;">
+                          Pełną listę możesz znaleźć tutaj:
+                          <br>
+                          <br>
+                          <a href="https://www.w3schools.com/charsets/ref_emoji.asp" target="_blank">https://www.w3schools.com/charsets/ref_emoji.asp</a>
+                      </div>
+    
+                </div>
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 </div>
+                </div>
+
+                
+
+            </div>
+
+
+
+    
+    
+
+          
+
+            
+
+
+
+
+
+        </div>
+    </div>
 </body>
 </html>
