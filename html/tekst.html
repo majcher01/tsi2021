@@ -110,11 +110,11 @@
                 </div>
 
                 <div style="display: flex; justify-content: center; margin-top: 30px;">
-                <div class="flip-card" >
+                <div class="flip-card" style="width: 500px;">
                     <div class="flip-card-inner">
                       <div class="flip-card-front">
                           <p style="color: white;">
-                       <b> &lt;font size="X"&gt;&lt;/font&gt; </b>
+                       <samp><b> &lt;font size="X"&gt;&lt;/font&gt; </b></samp>
                         </p>
                       </div>
                       <div class="flip-card-back">
@@ -144,11 +144,11 @@
                 </div>
 
                 <div style="display: flex; justify-content: center; margin-top: 30px;">
-                <div class="flip-card" >
+                <div class="flip-card" style="width: 500px;">
                     <div class="flip-card-inner">
                       <div class="flip-card-front">
                           <p style="color: white;">
-                       <b> &lt;font color="X"&gt;&lt;/font&gt; </b>
+                       <samp><b> &lt;font color="X"&gt;&lt;/font&gt; </b></samp>
                         </p>
                       </div>
                       <div class="flip-card-back">
@@ -228,6 +228,167 @@ Indeks &lt;sub&gt;dolny&lt;/sub&gt;
                   </div>
 
             </div>
+
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+              marquee
+              <bR>
+              <br>
+              <div style="font-size: 22px;">
+                  Dzięki znacznikowi &lt;marquee&gt; możemy dodać proste animacje do strony.
+                  <br>
+                  <br>
+                  <p style="line-height: 1.8;">
+                    <b>Typ animacji</b>
+                    <br>
+                    <span>
+                      Możemy go określić dodając parametr <samp>behavior</samp>
+                    </span>
+                    <br>
+                    Istnieją następujące typy:
+                    <div style="font-size: 22px; display: flex; justify-content: center;">
+                      <ul style="font-size: 22px; text-align: left;">
+                        <li><samp>scroll</samp> - tekst przesuwa się od prawej do lewej</li>
+                        <li><samp>alternate</samp> - tekst przesuwa sie od prawej do lewej, odbija się i wraca</li>
+                        <li><samp>slide</samp> - tekst przesunie się tylko raz, a potem się zatrzyma i zostanie nieruchomy</li>
+                      </ul>
+                    </div>
+                    
+                  </p>
+              </div>
+
+              <div style="display: flex; justify-content: center; margin-top: 30px;">
+              <div class="flip-card" >
+                  <div class="flip-card-inner" style="display: flex; justify-content: center;">
+                    <div class="flip-card-front" style="width:700px;">
+                        <p style="color: white; font-size: 24px; padding-top: 10px;">
+                     <samp>&lt;marquee behavior="alternate"&gt;tekst&lt;/marquee&gt;</samp>
+                      </p>
+                    </div>
+                    <div class="flip-card-back">
+                      <p style="font-size: 16pt; color: yellow; padding-top: 15px;">
+                          <marquee behavior="alternate">tekst</marquee>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                </div>
+
+                <div style="display: flex; justify-content: center; margin-top: 30px;">
+                  <div class="flip-card" >
+                      <div class="flip-card-inner" style="display: flex; justify-content: center;">
+                        <div class="flip-card-front" style="width:700px;">
+                            <p style="color: white; font-size: 24px; padding-top: 10px;">
+                         <samp>&lt;marquee behavior="slide"&gt;tekst&lt;/marquee&gt;</samp>
+                          </p>
+                        </div>
+                        <div class="flip-card-back">
+                          <p style="font-size: 16pt; color: yellow; padding-top: 15px;">
+                              <marquee behavior="slide">tekst</marquee>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+
+
+                    
+                      
+                      <div style="font-size: 22px; padding-top: 70px;">
+                          
+                          <p style="line-height: 1.8;">
+                            <b>Kierunek animacji</b>
+                            <br>
+                            <span>
+                              Możemy go określić dodając parametr <samp>direction</samp>
+                            </span>
+                            <br>
+                            Istnieją następujące możliwości:
+                            <div style="font-size: 22px; display: flex; justify-content: center;">
+                              <ul style="font-size: 22px; text-align: left;">
+                                <li><samp>left</samp> -  tekst będzie przesuwał się w lewo (domyślnie)</li>
+                                <li><samp>right</samp> – tekst będzie przesuwał się w prawo</li>
+                                <li><samp>up</samp> – tekst będzie przesuwał się w górę</li>
+                                <li><samp>down</samp> –  tekst będzie przesuwał się w dół</li>
+                                </ul>
+                            </div>
+                            
+                          </p>
+                      </div>
+
+                      <div style="display: flex; justify-content: center; margin-top: 30px;">
+                        <div class="flip-card" >
+                            <div class="flip-card-inner" style="display: flex; justify-content: center;">
+                              <div class="flip-card-front" style="width:700px;">
+                                  <p style="color: white; font-size: 24px; padding-top: 10px;">
+                               <samp>&lt;marquee direction="up"&gt;tekst&lt;/marquee&gt;</samp>
+                                </p>
+                              </div>
+                              <div class="flip-card-back">
+                                <p style="font-size: 16pt; color: yellow; padding-top: 15px; padding-left: 170px;">
+                                    <marquee direction="up">tekst</marquee>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          </div>
+          
+                          <div style="display: flex; justify-content: center; margin-top: 30px;">
+                            <div class="flip-card" >
+                                <div class="flip-card-inner" style="display: flex; justify-content: center;">
+                                  <div class="flip-card-front" style="width:700px;">
+                                      <p style="color: white; font-size: 24px; padding-top: 10px;">
+                                   <samp>&lt;marquee direction="down"&gt;tekst&lt;/marquee&gt;</samp>
+                                    </p>
+                                  </div>
+                                  <div class="flip-card-back">
+                                    <p style="font-size: 16pt; color: yellow; padding-top: 15px; padding-left: 170px;">
+                                        <marquee direction="down">tekst</marquee>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              </div>
+
+                              <div style="display: flex; justify-content: center; margin-top: 30px;">
+                                <div class="flip-card" >
+                                    <div class="flip-card-inner" style="display: flex; justify-content: center;">
+                                      <div class="flip-card-front" style="width:700px;">
+                                          <p style="color: white; font-size: 24px; padding-top: 10px;">
+                                      <samp> &lt;marquee direction="right"&gt;tekst&lt;/marquee&gt;</samp>
+                                        </p>
+                                      </div>
+                                      <div class="flip-card-back">
+                                        <p style="font-size: 16pt; color: yellow; padding-top: 15px;">
+                                            <marquee direction="right">tekst</marquee>
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  </div>
+
+                                  <div style="font-size: 22px; padding-top: 70px;">
+                          
+                                    <p style="line-height: 1.8;">
+                                      <b>Ilość powtórzeń</b>
+                                      <br>
+                                      <span>
+                                        Aby określić ilość powtórzeń należy dodać parametr <samp>loop</samp>
+                                      </span>
+                                      <br>
+                                      na przykład:
+                                      <div style="font-size: 22px; display: flex; justify-content: center; margin-bottom: 20px;">
+                                        <samp>&lt;marquee loop="5"&gt;tekst&lt;/marquee&gt;</samp>
+                                      </div>
+                                      Zostanie wykonanych 5 powtórzeń.
+                                      
+                                    </p>
+                                </div>
+
+
+                                  
+
+          
 
             
 
