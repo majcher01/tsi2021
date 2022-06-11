@@ -173,12 +173,32 @@ Selektory zawarte w pierwszej specyfikacji CSS zapewniają możliwość opisania
           Dodawanie stylów do dokumentu
           <bR>
           <br>
-          <div style="font-size: 22px; display: flex; justify-content: center;">
-            Dokument można powiązać z arkuszem określając relację tego pierwszego z osobnym dokumentem CSS za pomocą elementu <samp>link</samp>
+          <div style="font-size: 22px; ">
+            Dokument można powiązać z arkuszem określając relację tego pierwszego z osobnym dokumentem CSS za pomocą elementu <samp>link</samp>.<br>
+            <span class="syntax" style="width:700px; margin-left:150px;">
+              &lt;link rel="stylesheet" type="text/css" href="style.css" &gt;
+            </span><br>
+            Reguły CSS można też umieszczać wewnątrz nagłówka dokumentu HTML dzięki elementowi <samp>style</samp>:<br>
+            <span class="syntax">
+              &lt;style&gt;
+                p {color: red}
+              &lt;/style&gt;
+            </span><br>
+            Można również dodawać deklaracje bezpośrednio do danego elementu dokumentu za pomocą atrybutu <samp>style</samp> :<br>
+            <span class="syntax">
+              &lt;p style="color: red"&gt;Lorem ipsum&lt;/p&gt;
+            </span>
+
+
+
 
 
           </div>
       </div>
+
+      <div class="hd1" style="margin-top: 10px; font-size:30px;">
+        Źródło <a href="https://pl.wikipedia.org/wiki/Kaskadowe_arkusze_styl%C3%B3w" target="_blank">WIKIPEDIA</a>
+    </div>
 
 
 
