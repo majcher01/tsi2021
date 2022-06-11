@@ -97,7 +97,7 @@ mark {
             </p>
             
 
-            <div class="hd1" style="margin-top: 10px; font-size:30px; height: 2500px;">
+            <div class="hd1" style="margin-top: 10px; font-size:30px; height: 3100px;">
                 <p  style="margin-top: 10px; font-size:30px;">
                 
                     <span style="font-size: 22px;">
@@ -330,6 +330,67 @@ mark {
                                         </div>
                                       </div>
                                       </div>
+
+
+                                      <div style="font-size: 20px; margin-top: 325px; text-align: center;">
+                                        HTML umożliwia też scalanie komórek za pomocą parametrów <samp>colspan</samp> (poziom) oraz <samp>rowspan</samp> (pion). Po wpisaniu <samp>colspan=""/rowspan=""</samp> w cudzysłowie należy podać liczbę komórek jaką chcemy scalić, a potem usunąć je z tabeli.
+                                      </div>
+                    
+                                      <div style="display: flex; justify-content: center; margin-top: 30px;">
+                                        <div class="flip-card" style="width: 500px;">
+                                            <div class="flip-card-inner">
+                                              <div class="flip-card-front" style="height: 450px;">
+                                                  <p style="color: white; font-size: 22px;">
+                                                    <samp>&lt;table border="2"
+
+                                                        height="150px"
+                                                        width="300px"&gt;
+                                                        <br>
+                                                        
+                                                        &lt;tr height="20px" &gt;
+                                                        <br>
+                                                        &lt;td &gt;1&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;
+                                                        <br>
+                                                        &lt;/tr&gt;
+                                                        <br>
+                                                        
+                                                        &lt;tr&gt;&lt;td rowspan="2"&gt;y&lt;/td&gt;&lt;td colspan="2"&gt;x
+                                                        <br>
+                                                        &lt;/tr&gt;
+                                                        <br>
+                                                        &lt;tr&gt;<br>
+                                                        &lt;td &gt;8&lt;/td&gt;<br>
+                                                        &lt;td&gt;9&lt;/td&gt;<br>
+                                                        &lt;/tr&gt;<br>
+                                                        
+                                                        &lt;/table&gt;
+                                                        </samp>
+                                                </p>
+                                              </div>
+                                              <div class="flip-card-back" style="height: 450px; font-size:22px;">
+                                                <div style="font-size: 22px; display: flex; justify-content: center; padding-top: 130px;">
+                                                    <table border="2"
+
+height="150px"
+width="300px">
+
+<tr height="20px" >
+<td >1</td><td>2</td><td>3</td>
+</tr>
+
+<tr><td rowspan="2">y</td><td colspan="2">x
+</tr>
+<tr>
+<td >8</td>
+<td>9</td>
+</tr>
+
+</table>
+                                                 </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          </div>
                               
 
                               
