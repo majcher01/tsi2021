@@ -95,72 +95,42 @@ mark {
             <p class="hd1">
                 TABELE
             </p>
-            <p class="hd1" style="margin-top: 10px; font-size:30px;">
-                
-                <span style="font-size: 22px;">
-                   List używa się do grupowania tekstu. Dane w nich umieszczone są wypunktowane, mogą być też uporządkowane (ponumerowane) lub nie.
-                </span>
-            </p>
+            
 
-            <div class="hd1" style="margin-top: 10px; font-size:30px; height: 1150px;">
-                Listy uporządkowane
-                <bR>
-                <br>
-                <div style="font-size: 22px;">
-                    Lista uporządkowana to taka, w której pozycje posiadają swój indywidualny znak (numer bądź litera) i sa zorganizowane według nich.
-                    <br>
-                    <br>
-                    Listy uporządkowane tworzymy za pomocą znacznika <samp>&lt;ol&gt;</samp><samp>&lt;/ol&gt;</samp>
-                    <br>
-                    <br>
-                    Aby stworzyć podpunkty należy zastosować znacznik <samp>&lt;li&gt;</samp><samp>&lt;/li&gt;</samp>
-                    
-                </div>
+            <div class="hd1" style="margin-top: 10px; font-size:30px; height: 2500px;">
+                <p  style="margin-top: 10px; font-size:30px;">
+                
+                    <span style="font-size: 22px;">
+                       Tabele są kolejnym sposobem na grupowanie danych w HTML'u. Tworzymy je za pomocą znaczników &lt;table&gt;&lt;/table&gt;
+                    </span>
+                </p>
+                
+                
 
                 <div style="display: flex; justify-content: center; margin-top: 30px;">
                 <div class="flip-card" style="width: 500px;">
                     <div class="flip-card-inner">
                       <div class="flip-card-front" style="height: 200px;">
                           <p style="color: white; font-size: 22px;">
-                       <samp><samp>&lt;ol&gt;</samp>
-                           <br>
-                        <samp>&lt;li&gt;</samp>jeden<samp>&lt;/li&gt;</samp>
-                        <br>
-                        <samp>&lt;li&gt;</samp>dwa<samp>&lt;/li&gt;</samp>
-                        <br>
-                        <samp>&lt;li&gt;</samp>trzy<samp>&lt;/li&gt;</samp>
-                        <br>
-                    <samp>&lt;/ol&gt;</samp></samp>
+                            &lt;table&gt;
+                                <br><br>
+                            &lt;/table&gt;
                         </p>
                       </div>
                       <div class="flip-card-back" style="height: 200px; font-size:22px;">
                         <div style="font-size: 22px; display: flex; justify-content: center; padding-top: 30px;">
-                            <ol style="font-size: 22px; text-align: left;">
-                                <li>jeden</li>
-                                <li>dwa</li>
-                                <li>trzy</li>
-                            </ol>
+                            <table>
+
+                            </table>
+
                          </div>
                       </div>
                     </div>
                   </div>
                   </div>
 
-                  <div style="font-size: 20px; margin-top: 150px; text-align: left;">
-                    Element <samp>&lt;ol&gt;</samp> wskazuje jedynie na rodzaj listy. Wszystkie elementy listy muszą się znaleźć pomiędzy znacznikami <samp>&lt;li&gt;</samp> oraz <samp>&lt;/li&gt;</samp>.
-                    <br>
-                    <br>
-
-                        Możemy zmienić wygląd numeracji poprzez dodanie atrybutu type wraz z odpowiednią wartością.
-                        <br>
-                        <br>
-                        
-                        Gdy jako wartość ustawimy "A" podpunkty listy będą numerowane wielkimi literami alfabetu (A, B, C, D, E, F...)<br>
-                        Gdy jako wartość ustawimy "a" podpunkty listy będą numerowane małymi literami alfabetu (a, b, c, d, e, f...)<br>
-                        Gdy jako wartość ustawimy "I" podpunkty listy będą numerowane cyframi rzymskimi (I, II, III, IV, V, VI...)<br><br>
-                        
-                        
-                        Możemy rozpocząć numerowanie od dowolnej litery lub liczby. By to zrobić musimy dodać atrybut <samp>start</samp>, a jako wartość ustawić numer pierwszego podpunku. (gdy np. ustawimy <samp>start</samp>="5" lista rozpocznie się od 5)
+                  <div style="font-size: 20px; margin-top: 150px; text-align: center;">
+                    Aby zobaczyć tabelę musimy dodać ramkę oraz nadać tabeli szerokość i wysokość.
                   </div>
 
                   <div style="display: flex; justify-content: center; margin-top: 30px;">
@@ -168,17 +138,201 @@ mark {
                         <div class="flip-card-inner">
                           <div class="flip-card-front" style="height: 200px;">
                               <p style="color: white; font-size: 22px;">
-                           
+                                &lt;table border="1" height="100px" width="100px"&gt;
+                                    <br><br>
+                                &lt;/table&gt;
                             </p>
                           </div>
                           <div class="flip-card-back" style="height: 200px; font-size:22px;">
                             <div style="font-size: 22px; display: flex; justify-content: center; padding-top: 30px;">
-                                
+                                <table border="1" height="100px" width="100px">
+
+                                </table>
                              </div>
                           </div>
                         </div>
                       </div>
                       </div>
+
+
+                      <div style="font-size: 20px; margin-top: 150px; text-align: center;">
+                        Następnym krokiem będzie dodanie wierszy do tabeli, wiersze tworzy się wykorzystując znaczniki <samp>&lt;tr&gt;&lt;/tr&gt;</samp>
+                      </div>
+    
+                      <div style="display: flex; justify-content: center; margin-top: 30px;">
+                        <div class="flip-card" style="width: 500px;">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front" style="height: 200px;">
+                                  <p style="color: white; font-size: 22px;">
+                                    &lt;table border="1" height="100px" width="100px"&gt;
+                                    <br>
+                                        &lt;tr&gt;&lt;/tr&gt;
+                                        <br>
+                                        &lt;tr&gt;&lt;/tr&gt;
+                                        <br>
+                                    &lt;/table&gt;
+                                </p>
+                              </div>
+                              <div class="flip-card-back" style="height: 200px; font-size:22px;">
+                                <div style="font-size: 22px; display: flex; justify-content: center; padding-top: 30px;">
+                                    <table border="1" height="100px" width="100px">
+                                        <tr></tr>
+                                        <tr></tr>
+                                    </table>
+                                 </div>
+                              </div>
+                            </div>
+                          </div>
+                          </div>
+
+
+                          <div style="font-size: 20px; margin-top: 150px; text-align: center;">
+                            Nadal nic nie widać, ponieważ w naszej tabelce brakuje komórek, możemy je dodać wykorzystując znaczniki <samp>&lt;td&gt;&lt;/td&gt;</samp>. Komórki muszą znajdować się między znacznikami tworzącymi wiersze.
+                          </div>
+        
+                          <div style="display: flex; justify-content: center; margin-top: 30px;">
+                            <div class="flip-card" style="width: 500px;">
+                                <div class="flip-card-inner">
+                                  <div class="flip-card-front" style="height: 350px;">
+                                      <p style="color: white; font-size: 22px;">
+                                        &lt;table border="1" height="100px" width="100px"&gt;
+<br>
+                                            &lt;tr&gt;
+											<br>
+                                                &lt;td&gt;&lt;/td&gt;
+												<br>
+                                                &lt;td&gt;&lt;/td&gt;
+												<br>
+                                            &lt;/tr&gt;
+											<br>
+                                            &lt;tr&gt;
+											<br>
+                                                &lt;td&gt;&lt;/td&gt;
+												<br>
+                                                &lt;td&gt;&lt;/td&gt;
+												<br>
+                                            &lt;/tr&gt;
+											<br>
+                                        &lt;/table&gt;
+                                    </p>
+                                  </div>
+                                  <div class="flip-card-back" style="height: 350px; font-size:22px;">
+                                    <div style="font-size: 22px; display: flex; justify-content: center; padding-top: 130px;">
+                                        <table border="1" height="100px" width="100px">
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                     </div>
+                                  </div>
+                                </div>
+                              </div>
+                              </div>
+
+                              <div style="font-size: 20px; margin-top: 325px; text-align: center;">
+                                Teraz możemy wpisać dane do tabelki.
+                              </div>
+            
+                              <div style="display: flex; justify-content: center; margin-top: 30px;">
+                                <div class="flip-card" style="width: 500px;">
+                                    <div class="flip-card-inner">
+                                      <div class="flip-card-front" style="height: 350px;">
+                                          <p style="color: white; font-size: 22px;">
+                                            &lt;table border="1" height="100px" width="100px"&gt;
+    <br>
+                                                &lt;tr&gt;
+                                                <br>
+                                                    &lt;td&gt;1&lt;/td&gt;
+                                                    <br>
+                                                    &lt;td&gt;2&lt;/td&gt;
+                                                    <br>
+                                                &lt;/tr&gt;
+                                                <br>
+                                                &lt;tr&gt;
+                                                <br>
+                                                    &lt;td&gt;3&lt;/td&gt;
+                                                    <br>
+                                                    &lt;td&gt;4&lt;/td&gt;
+                                                    <br>
+                                                &lt;/tr&gt;
+                                                <br>
+                                            &lt;/table&gt;
+                                        </p>
+                                      </div>
+                                      <div class="flip-card-back" style="height: 350px; font-size:22px;">
+                                        <div style="font-size: 22px; display: flex; justify-content: center; padding-top: 130px;">
+                                            <table border="1" height="100px" width="100px">
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>4</td>
+                                                </tr>
+                                            </table>
+                                         </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  </div>
+
+
+                                  <div style="font-size: 20px; margin-top: 325px; text-align: center;">
+                                    Parametry <samp>height</samp> oraz <samp>width</samp> działają także w przypadku wierszy i komórek, także możemy zmienić szerokość/wysokość poszczególnego wiersza/komórki. Dodatkowo możemy zmienić kolor tła używając parametru <samp>bgcolor</samp>
+                                  </div>
+                
+                                  <div style="display: flex; justify-content: center; margin-top: 30px;">
+                                    <div class="flip-card" style="width: 500px;">
+                                        <div class="flip-card-inner">
+                                          <div class="flip-card-front" style="height: 350px;">
+                                              <p style="color: white; font-size: 22px;">
+                                                &lt;table border="1" height="100px" width="100px"&gt;
+        <br>
+                                                    &lt;tr height="30px"&gt;
+                                                    <br>
+                                                        &lt;td&gt;1&lt;/td&gt;
+                                                        <br>
+                                                        &lt;td&gt;2&lt;/td&gt;
+                                                        <br>
+                                                    &lt;/tr&gt;
+                                                    <br>
+                                                    &lt;tr&gt;
+                                                    <br>
+                                                        &lt;td&gt;3&lt;/td&gt;
+                                                        <br>
+                                                        &lt;td bgcolor="pink"&gt;4&lt;/td&gt;
+                                                        <br>
+                                                    &lt;/tr&gt;
+                                                    <br>
+                                                &lt;/table&gt;
+                                            </p>
+                                          </div>
+                                          <div class="flip-card-back" style="height: 350px; font-size:22px;">
+                                            <div style="font-size: 22px; display: flex; justify-content: center; padding-top: 130px;">
+                                                <table border="1" height="100px" width="100px">
+                                                    <tr style="height: 30px;">
+                                                        <td>1</td>
+                                                        <td>2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td style="background-color: pink;">4</td>
+                                                    </tr>
+                                                </table>
+                                             </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      </div>
+                              
+
+                              
 
             </div>
 
