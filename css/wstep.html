@@ -37,6 +37,22 @@
             color: white;
             text-decoration: none;
         }
+
+        .syntax{
+          height: 50px;
+          width:500px;
+          background-color: rgba(187, 187, 187, 0.226);
+          display: block;
+          text-align: center;
+          margin-bottom: 30px;
+          padding-top: 18px;
+          margin-left: 250px;
+          margin-top: 30px;
+          font-family: monospace;
+          border: 1px dotted white;
+          border-radius: 10px;
+          font-size: 20px;
+        }
     </style>
 </head>
 <body>
@@ -56,37 +72,113 @@
                     <br><br>
                     Zaletą arkusza stylów jest uproszczenie formatowania strony, zmniejszenie ilości kodu na stronie. Zamiast wielokrotnie wpisywać właściwości przy każdym znaczniku, definiuje się je tylko raz w CSS i odwołuje się do nich za pomocą identyfikatora ID lub klasy.
                 </span>
+                <br><br>
             </p>
 
             <div class="hd1" style="margin-top: 10px; font-size:30px;">
                 Właściwości HTML
                 <bR>
                 <br>
+                <span style="font-size: 22px;">
+                  Właściwości CSS możemy podzielić na kilka grup kategorii. Każda z tych grup jest odpowiedzialna za zmianę konkretnych cech wyglądu elementu HTML, na przykład:
+               </span>
                 <div style="font-size: 22px; display: flex; justify-content: center;">
-                   <ul style="font-size: 22px; text-align: left;">
-                       <li>2014 r. - HTML 5.0</li>
-                       <li><abbr title="początkowo wersja została wydana w 1997, ale w '98 wyszła poprawka, niektórzy uznają różne daty">1997/98 r.</abbr> - HTML 4.0</li>
-                       <li>1997 r. - HTML 3.2</li>
-                       <li>1995 r. - HTML 3.0</li>
-                       <li>1993 r. - Zarys opublikowany przez IETF</li>
+                  <ul style="font-size: 22px; text-align: left; line-height: 1.8;">
+                    <li><b>Tekst</b> - właściwości odpowiedzialne za formatowanie cech wyglądu tekstu w danym elemencie HTML, np. <samp class="sampwstep">text-align:center;</samp> wyśrodkuje tekst w elemencie.</li>
+                     <li><b>Czcionka</b> - właściwości odpowiedzialne za formatowanie wyglądu czcionki tekstu w danym elemencie HTML, np. <samp class="sampwstep">font-size:15px;</samp> zmieni rozmiar wyświetlanej czcionki tekstu.</li>
+                     <li><b>Rozmiary</b> - właściwości odpowiedzialne za formatowanie szerokości i wysokości w danym elemencie HTML, np. <samp class="sampwstep">width:200px;</samp> sprawi że szerokość elementu HTML będzie wynosić 200 pikseli.</li>
+                     <li><b>Tło</b> - właściwości odpowiedzialne za formatowanie cech wyglądu tła w danym elemencie HTML, np. <samp class="sampwstep">background-color:lightblue;</samp> zmieni kolor tła elementu HTML na jasnoniebieski.</li>
+                     <li><b>Marginesy</b> - właściwości odpowiedzialne za formatowanie wartości marginesów wewnętrznych i zewnętrznych w danym elemencie HTML, np. <samp class="sampwstep">margin:10px;</samp> sprawi że wszystkie marginesy zewnętrzne elementu HTML będą wynosić 10 pikseli.</li>
+                     <li><b>Obramowanie</b> - właściwości odpowiedzialne za formatowanie cech wyglądu obramowania w danym elemencie HTML, np. <samp class="sampwstep">border-top-style:solid;</samp> doda do elementu HTML górne obramowanie, którego stylem będzie styl solid, czyli ciągła pojedyncza linia.</li>
                    </ul>
                 </div>
             </div>
 
             <div class="hd1" style="margin-top: 10px; font-size:30px;">
-                Komponenty języka
+                Wersje CSS
                 <bR>
                 <br>
                 <div style="font-size: 22px; display: flex; justify-content: center;">
                    <ul style="font-size: 22px; text-align: left;">
-                       <li>Znaczniki i ich atrybuty</li>
-                       <li>Typy danych</li>
-                       <li><a href="https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references#Character_entity_references_in_HTML">Referencje znakowe</a></li>
-                       <li>Odwołania w postaci encji</li>
-                       <li>Deklaracja typu dokumentu</li>
+                       <li>CSS1 - koniec 1996r.</li>
+                       <li>CSS2 - 1998r.</li>
+                       <li>CSS3 - 1999r.</li>
+                       <li>CSS4 - nie istnieje już jako jedna specyfiacja, każdy z modułów rozwija się niezależnie</li>
+                       
                    </ul>
                 </div>
             </div>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+              Zalety i ograniczenia
+              <bR>
+              <br>
+              <div style="font-size: 22px; display: flex; justify-content: center;">
+                Największą zaletą CSS jest umożliwienie rozdzielenia warstwy prezentacji od warstwy danych. Dzięki temu możliwe jest definiowanie wielu stylów dla tych samych danych, a sam dokument HTML jest bardziej przejrzysty i łatwiejszy do utrzymania i dalszego rozwinięcia. Dodatkowo, w przypadku potrzeby wprowadzenia zmian w definicji stylu wykorzystanego dla elementu występującego wielokrotnie, w dokumencie HTML w pliku CSS zmiany są wprowadzane raz, a zmiana jest adaptowana przez wszystkie elementy. Skutkuje to oszczędnością czasu i pracy.
+
+                Z drugiej jednak strony, podczas gdy poziome rozmieszczenie jest relatywnie łatwe do wykonania, pionowe rozmieszczenie jest często mało intuicyjne. Proste czynności, takie jak centrowanie elementu pionowo, często wymagają skomplikowanych operacji. Oprócz tego CSS uniemożliwia definiowanie nowych zakresów bez względu na aktualną pozycję.
+              </div>
+          </div>
+
+          <div class="hd1" style="margin-top: 10px; font-size:30px;">
+            Składnia arkuszy
+            <bR>
+            <br>
+            <div style="font-size: 22px; ">
+              Arkusz stylów składa się z reguł określających styl dla wybranych elementów dokumentu (HTML, SVG i innych). Reguła składa się z selektora oraz deklaracji. Selektor określa grupę elementów (rzadziej pojedynczy element), którego ma dotyczyć deklaracja. Deklaracja określa formatowanie i składa się z nazwy jednej z właściwości i jej wartości napisanej po dwukropku. Deklaracja musi być otoczona nawiasami klamrowymi.<br>
+              <span class="syntax">
+                selektor { właściwość: wartość }
+              </span><br>
+              Dodatkowo możliwe jest grupowanie zarówno selektorów, jak i deklaracji. Zgrupowane selektory rozdziela się przecinkami, a deklaracje średnikami:<br>
+              <span class="syntax" style="width: 850px; margin-left:80px;">
+                selektor1, selektor2 { właściwość1: wartość1; właściwość2: wartość2; }
+              </span><br>
+              Dozwolone jest stosowanie średnika po wszystkich deklaracjach, nie jest jednak dozwolone stosowanie przecinka po ostatnim selektorze. Ponadto niektóre wartości mogą być zgrupowane i podane w ramach jednej deklaracji. W takim wypadku składnia zależy od definicji składni zbiorczej właściwości[22].
+
+Poniżej podana jest przykładowa reguła dla języka (X)HTML, w której przypisujemy wszystkim akapitom niebieski kolor tekstu:<br>
+<span class="syntax" >
+  p { color: blue; }
+</span><br>
+Selektorem jest tutaj <samp>p</samp>, właściwością <samp>color</samp>, a wartością <samp>blue</samp>.
+<br><br>
+Selektory zawarte w pierwszej specyfikacji CSS zapewniają możliwość opisania docelowej grupy elementów przez:
+
+<br>
+<div style="display: flex; justify-content:center;">
+<ul style="text-align: left; font-size:22px;">
+  <li>
+    nazwę elementu (np. „h1”)
+  </li>
+  <li>
+    klasę elementu (np. „.elementy_menu”), także w połączeniu z nazwą elementu (np. „img.wyrownane_do_prawej”)
+  </li>
+  <li>
+    id elementu (np. „#menu_lewe”)
+  </li>
+  <li>
+    przodków danego elementu (np. „div#menu_lewe a” zostanie zastosowane do linków zawartych w elemencie div o id „menu_lewe”)
+  </li>
+  <li>
+    stan linków określany przez pseudoklasy (:visited, :link, :active)
+  </li>
+  <li>
+    inne pseudoklasy typograficzne (:first-line: first-letter)
+  </li>
+</ul>
+</div>
+            </div>
+        </div>
+
+        <div class="hd1" style="margin-top: 10px; font-size:30px;">
+          Dodawanie stylów do dokumentu
+          <bR>
+          <br>
+          <div style="font-size: 22px; display: flex; justify-content: center;">
+            Dokument można powiązać z arkuszem określając relację tego pierwszego z osobnym dokumentem CSS za pomocą elementu <samp>link</samp>
+
+
+          </div>
+      </div>
 
 
 
