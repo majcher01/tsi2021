@@ -1,12 +1,200 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+        body{
+            font-family: 'Oxygen', sans-serif;
+            margin: 0px 0px 0px 0px;
+            color: white;
+            margin-bottom: 200px;
+        }
+        .srodek{
+            display: flex;
+            justify-content: center;
+        }
+
+        .hd1{
+            font-size: 34px;
+            margin-top: 20px;
+            border: 1px solid white;
+            padding: 15px 30px 15px 30px;
+            border-radius: 10px;
+            width: 1000px;
+            text-align: center;
+            background-color: #68686825;
+            margin-bottom: 0px;
+        }
+
+        abbr{
+            text-decoration: none;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        .syntax{
+          height: 50px;
+          width:500px;
+          background-color: rgba(187, 187, 187, 0.226);
+          display: block;
+          text-align: center;
+          margin-bottom: 30px;
+          padding-top: 18px;
+          margin-left: 250px;
+          margin-top: 30px;
+          font-family: monospace;
+          border: 1px dotted white;
+          border-radius: 10px;
+          font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="srodek">
+        <div>
+            
+            <p class="hd1" style="margin-top: 10px; font-size:30px;">
+                Tekst
+            </p>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+                Kolor tekstu
+                <bR>
+                <br>
+                <span class="syntax">
+                  selektor
+{
+   color: kolor;
+}
+                </span>
+                <Br>
+                <span style="font-size: 22px;">
+                  Jako kolor należy podać <a href="../Tabela-z-kolorami/index.html">definicję koloru</a>
+                  <br><br>
+                  Przykład:
+</span>
+<br><Br>
+
+
+                <div style="font-size: 22px;">
+                   HTML:
+                   <br>
+                   <span class="syntax">
+                    &lt;p&gt;Tekst 1&lt;/p&gt;
+                   </span>
+                   <br><br>
+                   CSS:
+                   <br>
+                   <span class="syntax">
+                     p {color: red;}
+                   </span>
+                   <br><br>
+                   Rezultat:
+                   <br>
+                   <span style="color: red;" class="syntax">
+                      Tekst 1
+                   </span>
+                </div>
+            </div>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+              Rodzaj czcionki
+              <bR>
+              <br>
+              <span class="syntax">
+                selektor
+{
+   font-family: rodzaj;
+}
+              </span>
+              <Br>
+              <span style="font-size: 22px;">
+                Jako "rodzaj" należy wpisać nazwę czcionki, na przykład: 
+              </span>
+
+
+
+
+
+              <div style="font-size: 22px; display: flex; justify-content: center;">
+                 <ul style="font-size: 22px; text-align: left;">
+                     <li><span style="font-family: Arial;">Arial</span></li>
+                     <li><span style="font-family: Courier New;">Courier New</span></li>
+                     <li><span style="font-family: Georgia;">Georgia</span></li>
+                     <li><span style="font-family: Impact;">Impact</span></li>
+                     <li><span style="font-family: Verdana;">Verdana</span></li>
+                 </ul>
+              </div>
+          </div>
+
+          <div class="hd1" style="margin-top: 10px; font-size:30px;">
+            Wielkość czcionki
+            <bR>
+            <br>
+            <span class="syntax">
+              selektor
+{
+   font-size: rozmiar;
+}
+            </span>
+            <Br>
+            <span style="font-size: 22px;">
+              Rozmiar czcionki możemy podać w trzech jednostkach: <samp> pt, px </samp> lub <samp> em </samp>
+            </span>
+
+
+        </div>
+
+        <div class="hd1" style="margin-top: 10px; font-size:30px;">
+          Waga czcionki
+          <bR>
+          <br>
+          <span class="syntax">
+            selektor
+{
+   font-weight: waga;
+}
+          </span>
+          <Br>
+          <span style="font-size: 22px;">
+            Jako "waga" należy wpisać nazwę czcionki, na przykład: 
+          </span>
+
+
+
+
+
+          <div style="font-size: 22px; display: flex; justify-content: center;">
+            <ul style="font-size: 22px; text-align: left;">
+              <li><samp>normal</samp> - czcionka normalna (podstawowa)</li>
+              <li><samp>bold</samp> - czcionka pogrubiona</li>
+              <li><samp>100, 200, 300...</samp> - waga czcionki</li>
+          </ul>
+          </div>
+          <div style="font-size: 22px;">
+            Przykłady wag:
+          </div>
+          <div style="font-size: 22px; display: flex; justify-content: center;">
+            <ul style="font-size: 22px; text-align: left;">
+              <li><span style="font-weight: 300;">300</span></li>
+              <li><span style="font-weight: 400;">400</span></li>
+              <li><span style="font-weight: 500;">500</span></li>
+              <li><span style="font-weight: 600;">600</span></li>
+              <li><span style="font-weight: 700;">700</span></li>
+          </ul>
+          </div>
+      </div>
+
+
+
+
+
+        </div>
+    </div>
+</body>
 </html>
