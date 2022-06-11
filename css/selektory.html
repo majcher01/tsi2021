@@ -1,12 +1,123 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+        body{
+            font-family: 'Oxygen', sans-serif;
+            margin: 0px 0px 0px 0px;
+            color: white;
+            margin-bottom: 200px;
+        }
+        .srodek{
+            display: flex;
+            justify-content: center;
+        }
+
+        .hd1{
+            font-size: 34px;
+            margin-top: 20px;
+            border: 1px solid white;
+            padding: 15px 30px 15px 30px;
+            border-radius: 10px;
+            width: 1000px;
+            text-align: center;
+            background-color: #68686825;
+            margin-bottom: 0px;
+        }
+
+        abbr{
+            text-decoration: none;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        .syntax{
+          height: 50px;
+          width:500px;
+          background-color: rgba(187, 187, 187, 0.226);
+          display: block;
+          text-align: center;
+          margin-bottom: 30px;
+          padding-top: 18px;
+          margin-left: 250px;
+          margin-top: 30px;
+          font-family: monospace;
+          border: 1px dotted white;
+          border-radius: 10px;
+          font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="srodek">
+        <div>
+            
+            <p class="hd1" style="margin-top: 10px; font-size:30px;">
+                Selektory
+                
+            </p>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+                Czym są selektory ?
+                <bR>
+                <br>
+                <div style="font-size: 22px; ">
+                  W CSS selektor to cześć stylu która poprzedza otwierający nawias klamrowy. Określa on do jakiego elementu odnosi się dana reguła.
+
+                  Selektorami mogą być praktycznie wszystkie tagi HTML takie jak: <samp> h1, h2, ol, ul, li, p, span </samp> itd.
+                </div>
+            </div>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+                Najważniejsze selektory:
+                
+            </div>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+              *
+              <bR>
+              <br>
+              <div style="font-size: 22px; ">
+                Symbol gwiazdki obierze za cel każdy element znajdujący się na stronie. Wielu deweloperów używa tego triku by wyzerować <samp>margin</samp>  i <samp>padding</samp> dla całej strony.
+                <br>
+                <span class="syntax">
+                  *
+{
+   margin: 0;
+   padding: 0;
+}
+                </span>
+              </div>
+          </div>
+
+          <div class="hd1" style="margin-top: 10px; font-size:30px;">
+            #X
+            <bR>
+            <br>
+            <div style="font-size: 22px; ">
+              Symbol '#' pozwala nam wybrać cel na podstawie id.Jest to najpopularniejszy sposób wykorzystania, jednak bądź ostrożny używając go.
+              <br>
+              <span class="syntax">
+                *
+{
+ margin: 0;
+ padding: 0;
+}
+              </span>
+            </div>
+        </div>
+
+
+
+
+
+        </div>
+    </div>
+</body>
 </html>
