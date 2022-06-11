@@ -4,8 +4,185 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+        body{
+            font-family: 'Oxygen', sans-serif;
+            margin: 0px 0px 0px 0px;
+            color: white;
+            margin-bottom: 200px;
+        }
+        .srodek{
+            display: flex;
+            justify-content: center;
+        }
+
+        .hd1{
+            font-size: 34px;
+            margin-top: 20px;
+            border: 1px solid white;
+            padding: 15px 30px 15px 30px;
+            border-radius: 10px;
+            width: 1000px;
+            text-align: center;
+            background-color: #68686825;
+            margin-bottom: 0px;
+        }
+
+        abbr{
+            text-decoration: none;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+        }
+
+        .flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 100px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: transparent;
+  color: black;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: #08004e;
+}
+
+.flip-card-back {
+  background-color: #08004e;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+mark {
+  background-color: yellow;
+  color: black;
+}
+    </style>
 </head>
 <body>
-    inputy
+    <div class="srodek">
+        <div>
+            <p class="hd1">
+                INPUTY
+            </p>
+            <p class="hd1" style="margin-top: 10px; font-size:30px;">
+                
+                <span style="font-size: 22px;">
+                    W celu uatrakcyjnienia naszej strony, by była interaktywna, musimy do niej dodać elementy, w których to użytkownik będzie mógł wprowadzić dane. Najbardziej popularnym elementem html pozwalającym na wprowadzanie danych przez użytkownika jest element &lt;input&gt; (ang. dane wejściowe).
+
+                    Element &lt;input&gt; jest samozamykającym się elementem. Jednak prawidłowy jego zapis wymaga jeszcze deklaracji typu. Typu deklaracji dokonujemy poprzez atrybut type.                </span>
+            </p>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+                Lista typów inputów.
+                <bR>
+                <br>
+                <div style="font-size: 22px; text-align: left;">
+                    <ul>
+                        <li><a id="link1" href="#"><b>button</b></a> - przycisk pozwala na wysłanie w formularzu.</li>
+                        <li><a id="link2" href="#"><b>checkbox</b></a> - używane są one zazwyczaj do potwierdzania, można wybrać wiele.</li>
+                        <li><a id="link3" href="#"><b>color</b></a> - pozwala nam na wybranie koloru.</li>
+                        <li><a id="link4" href="#"><b>date</b></a> - pozwala na wybranie daty.</li>
+                        <li><a id="link5" href="#"><b>email</b></a> -  pozwala na wprowadzenie email (odróznia się od "text", tym że automatycznie sprawdza składnie).</li>
+                        <li><a id="link6" href="#"><b>file</b></a> -  pozwala na przesłanie pliku.</li>
+                        <li><a id="link7" href="#"><b>image</b></a> - pozwala na przesłanie pliku jedynie z rozszerzeniem wskazującym na zdjęcie.</li>
+                        <li><a id="link8" href="#"><b>month</b></a> - pozwala na wybranie misiąca.</li>
+                        <li><a id="link9" href="#"><b>number </b></a> - pozwala na wpisanie liczby.</li>
+                        <li><a id="link10" href="#"><b>password </b> </a>- pozwala na wpisaniu hasła (odróznia się od "text", tym że automatycznie ukrywa wprowadzone znaki).</li>
+                        <li><a id="link11" href="#"><b>radio</b></a> - pozwala na wybranie jednej z podanych opcji.</li>
+                        <li><a id="link12" href="#"><b>range</b></a> - pozwala na wybranie wartości poprzez przmieszczenie suwaka.</li>
+                        <li><a id="link13" href="#"><b>reset</b></a> - pozwala na zresetowanie wszystkich inputów w formularzu.</li>
+                        <li><a id="link14" href="#"><b>submit </b></a> - przycisk pozwala na wysłanie w formularzu.</li>
+                        <li><a id="link15" href="#"><b>tel</b></a> - pozwala na wprowadzenie nr. telefonu według ustalonego wzoru.</li>
+                        <li><a id="link16" href="#"><b>text </b></a> - pozwala na wprowadzenie tekstu.</li>
+                        <li><a id="link17" href="#"><b>time</b></a> - pozwala na wprowadzenie czasu.</li>
+                        <li><a id="link18" href="#"><b>url</b></a> - pozwala na wprowadzenie linku.</li>
+                        <li><a id="link19" href="#"><b>week </b></a> - pozwala na wprowadzenie dnia tygodnia.</li></ul>
+                    
+                    
+                </div>
+
+                
+
+            </div>
+
+
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+                Kolor tekstu
+                <bR>
+                <br>
+                <div style="font-size: 22px;">
+                    Aby określić kolor tekstu należy umieścić go między znacznikami:
+                    <br>
+                    <br>
+                    <span style="font-size: 16px;">
+                        Najedź na prostokąt aby zobaczyć przykład.
+                    </span>
+                </div>
+
+                <div style="display: flex; justify-content: center; margin-top: 30px;">
+                <div class="flip-card" style="width: 500px;">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <p style="color: white;">
+                       <samp><b> &lt;font color="X"&gt;&lt;/font&gt; </b></samp>
+                        </p>
+                      </div>
+                      <div class="flip-card-back">
+                        <p style="font-size: 16pt; color: yellow; padding-top: 15px;">
+                            Tekst o kolorze żółtym
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+            </div>
+
+            
+    
+    
+
+          
+
+            
+
+
+
+
+
+        </div>
+    </div>
 </body>
 </html>
