@@ -127,7 +127,11 @@ mark {
                         <li><a id="link16" href="#"><b>text </b></a> - pozwala na wprowadzenie tekstu.</li>
                         <li><a id="link17" href="#"><b>time</b></a> - pozwala na wprowadzenie czasu.</li>
                         <li><a id="link18" href="#"><b>url</b></a> - pozwala na wprowadzenie linku.</li>
-                        <li><a id="link19" href="#"><b>week </b></a> - pozwala na wprowadzenie dnia tygodnia.</li></ul>
+                        <li><a id="link19" href="#"><b>week </b></a> - pozwala na wprowadzenie dnia tygodnia.</li>
+                        <li><b>&lt;select&gt;&lt;/select&gt;</b> - lista rozwijana</li>
+                        <li><b>&lt;textarea&gt;&lt;/textarea&gt;</b> - obszar tekstowy</li>
+                    
+                    </ul>
                     
                     
                 </div>
@@ -139,29 +143,722 @@ mark {
 
 
             <div class="hd1" style="margin-top: 10px; font-size:30px;">
-                Kolor tekstu
+                Button
                 <bR>
                 <br>
                 <div style="font-size: 22px;">
-                    Aby określić kolor tekstu należy umieścić go między znacznikami:
+                    By nadać inputowi typ „button” musimy dodać atrybut type wraz z wartością button.
+Dodatkowo by wyświetlić napis na przycisku możemy dodać atrybut value, a jako wartość podać interesujący nas tekst.
                     <br>
                     <br>
-                    <span style="font-size: 16px;">
-                        Najedź na prostokąt aby zobaczyć przykład.
-                    </span>
+                    
                 </div>
 
                 <div style="display: flex; justify-content: center; margin-top: 30px;">
                 <div class="flip-card" style="width: 500px;">
                     <div class="flip-card-inner">
                       <div class="flip-card-front">
-                          <p style="color: white;">
-                       <samp><b> &lt;font color="X"&gt;&lt;/font&gt; </b></samp>
+                          <p style="color: white; font-size: 22px;">
+                            &lt;input
+                            type="button"
+                            value="Kliknij na mnie!"&gt;
                         </p>
                       </div>
                       <div class="flip-card-back">
                         <p style="font-size: 16pt; color: yellow; padding-top: 15px;">
-                            Tekst o kolorze żółtym
+                            <input
+type="button"
+value="Kliknij na mnie!">
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+            </div>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+                Checkbox
+                <bR>
+                <br>
+                <div style="font-size: 22px;">
+                    By nadać inputowi typ „checkbox” musimy dodać atrybut type wraz z wartością checkbox.
+                    <br>
+                    <br>
+                    
+                </div>
+
+                <div style="display: flex; justify-content: center; margin-top: 30px;">
+                <div class="flip-card" style="width: 500px;">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <p style="color: white; font-size: 20px;">
+                            &lt;input type="checkbox"&gt;
+&lt;label&gt;Opcja 1&lt;/label&gt;&lt;br&gt;
+&lt;input type="checkbox"&gt;
+&lt;label&gt;Opcja 2&lt;/label&gt;
+                        </p>
+                      </div>
+                      <div class="flip-card-back">
+                        <p style="font-size: 16pt; color: yellow; padding-top: 15px;">
+                            <input type="checkbox">
+<label>Opcja 1</label><br>
+<input type="checkbox">
+<label>Opcja 2</label>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+            </div>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+                Color
+                <bR>
+                <br>
+                <div style="font-size: 22px;">
+                    By nadać inputowi typ „color” musimy dodać atrybut type wraz z wartością color.
+                    <br>
+                    <br>
+                    
+                </div>
+
+                <div style="display: flex; justify-content: center; margin-top: 30px;">
+                <div class="flip-card" style="width: 500px;">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <p style="color: white; font-size: 22px;">
+                            &lt;input type="color"&gt;
+                        </p>
+                      </div>
+                      <div class="flip-card-back">
+                        <p style="font-size: 16pt; color: yellow; padding-top: 15px;">
+                            <input type="color">
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+            </div>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+                Date
+                <bR>
+                <br>
+                <div style="font-size: 22px;">
+                    By nadać inputowi typ „date” musimy dodać atrybut type wraz z wartością date.
+
+
+                    <br>
+                    <br>
+                    
+                </div>
+
+                <div style="display: flex; justify-content: center; margin-top: 30px;">
+                <div class="flip-card" style="width: 500px;">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <p style="color: white; font-size: 22px;">
+                            &lt;input type="date"&gt;
+
+
+                        </p>
+                      </div>
+                      <div class="flip-card-back">
+                        <p style="font-size: 16pt; color: yellow; padding-top: 15px;">
+                            <input type="date">
+
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+            </div>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+                Email
+                <bR>
+                <br>
+                <div style="font-size: 22px;">
+                    By nadać inputowi typ „email” musimy dodać atrybut type wraz z wartością email.
+
+                    <br>
+                    <br>
+                    
+                </div>
+
+                <div style="display: flex; justify-content: center; margin-top: 30px;">
+                <div class="flip-card" style="width: 500px;">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <p style="color: white; font-size: 22px;">
+                            &lt;input type="email"&gt;
+                        </p>
+                      </div>
+                      <div class="flip-card-back">
+                        <p style="font-size: 16pt; color: yellow; padding-top: 15px;">
+                            <input type="email">
+
+
+
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+            </div>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+                File
+                <bR>
+                <br>
+                <div style="font-size: 22px;">
+                    By nadać inputowi typ „file” musimy dodać atrybut type wraz z wartością file.
+
+
+                    <br>
+                    <br>
+                    
+                </div>
+
+                <div style="display: flex; justify-content: center; margin-top: 30px;">
+                <div class="flip-card" style="width: 500px;">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <p style="color: white; font-size: 22px;">
+                            &lt;input type="file"&gt;
+
+
+                        </p>
+                      </div>
+                      <div class="flip-card-back">
+                        <p style="font-size: 16pt; color: yellow; padding-top: 15px;">
+                            <input type="file">
+
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+            </div>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+                Image
+                <bR>
+                <br>
+                <div style="font-size: 22px;">
+                    By nadać inputowi typ „image” musimy dodać atrybut type wraz z wartością image.
+By wyświetlić obraz na inpucie musimy dodać atrybut src, a jako wartość podać ścieżke interesującego nasz pliku.
+                    <br>
+                    <br>
+                    
+                </div>
+
+                <div style="display: flex; justify-content: center; margin-top: 30px;">
+                <div class="flip-card" style="width: 500px;">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <p style="color: white; font-size: 22px;">
+                            &lt;input
+type=" image"
+src="../img/code.webp"
+width="100px"&gt;
+                        </p>
+                      </div>
+                      <div class="flip-card-back">
+                        <p style="font-size: 16pt; color: yellow; padding-top: 15px;">
+                            <input
+type=" image"
+src="../img/code.webp"
+width="100px">
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+            </div>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+                Month
+                <bR>
+                <br>
+                <div style="font-size: 22px;">
+                    By nadać inputowi typ „month” musimy dodać atrybut type wraz z wartością month.
+
+
+                    <br>
+                    <br>
+                    
+                </div>
+
+                <div style="display: flex; justify-content: center; margin-top: 30px;">
+                <div class="flip-card" style="width: 500px;">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <p style="color: white; font-size: 22px;">
+                            &lt;input type="month"&gt;
+                        </p>
+                      </div>
+                      <div class="flip-card-back">
+                        <p style="font-size: 16pt; color: yellow; padding-top: 15px;">
+                            <input type="month">
+
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+            </div>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+                Number
+                <bR>
+                <br>
+                <div style="font-size: 22px;">
+                    By nadać inputowi typ „number” musimy dodać atrybut type wraz z wartością number.
+
+
+                    <br>
+                    <br>
+                    
+                </div>
+
+                <div style="display: flex; justify-content: center; margin-top: 30px;">
+                <div class="flip-card" style="width: 500px;">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <p style="color: white; font-size: 22px;">
+                            &lt;input type="number"&gt;
+                        </p>
+                      </div>
+                      <div class="flip-card-back">
+                        <p style="font-size: 16pt; color: yellow; padding-top: 15px;">
+                            <input type="number">
+
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+            </div>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+                Password
+                <bR>
+                <br>
+                <div style="font-size: 22px;">
+                    By nadać inputowi typ „password” musimy dodać atrybut type wraz z wartością password.
+
+
+                    <br>
+                    <br>
+                    
+                </div>
+
+                <div style="display: flex; justify-content: center; margin-top: 30px;">
+                <div class="flip-card" style="width: 500px;">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <p style="color: white; font-size: 22px;">
+                            &lt;input type="password"&gt;
+                        </p>
+                      </div>
+                      <div class="flip-card-back">
+                        <p style="font-size: 16pt; color: yellow; padding-top: 15px;">
+                            <input type="password">
+
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+            </div>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+                Radio
+                <bR>
+                <br>
+                <div style="font-size: 22px;">
+                    By nadać inputowi typ „radio” musimy dodać atrybut type wraz z wartością button.
+By pola wzajemnie się wykluczały należy nadać im taką samą nazwę za pomocą atrybutu name.
+                    <br>
+                    <br>
+                    
+                </div>
+
+                <div style="display: flex; justify-content: center; margin-top: 30px;">
+                <div class="flip-card" style="width: 500px;">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <p style="color: white; font-size: 20px;">
+                            &lt;input type="radio"&gt;
+&lt;label&gt;Opcja 1&lt;/label&gt;&lt;br&gt;
+&lt;input type="radio"&gt;
+&lt;label&gt;Opcja 2&lt;/label&gt;
+                        </p>
+                      </div>
+                      <div class="flip-card-back">
+                        <p style="font-size: 16pt; color: yellow; padding-top: 15px;">
+                            <input type="radio">
+<label>Opcja 1</label><br>
+<input type="radio">
+<label>Opcja 2</label>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+            </div>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+                Range
+                <bR>
+                <br>
+                <div style="font-size: 22px;">
+                    By nadać inputowi typ „range” musimy dodać atrybut type wraz z wartością range.
+
+
+                    <br>
+                    <br>
+                    
+                </div>
+
+                <div style="display: flex; justify-content: center; margin-top: 30px;">
+                <div class="flip-card" style="width: 500px;">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <p style="color: white; font-size: 22px;">
+                            &lt;input type="range"&gt;
+                        </p>
+                      </div>
+                      <div class="flip-card-back">
+                        <p style="font-size: 16pt; color: yellow; padding-top: 15px;">
+                            <input type="range">
+
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+            </div>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+                Reset
+                <bR>
+                <br>
+                <div style="font-size: 22px;">
+                    By nadać inputowi typ „range” musimy dodać atrybut type wraz z wartością reset.
+Dodatkowo by wyświetlić napis na przycisku reset możemy dodać atrybut value, a jako wartość podać interesujący nas tekst.
+                    <br>
+                    <br>
+                    
+                </div>
+
+                <div style="display: flex; justify-content: center; margin-top: 30px;">
+                <div class="flip-card" style="width: 500px;">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <p style="color: white; font-size: 22px;">
+                            &lt;input
+                            type="reset"
+                            value="Kliknij na mnie!"&gt;
+                        </p>
+                      </div>
+                      <div class="flip-card-back">
+                        <p style="font-size: 16pt; color: yellow; padding-top: 15px;">
+                            <input
+type="reset"
+value="Kliknij na mnie!">
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+            </div>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+                Submit
+                <bR>
+                <br>
+                <div style="font-size: 22px;">
+                    By nadać inputowi typ „submit” musimy dodać atrybut type wraz z wartością submit.
+Dodatkowo by wyświetlić napis na przycisku Submit możemy dodać atrybut value, a jako wartość podać interesujący nas tekst.
+                    <br>
+                    <br>
+                    
+                </div>
+
+                <div style="display: flex; justify-content: center; margin-top: 30px;">
+                <div class="flip-card" style="width: 500px;">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <p style="color: white; font-size: 22px;">
+                            &lt;input
+                            type="submit"
+                            value="wyślij"&gt;
+                        </p>
+                      </div>
+                      <div class="flip-card-back">
+                        <p style="font-size: 16pt; color: yellow; padding-top: 15px;">
+                            <input type="submit" value="Wyślij">
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+            </div>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+                Tel
+                <bR>
+                <br>
+                <div style="font-size: 22px;">
+                    By nadać inputowi typ „tel” musimy dodać atrybut type wraz z wartością tel.
+
+                    <br>
+                    <br>
+                    
+                </div>
+
+                <div style="display: flex; justify-content: center; margin-top: 30px;">
+                <div class="flip-card" style="width: 500px;">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <p style="color: white; font-size: 22px;">
+                            &lt;input
+                            type="tel"
+                            &gt;
+                        </p>
+                      </div>
+                      <div class="flip-card-back">
+                        <p style="font-size: 16pt; color: yellow; padding-top: 15px;">
+                            <input type="tel">
+
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+            </div>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+                Text
+                <bR>
+                <br>
+                <div style="font-size: 22px;">
+                    By nadać inputowi typ „text” musimy dodać atrybut type wraz z wartością text.
+
+                    <br>
+                    <br>
+                    
+                </div>
+
+                <div style="display: flex; justify-content: center; margin-top: 30px;">
+                <div class="flip-card" style="width: 500px;">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <p style="color: white; font-size: 22px;">
+                            &lt;input
+                            type="text"
+                            &gt;
+                        </p>
+                      </div>
+                      <div class="flip-card-back">
+                        <p style="font-size: 16pt; color: yellow; padding-top: 15px;">
+                            <input type="text">
+
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+            </div>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+                Time
+                <bR>
+                <br>
+                <div style="font-size: 22px;">
+                    By nadać inputowi typ „time” musimy dodać atrybut type wraz z wartością time.
+
+                    <br>
+                    <br>
+                    
+                </div>
+
+                <div style="display: flex; justify-content: center; margin-top: 30px;">
+                <div class="flip-card" style="width: 500px;">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <p style="color: white; font-size: 22px;">
+                            &lt;input
+                            type="time"
+                            &gt;
+                        </p>
+                      </div>
+                      <div class="flip-card-back">
+                        <p style="font-size: 16pt; color: yellow; padding-top: 15px;">
+                            <input type="time">
+
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+            </div>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+                Url
+                <bR>
+                <br>
+                <div style="font-size: 22px;">
+                    By nadać inputowi typ „url” musimy dodać atrybut type wraz z wartością url.
+
+
+                    <br>
+                    <br>
+                    
+                </div>
+
+                <div style="display: flex; justify-content: center; margin-top: 30px;">
+                <div class="flip-card" style="width: 500px;">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <p style="color: white; font-size: 22px;">
+                            &lt;input
+                            type="url"
+                            &gt;
+                        </p>
+                      </div>
+                      <div class="flip-card-back">
+                        <p style="font-size: 16pt; color: yellow; padding-top: 15px;">
+                            <input type="url">
+
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+            </div>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+                Week
+                <bR>
+                <br>
+                <div style="font-size: 22px;">
+                    By nadać inputowi typ „week” musimy dodać atrybut type wraz z wartością week.
+
+                    <br>
+                    <br>
+                    
+                </div>
+
+                <div style="display: flex; justify-content: center; margin-top: 30px;">
+                <div class="flip-card" style="width: 500px;">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <p style="color: white; font-size: 22px;">
+                            &lt;input
+                            type="week"
+                            &gt;
+                        </p>
+                      </div>
+                      <div class="flip-card-back">
+                        <p style="font-size: 16pt; color: yellow; padding-top: 15px;">
+                            <input
+type="week">
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+            </div>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+                Select
+                <bR>
+                <br>
+                <div style="font-size: 22px;">
+                    Znacznik &lt;select&gt;&lt;/select&gt; służy do stworzenia listy rozwijanej.
+Znacznik &lt;option&gt;&lt;/option&gt; służy do stworzenia opcji w liście rozwijanej. Muszą się one znajować między znacznikami &lt;select&gt; i &lt;/select&gt;
+                    <br>
+                    <br>
+                    
+                </div>
+
+                <div style="display: flex; justify-content: center; margin-top: 30px;">
+                <div class="flip-card" style="width: 500px;">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <p style="color: white; font-size: 20px;">
+                            &lt;select&gt;
+                            &lt;option&gt; Opcja 1&lt;/option&gt;
+                            &lt;option&gt; Opcja 2&lt;/option&gt;
+                            &lt;option&gt; Opcja 3&lt;/option&gt;
+                        &lt;/select&gt;
+                        </p>
+                      </div>
+                      <div class="flip-card-back">
+                        <p style="font-size: 16pt; color: yellow; padding-top: 15px;">
+                            <select>
+                                <option> Opcja 1</option>
+                                <option> Opcja 2</option>
+                                <option> Opcja 3</option>
+                            </select>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+            </div>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+                Textarea
+                <bR>
+                <br>
+                <div style="font-size: 22px;">
+                    Znacznik &lt;textarea&gt;&lt;/textarea&gt; służy do wielowierszowego wprawdzania tekstu przez użytkownika.
+
+
+
+                    <br>
+                    <br>
+                    
+                </div>
+
+                <div style="display: flex; justify-content: center; margin-top: 30px;">
+                <div class="flip-card" style="width: 500px;">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <p style="color: white; font-size: 22px;">
+                            &lt;textarea&gt;Tekst początkowy&lt;/textarea&gt;
+
+
+                        </p>
+                      </div>
+                      <div class="flip-card-back">
+                        <p style="font-size: 16pt; color: yellow; padding-top: 15px;">
+                            <textarea>Tekst początkowy</textarea>
+
                         </p>
                       </div>
                     </div>
