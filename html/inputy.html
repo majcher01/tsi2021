@@ -87,6 +87,10 @@ mark {
   background-color: yellow;
   color: black;
 }
+
+html{
+    scroll-behavior: smooth;
+}
     </style>
 </head>
 <body>
@@ -109,27 +113,27 @@ mark {
                 <br>
                 <div style="font-size: 22px; text-align: left;">
                     <ul>
-                        <li><a id="link1" href="#"><b>button</b></a> - przycisk pozwala na wysłanie w formularzu.</li>
-                        <li><a id="link2" href="#"><b>checkbox</b></a> - używane są one zazwyczaj do potwierdzania, można wybrać wiele.</li>
-                        <li><a id="link3" href="#"><b>color</b></a> - pozwala nam na wybranie koloru.</li>
-                        <li><a id="link4" href="#"><b>date</b></a> - pozwala na wybranie daty.</li>
-                        <li><a id="link5" href="#"><b>email</b></a> -  pozwala na wprowadzenie email (odróznia się od "text", tym że automatycznie sprawdza składnie).</li>
-                        <li><a id="link6" href="#"><b>file</b></a> -  pozwala na przesłanie pliku.</li>
-                        <li><a id="link7" href="#"><b>image</b></a> - pozwala na przesłanie pliku jedynie z rozszerzeniem wskazującym na zdjęcie.</li>
-                        <li><a id="link8" href="#"><b>month</b></a> - pozwala na wybranie misiąca.</li>
-                        <li><a id="link9" href="#"><b>number </b></a> - pozwala na wpisanie liczby.</li>
-                        <li><a id="link10" href="#"><b>password </b> </a>- pozwala na wpisaniu hasła (odróznia się od "text", tym że automatycznie ukrywa wprowadzone znaki).</li>
-                        <li><a id="link11" href="#"><b>radio</b></a> - pozwala na wybranie jednej z podanych opcji.</li>
-                        <li><a id="link12" href="#"><b>range</b></a> - pozwala na wybranie wartości poprzez przmieszczenie suwaka.</li>
-                        <li><a id="link13" href="#"><b>reset</b></a> - pozwala na zresetowanie wszystkich inputów w formularzu.</li>
-                        <li><a id="link14" href="#"><b>submit </b></a> - przycisk pozwala na wysłanie w formularzu.</li>
-                        <li><a id="link15" href="#"><b>tel</b></a> - pozwala na wprowadzenie nr. telefonu według ustalonego wzoru.</li>
-                        <li><a id="link16" href="#"><b>text </b></a> - pozwala na wprowadzenie tekstu.</li>
-                        <li><a id="link17" href="#"><b>time</b></a> - pozwala na wprowadzenie czasu.</li>
-                        <li><a id="link18" href="#"><b>url</b></a> - pozwala na wprowadzenie linku.</li>
-                        <li><a id="link19" href="#"><b>week </b></a> - pozwala na wprowadzenie dnia tygodnia.</li>
-                        <li><b>&lt;select&gt;&lt;/select&gt;</b> - lista rozwijana</li>
-                        <li><b>&lt;textarea&gt;&lt;/textarea&gt;</b> - obszar tekstowy</li>
+                        <li><a  href="#link1"><b>button</b></a> - przycisk pozwala na wysłanie w formularzu.</li>
+                        <li><a  href="#link2"><b>checkbox</b></a> - używane są one zazwyczaj do potwierdzania, można wybrać wiele.</li>
+                        <li><a  href="#link3"><b>color</b></a> - pozwala nam na wybranie koloru.</li>
+                        <li><a  href="#link4"><b>date</b></a> - pozwala na wybranie daty.</li>
+                        <li><a  href="#link5"><b>email</b></a> -  pozwala na wprowadzenie email (odróznia się od "text", tym że automatycznie sprawdza składnie).</li>
+                        <li><a  href="#link6"><b>file</b></a> -  pozwala na przesłanie pliku.</li>
+                        <li><a  href="#link7"><b>image</b></a> - pozwala na przesłanie pliku jedynie z rozszerzeniem wskazującym na zdjęcie.</li>
+                        <li><a href="#link8"><b>month</b></a> - pozwala na wybranie misiąca.</li>
+                        <li><a href="#link9"><b>number </b></a> - pozwala na wpisanie liczby.</li>
+                        <li><a  href="#link10"><b>password </b> </a>- pozwala na wpisaniu hasła (odróznia się od "text", tym że automatycznie ukrywa wprowadzone znaki).</li>
+                        <li><a  href="#link11"><b>radio</b></a> - pozwala na wybranie jednej z podanych opcji.</li>
+                        <li><a  href="#link12"><b>range</b></a> - pozwala na wybranie wartości poprzez przmieszczenie suwaka.</li>
+                        <li><a  href="#link13"><b>reset</b></a> - pozwala na zresetowanie wszystkich inputów w formularzu.</li>
+                        <li><a  href="#link14"><b>submit </b></a> - przycisk pozwala na wysłanie w formularzu.</li>
+                        <li><a  href="#link15"><b>tel</b></a> - pozwala na wprowadzenie nr. telefonu według ustalonego wzoru.</li>
+                        <li><a  href="#link16"><b>text </b></a> - pozwala na wprowadzenie tekstu.</li>
+                        <li><a  href="#link17"><b>time</b></a> - pozwala na wprowadzenie czasu.</li>
+                        <li><a  href="#link18"><b>url</b></a> - pozwala na wprowadzenie linku.</li>
+                        <li><a  href="#link19"><b>week </b></a> - pozwala na wprowadzenie dnia tygodnia.</li>
+                        <li><a href="#link20"><b>&lt;select&gt;&lt;/select&gt;</b> </a>- lista rozwijana</li>
+                        <li><a href="#link21"><b>&lt;textarea&gt;&lt;/textarea&gt;</b></a> - obszar tekstowy</li>
                     
                     </ul>
                     
@@ -142,7 +146,7 @@ mark {
 
 
 
-            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+            <div class="hd1" style="margin-top: 10px; font-size:30px;" id="link1">
                 Button
                 <bR>
                 <br>
@@ -177,7 +181,7 @@ value="Kliknij na mnie!">
 
             </div>
 
-            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+            <div class="hd1" style="margin-top: 10px; font-size:30px;" id="link2">
                 Checkbox
                 <bR>
                 <br>
@@ -213,7 +217,7 @@ value="Kliknij na mnie!">
 
             </div>
 
-            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+            <div class="hd1" style="margin-top: 10px; font-size:30px;" id="link3">
                 Color
                 <bR>
                 <br>
@@ -243,7 +247,7 @@ value="Kliknij na mnie!">
 
             </div>
 
-            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+            <div class="hd1" style="margin-top: 10px; font-size:30px;" id="link4">
                 Date
                 <bR>
                 <br>
@@ -278,7 +282,7 @@ value="Kliknij na mnie!">
 
             </div>
 
-            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+            <div class="hd1" style="margin-top: 10px; font-size:30px;" id="link5">
                 Email
                 <bR>
                 <br>
@@ -312,7 +316,7 @@ value="Kliknij na mnie!">
 
             </div>
 
-            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+            <div class="hd1" style="margin-top: 10px; font-size:30px;" id="link6">
                 File
                 <bR>
                 <br>
@@ -347,7 +351,7 @@ value="Kliknij na mnie!">
 
             </div>
 
-            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+            <div class="hd1" style="margin-top: 10px; font-size:30px;" id="link7">
                 Image
                 <bR>
                 <br>
@@ -384,7 +388,7 @@ width="100px">
 
             </div>
 
-            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+            <div class="hd1" style="margin-top: 10px; font-size:30px;" id="link8">
                 Month
                 <bR>
                 <br>
@@ -417,7 +421,7 @@ width="100px">
 
             </div>
 
-            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+            <div class="hd1" style="margin-top: 10px; font-size:30px;" id="link9">
                 Number
                 <bR>
                 <br>
@@ -450,7 +454,7 @@ width="100px">
 
             </div>
 
-            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+            <div class="hd1" style="margin-top: 10px; font-size:30px;" id="link10">
                 Password
                 <bR>
                 <br>
@@ -483,7 +487,7 @@ width="100px">
 
             </div>
 
-            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+            <div class="hd1" style="margin-top: 10px; font-size:30px;" id="link11">
                 Radio
                 <bR>
                 <br>
@@ -520,7 +524,7 @@ By pola wzajemnie się wykluczały należy nadać im taką samą nazwę za pomoc
 
             </div>
 
-            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+            <div class="hd1" style="margin-top: 10px; font-size:30px;" id="link12">
                 Range
                 <bR>
                 <br>
@@ -553,7 +557,7 @@ By pola wzajemnie się wykluczały należy nadać im taką samą nazwę za pomoc
 
             </div>
 
-            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+            <div class="hd1" style="margin-top: 10px; font-size:30px;" id="link13">
                 Reset
                 <bR>
                 <br>
@@ -588,7 +592,7 @@ value="Kliknij na mnie!">
 
             </div>
 
-            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+            <div class="hd1" style="margin-top: 10px; font-size:30px;" id="link14">
                 Submit
                 <bR>
                 <br>
@@ -621,7 +625,7 @@ Dodatkowo by wyświetlić napis na przycisku Submit możemy dodać atrybut value
 
             </div>
 
-            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+            <div class="hd1" style="margin-top: 10px; font-size:30px;" id="link15">
                 Tel
                 <bR>
                 <br>
@@ -655,7 +659,7 @@ Dodatkowo by wyświetlić napis na przycisku Submit możemy dodać atrybut value
 
             </div>
 
-            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+            <div class="hd1" style="margin-top: 10px; font-size:30px;" id="link16">
                 Text
                 <bR>
                 <br>
@@ -689,7 +693,7 @@ Dodatkowo by wyświetlić napis na przycisku Submit możemy dodać atrybut value
 
             </div>
 
-            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+            <div class="hd1" style="margin-top: 10px; font-size:30px;" id="link17">
                 Time
                 <bR>
                 <br>
@@ -723,7 +727,7 @@ Dodatkowo by wyświetlić napis na przycisku Submit możemy dodać atrybut value
 
             </div>
 
-            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+            <div class="hd1" style="margin-top: 10px; font-size:30px;" id="link18">
                 Url
                 <bR>
                 <br>
@@ -758,7 +762,7 @@ Dodatkowo by wyświetlić napis na przycisku Submit możemy dodać atrybut value
 
             </div>
 
-            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+            <div class="hd1" style="margin-top: 10px; font-size:30px;" id="link19">
                 Week
                 <bR>
                 <br>
@@ -792,7 +796,7 @@ type="week">
 
             </div>
 
-            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+            <div class="hd1" style="margin-top: 10px; font-size:30px;" id="link20">
                 Select
                 <bR>
                 <br>
@@ -831,7 +835,7 @@ Znacznik &lt;option&gt;&lt;/option&gt; służy do stworzenia opcji w liście roz
 
             </div>
 
-            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+            <div class="hd1" style="margin-top: 10px; font-size:30px;" id="link21">
                 Textarea
                 <bR>
                 <br>
