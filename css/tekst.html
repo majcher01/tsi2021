@@ -151,18 +151,18 @@
         </div>
 
         <div class="hd1" style="margin-top: 10px; font-size:30px;">
-          Waga czcionki
+          Transformacja
           <bR>
           <br>
-          <span class="syntax">
+          <span class="syntax" style="width: 600px; margin-left: 200px;">
             selektor
 {
-   font-weight: waga;
+   text-transform: transformacja;
 }
           </span>
           <Br>
           <span style="font-size: 22px;">
-            Jako "waga" należy wpisać nazwę czcionki, na przykład: 
+            Jako "transformacja" należy wpisać: 
           </span>
 
 
@@ -171,24 +171,183 @@
 
           <div style="font-size: 22px; display: flex; justify-content: center;">
             <ul style="font-size: 22px; text-align: left;">
-              <li><samp>normal</samp> - czcionka normalna (podstawowa)</li>
-              <li><samp>bold</samp> - czcionka pogrubiona</li>
-              <li><samp>100, 200, 300...</samp> - waga czcionki</li>
+              <li><samp>none</samp> - bez transformacji</li>
+              <li><samp>capitalize</samp> - zmiana pierwszych liter na wielkie</li>
+              <li><samp>uppercase</samp> - zmiana wszystkich liter na wielkie</li>
+              <li><samp>lowercase</samp> - zmiana wszystkich liter na małe</li>
           </ul>
           </div>
-          <div style="font-size: 22px;">
-            Przykłady wag:
+          <div style="font-size: 22px; display: flex; justify-content: center; margin-top: 30px;">
+            Przykłady transformacji i transpozycji &nbsp; <a href="https://i31.majcherski.com" target="_blank"> TUTAJ</a>
           </div>
-          <div style="font-size: 22px; display: flex; justify-content: center;">
-            <ul style="font-size: 22px; text-align: left;">
-              <li><span style="font-weight: 300;">300</span></li>
-              <li><span style="font-weight: 400;">400</span></li>
-              <li><span style="font-weight: 500;">500</span></li>
-              <li><span style="font-weight: 600;">600</span></li>
-              <li><span style="font-weight: 700;">700</span></li>
-          </ul>
-          </div>
+          
       </div>
+
+      <div class="hd1" style="margin-top: 10px; font-size:30px;">
+        Wyrównanie
+        <bR>
+        <br>
+        <span class="syntax" style="width: 600px; margin-left: 200px;">
+          selektor
+{
+   text-align: wyrównanie;
+}
+        </span>
+        <Br>
+        <span style="font-size: 22px;">
+          Jako "wyrównanie" należy wpisać: 
+        </span>
+
+
+
+
+
+        <div style="font-size: 22px; display: flex; justify-content: center;">
+          <ul class="listamargines" style="font-size: 22px; text-align: left;">
+            <li><samp>left</samp> - wyrównanie tekstu do lewego marginesu (domyślnie)</li>
+            <li><samp>right</samp> - wyrównanie do prawego marginesu</li>
+            <li><samp>center</samp> - do środka (wyśrodkowanie)</li>
+            <li><samp>justify</samp> - do obu marginesów jednocześnie (justowanie)</li>
+          
+          
+          
+          </ul>
+        </div>
+        
+    </div>
+
+    <div class="hd1" style="margin-top: 10px; font-size:30px;">
+      Odstępy między znakami
+      <bR>
+      <br>
+      <span class="syntax" style="width: 600px; margin-left: 200px;">
+        selektor
+{
+   letter-spacing: odległość;
+}
+      </span>
+      <Br>
+      <span style="font-size: 22px;">
+        Jako "odległość" należy podać wartość wyrażoną w pixelach, która będzie określała odległość między znakami. Może być to również wartość ujemna. 
+      </span>
+
+
+
+
+
+      <div style="font-size: 22px; display: flex; justify-content: center;">
+        <ul class="listamargines" style="font-size: 22px; text-align: left;">
+          <li><samp>left</samp> - wyrównanie tekstu do lewego marginesu (domyślnie)</li>
+          <li><samp>right</samp> - wyrównanie do prawego marginesu</li>
+          <li><samp>center</samp> - do środka (wyśrodkowanie)</li>
+          <li><samp>justify</samp> - do obu marginesów jednocześnie (justowanie)</li>
+        
+        
+        
+        </ul>
+      </div>
+      <br><br>
+      <span style="font-size: 22px;">
+      Przykład:
+      </span>
+      <br><br>
+      <div style="font-size: 22px;">
+        HTML:
+        <br>
+        <span class="syntax" style="height: 80px;">
+          &lt;p class="klasajeden"&gt;Tekst 1&lt;/p&gt;
+          <br>
+          &lt;p class="klasadwa"&gt;Tekst 2&lt;/p&gt;
+        </span>
+        <br><br>
+        CSS:
+        <br>
+        <span class="syntax" style="height: 80px;">
+          .klasajeden
+{
+   letter-spacing: 2px;
+}
+<Br>
+.klasadwa
+{
+   letter-spacing: -15px;
+}
+        </span>
+        <br><br>
+        Rezultat:
+        <br>
+        <span style="letter-spacing: 2px; margin-bottom: 10px;" class="syntax">
+           Tekst 1
+        </span>
+        <br>
+        <span style="letter-spacing: -15; margin-top: 10px;" class="syntax">
+          Tekst 1
+       </span>
+     </div>
+      
+  </div>
+
+
+  <div class="hd1" style="margin-top: 10px; font-size:30px;">
+    Kolor tła
+    <bR>
+    <br>
+    <span class="syntax" style="width: 600px; margin-left: 200px;">
+      selektor
+{
+   background: kolor;
+}
+    </span>
+    <Br>
+    <span style="font-size: 22px;">
+      Jako kolor należy podać <a href="../Tabela-z-kolorami/index.html">definicję koloru</a> 
+    </span>
+
+
+
+
+
+    <div style="font-size: 22px; display: flex; justify-content: center;">
+      <ul class="listamargines" style="font-size: 22px; text-align: left;">
+        <li><samp>left</samp> - wyrównanie tekstu do lewego marginesu (domyślnie)</li>
+        <li><samp>right</samp> - wyrównanie do prawego marginesu</li>
+        <li><samp>center</samp> - do środka (wyśrodkowanie)</li>
+        <li><samp>justify</samp> - do obu marginesów jednocześnie (justowanie)</li>
+      
+      
+      
+      </ul>
+    </div>
+    <br><br>
+      <span style="font-size: 22px;">
+      Przykład:
+      </span>
+      <br><br>
+      <div style="font-size: 22px;">
+        HTML:
+        <br>
+        <span class="syntax" >
+          &lt;p class="napis"&gt;Tekst 1&lt;/p&gt;
+        </span>
+        <br><br>
+        CSS:
+        <br>
+        <span class="syntax" >
+          .napis
+{
+   background: #FF0000;
+}
+        </span>
+        <br><br>
+        Rezultat:
+        <br>
+        <span style=" margin-bottom: 10px;" class="syntax">
+           <span style="background-color: red;">Tekst 1</span>
+        </span>
+        
+     </div>
+    
+</div>
 
 
 
