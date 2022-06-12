@@ -72,6 +72,7 @@
                 <Br>
                 <span style="font-size: 22px;">
                   Wszystkie elementy HTML można traktować jak pola. W CSS termin „model pudełkowy” jest używany, gdy mówi się o projekcie i układzie.
+                  
 <br><br>
 Model pudełkowy CSS jest zasadniczo pudełkiem, które otacza każdy element HTML. Składa się z: marginesów, ramek, wypełnienia i rzeczywistej zawartości. Poniższy obraz ilustruje model pudełka:
 <br><br>
@@ -93,308 +94,66 @@ Czyści obszar poza granicą. Margines jest przezroczysty.</li>
 
 </ul>
 </div>
+
                   
 </span>
+<span style="font-size: 22px;">
+  Model pudełkowy pozwala nam dodać obramowanie wokół elementów i zdefiniować przestrzeń między elementami.
+  </span>
 
             </div>
 
             <div class="hd1" style="margin-top: 10px; font-size:30px;">
-              Kursory ogólnego przeznaczenia
+              Przykład
               <bR>
               <br>
               
-              <Br>
-              
-              <div style="font-size: 22px; display: flex; justify-content: center;">
-                <ul style="font-size: 22px; text-align: left;">
-                  <li>
-                    <samp>auto</samp> - automatyczny wybór kształtu kursora (zależy od typu elementu, na który wskazujemy - tryb domyślny)
-                    <br>
-                    <span class="syntax" style="cursor: auto;">
-                      Najedź myszką na tekst
-                    </span>
-                  </li>
-                  <li>
-                    <samp>default</samp> - kursor domyślny
-                    <br>
-                    <span class="syntax" style="cursor: default;">
-                      Najedź myszką na tekst
-                    </span>
-                  </li>
-                  <li>
-                    <samp>none</samp> - brak kursora
-                    <br>
-                    <span class="syntax" style="cursor: none;">
-                      Najedź myszką na tekst
-                    </span>
-                  </li>
-                </ul>
+              <span class="syntax" style="height: 200px; text-align: left; padding-left:90px; margin-left:220px;">
+                div<br>
+{<br>
+   width: 300px;<br>
+   border: 15px solid green;<br>
+   padding: 50px;<br>
+   margin: 15px;<br>
+}
+              </span>
+              <div style="width: 300px; border: solid 15px green; padding: 50px; margin: 15px;background-color: white; color: black; margin-left: auto; margin-right: auto;">Tekst wewnątrz</div>
+
+              <div style="display: flex; justify-content: center;">
+                <img src="../img/model.png">
               </div>
 
           </div>
+          
 
           <div class="hd1" style="margin-top: 10px; font-size:30px;">
-            Kursory statusu / odsyłacze
+            Czym jest <samp>div</samp>?
+
             <bR>
             <br>
+            <span style="font-size: 22px;">
+              Do budowy sekcji możemy użyć elementu blokowego <div> (ang. division – oddział, wydział, sekcja). Element ten nazywany jest również box’em (pudełkiem), albo kontenerem (ang. container, contain – zawierać w sobie), z tego względu, że zawiera on w sobie inne elementy.
+
+<br><br>
+
+
+                Poniżej znajdziesz materiał, który pomoże ci zrozumieć strukturę strony www opartej na divach, oraz poznasz jej wady i zalety.
+              </span>
+
+              <div style="display: flex; justify-content: center; margin-top: 25px;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2nWSCxIpHfc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              
             
             <Br>
             
-            <div style="font-size: 22px; display: flex; justify-content: center;">
-              <ul style="font-size: 22px; text-align: left;">
-                <li>
-                  <samp>context-menu</samp> - menu kontekstowe, zwykle dostępne po kliknięciu prawym przyciskiem myszki
-                  <br>
-                  <span class="syntax" style="cursor: context-menu;">
-                    Najedź myszką na tekst
-                  </span>
-                </li>
-                <li>
-                  <samp>help</samp> -  kursor pomocy
-                  <br>
-                  <span class="syntax" style="cursor: help;">
-                    Najedź myszką na tekst
-                  </span>
-                </li>
-                <li>
-                  <samp>pointer</samp> - wskaźnik (wskazuje odsyłacz)
-                  <br>
-                  <span class="syntax" style="cursor: pointer;">
-                    Najedź myszką na tekst
-                  </span>
-                </li>
-                <li>
-                  <samp>progress</samp> - kursor postępu
-                  <br>
-                  <span class="syntax" style="cursor: progress;">
-                    Najedź myszką na tekst
-                  </span>
-                </li>
-                <li>
-                  <samp>wait</samp> - "poczekaj"
-                  <br>
-                  <span class="syntax" style="cursor: wait;">
-                    Najedź myszką na tekst
-                  </span>
-                </li>
-              </ul>
-            </div>
+            
 
+        </div>
         </div>
 
 
-        <div class="hd1" style="margin-top: 10px; font-size:30px;">
-          Kursory wyboru
-          <bR>
-          <br>
-          
-          <Br>
-          
-          <div style="font-size: 22px; ">
-            <ul style="font-size: 22px; text-align: left;">
-              <li>
-                <samp>cell</samp> - wskazuje, że komórka może być zaznaczona
-                <br>
-                <span class="syntax" style="cursor: cell;">
-                  Najedź myszką na tekst
-                </span>
-              </li>
-              <li>
-                <samp>crosshair</samp> -  krzyżyk
-                <br>
-                <span class="syntax" style="cursor: crosshair;">
-                  Najedź myszką na tekst
-                </span>
-              </li>
-              <li>
-                <samp>text</samp> - kursor tekstowy
-                <br>
-                <span class="syntax" style="cursor: text;">
-                  Najedź myszką na tekst
-                </span>
-              </li>
-              <li>
-                <samp>vertical-text</samp> - pionowy kursor tekstowy
-                <br>
-                <span class="syntax" style="cursor: vertical-text;">
-                  Najedź myszką na tekst
-                </span>
-              </li>
-              
-            </ul>
-          </div>
-
-      </div>
-
-
-      <div class="hd1" style="margin-top: 10px; font-size:30px;">
-        Kursory "przeciągnij i upuść"
-        <bR>
-        <br>
-        
-        <Br>
-        
-        <div style="font-size: 22px;">
-          <ul style="font-size: 22px; text-align: left;">
-            <li>
-              <samp>alias</samp> - skrót
-              <br>
-              <span class="syntax" style="cursor: alias;">
-                Najedź myszką na tekst
-              </span>
-            </li>
-            <li>
-              <samp>copy</samp> -  kopiuj
-              <br>
-              <span class="syntax" style="cursor: copy;">
-                Najedź myszką na tekst
-              </span>
-            </li>
-            <li>
-              <samp>move</samp> - przesuń
-              <br>
-              <span class="syntax" style="cursor: move;">
-                Najedź myszką na tekst
-              </span>
-            </li>
-            <li>
-              <samp>no-drop</samp> - element nie może zostać upuszczony w aktualnej pozycji
-              <br>
-              <span class="syntax" style="cursor: no-drop;">
-                Najedź myszką na tekst
-              </span>
-            </li>
-            <li>
-              <samp>not-allowed</samp> - akcja nie jest dozwolona
-              <br>
-              <span class="syntax" style="cursor: not-allowed;">
-                Najedź myszką na tekst
-              </span>
-            </li>
-          </ul>
-        </div>
-
-    </div>
-
-
-    <div class="hd1" style="margin-top: 10px; font-size:30px;">
-      Kursory zmiany rozmiaru / przewijania
-      <bR>
-      <br>
-      
-      <Br>
-      
-      <div style="font-size: 22px;">
-        <ul style="font-size: 22px; text-align: left;">
-          <li>
-            <samp>n-resize</samp> - "północ" - strzałka w górę
-            <br>
-            <span class="syntax" style="cursor: n-resize;">
-              Najedź myszką na tekst
-            </span>
-          </li>
-          <li>
-            <samp>ne-resize</samp> -  "północny wschód"
-            <br>
-            <span class="syntax" style="cursor: ne-resize;">
-              Najedź myszką na tekst
-            </span>
-          </li>
-          <li>
-            <samp>e-resize</samp> - "wschód"
-            <br>
-            <span class="syntax" style="cursor: e-resize;">
-              Najedź myszką na tekst
-            </span>
-          </li>
-          <li>
-            <samp>se-resize</samp> - "południowy wschód"
-            <br>
-            <span class="syntax" style="cursor: se-resize;">
-              Najedź myszką na tekst
-            </span>
-          </li>
-          <li>
-            <samp>s-resize</samp> - "południe"
-            <br>
-            <span class="syntax" style="cursor: s-resize;">
-              Najedź myszką na tekst
-            </span>
-          </li>
-          <li>
-            <samp>sw-resize</samp> - "południowy zachód"
-            <br>
-            <span class="syntax" style="cursor: sw-resize;">
-              Najedź myszką na tekst
-            </span>
-          </li>
-          <li>
-            <samp>w-resize</samp> - "zachód"
-            <br>
-            <span class="syntax" style="cursor: w-resize;">
-              Najedź myszką na tekst
-            </span>
-          </li>
-          <li>
-            <samp>nw-resize</samp> - "północny zachód"
-            <br>
-            <span class="syntax" style="cursor: nw-resize;">
-              Najedź myszką na tekst
-            </span>
-          </li>
-          <li>
-            <samp>ns-resize</samp> - północ-południe
-            <br>
-            <span class="syntax" style="cursor: ns-resize;">
-              Najedź myszką na tekst
-            </span>
-          </li>
-          <li>
-            <samp>ew-resize</samp> - wschód-zachód
-            <br>
-            <span class="syntax" style="cursor: ew-resize;">
-              Najedź myszką na tekst
-            </span>
-          </li>
-          <li>
-            <samp>nesw-resize</samp> - północny wschód-południowy zachód
-            <br>
-            <span class="syntax" style="cursor: nesw-resize;">
-              Najedź myszką na tekst
-            </span>
-          </li>
-          <li>
-            <samp>nwse-resize</samp> - północny zachód-południowy wschód
-            <br>
-            <span class="syntax" style="cursor: nwse-resize;">
-              Najedź myszką na tekst
-            </span>
-          </li>
-          <li>
-            <samp>col-resize</samp> - pozioma zmiana szerokości kolumny
-            <br>
-            <span class="syntax" style="cursor: col-resize;">
-              Najedź myszką na tekst
-            </span>
-          </li>
-          <li>
-            <samp>row-resize</samp> - pionowa zmiana wysokości wiersza
-            <br>
-            <span class="syntax" style="cursor: row-resize;">
-              Najedź myszką na tekst
-            </span>
-          </li>
-          <li>
-            <samp>all-scroll</samp> - przewijanie w dowolnym kierunku
-            <br>
-            <span class="syntax" style="cursor: all-scroll;">
-              Najedź myszką na tekst
-            </span>
-          </li>
-        </ul>
-      </div>
-
-  </div>
+       
 
 
         
