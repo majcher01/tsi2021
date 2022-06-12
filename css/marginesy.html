@@ -1,12 +1,476 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+        body{
+            font-family: 'Oxygen', sans-serif;
+            margin: 0px 0px 0px 0px;
+            color: white;
+            margin-bottom: 200px;
+        }
+        .srodek{
+            display: flex;
+            justify-content: center;
+        }
+
+        .hd1{
+            font-size: 34px;
+            margin-top: 20px;
+            border: 1px solid white;
+            padding: 15px 30px 15px 30px;
+            border-radius: 10px;
+            width: 1000px;
+            text-align: center;
+            background-color: #68686825;
+            margin-bottom: 0px;
+        }
+
+        abbr{
+            text-decoration: none;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        .syntax{
+          height: 50px;
+          width:500px;
+          background-color: rgba(187, 187, 187, 0.226);
+          display: block;
+          text-align: center;
+          margin-bottom: 30px;
+          padding-top: 18px;
+          margin-left: 250px;
+          margin-top: 30px;
+          font-family: monospace;
+          border: 1px dotted white;
+          border-radius: 10px;
+          font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="srodek">
+        <div>
+            
+            <p class="hd1" style="margin-top: 10px; font-size:30px;">
+                Marginesy
+            </p>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+                Margines górny
+                <bR>
+                <br>
+                <span class="syntax">
+                  selektor
+{
+   margin-top: rozmiar;
+}
+                </span>
+                <Br>
+                <span style="font-size: 22px;">
+                  Jako "rozmiar" należy podać konkretną wartość w jednostkach długości. Wpisanie auto ustali wartość automatyczną.
+                  
+</span>
+
+            </div>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+              Margines dolny
+              <bR>
+              <br>
+              <span class="syntax">
+                selektor
+{
+ margin-bottom: rozmiar;
+}
+              </span>
+              <Br>
+              <span style="font-size: 22px;">
+                Jako "rozmiar" należy podać konkretną wartość w jednostkach długości. Wpisanie auto ustali wartość automatyczną.
+                <br><br>
+                  Przykład:
+</span>
+
+<br><Br>
+
+
+  <div style="font-size: 22px;">
+     HTML:
+     <br>
+     <span class="syntax" style="height: 100px;">
+      &lt;p&gt;Tekst 1&lt;/p&gt;<br>
+&lt;p class="klasajeden"&gt;Tekst 2&lt;/p&gt;<br>
+&lt;p&gt;Tekst 3&lt;/p&gt;
+     </span>
+     <br><br>
+     CSS:
+     <br>
+     <span class="syntax">
+      .klasajeden
+      {
+         margin-bottom: 20px;
+      }
+     </span>
+     <br><br>
+     Rezultat:
+     <br>
+     <span style="height: 150px;" class="syntax" >
+        <span>Tekst 1</span><br>
+        <span style="margin-bottom: 20px; display:block;">Tekst 2</span><br>
+        <span>Tekst 3</span>
+     </span>
+  </div>
+
+          </div>
+
+          <div class="hd1" style="margin-top: 10px; font-size:30px;">
+            Lewy margines
+            <bR>
+            <br>
+            <span class="syntax">
+              selektor
+{
+   margin-left: rozmiar;
+}
+            </span>
+            <Br>
+            <span style="font-size: 22px;">
+              Natomiast jako "rozmiar" należy podać konkretną wartość w jednostkach długości. Wpisanie auto ustali wartość automatyczną.
+            </span>
+
+
+        </div>
+
+        <div class="hd1" style="margin-top: 10px; font-size:30px;">
+          Prawy margines
+          <bR>
+          <br>
+          <span class="syntax">
+            selektor
+{
+margin-right: rozmiar;
+}
+          </span>
+          <Br>
+          <span style="font-size: 22px;">
+            Jako "rozmiar" należy podać konkretną wartość w jednostkach długości. Wpisanie auto ustali wartość automatyczną.
+            <br><br>
+              Przykład:
+</span>
+
+<br><Br>
+
+
+<div style="font-size: 22px;">
+ HTML:
+ <br>
+ <span class="syntax" style="height: 100px;">
+  &lt;p&gt;Tekst 1&lt;/p&gt;<br>
+&lt;p class="klasajeden"&gt;Tekst 2&lt;/p&gt;<br>
+&lt;p&gt;Tekst 3&lt;/p&gt;
+ </span>
+ <br><br>
+ CSS:
+ <br>
+ <span class="syntax">
+  .klasajeden
+  {
+     margin-right: 80px;
+  }
+ </span>
+ <br><br>
+ Rezultat:
+ <br>
+ <span  class="syntax" >
+    <span style="display: inline-block;">Tekst 1</span>
+    <span style="margin-right: 80px; display:inline-block;">Tekst 2</span>
+    <span style="display: inline-block;">Tekst 3</span>
+ </span>
+</div>
+</div>
+
+      <div class="hd1" style="margin-top: 10px; font-size:30px;">
+        Marginesy - zapis skrócony
+        <bR>
+        <br>
+        <span class="syntax" style="width: 600px; margin-left: 200px;">
+          selektor
+{
+   margin: wartosci atrybutów;
+}
+        </span>
+        <Br>
+        <span style="font-size: 22px;">
+          Jako "wartości atrybutów" należy podać:
+        </span>
+
+
+
+
+
+        <div style="font-size: 22px; display: flex; justify-content: center;">
+          <ul class="listamargines" style="font-size: 22px; text-align: left;">
+            <li><samp>Jedną wartość</samp> -  wtedy wszystkie marginesy będą jednakowe</li>
+            <li><samp>Dwie wartości</samp> -  z których pierwsza oznacza górny i dolny margines, natomiast druga -  lewy i prawy.</li>
+            <li><samp>Trzy wartości </samp> -  z których pierwsza oznacza górny margines, druga - jednocześnie lewy i prawy, a ostatnia - dolny.</li>
+            <li><samp>Cztery wartości</samp>  - które oznaczają kolejno marginesy: górny, prawy, dolny, lewy.</li>
+      
+          
+          
+          
+          </ul>
+        </div>
+        
+    </div>
+
+    <div class="hd1" style="margin-top: 10px; font-size:30px;">
+      Odstępy między znakami
+      <bR>
+      <br>
+      <span class="syntax" style="width: 600px; margin-left: 200px;">
+        selektor
+{
+   letter-spacing: odległość;
+}
+      </span>
+      <Br>
+      <span style="font-size: 22px;">
+        Jako "odległość" należy podać wartość wyrażoną w pixelach, która będzie określała odległość między znakami. Może być to również wartość ujemna. 
+      </span>
+
+
+
+
+
+      <div style="font-size: 22px; display: flex; justify-content: center;">
+        <ul class="listamargines" style="font-size: 22px; text-align: left;">
+          <li><samp>left</samp> - wyrównanie tekstu do lewego marginesu (domyślnie)</li>
+          <li><samp>right</samp> - wyrównanie do prawego marginesu</li>
+          <li><samp>center</samp> - do środka (wyśrodkowanie)</li>
+          <li><samp>justify</samp> - do obu marginesów jednocześnie (justowanie)</li>
+        
+        
+        
+        </ul>
+      </div>
+      <br><br>
+      <span style="font-size: 22px;">
+      Przykład:
+      </span>
+      <br><br>
+      <div style="font-size: 22px;">
+        HTML:
+        <br>
+        <span class="syntax" style="height: 80px;">
+          &lt;p class="klasajeden"&gt;Tekst 1&lt;/p&gt;
+          <br>
+          &lt;p class="klasadwa"&gt;Tekst 2&lt;/p&gt;
+        </span>
+        <br><br>
+        CSS:
+        <br>
+        <span class="syntax" style="height: 80px;">
+          .klasajeden
+{
+   letter-spacing: 2px;
+}
+<Br>
+.klasadwa
+{
+   letter-spacing: -15px;
+}
+        </span>
+        <br><br>
+        Rezultat:
+        <br>
+        <span style="letter-spacing: 2px; margin-bottom: 10px;" class="syntax">
+           Tekst 1
+        </span>
+        <br>
+        <span style="letter-spacing: -15; margin-top: 10px;" class="syntax">
+          Tekst 1
+       </span>
+     </div>
+      
+  </div>
+
+
+  <div class="hd1" style="margin-top: 10px; font-size:30px;">
+    Kolor tła
+    <bR>
+    <br>
+    <span class="syntax" style="width: 600px; margin-left: 200px;">
+      selektor
+{
+   background: kolor;
+}
+    </span>
+    <Br>
+    <span style="font-size: 22px;">
+      Jako kolor należy podać <a href="../Tabela-z-kolorami/index.html">definicję koloru</a> 
+    </span>
+
+
+
+
+
+    <div style="font-size: 22px; display: flex; justify-content: center;">
+      <ul class="listamargines" style="font-size: 22px; text-align: left;">
+        <li><samp>left</samp> - wyrównanie tekstu do lewego marginesu (domyślnie)</li>
+        <li><samp>right</samp> - wyrównanie do prawego marginesu</li>
+        <li><samp>center</samp> - do środka (wyśrodkowanie)</li>
+        <li><samp>justify</samp> - do obu marginesów jednocześnie (justowanie)</li>
+      
+      
+      
+      </ul>
+    </div>
+    <br><br>
+      <span style="font-size: 22px;">
+      Przykład:
+      </span>
+      <br><br>
+      <div style="font-size: 22px;">
+        HTML:
+        <br>
+        <span class="syntax" >
+          &lt;p class="napis"&gt;Tekst 1&lt;/p&gt;
+        </span>
+        <br><br>
+        CSS:
+        <br>
+        <span class="syntax" >
+          .napis
+{
+   background: #FF0000;
+}
+        </span>
+        <br><br>
+        Rezultat:
+        <br>
+        <span style=" margin-bottom: 10px;" class="syntax">
+           <span style="background-color: red;">Tekst 1</span>
+        </span>
+        
+     </div>
+    
+</div>
+
+<div class="hd1" style="margin-top: 10px; font-size:30px;">
+  Obraz jako tło
+  <bR>
+  <br>
+  <span class="syntax" style="width: 600px; margin-left: 200px;">
+    selektor
+{
+   background-image: url('scieżka');
+}
+  </span>
+  <Br>
+  <span style="font-size: 22px;">
+    Jako ścieżka należy podać scieżkę do interesującego nas obrazka 
+  </span>
+  <br><br>
+      <span style="font-size: 22px;">
+      Przykład:
+      </span>
+      <br><br>
+      <div style="font-size: 22px;">
+        HTML:
+        <br>
+        <span class="syntax" >
+          &lt;p class="napis"&gt;Tekst 1&lt;/p&gt;
+        </span>
+        <br><br>
+        CSS:
+        <br>
+        <span class="syntax" style="height: 80px;">
+          .napis
+{
+   background-image: url('../img/code.webp');
+}
+        </span>
+        <br><br>
+        Rezultat:
+        <br>
+        <span style=" margin-bottom: 10px;" class="syntax">
+           <span style="background-image: url('../img/code.webp');">Tekst 1</span>
+        </span>
+        
+     </div>
+  
+</div>
+
+
+<div class="hd1" style="margin-top: 10px; font-size:30px;">
+  Rozmiary tła
+  <bR>
+  <br>
+  <span class="syntax" style="width: 600px; margin-left: 200px;">
+    selektor
+{
+   background-size: szerokość wysokość;
+}
+  </span>
+  <Br>
+  <span style="font-size: 22px;">
+    Jako szerokość należy podać szerokość w pikselach
+<br>
+Jako wysokość należy podać wysokość w pikselach 
+  </span>
+
+
+  
+</div>
+
+
+<div class="hd1" style="margin-top: 10px; font-size:30px;">
+  Powtarzanie tła
+  <bR>
+  <br>
+  <span class="syntax" style="width: 600px; margin-left: 200px;">
+    selektor
+{
+   background-repeat: powtarzanie;
+}
+  </span>
+  <Br>
+  <span style="font-size: 22px;">
+    Jako "powtarzanie" należy wpisać:
+  </span>
+
+
+
+
+
+  <div style="font-size: 22px; display: flex; justify-content: center;">
+    <ul class="listamargines" style="font-size: 22px; text-align: left;">
+			<li><samp>repeat</samp> - powtarzanie tła w obu kierunkach (domyślnie)</li>
+			<li><samp>repeat-x</samp> - powtarzanie tła tylko w kierunku poziomym</li>
+			<li><samp>repeat-y</samp> - powtarzanie tła tylko w kierunku pionowym</li>
+			<li><samp>no-repeat</samp> - brak powtarzania tła (zostanie wyświetlone jako pojedynczy obrazek)</li>
+			<li><samp>space</samp> -  przestrzeń pomiędzy obrazkami w tle zostanie dobrana w taki sposób, aby żadna grafika nie była przycięta (CSS 3 - MSIE 9, Opera)</li>
+			<li><samp>round</samp> - wymiary obrazka w tle zostaną dopasowane w taki sposób, aby żadna grafika nie była przycięta (CSS 3 - MSIE 9, Opera)</li>
+		
+		
+		
+		</ul>
+  </div>
+  
+  
+</div>
+
+
+
+
+
+        </div>
+    </div>
+</body>
 </html>
