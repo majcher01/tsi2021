@@ -102,7 +102,7 @@ mark {
                 </span>
             </p>
 
-            <div class="hd1" style="margin-top: 10px; font-size:30px; height: 1150px;">
+            <div class="hd1" style="margin-top: 10px; font-size:30px; height: 1500px;">
                 Listy uporządkowane
                 <bR>
                 <br>
@@ -157,7 +157,9 @@ mark {
                         
                         Gdy jako wartość ustawimy "A" podpunkty listy będą numerowane wielkimi literami alfabetu (A, B, C, D, E, F...)<br>
                         Gdy jako wartość ustawimy "a" podpunkty listy będą numerowane małymi literami alfabetu (a, b, c, d, e, f...)<br>
-                        Gdy jako wartość ustawimy "I" podpunkty listy będą numerowane cyframi rzymskimi (I, II, III, IV, V, VI...)<br><br>
+                        Gdy jako wartość ustawimy "I" podpunkty listy będą numerowane cyframi rzymskimi (I, II, III, IV, V, VI...)<br>
+                        Gdy jako wartość ustawimy "i" podpunkty listy będą numerowane małymi cyframi rzymskimi (I, II, III, IV, V, VI...)<br><br>
+
                         
                         
                         Możemy rozpocząć numerowanie od dowolnej litery lub liczby. By to zrobić musimy dodać atrybut <samp>start</samp>, a jako wartość ustawić numer pierwszego podpunku. (gdy np. ustawimy <samp>start</samp>="5" lista rozpocznie się od 5)
@@ -191,6 +193,40 @@ mark {
                         </div>
                       </div>
                       </div>
+                      <p style="font-size: 22px; margin-top: 170px;">
+                        type="i"
+                      </p>
+                      <div style="display: flex; justify-content: center; margin-top: 50px;">
+                        <div class="flip-card" style="width: 500px;">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front" style="height: 220px;">
+                                  <p style="color: white; font-size: 22px;">
+                               <samp><samp>&lt;ol type="i"&gt;</samp>
+                                   <br>
+                                <samp>&lt;li&gt;</samp>jeden<samp>&lt;/li&gt;</samp>
+                                <br>
+                                <samp>&lt;li&gt;</samp>dwa<samp>&lt;/li&gt;</samp>
+                                <br>
+                                <samp>&lt;li&gt;</samp>trzy<samp>&lt;/li&gt;</samp>
+                                <br>
+                                <samp>&lt;li&gt;</samp>cztery<samp>&lt;/li&gt;</samp>
+                                <br>
+                            <samp>&lt;/ol&gt;</samp></samp>
+                                </p>
+                              </div>
+                              <div class="flip-card-back" style="height: 220px; font-size:22px;">
+                                <div style="font-size: 22px; display: flex; justify-content: center; padding-top: 30px;">
+                                    <ol style="font-size: 22px; text-align: left;" type="i">
+                                        <li>jeden</li>
+                                        <li>dwa</li>
+                                        <li>trzy</li>
+                                        <li>cztery</li>
+                                    </ol>
+                                 </div>
+                              </div>
+                            </div>
+                          </div>
+                          </div>
 
             </div>
 
@@ -427,6 +463,84 @@ mark {
                   
 
             </div>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px; height: 1000px;">
+              Co się stanie gdy skończą się litery ?
+              <bR>
+              <br>
+              <div style="font-size: 22px;">
+                  Gdy lista uporządkowana typu "a" lub "A" będzie miała więcej niż 26 pozycji (ilość liter w angielskim alfabecie) kolejny numer będzie poprzedzała liera "a" lub "A" w zależności od typu listy, np. aa, ab, ac itd. / AA, AB, AC itd. Dwa elementy <samp>&lt;li&gt;</samp> w liście nie mogą mieć identycznego identyfikatora. 
+                  <br>
+                  <br>
+                  
+                  
+              </div>
+
+              <div style="display: flex; justify-content: center; margin-top: 30px;">
+              <div class="flip-card" style="width: 500px;">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front" style="height: 350px;">
+                        <p style="color: white; font-size: 22px; padding-top: 50px;">
+                          &lt;ol style="font-size: 22px; text-align: left;" <Br> type="A" start="25"&gt;<br>
+                              &lt;li&gt;jeden&lt;/li&gt;<br>
+                              &lt;li&gt;dwa&lt;/li&gt;<br>
+                              &lt;li&gt;trzy&lt;/li&gt;<br>
+                              &lt;li&gt;cztery&lt;/li&gt;<br>
+                              &lt;li&gt;pięć&lt;/li&gt;<br>
+                          &lt;/ol&gt;
+                      </p>
+                    </div>
+                    <div class="flip-card-back" style="height: 350px; font-size:22px;">
+                      <div style="font-size: 22px;  padding-top: 70px;">
+                          <span style="display: flex; justify-content: center;">
+                          <ol style="font-size: 22px; text-align: left;" type="A" start="25">
+                              <li>jeden</li>
+                              <li>dwa</li>
+                              <li>trzy</li>
+                              <li>cztery</li>
+                              <li>pięć</li>
+                          </ol>
+                          </span>
+                       </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+
+                <div style="display: flex; justify-content: center; margin-top: 300px;">
+                  <div class="flip-card" style="width: 500px;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" style="height: 350px;">
+                            <p style="color: white; font-size: 22px; padding-top: 50px;">
+                              &lt;ol style="font-size: 22px; text-align: left;" <Br> type="a" start="25"&gt;<br>
+                                  &lt;li&gt;jeden&lt;/li&gt;<br>
+                                  &lt;li&gt;dwa&lt;/li&gt;<br>
+                                  &lt;li&gt;trzy&lt;/li&gt;<br>
+                                  &lt;li&gt;cztery&lt;/li&gt;<br>
+                                  &lt;li&gt;pięć&lt;/li&gt;<br>
+                              &lt;/ol&gt;
+                          </p>
+                        </div>
+                        <div class="flip-card-back" style="height: 350px; font-size:22px;">
+                          <div style="font-size: 22px;  padding-top: 70px;">
+                              <span style="display: flex; justify-content: center;">
+                              <ol style="font-size: 22px; text-align: left;" type="a" start="25">
+                                  <li>jeden</li>
+                                  <li>dwa</li>
+                                  <li>trzy</li>
+                                  <li>cztery</li>
+                                  <li>pięć</li>
+                              </ol>
+                              </span>
+                           </div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+
+                
+
+          </div>
 
 
             <p class="hd1" style="margin-top: 10px; font-size:22px; height: 30px;">
