@@ -38,6 +38,22 @@
             text-decoration: none;
         }
 
+        .syntax{
+          height: 50px;
+          width:500px;
+          background-color: rgba(187, 187, 187, 0.226);
+          display: block;
+          text-align: center;
+          margin-bottom: 30px;
+          padding-top: 18px;
+          margin-left: 250px;
+          margin-top: 30px;
+          font-family: monospace;
+          border: 1px dotted white;
+          border-radius: 10px;
+          font-size: 20px;
+        }
+
         .flip-card {
   background-color: transparent;
   width: 400px;
@@ -107,66 +123,205 @@ mark {
                 <bR>
                 <br>
                 <div style="font-size: 22px;">
-                    Aby określić rozmiar tekstu należy umieścić go między znacznikami:
+                    Rozmiar tekstu można określić na dwa sposoby. Za pomocą znacznika <samp>&lt;font&gt;</samp> z parametrem <samp>size</samp> jednak jest to przestarzały znacznik i nie należy go używać. Lepszym sposobem jest nadanie stylu za pomocą CSS.
                     <br>
                     <br>
-                    <span style="font-size: 16px;">
-                        Najedź na prostokąt aby zobaczyć przykład.
-                    </span>
+                    <ul>
+                      <li>
+                        HTML<br><br>
+                        Znacznik <samp>&lt;font&gt;</samp> obsługuje tylko 7 rozmiarów czcionki, jeżeli podamy większy niż 7 i tak zostanie wyświetlona czcionka o rozmiarze 7.
+                      </li>
+                    </ul>
+                    
                 </div>
-
-                <div style="display: flex; justify-content: center; margin-top: 30px;">
-                <div class="flip-card" style="width: 500px;">
+<div style="display: flex; justify-content: center;">
+                <div style=" margin-top: 30px;">
+                <div class="flip-card" style="width: 700px;">
                     <div class="flip-card-inner">
                       <div class="flip-card-front">
                           <p style="color: white;">
-                       <samp><b> &lt;font size="X"&gt;&lt;/font&gt; </b></samp>
+                       <samp><b> &lt;font size="2px"&gt;&lt;/font&gt; </b></samp>
                         </p>
                       </div>
                       <div class="flip-card-back">
-                        <p style="font-size: 16pt; color: white; padding-top: 15px;">
-                            Czcionka o rozmiarze 16pt
+                        <p>
+                           <font size="2px" >Czcionka o rozmiarze 2px</font>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card" style="width: 700px; margin-top: 50px;">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <p style="color: white;">
+                       <samp><b> &lt;font size="7px"&gt;&lt;/font&gt; </b></samp>
+                        </p>
+                      </div>
+                      <div class="flip-card-back">
+                        <p>
+                           <font size="7px" >Czcionka o rozmiarze 7px</font>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card" style="width: 700px; margin-top: 50px;">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <p style="color: white;">
+                       <samp><b> &lt;font size="100px"&gt;&lt;/font&gt; </b></samp>
+                        </p>
+                      </div>
+                      <div class="flip-card-back">
+                        <p>
+                           <font size="100px" >Czcionka o rozmiarze 100px</font>
                         </p>
                       </div>
                     </div>
                   </div>
                   </div>
+</div>
+
+<div style="font-size: 22px; margin-top: 100px;">
+  
+  <ul>
+    <li>
+      CSS<br><br>
+      Rozmiar możemy określić stylem CSS, stosując go dla całego elementu sekcji lub umieścić tekst między znacznikami <samp>&lt;span&gt;</samp> i nadać styl tylko temu elementowi.
+    </li>
+  </ul>
+  
+</div>
+
+<div style="display: flex; justify-content: center;">
+  <div style=" margin-top: 30px;">
+  <div class="flip-card" style="width: 700px;">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <p style="color: white; font-size: 22px;">
+         <samp>&lt;span style="font-size: 30px;"&gt;Tekst o rozmiarze 30px&lt;/span&gt;</samp>
+          </p>
+        </div>
+        <div class="flip-card-back">
+          <p>
+             <span style="font-size: 30px;">Tekst o rozmiarze 30px</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+</div>
 
             </div>
 
 
 
             <div class="hd1" style="margin-top: 10px; font-size:30px;">
-                Kolor tekstu
-                <bR>
-                <br>
-                <div style="font-size: 22px;">
-                    Aby określić kolor tekstu należy umieścić go między znacznikami:
-                    <br>
-                    <br>
-                    <span style="font-size: 16px;">
-                        Najedź na prostokąt aby zobaczyć przykład.
-                    </span>
-                </div>
-
-                <div style="display: flex; justify-content: center; margin-top: 30px;">
-                <div class="flip-card" style="width: 500px;">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                          <p style="color: white;">
-                       <samp><b> &lt;font color="X"&gt;&lt;/font&gt; </b></samp>
-                        </p>
-                      </div>
-                      <div class="flip-card-back">
-                        <p style="font-size: 16pt; color: yellow; padding-top: 15px;">
-                            Tekst o kolorze żółtym
-                        </p>
-                      </div>
+              Kolor tekstu
+              <bR>
+              <br>
+              <div style="font-size: 22px;">
+                  Kolor tekstu można określić na dwa sposoby. Za pomocą znacznika <samp>&lt;font&gt;</samp> z parametrem <samp>color</samp> jednak jest to przestarzały znacznik i nie należy go używać. Lepszym sposobem jest nadanie stylu za pomocą CSS.
+                  <br>
+                  <br>
+                  <ul>
+                    <li>
+                      HTML<br><br>
+                      Znacznik <samp>&lt;font&gt;</samp>.
+                    </li>
+                  </ul>
+                  
+              </div>
+<div style="display: flex; justify-content: center;">
+              <div style=" margin-top: 30px;">
+              <div class="flip-card" style="width: 700px;">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p style="color: white; font-size: 22px;">
+                     <samp>&lt;font color="yellow" &gt;Czcionka koloru żółtego&lt;/font&gt;</samp>
+                      </p>
+                    </div>
+                    <div class="flip-card-back">
+                      <p>
+                         <font color="yellow" >Czcionka koloru żółtego</font>
+                      </p>
                     </div>
                   </div>
-                  </div>
+                </div>
+                
+                </div>
+</div>
 
-            </div>
+<div style="font-size: 22px; margin-top: 100px;">
+
+<ul>
+  <li>
+    CSS<br><br>
+    Kolor możemy określić stylem CSS, stosując go dla całego elementu sekcji lub umieścić tekst między znacznikami <samp>&lt;span&gt;</samp> i nadać styl tylko temu elementowi.
+  </li>
+</ul>
+
+</div>
+
+<div style="display: flex; justify-content: center;">
+<div style=" margin-top: 30px;">
+<div class="flip-card" style="width: 700px;">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+          <p style="color: white; font-size: 22px;">
+       <samp>&lt;span style="color: yellow;"&gt;Czcionka koloru żółtego&lt;/span&gt;</samp>
+        </p>
+      </div>
+      <div class="flip-card-back">
+        <p>
+           <span style="color: yellow;">Czcionka koloru żółtego</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+  
+</div>
+
+<div style="font-size: 22px; margin-top: 100px;">
+
+  <ul>
+    <li>
+      Sposoby określania koloru
+      <br><br>
+      Jako kolor należy podać konkretną wartość w zapisie rgb, heksadecymalnym lub definicję koloru.
+    </li>
+  </ul>
+  
+  </div>
+
+ 
+    
+  
+  <span class="syntax" style="margin-bottom: 0px;">
+  <span style="color: red;">
+  red
+  </span>
+  </span>
+  <br>
+  <span class="syntax" style="margin-bottom: 0px;">
+    <span style="color: #FF0000">
+    #FF0000
+    </span>
+    </span>
+    <br>
+    <span class="syntax" style="margin-bottom: 0px;">
+      <span style="color: rgb(255, 0, 0)">
+      rgb(255, 0, 0)
+      </span>
+      </span>
+      <br>
+  
+  
+  
+  
+
+          </div>
 
             <div class="hd1" style="margin-top: 10px; font-size:30px; height: 740px;">
                 Wyróżniki tekstu
