@@ -8,6 +8,24 @@ body{
     margin-bottom: 100px;
 }
 
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+  }
+  
+  td{
+      padding: 0px 15px 0px 15px;
+  }
+
+  .tdimg{
+    padding: 0px 0px 0px 0px;
+}
+
+a{
+    color: white;
+    text-decoration: dotted;
+}
+
 .srodek{
     display: flex;
     justify-content: center;
