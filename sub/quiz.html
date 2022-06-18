@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="../img/majcherski-ico.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+        body{
+            font-family: 'Oxygen', sans-serif;
+            margin: 0px 0px 0px 0px;
+            color: white;
+            margin-bottom: 150px;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+
+        .srodek{
+            display: flex;
+            justify-content: center;
+        }
+        .hd1{
+            font-size: 22px;
+            margin-top: 20px;
+            border: 1px solid white;
+            padding: 15px 30px 15px 30px;
+            border-radius: 10px;
+            width: 650px;
+            text-align: left;
+            background-color: #68686825;
+            margin-bottom: 0px;
+        }
+
+        
+.question{
+	font-weight: 600;
+}
+.answers {
+  margin-bottom: 20px;
+}
+.answers label{
+  display: block;
+}
+#submit{
+	font-family: sans-serif;
+	font-size: 20px;
+	background-color: #279;
+	color: #fff;
+	border: 0px;
+	border-radius: 3px;
+	padding: 20px;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+#submit:hover{
+	background-color: #38a;
+}
+        </style>
+</head>
+<body>
+    <div class="srodek">
+        <div style="margin-top: 80px; font-size: 20px;">
+            <div style="padding-left: 0px; ">
+            <p class="hd1" style="text-align: center;" >
+                 Po ukończeniu kursu zapraszam do wzięcia udziału w krótkim quizie sprawdzającym zdobytą wiedzę.
+            </p>
+            </div>
+
+            
+
+            <div style="margin-top: 20px; " class="hd1">
+                <div id="quiz"></div>
+<button id="submit">Sprawdź</button>
+<div id="results"></div>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+<script>
+    (function(){
+  function buildQuiz(){
+    // variable to store the HTML output
+    const output = [];
+
+    // for each question...
+    myQuestions.forEach(
+      (currentQuestion, questionNumber) => {
+
+        // variable to store the list of possible answers
+        const answers = [];
+
+        // and for each available answer...
+        for(letter in currentQuestion.answers){
+
+          // ...add an HTML radio button
+          answers.push(
+            `<label>
+              <input type="radio" name="question${questionNumber}" value="${letter}">
+              ${letter} :
+              ${currentQuestion.answers[letter]}
+            </label>`
+          );
+        }
+
+        // add this question and its answers to the output
+        output.push(
+          `<div class="question"> ${currentQuestion.question} </div>
+          <div class="answers"> ${answers.join('')} </div>`
+        );
+      }
+    );
+
+    // finally combine our output list into one string of HTML and put it on the page
+    quizContainer.innerHTML = output.join('');
+  }
+
+  function showResults(){
+
+    // gather answer containers from our quiz
+    const answerContainers = quizContainer.querySelectorAll('.answers');
+
+    // keep track of user's answers
+    let numCorrect = 0;
+
+    // for each question...
+    myQuestions.forEach( (currentQuestion, questionNumber) => {
+
+      // find selected answer
+      const answerContainer = answerContainers[questionNumber];
+      const selector = `input[name=question${questionNumber}]:checked`;
+      const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+
+      // if answer is correct
+      if(userAnswer === currentQuestion.correctAnswer){
+        // add to the number of correct answers
+        numCorrect++;
+
+        // color the answers green
+        answerContainers[questionNumber].style.color = 'lightgreen';
+      }
+      // if answer is wrong or blank
+      else{
+        // color the answers red
+        answerContainers[questionNumber].style.color = 'red';
+      }
+    });
+
+    // show number of correct answers out of total
+    resultsContainer.innerHTML = `${numCorrect} z ${myQuestions.length}`;
+  }
+
+  const quizContainer = document.getElementById('quiz');
+  const resultsContainer = document.getElementById('results');
+  const submitButton = document.getElementById('submit');
+  const myQuestions = [
+    {
+      question: "Czym jest HTML ?",
+      answers: {
+        a: "Językiem programowania",
+        b: "Rodzajem procesora",
+        c: "Językiem znaczników."
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "Które określenie koloru jest prawidłowe ?",
+      answers: {
+        a: "rgb(332, 523)",
+        b: "#00FF00",
+        c: "czerwony"
+      },
+      correctAnswer: "b"
+    },
+    {
+      question: "Który znacznik umożliwia podświetlenie tekstu ?",
+      answers: {
+        a: "&lt;mark&gt;",
+        b: "&lt;div&gt;",
+        c: "&lt;h2&gt;",
+        d: "&lt;script&gt;"
+      },
+      correctAnswer: "a"
+    },
+    {
+      question: "Który selektor odniesie się do wszystkich elementów strony ?",
+      answers: {
+        a: "all",
+        b: "html",
+        c: "body",
+        d: "*"
+      },
+      correctAnswer: "d"
+    },
+    {
+      question: "Czym jest CSS ?",
+      answers: {
+        a: "Kaskadowym arkuszem stylów",
+        b: "Platformą wymiany plików",
+        c: "Amerykańskim okrętem bojowym",
+        d: "Rodzajem piwa"
+      },
+      correctAnswer: "a"
+    },
+    {
+      question: "Jaki znacznik tworzy listę uporządkowaną ?",
+      answers: {
+        a: "&lt;ol&gt;",
+        b: "&lt;ul&gt;",
+        c: "&lt;el&gt;",
+        d: "&lt;al&gt;"
+      },
+      correctAnswer: "a"
+    }
+  ];
+
+  // Kick things off
+  buildQuiz();
+
+  // Event listeners
+  submitButton.addEventListener('click', showResults);
+})();
+    </script>
+</body>
+</html>
