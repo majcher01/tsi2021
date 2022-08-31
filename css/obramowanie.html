@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/progressbar.css">
+
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+        body{
+            font-family: 'Oxygen', sans-serif;
+            margin: 0px 0px 0px 0px;
+            color: white;
+            margin-bottom: 200px;
+        }
+        .srodek{
+            display: flex;
+            justify-content: center;
+        }
+
+        html{
+          scroll-behavior: smooth;
+        }
+
+        .hd1{
+            font-size: 34px;
+            margin-top: 20px;
+            border: 1px solid white;
+            padding: 15px 30px 15px 30px;
+            border-radius: 10px;
+            width: 1000px;
+            text-align: center;
+            background-color: #68686825;
+            margin-bottom: 0px;
+        }
+
+        abbr{
+            text-decoration: none;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        .syntax{
+          height: 50px;
+          width:500px;
+          background-color: rgba(187, 187, 187, 0.226);
+          display: block;
+          text-align: center;
+          margin-bottom: 30px;
+          padding-top: 18px;
+          margin-left: 250px;
+          margin-top: 30px;
+          font-family: monospace;
+          border: 1px dotted white;
+          border-radius: 10px;
+          font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+  <div class="header">
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+    <div class="srodek">
+        <div>
+            
+            <p class="hd1" style="margin-top: 10px; font-size:30px;">
+                Obramowanie
+            </p>
+            <div class="hd1" style="margin-top: 10px; font-size:22px;">
+              Obramowanie można określić na dwa sposoby:
+              <br>
+              <ul type="none">
+                <li style="margin-top: 50px;">
+                  Określić wszystkie parametry osobno:
+                  <br>
+                  <span class="syntax" style="height: 200px; text-align: left; ">
+                    <span style="padding-left: 100px; display: block;">
+                    selektor
+                    <br>
+                    {<br>
+                      border-X-style: styl;<br>
+                      border-X-width: szerkość;<br>
+                      border-X-color: kolor;<br>
+                    }
+                    </span>
+                    
+                  </span>
+                  Gdzie jako "X" należy wpisać które obramowanie określamy (top, bottom, right, left).
+                </li>
+                <li style="margin-top: 50px;">
+                  Lub wszystkie razem:
+                  <br>
+                  <span class="syntax" style="height: 140px; text-align: left; ">
+                    <span style="padding-left: 100px; display: block;">
+                    selektor
+                    <br>
+                    {<br>
+                      border-X: styl szerokość kolor;<br>
+                    }
+                    </span>
+                    
+                  </span>
+                  Gdzie jako "X" należy wpisać które obramowanie określamy (top, bottom, right, left).
+                </li>
+              </ul>
+            </div>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+                Obramowanie górne
+                <bR>
+                <br>
+                <span class="syntax" style="height: 80px;">
+                  selektor
+{
+   border-top: styl wielkość kolor;
+}
+                </span>
+                <Br>
+                <span style="font-size: 22px;">
+                  <a href="#copowinnosieznajdowac">TUTAJ</a> znajdziesz co powinno się znajdować w miejscach styl, wielkość i kolor.
+                  
+</span>
+<br><br>
+
+<span class="syntax">
+  <span style="border-top: 2px solid red">
+    Obramowanie górne
+  </span>
+</span>
+
+            </div>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+              Obramowanie dolne
+              <bR>
+              <br>
+              <span class="syntax" style="height: 80px;">
+                selektor
+{
+ border-bottom: styl wielkość kolor;
+}
+              </span>
+              <Br>
+              <span style="font-size: 22px;">
+                <a href="#copowinnosieznajdowac">TUTAJ</a> znajdziesz co powinno się znajdować w miejscach styl, wielkość i kolor.
+                
+</span>
+<br><br>
+
+<span class="syntax">
+<span style="border-bottom: 2px solid red">
+  Obramowanie dolne
+</span>
+</span>
+
+          </div>
+
+          <div class="hd1" style="margin-top: 10px; font-size:30px;">
+            Obramowanie lewe
+            <bR>
+            <br>
+            <span class="syntax" style="height: 80px;">
+              selektor
+{
+border-left: styl wielkość kolor;
+}
+            </span>
+            <Br>
+            <span style="font-size: 22px;">
+              <a href="#copowinnosieznajdowac">TUTAJ</a> znajdziesz co powinno się znajdować w miejscach styl, wielkość i kolor.
+              
+</span>
+<br><br>
+
+<span class="syntax">
+<span style="border-left: 2px solid red">
+Obramowanie lewe
+</span>
+</span>
+
+        </div>
+
+
+        <div class="hd1" style="margin-top: 10px; font-size:30px;">
+          Obramowanie prawe
+          <bR>
+          <br>
+          <span class="syntax" style="height: 80px;">
+            selektor
+{
+border-right: styl wielkość kolor;
+}
+          </span>
+          <Br>
+          <span style="font-size: 22px;">
+            <a href="#copowinnosieznajdowac">TUTAJ</a> znajdziesz co powinno się znajdować w miejscach styl, wielkość i kolor.
+            
+</span>
+<br><br>
+
+<span class="syntax">
+<span style="border-right: 2px solid red">
+Obramowanie prawe
+</span>
+</span>
+
+      </div>
+
+
+      <div class="hd1" style="margin-top: 10px; font-size:30px;">
+        Obramowanie ze wszystkich stron
+        <bR>
+        <br>
+        <span class="syntax" style="height: 80px;">
+          selektor
+{
+border: styl wielkość kolor;
+}
+        </span>
+        <Br>
+        <span style="font-size: 22px;">
+          <a href="#copowinnosieznajdowac">TUTAJ</a> znajdziesz co powinno się znajdować w miejscach styl, wielkość i kolor.
+          
+</span>
+<br><br>
+
+<span class="syntax">
+<span style="border: 2px solid red">
+Obramowanie całe
+</span>
+</span>
+
+    </div>
+
+    <p class="hd1" style="margin-top: 10px; font-size:30px;" id="copowinnosieznajdowac">
+      Styl, wielkość i kolor
+  </p>
+
+  <div class="hd1" style="margin-top: 10px; font-size:30px;">
+    Styl obramowania
+
+<br><br>
+
+<span class="syntax" style="margin-bottom: 0px;">
+<span style="border: 2px solid red">
+<samp>solid</samp> - jednolite ciągłe
+</span>
+</span>
+<br>
+<span class="syntax" style="margin-bottom: 0px; margin-top: 0px;">
+  <span style="border: 2px dotted red">
+  <samp>dotted</samp> - kropkowane
+  </span>
+  </span>
+  <br>
+  <span class="syntax" style="margin-bottom: 0px; margin-top: 0px;">
+    <span style="border: 2px dashed red">
+    <samp>dashed</samp> - kreskowane
+    </span>
+    </span>
+    <br>
+    <span class="syntax" style="margin-bottom: 0px; margin-top: 0px;">
+      <span style="border: 2px double red">
+      <samp>double</samp> - podwójne
+      </span>
+      </span>
+      <br>
+      <span class="syntax" style="margin-bottom: 0px; margin-top: 0px;">
+        <span style="border: 2px groove red">
+        <samp>groove</samp> - wklęsłe
+        </span>
+        </span>
+        <br>
+        <span class="syntax" style="margin-bottom: 0px; margin-top: 0px;">
+          <span style="border: 2px ridge red">
+          <samp>ridge</samp> - wypukłe
+          </span>
+          </span>
+          <br>
+          <span class="syntax" style="margin-bottom: 0px; margin-top: 0px;">
+            <span style="border: 2px inset red">
+            <samp>inset</samp> - wklejające
+            </span>
+            </span>
+            <br>
+            <span class="syntax" style="margin-bottom: 0px; margin-top: 0px;">
+              <span style="border: 2px outset red">
+              <samp>outset</samp> - uwypuklające
+              </span>
+              </span>
+              <br>
+              <span class="syntax" style="margin-bottom: 0px; margin-top: 0px;">
+                <span style="border: 2px none red">
+                <samp>none</samp> - brak obramowania
+                </span>
+                </span>
+                <br>
+
+
+</div>
+
+<div class="hd1" style="margin-top: 10px; font-size:30px;">
+  Rozmiar obramowania
+<br>
+<span style="margin-top: 20px; font-size:22px;">
+  Można tu podać konkretną wartość np. 2px lub jedną ze stałych:
+</span>
+<br><br>
+
+<span class="syntax" style="margin-bottom: 0px;">
+<span style="border: thin solid red">
+<samp>thin</samp> - cienkie obramowanie
+</span>
+</span>
+<br>
+<span class="syntax" style="margin-bottom: 0px;">
+  <span style="border: medium solid red">
+  <samp>medium</samp> - średnie obramowanie
+  </span>
+  </span>
+  <br>
+  <span class="syntax" style="margin-bottom: 0px;">
+    <span style="border: thick solid red">
+    <samp>thick</samp> - grube obramowanie
+    </span>
+    </span>
+    <br>
+
+
+
+</div>
+
+<div class="hd1" style="margin-top: 10px; font-size:30px;">
+  Kolor obramowania
+<br>
+<span style="margin-top: 20px; font-size:22px;">
+  Jako kolor należy podać konkretną wartość w zapisie rgb, heksadecymalnym lub definicję koloru.
+</span>
+<br><br>
+
+<span class="syntax" style="margin-bottom: 0px;">
+<span style="border: 2px solid red">
+red
+</span>
+</span>
+<br>
+<span class="syntax" style="margin-bottom: 0px;">
+  <span style="border: 2px solid #FF0000">
+  #FF0000
+  </span>
+  </span>
+  <br>
+  <span class="syntax" style="margin-bottom: 0px;">
+    <span style="border: 2px solid rgb(255, 0, 0)">
+    rgb(255, 0, 0)
+    </span>
+    </span>
+    <br>
+
+
+
+</div>
+
+<p class="hd1" style="margin-top: 10px; font-size:22px; height: 30px; ">
+                
+  <span style="float: left;">
+    <a href="marginesy.html"> <- Poprzednia strona</a>
+  </span>
+  <span style="float: right;">
+      <a href="kursory.html">Następna strona -></a>
+  </span>
+</p>
+
+
+
+            
+
+          
+
+
+
+
+
+
+        </div>
+    </div>
+    <script src="js/progressbar.js"></script>
+
+
+</body>
+</html>

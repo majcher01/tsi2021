@@ -4,8 +4,523 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/progressbar.css">
+
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+        body{
+            font-family: 'Oxygen', sans-serif;
+            margin: 0px 0px 0px 0px;
+            color: white;
+            margin-bottom: 200px;
+        }
+        .srodek{
+            display: flex;
+            justify-content: center;
+        }
+
+        .hd1{
+            font-size: 34px;
+            margin-top: 20px;
+            border: 1px solid white;
+            padding: 15px 30px 15px 30px;
+            border-radius: 10px;
+            width: 1000px;
+            text-align: center;
+            background-color: #68686825;
+            margin-bottom: 0px;
+        }
+
+        abbr{
+            text-decoration: none;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+        }
+
+        .flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 100px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: transparent;
+  color: black;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: #08004e;
+}
+
+.flip-card-back {
+  background-color: #08004e;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+mark {
+  background-color: yellow;
+  color: black;
+}
+    </style>
 </head>
 <body>
-    tabele
+  <div class="header">
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+    <div class="srodek">
+        <div>
+            <p class="hd1">
+                TABELE
+            </p>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+              Znaczniki wykorzystywane do tworzenia tabel
+              <bR>
+              <br>
+              <div style="font-size: 22px; display: flex; justify-content: center;">
+                 <ul style="font-size: 22px; text-align: left;">
+                     <li><samp>&lt;table&gt;</samp> - tworzy i otwiera tabelę</li>
+                     <li><samp>&lt;tr&gt;</samp> - tworzy wiersz w tabeli</li>
+                     <li><samp>&lt;td&gt;</samp> - tworzy komórkę w tabeli</li>
+                     <li><samp>&lt;th&gt;</samp> - tworzy wiersz nagłówkowy w tabeli</li>
+                     <li><samp>&lt;thead&gt;</samp> - używany do grupowania elementów nagłówka tabeli</li>
+                     <li><samp>&lt;tbody&gt;</samp> - używany do grupowania elementów zawartości tabeli</li>
+                     <li><samp>&lt;tfoot&gt;</samp> - używany do grupowania elementów stopki tabeli</li>
+                 </ul>
+              </div>
+          </div>
+            
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px; height: 4000px;">
+                <p  style="margin-top: 10px; font-size:30px;">
+                
+                    <span style="font-size: 22px;">
+                       Tabele są kolejnym sposobem na grupowanie danych w HTML'u. Tworzymy je za pomocą znaczników &lt;table&gt;&lt;/table&gt;
+                    </span>
+                </p>
+                
+                
+
+                <div style="display: flex; justify-content: center; margin-top: 30px;">
+                <div class="flip-card" style="width: 500px;">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front" style="height: 200px;">
+                          <p style="color: white; font-size: 22px;">
+                            &lt;table&gt;
+                                <br><br>
+                            &lt;/table&gt;
+                        </p>
+                      </div>
+                      <div class="flip-card-back" style="height: 200px; font-size:22px;">
+                        <div style="font-size: 22px; display: flex; justify-content: center; padding-top: 30px;">
+                            <table>
+
+                            </table>
+
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+                  <div style="font-size: 20px; margin-top: 150px; text-align: center;">
+                    Aby zobaczyć tabelę musimy dodać ramkę oraz nadać tabeli szerokość i wysokość.
+                  </div>
+
+                  <div style="display: flex; justify-content: center; margin-top: 30px;">
+                    <div class="flip-card" style="width: 500px;">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front" style="height: 200px;">
+                              <p style="color: white; font-size: 22px;">
+                                &lt;table border="1" height="100px" width="100px"&gt;
+                                    <br><br>
+                                &lt;/table&gt;
+                            </p>
+                          </div>
+                          <div class="flip-card-back" style="height: 200px; font-size:22px;">
+                            <div style="font-size: 22px; display: flex; justify-content: center; padding-top: 30px;">
+                                <table border="1" height="100px" width="100px">
+
+                                </table>
+                             </div>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+
+
+                      <div style="font-size: 20px; margin-top: 150px; text-align: center;">
+                        Następnym krokiem będzie dodanie wierszy do tabeli, wiersze tworzy się wykorzystując znaczniki <samp>&lt;tr&gt;&lt;/tr&gt;</samp>
+                      </div>
+    
+                      <div style="display: flex; justify-content: center; margin-top: 30px;">
+                        <div class="flip-card" style="width: 500px;">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front" style="height: 200px;">
+                                  <p style="color: white; font-size: 22px;">
+                                    &lt;table border="1" height="100px" width="100px"&gt;
+                                    <br>
+                                        &lt;tr&gt;&lt;/tr&gt;
+                                        <br>
+                                        &lt;tr&gt;&lt;/tr&gt;
+                                        <br>
+                                    &lt;/table&gt;
+                                </p>
+                              </div>
+                              <div class="flip-card-back" style="height: 200px; font-size:22px;">
+                                <div style="font-size: 22px; display: flex; justify-content: center; padding-top: 30px;">
+                                    <table border="1" height="100px" width="100px">
+                                        <tr></tr>
+                                        <tr></tr>
+                                    </table>
+                                 </div>
+                              </div>
+                            </div>
+                          </div>
+                          </div>
+
+
+                          <div style="font-size: 20px; margin-top: 150px; text-align: center;">
+                            Nadal nic nie widać, ponieważ w naszej tabelce brakuje komórek, możemy je dodać wykorzystując znaczniki <samp>&lt;td&gt;&lt;/td&gt;</samp>. Komórki muszą znajdować się między znacznikami tworzącymi wiersze.
+                          </div>
+        
+                          <div style="display: flex; justify-content: center; margin-top: 30px;">
+                            <div class="flip-card" style="width: 500px;">
+                                <div class="flip-card-inner">
+                                  <div class="flip-card-front" style="height: 350px;">
+                                      <p style="color: white; font-size: 22px;">
+                                        &lt;table border="1" height="100px" width="100px"&gt;
+<br>
+                                            &lt;tr&gt;
+											<br>
+                                                &lt;td&gt;&lt;/td&gt;
+												<br>
+                                                &lt;td&gt;&lt;/td&gt;
+												<br>
+                                            &lt;/tr&gt;
+											<br>
+                                            &lt;tr&gt;
+											<br>
+                                                &lt;td&gt;&lt;/td&gt;
+												<br>
+                                                &lt;td&gt;&lt;/td&gt;
+												<br>
+                                            &lt;/tr&gt;
+											<br>
+                                        &lt;/table&gt;
+                                    </p>
+                                  </div>
+                                  <div class="flip-card-back" style="height: 350px; font-size:22px;">
+                                    <div style="font-size: 22px; display: flex; justify-content: center; padding-top: 130px;">
+                                        <table border="1" height="100px" width="100px">
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                     </div>
+                                  </div>
+                                </div>
+                              </div>
+                              </div>
+
+                              <div style="font-size: 20px; margin-top: 325px; text-align: center;">
+                                Teraz możemy wpisać dane do tabelki.
+                              </div>
+            
+                              <div style="display: flex; justify-content: center; margin-top: 30px;">
+                                <div class="flip-card" style="width: 500px;">
+                                    <div class="flip-card-inner">
+                                      <div class="flip-card-front" style="height: 350px;">
+                                          <p style="color: white; font-size: 22px;">
+                                            &lt;table border="1" height="100px" width="100px"&gt;
+    <br>
+                                                &lt;tr&gt;
+                                                <br>
+                                                    &lt;td&gt;1&lt;/td&gt;
+                                                    <br>
+                                                    &lt;td&gt;2&lt;/td&gt;
+                                                    <br>
+                                                &lt;/tr&gt;
+                                                <br>
+                                                &lt;tr&gt;
+                                                <br>
+                                                    &lt;td&gt;3&lt;/td&gt;
+                                                    <br>
+                                                    &lt;td&gt;4&lt;/td&gt;
+                                                    <br>
+                                                &lt;/tr&gt;
+                                                <br>
+                                            &lt;/table&gt;
+                                        </p>
+                                      </div>
+                                      <div class="flip-card-back" style="height: 350px; font-size:22px;">
+                                        <div style="font-size: 22px; display: flex; justify-content: center; padding-top: 130px;">
+                                            <table border="1" height="100px" width="100px">
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>4</td>
+                                                </tr>
+                                            </table>
+                                         </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  </div>
+
+
+                                  <div style="font-size: 20px; margin-top: 325px; text-align: center;">
+                                    Parametry <samp>height</samp> oraz <samp>width</samp> działają także w przypadku wierszy i komórek, także możemy zmienić szerokość/wysokość poszczególnego wiersza/komórki. Dodatkowo możemy zmienić kolor tła używając parametru <samp>bgcolor</samp>
+                                  </div>
+                
+                                  <div style="display: flex; justify-content: center; margin-top: 30px;">
+                                    <div class="flip-card" style="width: 500px;">
+                                        <div class="flip-card-inner">
+                                          <div class="flip-card-front" style="height: 350px;">
+                                              <p style="color: white; font-size: 22px;">
+                                                &lt;table border="1" height="100px" width="100px"&gt;
+        <br>
+                                                    &lt;tr height="30px"&gt;
+                                                    <br>
+                                                        &lt;td&gt;1&lt;/td&gt;
+                                                        <br>
+                                                        &lt;td&gt;2&lt;/td&gt;
+                                                        <br>
+                                                    &lt;/tr&gt;
+                                                    <br>
+                                                    &lt;tr&gt;
+                                                    <br>
+                                                        &lt;td&gt;3&lt;/td&gt;
+                                                        <br>
+                                                        &lt;td bgcolor="pink"&gt;4&lt;/td&gt;
+                                                        <br>
+                                                    &lt;/tr&gt;
+                                                    <br>
+                                                &lt;/table&gt;
+                                            </p>
+                                          </div>
+                                          <div class="flip-card-back" style="height: 350px; font-size:22px;">
+                                            <div style="font-size: 22px; display: flex; justify-content: center; padding-top: 130px;">
+                                                <table border="1" height="100px" width="100px">
+                                                    <tr style="height: 30px;">
+                                                        <td>1</td>
+                                                        <td>2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td style="background-color: pink;">4</td>
+                                                    </tr>
+                                                </table>
+                                             </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      </div>
+
+
+                                      <div style="font-size: 20px; margin-top: 325px; text-align: center;">
+                                        HTML umożliwia też scalanie komórek za pomocą parametrów <samp>colspan</samp> (poziom) oraz <samp>rowspan</samp> (pion). Po wpisaniu <samp>colspan=""/rowspan=""</samp> w cudzysłowie należy podać liczbę komórek jaką chcemy scalić, a potem usunąć je z tabeli.
+                                      </div>
+                    
+                                      <div style="display: flex; justify-content: center; margin-top: 30px;">
+                                        <div class="flip-card" style="width: 500px;">
+                                            <div class="flip-card-inner">
+                                              <div class="flip-card-front" style="height: 450px;">
+                                                  <p style="color: white; font-size: 22px;">
+                                                    <samp>&lt;table border="2"
+
+                                                        height="150px"
+                                                        width="300px"&gt;
+                                                        <br>
+                                                        
+                                                        &lt;tr height="20px" &gt;
+                                                        <br>
+                                                        &lt;td &gt;1&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;
+                                                        <br>
+                                                        &lt;/tr&gt;
+                                                        <br>
+                                                        
+                                                        &lt;tr&gt;&lt;td rowspan="2"&gt;y&lt;/td&gt;&lt;td colspan="2"&gt;x
+                                                        <br>
+                                                        &lt;/tr&gt;
+                                                        <br>
+                                                        &lt;tr&gt;<br>
+                                                        &lt;td &gt;8&lt;/td&gt;<br>
+                                                        &lt;td&gt;9&lt;/td&gt;<br>
+                                                        &lt;/tr&gt;<br>
+                                                        
+                                                        &lt;/table&gt;
+                                                        </samp>
+                                                </p>
+                                              </div>
+                                              <div class="flip-card-back" style="height: 450px; font-size:22px;">
+                                                <div style="font-size: 22px; display: flex; justify-content: center; padding-top: 130px;">
+                                                    <table border="2"
+
+height="150px"
+width="300px">
+
+<tr height="20px" >
+<td >1</td><td>2</td><td>3</td>
+</tr>
+
+<tr><td rowspan="2">y</td><td colspan="2">x
+</tr>
+<tr>
+<td >8</td>
+<td>9</td>
+</tr>
+
+</table>
+                                                 </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          </div>
+
+                                          <div style="font-size: 20px; margin-top: 450px; text-align: center;">
+                                            Przykład tabeli z wierszem nagłówkowym.
+                                          </div>
+                        
+                                          <div style="display: flex; justify-content: center; margin-top: 30px;">
+                                            <div class="flip-card" style="width: 500px;">
+                                                <div class="flip-card-inner">
+                                                  <div class="flip-card-front" style="height: 450px; width: 700px; margin-left: -100px;">
+                                                      <p style="color: white; font-size: 22px; margin-top: 100px;">
+                                                        <samp>&lt;table border="2"
+    
+                                                          height="150px"<br>
+                                                          width="300px"&gt;<br>
+                                                      
+                                                        &lt;tr&gt;
+                                                          &lt;th&gt;1&lt;/th&gt;
+                                                          &lt;th&gt;2&lt;/th&gt;
+                                                          &lt;th&gt;3&lt;/th&gt;
+                                                        &lt;/tr&gt;<br>
+                                                        &lt;tr&gt;
+                                                          &lt;td&gt;4&lt;/td&gt;
+                                                          &lt;td&gt;5&lt;/td&gt;
+                                                          &lt;td&gt;6&lt;/td&gt;
+                                                        &lt;/tr&gt;<br>
+                                                        &lt;tr&gt;
+                                                          &lt;td&gt;7&lt;/td&gt;
+                                                          &lt;td&gt;8&lt;/td&gt;
+                                                          &lt;td&gt;9&lt;/td&gt;
+                                                        &lt;/tr&gt;<br>
+                                                      &lt;/table&gt;
+                                                            </samp>
+                                                    </p>
+                                                  </div>
+                                                  <div class="flip-card-back" style="height: 450px; font-size:22px;">
+                                                    <div style="font-size: 22px; display: flex; justify-content: center; padding-top: 130px;">
+                                                      <table border="2"
+    
+                                                      height="150px"
+                                                      width="300px">
+                                                  <thead>
+                                                    <tr>
+                                                      <th>1</th>
+                                                      <th>2</th>
+                                                      <th>3</th>
+                                                    </tr>
+                                                  </thead>
+                                                  <tbody>
+                                                    <tr>
+                                                      <td>4</td>
+                                                      <td>5</td>
+                                                      <td>6</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>7</td>
+                                                      <td>8</td>
+                                                      <td>9</td>
+                                                    </tr>
+                                                  </tbody>
+                                                  </table>
+                                                     </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              </div>
+
+                                              <p style="font-size: 22px; margin-top: 500px;">
+                                                Możemy zauważyć, że cyfry w pierwszym wierszu zostały pogrubione
+                                              </p>
+                              
+
+                              
+
+            </div>
+
+
+            <p class="hd1" style="margin-top: 10px; font-size:22px; height: 30px;">
+                
+              <span style="float: left;">
+                <a href="listy.html"> <- Poprzednia strona</a>
+              </span>
+              <span style="float: right;">
+                  <a href="hiperlacza.html">Następna strona -></a>
+              </span>
+            </p>
+
+
+            
+
+
+
+    
+    
+
+          
+
+            
+
+
+
+
+
+        </div>
+    </div>
+
+    <script src="js/progressbar.js"></script>
 </body>
 </html>

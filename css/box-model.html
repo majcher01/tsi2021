@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/progressbar.css">
+
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+        body{
+            font-family: 'Oxygen', sans-serif;
+            margin: 0px 0px 0px 0px;
+            color: white;
+            margin-bottom: 200px;
+        }
+        .srodek{
+            display: flex;
+            justify-content: center;
+        }
+
+        html{
+          scroll-behavior: smooth;
+        }
+
+        .hd1{
+            font-size: 34px;
+            margin-top: 20px;
+            border: 1px solid white;
+            padding: 15px 30px 15px 30px;
+            border-radius: 10px;
+            width: 1000px;
+            text-align: center;
+            background-color: #68686825;
+            margin-bottom: 0px;
+        }
+
+        abbr{
+            text-decoration: none;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        .syntax{
+          height: 50px;
+          width:500px;
+          background-color: rgba(187, 187, 187, 0.226);
+          display: block;
+          text-align: center;
+          margin-bottom: 30px;
+          padding-top: 18px;
+          margin-left: 250px;
+          margin-top: 30px;
+          font-family: monospace;
+          border: 1px dotted white;
+          border-radius: 10px;
+          font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+  <div class="header">
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+    <div class="srodek">
+        <div>
+            
+            <p class="hd1" style="margin-top: 10px; font-size:30px;">
+                Box model CSS
+            </p>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+                Czym jest box model ?
+                <bR>
+                <Br>
+                <span style="font-size: 22px;">
+                  Wszystkie elementy HTML można traktować jak pola. W CSS termin „model pudełkowy” jest używany, gdy mówi się o projekcie i układzie.
+                  
+<br><br>
+Model pudełkowy CSS jest zasadniczo pudełkiem, które otacza każdy element HTML. Składa się z: marginesów, ramek, wypełnienia i rzeczywistej zawartości. Poniższy obraz ilustruje model pudełka:
+<br><br>
+<img src="../img/boxmodel.png">
+<br><br>
+Objaśnienia elementów:
+<br>
+<div style="font-size: 22px; display: flex; justify-content: center;">
+  
+<ul class="listamargines" style="font-size: 22px; text-align: left;">
+  <li><b>Content</b> - Zawartość pola, w którym pojawia się tekst i obrazy;</li>
+  <li><b>Padding</b> - 
+Czyści obszar wokół zawartości. Wypełnienie jest przezroczyste;</li>
+  <li><b>Border</b> - 
+Obramowanie wokół wypełnienia i zawartości;</li>
+  <li><b>Margin</b> - 
+Czyści obszar poza granicą. Margines jest przezroczysty.</li>
+
+
+</ul>
+</div>
+
+                  
+</span>
+<span style="font-size: 22px;">
+  Model pudełkowy pozwala nam dodać obramowanie wokół elementów i zdefiniować przestrzeń między elementami.
+  </span>
+
+            </div>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+              Przykład
+              <bR>
+              <br>
+              
+              <span class="syntax" style="height: 200px; text-align: left; padding-left:90px; margin-left:220px;">
+                div<br>
+{<br>
+   width: 300px;<br>
+   border: 15px solid green;<br>
+   padding: 50px;<br>
+   margin: 15px;<br>
+}
+              </span>
+              <div style="width: 300px; border: solid 15px green; padding: 50px; margin: 15px;background-color: white; color: black; margin-left: auto; margin-right: auto;">Tekst wewnątrz</div>
+
+              <div style="display: flex; justify-content: center;">
+                <img src="../img/model.png">
+              </div>
+
+          </div>
+          
+
+          <div class="hd1" style="margin-top: 10px; font-size:30px;">
+            Czym jest <samp>div</samp>?
+
+            <bR>
+            <br>
+            <span style="font-size: 22px;">
+              Do budowy sekcji możemy użyć elementu blokowego <div> (ang. division – oddział, wydział, sekcja). Element ten nazywany jest również box’em (pudełkiem), albo kontenerem (ang. container, contain – zawierać w sobie), z tego względu, że zawiera on w sobie inne elementy.
+
+<br><br>
+
+
+                Poniżej znajdziesz materiał, który pomoże ci zrozumieć strukturę strony www opartej na divach, oraz poznasz jej wady i zalety.
+              </span>
+
+              <div style="display: flex; justify-content: center; margin-top: 25px;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2nWSCxIpHfc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              
+            
+            <Br>
+            
+            
+
+        </div>
+        </div>
+
+        <p class="hd1" style="margin-top: 10px; font-size:22px; height: 30px; ">
+                
+          <span style="float: left;">
+            <a href="kursory.html"> <- Poprzednia strona</a>
+          </span>
+          <span style="float: right;">
+              
+          </span>
+        </p>
+
+
+       
+
+
+        
+
+
+
+            
+
+          
+
+
+
+
+
+
+        </div>
+    </div>
+    <script src="js/progressbar.js"></script>
+
+
+</body>
+</html>

@@ -4,8 +4,246 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/progressbar.css">
+
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+        body{
+            font-family: 'Oxygen', sans-serif;
+            margin: 0px 0px 0px 0px;
+            color: white;
+            margin-bottom: 200px;
+        }
+        .srodek{
+            display: flex;
+            justify-content: center;
+        }
+
+        .hd1{
+            font-size: 34px;
+            margin-top: 20px;
+            border: 1px solid white;
+            padding: 15px 30px 15px 30px;
+            border-radius: 10px;
+            width: 1000px;
+            text-align: center;
+            background-color: #68686825;
+            margin-bottom: 0px;
+        }
+
+        abbr{
+            text-decoration: none;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+        }
+
+        .flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 100px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: transparent;
+  color: black;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: #08004e;
+}
+
+.flip-card-back {
+  background-color: #08004e;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+mark {
+  background-color: yellow;
+  color: black;
+}
+    </style>
 </head>
 <body>
-    formularze
+  <div class="header">
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+    <div class="srodek">
+        <div>
+            <p class="hd1">
+                FORMULARZE
+            </p>
+            <p class="hd1" style="margin-top: 10px; font-size:30px;">
+                
+                <span style="font-size: 22px;">
+                    By uporządkować wszystkie dane oraz przesłać je na serwer, na którym znajduje się nasza strona wszystkie pola mające na celu odebrać dane od użytkownika strony musimy umieścić w formularzu.
+Formularze tworzymy za pomocą znacznika &lt;form&gt;&lt;/form&gt;.
+Musimy pamiętać by dodawać tytuły naszym polom wejscia, możemy to zrobić za pomocą znacznika &lt;label&gt;&lt;/label&gt;.
+            </p>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px; height: 45px;">
+                Więcej na temat formularzy znajdziesz <a href="../formularze/index.html">TUTAJ</a> i <a href="../formularze2/index.html">TUTAJ</a>
+                <bR>
+                <br>
+                <div style="font-size: 22px; text-align: left;">
+                    
+                    
+                    
+                </div>
+
+                
+
+            </div>
+
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px; height: 1500px;">
+                
+                <bR>
+                <br>
+                
+
+                <div style="display: flex; justify-content: center; margin-top: 30px;">
+                <div class="flip-card" style="width: 600px;">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front" style="height: 1200px;">
+                          <p style="color: white; font-size: 20px; line-height: 2; padding-top: 30px;">
+                            &lt;form&gt;<br>
+
+                            &lt;label&gt;Imię<br>
+                             &lt;input type="text"&gt;&lt;/label&gt;<br>
+                           
+                            &lt;label&gt;Nazwisko <br>
+                             &lt;input type="text"&gt;&lt;/label&gt;<br>
+                           
+                             &lt;label&gt;Login<br>
+                            &lt;input type="text"&gt;&lt;/label&gt;<br>
+                           
+                            &lt;label&gt;Email<br>
+                             &lt;input type="email"&gt;&lt;/label&gt;<br>
+                           
+                            &lt;label&gt;Hasło<br>
+                            &lt;input type=password"&gt;&lt;/label&gt;<br>
+                           
+                             &lt;label&gt;Data<br>
+                            &lt;input type="date"&gt;&lt;/label&gt;<br>
+                           
+                             &lt;label&gt;Czas<br>
+                            &lt;input type="time"&gt;&lt;/label&gt;<br>
+                           
+                             &lt;label&gt;Plik<br>
+                            &lt;input type="file"&gt;&lt;/label&gt;<br>
+                           
+                             &lt;label&gt;Kolor<br>
+                            &lt;input type="color"&gt;&lt;/label&gt;<br>
+                           
+                             &lt;input type="submit" value="Prześlij"&gt;<br>
+                           
+                           &lt;/form&gt;
+                        </p>
+                      </div>
+                      <div class="flip-card-back" style="height: 1200px;">
+                        <p style="font-size: 20px; color: yellow; padding-top: 15px;">
+                            <form>
+
+                                <label>Imię<br>
+                                 <input type="text"></label><br><br>
+                               
+                                <label>Nazwisko <br>
+                                 <input type="text"></label><br><br>
+                               
+                                 <label>Login<br>
+                                <input type="text"></label><br><br>
+                               
+                                <label>Email<br>
+                                 <input type="email"></label><br><br>
+                               
+                                <label>Hasło<br>
+                                <input type=password"></label><br><br>
+                               
+                                 <label>Data<br>
+                                <input type="date"></label><br><br>
+                               
+                                 <label>Czas<br>
+                                <input type="time"></label><br><br>
+                               
+                                 <label>Plik<br>
+                                <input type="file"></label><br><br>
+                               
+                                 <label>Kolor<br>
+                                <input type="color"></label><br><br>
+                               
+                                 <input type="submit" value="Prześlij">
+                               
+                               </form>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+            </div>
+
+
+            <p class="hd1" style="margin-top: 10px; font-size:22px; height: 30px;">
+                
+              <span style="float: left;">
+                <a href="inputy.html"> <- Poprzednia strona</a>
+              </span>
+              <span style="float: right;">
+                  
+              </span>
+            </p>
+
+
+
+           
+
+            
+    
+    
+
+          
+
+            
+
+
+
+
+
+        </div>
+    </div>
+    <script src="js/progressbar.js"></script>
+
+
 </body>
 </html>

@@ -4,8 +4,681 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/progressbar.css">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+        body{
+            font-family: 'Oxygen', sans-serif;
+            margin: 0px 0px 0px 0px;
+            color: white;
+            margin-bottom: 200px;
+        }
+        .srodek{
+            display: flex;
+            justify-content: center;
+        }
+
+        .hd1{
+            font-size: 34px;
+            margin-top: 20px;
+            border: 1px solid white;
+            padding: 15px 30px 15px 30px;
+            border-radius: 10px;
+            width: 1000px;
+            text-align: center;
+            background-color: #68686825;
+            margin-bottom: 0px;
+        }
+
+        abbr{
+            text-decoration: none;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+        }
+
+        .flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 100px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: transparent;
+  color: black;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: #08004e;
+}
+
+.flip-card-back {
+  background-color: #08004e;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+mark {
+  background-color: yellow;
+  color: black;
+}
+
+
+
+
+    </style>
 </head>
 <body>
-    listy
+  <div class="header">
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+    <div class="srodek">
+        <div>
+            <p class="hd1">
+                LISTY
+            </p>
+            <p class="hd1" style="margin-top: 10px; font-size:30px;">
+                
+                <span style="font-size: 22px;">
+                   List używa się do grupowania tekstu. Dane w nich umieszczone są wypunktowane, mogą być też uporządkowane (ponumerowane) lub nie.
+                </span>
+            </p>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px; height: 1500px;">
+                Listy uporządkowane
+                <bR>
+                <br>
+                <div style="font-size: 22px;">
+                    Lista uporządkowana to taka, w której pozycje posiadają swój indywidualny znak (numer bądź litera) i sa zorganizowane według nich.
+                    <br>
+                    <br>
+                    Listy uporządkowane tworzymy za pomocą znacznika <samp>&lt;ol&gt;</samp><samp>&lt;/ol&gt;</samp>
+                    <br>
+                    <br>
+                    Aby stworzyć podpunkty należy zastosować znacznik <samp>&lt;li&gt;</samp><samp>&lt;/li&gt;</samp>
+                    
+                </div>
+
+                <div style="display: flex; justify-content: center; margin-top: 30px;">
+                <div class="flip-card" style="width: 500px;">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front" style="height: 200px;">
+                          <p style="color: white; font-size: 22px;">
+                       <samp><samp>&lt;ol&gt;</samp>
+                           <br>
+                        <samp>&lt;li&gt;</samp>jeden<samp>&lt;/li&gt;</samp>
+                        <br>
+                        <samp>&lt;li&gt;</samp>dwa<samp>&lt;/li&gt;</samp>
+                        <br>
+                        <samp>&lt;li&gt;</samp>trzy<samp>&lt;/li&gt;</samp>
+                        <br>
+                    <samp>&lt;/ol&gt;</samp></samp>
+                        </p>
+                      </div>
+                      <div class="flip-card-back" style="height: 200px; font-size:22px;">
+                        <div style="font-size: 22px; display: flex; justify-content: center; padding-top: 30px;">
+                            <ol style="font-size: 22px; text-align: left;">
+                                <li>jeden</li>
+                                <li>dwa</li>
+                                <li>trzy</li>
+                            </ol>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+                  <div style="font-size: 20px; margin-top: 150px; text-align: left;">
+                    Element <samp>&lt;ol&gt;</samp> wskazuje jedynie na rodzaj listy. Wszystkie elementy listy muszą się znaleźć pomiędzy znacznikami <samp>&lt;li&gt;</samp> oraz <samp>&lt;/li&gt;</samp>.
+                    <br>
+                    <br>
+
+                        Możemy zmienić wygląd numeracji poprzez dodanie atrybutu type wraz z odpowiednią wartością.
+                        <br>
+                        <br>
+                        
+                        Gdy jako wartość ustawimy "A" podpunkty listy będą numerowane wielkimi literami alfabetu (A, B, C, D, E, F...)<br>
+                        Gdy jako wartość ustawimy "a" podpunkty listy będą numerowane małymi literami alfabetu (a, b, c, d, e, f...)<br>
+                        Gdy jako wartość ustawimy "I" podpunkty listy będą numerowane cyframi rzymskimi (I, II, III, IV, V, VI...)<br>
+                        Gdy jako wartość ustawimy "i" podpunkty listy będą numerowane małymi cyframi rzymskimi (i, ii, iii, iv, v, vi...)<br><br>
+
+                        
+                        
+                        Możemy rozpocząć numerowanie od dowolnej litery lub liczby. By to zrobić musimy dodać atrybut <samp>start</samp>, a jako wartość ustawić numer pierwszego podpunku. (gdy np. ustawimy <samp>start</samp>="5" lista rozpocznie się od 5)
+                  </div>
+
+                  <div style="display: flex; justify-content: center; margin-top: 30px;">
+                    <div class="flip-card" style="width: 500px;">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front" style="height: 200px;">
+                              <p style="color: white; font-size: 22px;">
+                           <samp><samp>&lt;ol type="A" start="5"&gt;</samp>
+                               <br>
+                            <samp>&lt;li&gt;</samp>jeden<samp>&lt;/li&gt;</samp>
+                            <br>
+                            <samp>&lt;li&gt;</samp>dwa<samp>&lt;/li&gt;</samp>
+                            <br>
+                            <samp>&lt;li&gt;</samp>trzy<samp>&lt;/li&gt;</samp>
+                            <br>
+                        <samp>&lt;/ol&gt;</samp></samp>
+                            </p>
+                          </div>
+                          <div class="flip-card-back" style="height: 200px; font-size:22px;">
+                            <div style="font-size: 22px; display: flex; justify-content: center; padding-top: 30px;">
+                                <ol style="font-size: 22px; text-align: left;" type="A" start="5">
+                                    <li>jeden</li>
+                                    <li>dwa</li>
+                                    <li>trzy</li>
+                                </ol>
+                             </div>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                      <p style="font-size: 22px; margin-top: 170px;">
+                        type="i"
+                      </p>
+                      <div style="display: flex; justify-content: center; margin-top: 50px;">
+                        <div class="flip-card" style="width: 500px;">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front" style="height: 220px;">
+                                  <p style="color: white; font-size: 22px;">
+                               <samp><samp>&lt;ol type="i"&gt;</samp>
+                                   <br>
+                                <samp>&lt;li&gt;</samp>jeden<samp>&lt;/li&gt;</samp>
+                                <br>
+                                <samp>&lt;li&gt;</samp>dwa<samp>&lt;/li&gt;</samp>
+                                <br>
+                                <samp>&lt;li&gt;</samp>trzy<samp>&lt;/li&gt;</samp>
+                                <br>
+                                <samp>&lt;li&gt;</samp>cztery<samp>&lt;/li&gt;</samp>
+                                <br>
+                            <samp>&lt;/ol&gt;</samp></samp>
+                                </p>
+                              </div>
+                              <div class="flip-card-back" style="height: 220px; font-size:22px;">
+                                <div style="font-size: 22px; display: flex; justify-content: center; padding-top: 30px;">
+                                    <ol style="font-size: 22px; text-align: left;" type="i">
+                                        <li>jeden</li>
+                                        <li>dwa</li>
+                                        <li>trzy</li>
+                                        <li>cztery</li>
+                                    </ol>
+                                 </div>
+                              </div>
+                            </div>
+                          </div>
+                          </div>
+
+            </div>
+
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px; height: 1150px;">
+                Listy nieuporządkowane
+                <bR>
+                <br>
+                <div style="font-size: 22px;">
+                    Lista uporządkowana to taka, w której pozycje nie posiadają swojego indywidualnego znaku, są wymienione luźno np. od myślników czy kropek.
+                    <br>
+                    <br>
+                    Listy uporządkowane tworzymy za pomocą znacznika <samp>&lt;ul&gt;</samp><samp>&lt;/ul&gt;</samp>
+                    <br>
+                    <br>
+                    Aby stworzyć podpunkty należy zastosować znacznik <samp>&lt;li&gt;</samp><samp>&lt;/li&gt;</samp>
+                    
+                </div>
+
+                <div style="display: flex; justify-content: center; margin-top: 30px;">
+                <div class="flip-card" style="width: 500px;">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front" style="height: 200px;">
+                          <p style="color: white; font-size: 22px;">
+                       <samp><samp>&lt;ul&gt;</samp>
+                           <br>
+                        <samp>&lt;li&gt;</samp>jeden<samp>&lt;/li&gt;</samp>
+                        <br>
+                        <samp>&lt;li&gt;</samp>dwa<samp>&lt;/li&gt;</samp>
+                        <br>
+                        <samp>&lt;li&gt;</samp>trzy<samp>&lt;/li&gt;</samp>
+                        <br>
+                    <samp>&lt;/ul&gt;</samp></samp>
+                        </p>
+                      </div>
+                      <div class="flip-card-back" style="height: 200px; font-size:22px;">
+                        <div style="font-size: 22px; display: flex; justify-content: center; padding-top: 30px;">
+                            <ul style="font-size: 22px; text-align: left;">
+                                <li>jeden</li>
+                                <li>dwa</li>
+                                <li>trzy</li>
+                            </ul>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+                  <div style="font-size: 20px; margin-top: 150px; text-align: center;">
+                    Tak jak w listach numerowanych mamy możliwość zmiany stylu podpunktów.
+                    <br>
+                    <br>
+                    Dostępne są opcje:
+                    <br>
+                    <br>
+                    <samp>disc</samp> - ○
+                    <br>
+                    <samp>circle</samp> - ●
+                    <br>
+                    <samp>square</samp> - ■
+                    <br>
+                    <samp>none</samp> - nie wyświetli się nic
+                  </div>
+
+                  <div style="display: flex; justify-content: center; margin-top: 30px;">
+                    <div class="flip-card" style="width: 500px;">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front" style="height: 200px;">
+                              <p style="color: white; font-size: 22px;">
+                           <samp><samp>&lt;ul type="square"&gt;</samp>
+                               <br>
+                            <samp>&lt;li&gt;</samp>jeden<samp>&lt;/li&gt;</samp>
+                            <br>
+                            <samp>&lt;li&gt;</samp>dwa<samp>&lt;/li&gt;</samp>
+                            <br>
+                            <samp>&lt;li&gt;</samp>trzy<samp>&lt;/li&gt;</samp>
+                            <br>
+                        <samp>&lt;/ul&gt;</samp></samp>
+                            </p>
+                          </div>
+                          <div class="flip-card-back" style="height: 200px; font-size:22px;">
+                            <div style="font-size: 22px; display: flex; justify-content: center; padding-top: 30px;">
+                                <ul style="font-size: 22px; text-align: left;" type="square">
+                                    <li>jeden</li>
+                                    <li>dwa</li>
+                                    <li>trzy</li>
+                                </ul>
+                             </div>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+
+            </div>
+
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px; height: 500px;">
+                Tytuły list
+                <bR>
+                <br>
+                <div style="font-size: 22px;">
+                    Aby poinformować użytkowników czego dotyczy lista warto nadać jej tytuł.
+                    <br>
+                    Aby to zrobić można użyć znacznika nagłówka (od <samp>&lt;h1&gt;</samp> do <samp>&lt;h6&gt;</samp>)
+                    <br>
+                    <br>
+                    
+                    
+                </div>
+
+                <div style="display: flex; justify-content: center; margin-top: 30px;">
+                <div class="flip-card" style="width: 500px;">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front" style="height: 300px;">
+                          <p style="color: white; font-size: 22px; padding-top: 50px;">
+                            <samp>&lt;h5&gt;Przykładowa lista&lt;/h5&gt;</samp>
+                            <br>
+                       <samp><samp>&lt;ul&gt;</samp>
+                           <br>
+                        <samp>&lt;li&gt;</samp>jeden<samp>&lt;/li&gt;</samp>
+                        <br>
+                        <samp>&lt;li&gt;</samp>dwa<samp>&lt;/li&gt;</samp>
+                        <br>
+                        <samp>&lt;li&gt;</samp>trzy<samp>&lt;/li&gt;</samp>
+                        <br>
+                    <samp>&lt;/ul&gt;</samp></samp>
+                        </p>
+                      </div>
+                      <div class="flip-card-back" style="height: 300px; font-size:22px;">
+                        <div style="font-size: 22px;  padding-top: 30px;">
+                            <h5>Przykładowa lista</h5>
+                            <span style="display: flex; justify-content: center;">
+                            <ul style="font-size: 22px; text-align: left;">
+                                <li>jeden</li>
+                                <li>dwa</li>
+                                <li>trzy</li>
+                            </ul>
+                            </span>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+                  
+
+            </div>
+
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px; height: 900px;">
+                Listy zagnieżdżone
+                <bR>
+                <br>
+                <div style="font-size: 22px;">
+                    Lista zagnieżdżona to taka, która znajduje się wewnątrz innej listy, między znacznikami <samp>&lt;li&gt;</samp><samp>&lt;/li&gt;</samp>
+                    
+                    <br>
+                    <br>
+                    
+                    
+                </div>
+
+                <div style="display: flex; justify-content: center; margin-top: 30px;">
+                <div class="flip-card" style="width: 500px;">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front" style="height: 700px;">
+                          <p style="color: white; font-size: 22px; padding-top: 50px;">
+                            <samp>&lt;ol&gt;
+                                <br>
+                                &lt;li&gt;
+                                <br>
+                                    Owoce
+                                    <br>
+                                    &lt;ul&gt;
+                                    <br>
+                                        &lt;li&gt;ananas&lt;/li&gt;
+                                        <br>
+                                        &lt;li&gt;banan&lt;/li&gt;
+                                        <br>
+                                        &lt;li&gt;arbuz&lt;/li&gt;
+                                        <br>
+                                    &lt;/ul&gt;
+                                    <br>
+                                &lt;/li&gt;
+                                <br>
+                                &lt;li&gt;
+                                <br>
+                                    Warzywa
+                                    <br>
+                                    &lt;ul&gt;
+                                    <br>
+                                        &lt;li&gt;cebula&lt;/li&gt;
+                                        <br>
+                                        &lt;li&gt;kapusta&lt;/li&gt;
+                                        <br>
+                                        &lt;li&gt;ogórek&lt;/li&gt;
+                                        <br>
+                                    &lt;/ul&gt;
+                                    <br>
+                                &lt;/li&gt;
+                                <br>
+                            &lt;/ol&gt;</samp>
+                        </p>
+                      </div>
+                      <div class="flip-card-back" style="height: 700px; font-size:22px;">
+                        <div style="font-size: 22px;  padding-top: 200px;">
+                            
+                            <span style="display: flex; justify-content: center;">
+                            <ol>
+                                <li>
+                                    Owoce
+                                    <ul>
+                                        <li>ananas</li>
+                                        <li>banan</li>
+                                        <li>arbuz</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Warzywa
+                                    <ul>
+                                        <li>cebula</li>
+                                        <li>kapusta</li>
+                                        <li>ogórek</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                            </span>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+                  
+
+            </div>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px; height: 1000px;">
+              Co się stanie gdy skończą się litery ?
+              <bR>
+              <br>
+              <div style="font-size: 22px;">
+                  Gdy lista uporządkowana typu "a" lub "A" będzie miała więcej niż 26 pozycji (ilość liter w angielskim alfabecie) kolejny numer będzie poprzedzała liera "a" lub "A" w zależności od typu listy, np. aa, ab, ac itd. / AA, AB, AC itd. Dwa elementy <samp>&lt;li&gt;</samp> w liście nie mogą mieć identycznego identyfikatora. 
+                  <br>
+                  <br>
+                  
+                  
+              </div>
+
+              <div style="display: flex; justify-content: center; margin-top: 30px;">
+              <div class="flip-card" style="width: 500px;">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front" style="height: 350px;">
+                        <p style="color: white; font-size: 22px; padding-top: 50px;">
+                          &lt;ol style="font-size: 22px; text-align: left;" <Br> type="A" start="25"&gt;<br>
+                              &lt;li&gt;jeden&lt;/li&gt;<br>
+                              &lt;li&gt;dwa&lt;/li&gt;<br>
+                              &lt;li&gt;trzy&lt;/li&gt;<br>
+                              &lt;li&gt;cztery&lt;/li&gt;<br>
+                              &lt;li&gt;pięć&lt;/li&gt;<br>
+                          &lt;/ol&gt;
+                      </p>
+                    </div>
+                    <div class="flip-card-back" style="height: 350px; font-size:22px;">
+                      <div style="font-size: 22px;  padding-top: 70px;">
+                          <span style="display: flex; justify-content: center;">
+                          <ol style="font-size: 22px; text-align: left;" type="A" start="25">
+                              <li>jeden</li>
+                              <li>dwa</li>
+                              <li>trzy</li>
+                              <li>cztery</li>
+                              <li>pięć</li>
+                          </ol>
+                          </span>
+                       </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+
+                <div style="display: flex; justify-content: center; margin-top: 300px;">
+                  <div class="flip-card" style="width: 500px;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" style="height: 350px;">
+                            <p style="color: white; font-size: 22px; padding-top: 50px;">
+                              &lt;ol style="font-size: 22px; text-align: left;" <Br> type="a" start="25"&gt;<br>
+                                  &lt;li&gt;jeden&lt;/li&gt;<br>
+                                  &lt;li&gt;dwa&lt;/li&gt;<br>
+                                  &lt;li&gt;trzy&lt;/li&gt;<br>
+                                  &lt;li&gt;cztery&lt;/li&gt;<br>
+                                  &lt;li&gt;pięć&lt;/li&gt;<br>
+                              &lt;/ol&gt;
+                          </p>
+                        </div>
+                        <div class="flip-card-back" style="height: 350px; font-size:22px;">
+                          <div style="font-size: 22px;  padding-top: 70px;">
+                              <span style="display: flex; justify-content: center;">
+                              <ol style="font-size: 22px; text-align: left;" type="a" start="25">
+                                  <li>jeden</li>
+                                  <li>dwa</li>
+                                  <li>trzy</li>
+                                  <li>cztery</li>
+                                  <li>pięć</li>
+                              </ol>
+                              </span>
+                           </div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+
+                
+
+          </div>
+
+
+          <div class="hd1" style="margin-top: 10px; font-size:30px; height: 1400px;">
+            Własne ikonki jako punktory do list
+            <bR>
+            <br>
+            <div style="font-size: 22px;">
+                HTML pozwala na określenie własnych punktorów w listach, poniżej przykłady. 
+                <br>
+                <br>
+                <ul>
+                  <li>Emotikony
+                    <br><br>
+                    Aby ustawić emotikon jako punktor należy dodać parametr stylu css. <br>
+                    <samp>list-style-type: X;</samp><br>
+                    Gdzie X jest kodem wybranego emotikona.
+                  </li>
+                </ul>
+                
+                
+            </div>
+
+            <div style="display: flex; justify-content: center; margin-top: 30px;">
+            <div class="flip-card" style="width: 500px;">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front" style="height: 350px;">
+                      <p style="color: white; font-size: 22px; padding-top: 50px;">
+                        &lt;ol style="font-size: 22px; text-align: left; <br><span style="color: yellow;">list-style-type: '\1F44D';</span>"  &gt;<br>
+                            &lt;li&gt;jeden&lt;/li&gt;<br>
+                            &lt;li&gt;dwa&lt;/li&gt;<br>
+                            &lt;li&gt;trzy&lt;/li&gt;<br>
+                            &lt;li&gt;cztery&lt;/li&gt;<br>
+                            &lt;li&gt;pięć&lt;/li&gt;<br>
+                        &lt;/ol&gt;
+                    </p>
+                  </div>
+                  <div class="flip-card-back" style="height: 350px; font-size:22px;">
+                    <div style="font-size: 22px;  padding-top: 70px;">
+                        <span style="display: flex; justify-content: center;">
+                        <ul style="font-size: 22px; text-align: left; list-style-type: '\1F44D';" >
+                            <li>jeden</li>
+                            <li>dwa</li>
+                            <li>trzy</li>
+                            <li>cztery</li>
+                            <li>pięć</li>
+                        </ul>
+                        </span>
+                     </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+<div style="font-size: 22px; margin-top: 300px;">
+              <ul>
+                <li>
+                  Zdjęcie
+                    <br><br>
+                    Aby ustawić zdjęcie jako punktor należy dodać parametr stylu css. <br>
+                    <samp>list-style-image: url('X');</samp><br>
+                    Gdzie X jest ścieżką do wybranego zdjęcia.
+                </li>
+              </ul>
+</div>
+
+              <div style="display: flex; justify-content: center; margin-top: 100px;">
+                <div class="flip-card" style="width: 500px;">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front" style="height: 350px;">
+                          <p style="color: white; font-size: 22px; padding-top: 50px;">
+                            &lt;ol style="font-size: 22px; text-align: left; <br> <span style="color: yellow;"> list-style-image: url('../img/majcherski-ico-white.png');</span>" &gt;<br>
+                                &lt;li&gt;jeden&lt;/li&gt;<br>
+                                &lt;li&gt;dwa&lt;/li&gt;<br>
+                                &lt;li&gt;trzy&lt;/li&gt;<br>
+                                &lt;li&gt;cztery&lt;/li&gt;<br>
+                                &lt;li&gt;pięć&lt;/li&gt;<br>
+                            &lt;/ol&gt;
+                        </p>
+                      </div>
+                      <div class="flip-card-back" style="height: 350px; font-size:22px;">
+                        <div style="font-size: 22px;  padding-top: 70px;">
+                            <span style="display: flex; justify-content: center;">
+                            <ol style="font-size: 22px; text-align: left; list-style-image: url('../img/majcherski-ico-white.png');" >
+                                <li>jeden</li>
+                                <li>dwa</li>
+                                <li>trzy</li>
+                                <li>cztery</li>
+                                <li>pięć</li>
+                            </ol>
+                            </span>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+              
+
+        </div>
+
+
+            <p class="hd1" style="margin-top: 10px; font-size:22px; height: 30px;">
+                
+                <span style="float: left;">
+                  <a href="znaki.html"> <- Poprzednia strona</a>
+                </span>
+                <span style="float: right;">
+                    <a href="tabele.html">Następna strona -></a>
+                </span>
+              </p>
+
+
+
+    
+    
+
+          
+
+            
+
+
+
+
+
+        </div>
+    </div>
+
+    <script src="js/progressbar.js"></script>
+
+
 </body>
 </html>

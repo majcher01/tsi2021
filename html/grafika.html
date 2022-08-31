@@ -4,8 +4,287 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/progressbar.css">
+
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+        body{
+            font-family: 'Oxygen', sans-serif;
+            margin: 0px 0px 0px 0px;
+            color: white;
+            margin-bottom: 200px;
+        }
+        .srodek{
+            display: flex;
+            justify-content: center;
+        }
+
+        .hd1{
+            font-size: 34px;
+            margin-top: 20px;
+            border: 1px solid white;
+            padding: 15px 30px 15px 30px;
+            border-radius: 10px;
+            width: 1000px;
+            text-align: center;
+            background-color: #68686825;
+            margin-bottom: 0px;
+        }
+
+        abbr{
+            text-decoration: none;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+        }
+
+        .flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 100px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: transparent;
+  color: black;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: #08004e;
+}
+
+.flip-card-back {
+  background-color: #08004e;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+mark {
+  background-color: yellow;
+  color: black;
+}
+    </style>
 </head>
 <body>
-    grafika
+  <div class="header">
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+    <div class="srodek">
+        <div>
+            <p class="hd1">
+                GRAFIKA
+            </p>
+            
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px; height: 3200px;">
+                <p  style="margin-top: 10px; font-size:30px;">
+                
+                    <span style="font-size: 22px;">
+                       Wstawienie grafiki jest dobrym sposobem na uatrakcyjnienie strony.
+                    </span>
+                    <br>
+                    <br>
+                    <span style="font-size: 22px;">
+                        Do wstawiania plków graficznych wykorzystujemy znacznik <samp>&lt;img&gt;</samp>. Jest jednym z niewielu które nie wymagają zamknięcia
+                        <br><br>
+                        Znacznik wymaga atrybutu <samp>src=""</samp> który wskazuje ścieżkę do pliku.</samp>
+                    </span>
+                </p>
+                
+                
+                <br>
+                <div style="font-size: 22px;">
+                    
+                    
+                </div>
+
+                <div style="display: flex; justify-content: center; margin-top: 30px;">
+                <div class="flip-card" style="width: 500px;" >
+                    <div class="flip-card-inner" style="display: flex; justify-content: center;">
+                      <div class="flip-card-front" style="height: 300px; width: 600px;">
+                          <p style="color: white; font-size: 22px; padding-top: 100px;">
+                            &lt;img src="../img/code.webp"&gt;
+                        </p>
+                      </div>
+                      <div class="flip-card-back" style="height: 300px; font-size:22px; width: 600px;">
+                        <div style="font-size: 22px; display: flex; justify-content: center; padding-top: 50px;">
+                            <img src="../img/code.webp" style="height: 200px; width: auto;">
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+                  <div style="font-size: 20px; margin-top: 300px; text-align: center;">
+                    Możemy też określić wysokość lub szerokośc wstawianego zdjęcia korzystając z parametrów <samp>width</samp> i <samp>height</samp>. W przypadku gdy określimy tylko jeden parametr, drugi ustawi się automatycznie.
+                  </div>
+
+                  <div style="display: flex; justify-content: center; margin-top: 30px;">
+                    <div class="flip-card" style="width: 500px;" >
+                        <div class="flip-card-inner" style="display: flex; justify-content: center;">
+                          <div class="flip-card-front" style="height: 300px; width: 600px;">
+                              <p style="color: white; font-size: 22px; padding-top: 100px;">
+                                &lt;img src="../img/code.webp" height="100px"&gt;
+                            </p>
+                          </div>
+                          <div class="flip-card-back" style="height: 300px; font-size:22px; width: 600px;">
+                            <div style="font-size: 22px; display: flex; justify-content: center; padding-top: 90px;">
+                                <img src="../img/code.webp" style="height: 100px; width: auto;">
+                             </div>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+
+                      <div style="font-size: 20px; margin-top: 300px; text-align: center;">
+                        Mamy też oczywiście możliwość ustawienia ręcznie obu parametrów.
+                      </div>
+    
+                      <div style="display: flex; justify-content: center; margin-top: 30px;">
+                        <div class="flip-card" style="width: 500px;" >
+                            <div class="flip-card-inner" style="display: flex; justify-content: center;">
+                              <div class="flip-card-front" style="height: 300px; width: 600px;">
+                                  <p style="color: white; font-size: 22px; padding-top: 100px;">
+                                    &lt;img src="../img/code.webp" height="150px width="150px"&gt;
+                                </p>
+                              </div>
+                              <div class="flip-card-back" style="height: 300px; font-size:22px; width: 600px;">
+                                <div style="font-size: 22px; display: flex; justify-content: center; padding-top: 70px;">
+                                    <img src="../img/code.webp" style="height: 150px; width: 150px;">
+                                 </div>
+                              </div>
+                            </div>
+                          </div>
+                          </div>
+
+                          <div style="font-size: 20px; margin-top: 300px; text-align: left;">
+                            Warto do naszej grafiki dodać również dwa inne atrybuty, takie jak <samp>title</samp> oraz <samp>alt</samp>.<br>
+Title to atrybut nadający tytuł obrazkowi. Wartość tego atrybutu jest wyświetlana po najechaniu kursorem na obrazek.<br>
+Alt to atrybut spełniający swoją funkcję, gdy wystąpi błąd na naszej stronie i grafika nie zostanie załadowana. Wtedy wartość tego atrybutu zostanie wyświetlona zamiast grafiki.
+                          </div>
+        
+                          <div style="display: flex; justify-content: center; margin-top: 30px;">
+                            <div class="flip-card" style="width: 500px;" >
+                                <div class="flip-card-inner" style="display: flex; justify-content: center;">
+                                  <div class="flip-card-front" style="height: 300px; width: 600px;">
+                                      <p style="color: white; font-size: 22px; padding-top: 100px;">
+                                        &lt;img src="../img/code.webp" alt="grafika"
+                                        title="grafika"&gt;
+                                    </p>
+                                  </div>
+                                  <div class="flip-card-back" style="height: 300px; font-size:22px; width: 600px;">
+                                    <div style="font-size: 22px; display: flex; justify-content: center; padding-top: 50px;">
+                                        <img src="../img/code.webp" style="height: 200px; width: auto;" alt="grafika"
+                                        title="grafika">
+                                     </div>
+                                  </div>
+                                </div>
+                              </div>
+                              </div>
+
+                              <div style="display: flex; justify-content: center; margin-top: 300px;">
+                                <div class="flip-card" style="width: 500px;" >
+                                    <div class="flip-card-inner" style="display: flex; justify-content: center;">
+                                      <div class="flip-card-front" style="height: 300px; width: 600px;">
+                                          <p style="color: white; font-size: 22px; padding-top: 100px;">
+                                            &lt;img src="../blednyadres" alt="grafika"
+                                            title="grafika"&gt;
+                                        </p>
+                                      </div>
+                                      <div class="flip-card-back" style="height: 300px; font-size:22px; width: 600px;">
+                                        <div style="font-size: 22px; display: flex; justify-content: center; padding-top: 50px;">
+                                            <img src="../blednyadres" style="height: 200px; width: auto;" alt="grafika"
+                                            title="grafika">
+                                         </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  </div>
+
+                                  <div style="font-size: 20px; margin-top: 300px; text-align: center;">
+                                    Wstawiany plik nie musi znajdować się na komputerze, może być wstawiony z internetu, tylko wtedy zamiast ścieżki do pliku należy podać link do niego.
+                                  </div>
+                
+                                  <div style="display: flex; justify-content: center; margin-top: 30px;">
+                                    <div class="flip-card" style="width: 500px;" >
+                                        <div class="flip-card-inner" style="display: flex; justify-content: center;">
+                                          <div class="flip-card-front" style="height: 300px; width: 600px;">
+                                              <p style="color: white; font-size: 22px; padding-top: 100px;">
+                                                &lt;img src="https://majcherski.com/files/arch.jpg" "&gt;
+                                            </p>
+                                          </div>
+                                          <div class="flip-card-back" style="height: 300px; font-size:22px; width: 600px;">
+                                            <div style="font-size: 22px; display: flex; justify-content: center; padding-top: 50px;">
+                                                <img src="https://majcherski.com/files/arch.jpg" style="height: 200px; width: auto;" alt="cos sie zepsulo">
+                                             </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      </div>
+
+
+                          
+
+            </div>
+
+            <p class="hd1" style="margin-top: 10px; font-size:22px; height: 30px;">
+                
+              <span style="float: left;">
+                <a href="hiperlacza.html"> <- Poprzednia strona</a>
+              </span>
+              <span style="float: right;">
+                  <a href="multimedia.html">Następna strona -></a>
+              </span>
+            </p>
+
+
+
+
+
+    
+    
+
+          
+
+            
+
+
+
+
+
+        </div>
+    </div>
+    <script src="js/progressbar.js"></script>
+
+
 </body>
 </html>

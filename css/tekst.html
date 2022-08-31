@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/progressbar.css">
+
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+        body{
+            font-family: 'Oxygen', sans-serif;
+            margin: 0px 0px 0px 0px;
+            color: white;
+            margin-bottom: 200px;
+        }
+        .srodek{
+            display: flex;
+            justify-content: center;
+        }
+
+        .hd1{
+            font-size: 34px;
+            margin-top: 20px;
+            border: 1px solid white;
+            padding: 15px 30px 15px 30px;
+            border-radius: 10px;
+            width: 1000px;
+            text-align: center;
+            background-color: #68686825;
+            margin-bottom: 0px;
+        }
+
+        abbr{
+            text-decoration: none;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        .syntax{
+          height: 50px;
+          width:500px;
+          background-color: rgba(187, 187, 187, 0.226);
+          display: block;
+          text-align: center;
+          margin-bottom: 30px;
+          padding-top: 18px;
+          margin-left: 250px;
+          margin-top: 30px;
+          font-family: monospace;
+          border: 1px dotted white;
+          border-radius: 10px;
+          font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+  <div class="header">
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+    <div class="srodek">
+        <div>
+            
+            <p class="hd1" style="margin-top: 10px; font-size:30px;">
+                Tekst
+            </p>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+                Kolor tekstu
+                <bR>
+                <br>
+                <span class="syntax">
+                  selektor
+{
+   color: kolor;
+}
+                </span>
+                <Br>
+                <span style="font-size: 22px;">
+                  Jako kolor należy podać <a href="../Tabela-z-kolorami/index.html">definicję koloru</a>
+                  <br><br>
+                  Przykład:
+</span>
+<br><Br>
+
+
+                <div style="font-size: 22px;">
+                   HTML:
+                   <br>
+                   <span class="syntax">
+                    &lt;p&gt;Tekst 1&lt;/p&gt;
+                   </span>
+                   <br><br>
+                   CSS:
+                   <br>
+                   <span class="syntax">
+                     p {color: red;}
+                   </span>
+                   <br><br>
+                   Rezultat:
+                   <br>
+                   <span style="color: red;" class="syntax">
+                      Tekst 1
+                   </span>
+                </div>
+            </div>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+              Dekoracja tekstu
+              <bR>
+              <br>
+              <span class="syntax">
+                selektor
+{
+   text-decoration: dekoracja;
+}
+              </span>
+              <Br>
+              <span style="font-size: 22px;">
+                Jako "dekoracja" należy wpisać: 
+              </span>
+
+
+
+
+
+              <div style="font-size: 22px; display: flex; justify-content: center;">
+                <ul style="font-size: 22px; text-align: left;">
+                  <li><samp>none</samp> - bez dekoracji</li>
+                  <li><samp>underline</samp> - podkreślenie</li>
+                  <li><samp>line-through</samp> - przekreślenie</li>
+                  <li><samp>overline</samp> - nadkreślenie</li>
+                  <li><samp>blink</samp> - migotanie tekstu</li>
+              </ul>
+              </div>
+          </div>
+
+          <div class="hd1" style="margin-top: 10px; font-size:30px;">
+            Wielkość czcionki
+            <bR>
+            <br>
+            <span class="syntax">
+              selektor
+{
+   font-size: rozmiar;
+}
+            </span>
+            <Br>
+            <span style="font-size: 22px;">
+              Rozmiar czcionki możemy podać w trzech jednostkach: <samp> pt, px </samp> lub <samp> em </samp>
+            </span>
+
+
+        </div>
+
+        <div class="hd1" style="margin-top: 10px; font-size:30px;">
+          Transformacja
+          <bR>
+          <br>
+          <span class="syntax" style="width: 600px; margin-left: 200px;">
+            selektor
+{
+   text-transform: transformacja;
+}
+          </span>
+          <Br>
+          <span style="font-size: 22px;">
+            Jako "transformacja" należy wpisać: 
+          </span>
+
+
+
+
+
+          <div style="font-size: 22px; display: flex; justify-content: center;">
+            <ul style="font-size: 22px; text-align: left;">
+              <li><samp>none</samp> - bez transformacji</li>
+              <li><samp>capitalize</samp> - zmiana pierwszych liter na wielkie</li>
+              <li><samp>uppercase</samp> - zmiana wszystkich liter na wielkie</li>
+              <li><samp>lowercase</samp> - zmiana wszystkich liter na małe</li>
+          </ul>
+          </div>
+          <div style="font-size: 22px; display: flex; justify-content: center; margin-top: 30px;">
+            Przykłady transformacji i transpozycji &nbsp; <a href="https://i31.majcherski.com" target="_blank"> TUTAJ</a>
+          </div>
+          
+      </div>
+
+      <div class="hd1" style="margin-top: 10px; font-size:30px;">
+        Wyrównanie
+        <bR>
+        <br>
+        <span class="syntax" style="width: 600px; margin-left: 200px;">
+          selektor
+{
+   text-align: wyrównanie;
+}
+        </span>
+        <Br>
+        <span style="font-size: 22px;">
+          Jako "wyrównanie" należy wpisać: 
+        </span>
+
+
+
+
+
+        <div style="font-size: 22px; display: flex; justify-content: center;">
+          <ul class="listamargines" style="font-size: 22px; text-align: left;">
+            <li><samp>left</samp> - wyrównanie tekstu do lewego marginesu (domyślnie)</li>
+            <li><samp>right</samp> - wyrównanie do prawego marginesu</li>
+            <li><samp>center</samp> - do środka (wyśrodkowanie)</li>
+            <li><samp>justify</samp> - do obu marginesów jednocześnie (justowanie)</li>
+          
+          
+          
+          </ul>
+        </div>
+        
+    </div>
+
+    <div class="hd1" style="margin-top: 10px; font-size:30px;">
+      Odstępy między znakami
+      <bR>
+      <br>
+      <span class="syntax" style="width: 600px; margin-left: 200px;">
+        selektor
+{
+   letter-spacing: odległość;
+}
+      </span>
+      <Br>
+      <span style="font-size: 22px;">
+        Jako "odległość" należy podać wartość wyrażoną w pixelach, która będzie określała odległość między znakami. Może być to również wartość ujemna. 
+      </span>
+
+
+
+
+
+      <div style="font-size: 22px; display: flex; justify-content: center;">
+        <ul class="listamargines" style="font-size: 22px; text-align: left;">
+          <li><samp>left</samp> - wyrównanie tekstu do lewego marginesu (domyślnie)</li>
+          <li><samp>right</samp> - wyrównanie do prawego marginesu</li>
+          <li><samp>center</samp> - do środka (wyśrodkowanie)</li>
+          <li><samp>justify</samp> - do obu marginesów jednocześnie (justowanie)</li>
+        
+        
+        
+        </ul>
+      </div>
+      <br><br>
+      <span style="font-size: 22px;">
+      Przykład:
+      </span>
+      <br><br>
+      <div style="font-size: 22px;">
+        HTML:
+        <br>
+        <span class="syntax" style="height: 80px;">
+          &lt;p class="klasajeden"&gt;Tekst 1&lt;/p&gt;
+          <br>
+          &lt;p class="klasadwa"&gt;Tekst 2&lt;/p&gt;
+        </span>
+        <br><br>
+        CSS:
+        <br>
+        <span class="syntax" style="height: 80px;">
+          .klasajeden
+{
+   letter-spacing: 2px;
+}
+<Br>
+.klasadwa
+{
+   letter-spacing: -15px;
+}
+        </span>
+        <br><br>
+        Rezultat:
+        <br>
+        <span style="letter-spacing: 2px; margin-bottom: 10px;" class="syntax">
+           Tekst 1
+        </span>
+        <br>
+        <span style="letter-spacing: -15; margin-top: 10px;" class="syntax">
+          Tekst 1
+       </span>
+     </div>
+      
+  </div>
+
+
+  <div class="hd1" style="margin-top: 10px; font-size:30px;">
+    Kolor tła
+    <bR>
+    <br>
+    <span class="syntax" style="width: 600px; margin-left: 200px;">
+      selektor
+{
+   background: kolor;
+}
+    </span>
+    <Br>
+    <span style="font-size: 22px;">
+      Jako kolor należy podać <a href="../Tabela-z-kolorami/index.html">definicję koloru</a>, wartość rgb lub heksadecymalną.
+    </span>
+
+
+
+    <br><br>
+      <span style="font-size: 22px;">
+      Przykład:
+      </span>
+      <br><br>
+      <div style="font-size: 22px;">
+        HTML:
+        <br>
+        <span class="syntax" >
+          &lt;p class="napis"&gt;Tekst 1&lt;/p&gt;
+        </span>
+        <br><br>
+        CSS:
+        <br>
+        <span class="syntax" >
+          .napis
+{
+   background: #FF0000;
+}
+        </span>
+        <br><br>
+        Rezultat:
+        <br>
+        <span style=" margin-bottom: 10px;" class="syntax">
+           <span style="background-color: red;">Tekst 1</span>
+        </span>
+        
+     </div>
+    
+</div>
+
+<div class="hd1" style="margin-top: 10px; font-size:30px;">
+  Obraz jako tło
+  <bR>
+  <br>
+  <span class="syntax" style="width: 600px; margin-left: 200px;">
+    selektor
+{
+   background-image: url('scieżka');
+}
+  </span>
+  <Br>
+  <span style="font-size: 22px;">
+    Jako ścieżka należy podać scieżkę do interesującego nas obrazka 
+  </span>
+  <br><br>
+      <span style="font-size: 22px;">
+      Przykład:
+      </span>
+      <br><br>
+      <div style="font-size: 22px;">
+        HTML:
+        <br>
+        <span class="syntax" >
+          &lt;p class="napis"&gt;Tekst 1&lt;/p&gt;
+        </span>
+        <br><br>
+        CSS:
+        <br>
+        <span class="syntax" style="height: 80px;">
+          .napis
+{
+   background-image: url('../img/code.webp');
+}
+        </span>
+        <br><br>
+        Rezultat:
+        <br>
+        <span style=" margin-bottom: 10px;" class="syntax">
+           <span style="background-image: url('../img/code.webp');">Tekst 1</span>
+        </span>
+        
+     </div>
+  
+</div>
+
+
+<div class="hd1" style="margin-top: 10px; font-size:30px;">
+  Rozmiary tła
+  <bR>
+  <br>
+  <span class="syntax" style="width: 600px; margin-left: 200px;">
+    selektor
+{
+   background-size: szerokość wysokość;
+}
+  </span>
+  <Br>
+  <span style="font-size: 22px;">
+    Jako szerokość należy podać szerokość w pikselach
+<br>
+Jako wysokość należy podać wysokość w pikselach 
+  </span>
+
+
+  
+</div>
+
+
+<div class="hd1" style="margin-top: 10px; font-size:30px;">
+  Powtarzanie tła
+  <bR>
+  <br>
+  <span class="syntax" style="width: 600px; margin-left: 200px;">
+    selektor
+{
+   background-repeat: powtarzanie;
+}
+  </span>
+  <Br>
+  <span style="font-size: 22px;">
+    Jako "powtarzanie" należy wpisać:
+  </span>
+
+
+
+
+
+  <div style="font-size: 22px; display: flex; justify-content: center;">
+    <ul class="listamargines" style="font-size: 22px; text-align: left;">
+			<li><samp>repeat</samp> - powtarzanie tła w obu kierunkach (domyślnie)</li>
+			<li><samp>repeat-x</samp> - powtarzanie tła tylko w kierunku poziomym</li>
+			<li><samp>repeat-y</samp> - powtarzanie tła tylko w kierunku pionowym</li>
+			<li><samp>no-repeat</samp> - brak powtarzania tła (zostanie wyświetlone jako pojedynczy obrazek)</li>
+			<li><samp>space</samp> -  przestrzeń pomiędzy obrazkami w tle zostanie dobrana w taki sposób, aby żadna grafika nie była przycięta (CSS 3 - MSIE 9, Opera)</li>
+			<li><samp>round</samp> - wymiary obrazka w tle zostaną dopasowane w taki sposób, aby żadna grafika nie była przycięta (CSS 3 - MSIE 9, Opera)</li>
+		
+		
+		
+		</ul>
+  </div>
+  
+  
+</div>
+
+<p class="hd1" style="margin-top: 10px; font-size:22px; height: 30px; ">
+                
+  <span style="float: left;">
+    <a href="czcionki.html"> <- Poprzednia strona</a>
+  </span>
+  <span style="float: right;">
+      <a href="marginesy.html">Następna strona -></a>
+  </span>
+</p>
+
+
+
+
+
+        </div>
+    </div>
+    <script src="js/progressbar.js"></script>
+
+
+</body>
+</html>

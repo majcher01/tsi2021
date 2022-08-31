@@ -4,8 +4,913 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+        body{
+            font-family: 'Oxygen', sans-serif;
+            margin: 0px 0px 0px 0px;
+            color: white;
+            margin-bottom: 200px;
+        }
+        .srodek{
+            display: flex;
+            justify-content: center;
+        }
+
+        .hd1{
+            font-size: 34px;
+            margin-top: 20px;
+            border: 1px solid white;
+            padding: 15px 30px 15px 30px;
+            border-radius: 10px;
+            width: 1000px;
+            text-align: center;
+            background-color: #68686825;
+            margin-bottom: 0px;
+        }
+
+        abbr{
+            text-decoration: none;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+        }
+
+        .syntax{
+          height: 50px;
+          width:500px;
+          background-color: rgba(187, 187, 187, 0.226);
+          display: block;
+          text-align: center;
+          margin-bottom: 30px;
+          padding-top: 18px;
+          margin-left: 250px;
+          margin-top: 30px;
+          font-family: monospace;
+          border: 1px dotted white;
+          border-radius: 10px;
+          font-size: 20px;
+        }
+
+        /* Style the header: fixed position (always stay at the top) */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: transparent;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: transparent;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #4300fc;
+  width: 0%;
+  border-radius: 15px;
+  
+}
+
+        .flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 100px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: transparent;
+  color: black;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: #08004e;
+}
+
+.flip-card-back {
+  background-color: #08004e;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+mark {
+  background-color: yellow;
+  color: black;
+}
+    </style>
 </head>
 <body>
-    tekst
+  <div class="header">
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+    <div class="srodek">
+        <div>
+            <p class="hd1">
+                TEKST
+            </p>
+            <p class="hd1" style="margin-top: 10px; font-size:30px;">
+                
+                <span style="font-size: 22px;">
+                   Aby strona wyglądała lepiej, nie powinniśmy zostawiać domyślnych stylów, zalecana jest ich zmiana. Dzięki temu można określić np. wybraną czcionkę, kolor, rozmiar i formatowanie tekstu oraz innych elementów na stronie.
+                </span>
+            </p>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+                Rozmiar tekstu
+                <bR>
+                <br>
+                <div style="font-size: 22px;">
+                    Rozmiar tekstu można określić na dwa sposoby. Za pomocą znacznika <samp>&lt;font&gt;</samp> z parametrem <samp>size</samp> jednak jest to przestarzały znacznik i nie należy go używać. Lepszym sposobem jest nadanie stylu za pomocą CSS.
+                    <br>
+                    <br>
+                    <ul>
+                      <li>
+                        HTML<br><br>
+                        Znacznik <samp>&lt;font&gt;</samp> obsługuje tylko 7 rozmiarów czcionki, jeżeli podamy większy niż 7 i tak zostanie wyświetlona czcionka o rozmiarze 7.
+                      </li>
+                    </ul>
+                    
+                </div>
+<div style="display: flex; justify-content: center;">
+                <div style=" margin-top: 30px;">
+                <div class="flip-card" style="width: 700px;">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <p style="color: white;">
+                       <samp><b> &lt;font size="2px"&gt;&lt;/font&gt; </b></samp>
+                        </p>
+                      </div>
+                      <div class="flip-card-back">
+                        <p>
+                           <font size="2px" >Czcionka o rozmiarze 2px</font>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card" style="width: 700px; margin-top: 50px;">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <p style="color: white;">
+                       <samp><b> &lt;font size="7px"&gt;&lt;/font&gt; </b></samp>
+                        </p>
+                      </div>
+                      <div class="flip-card-back">
+                        <p>
+                           <font size="7px" >Czcionka o rozmiarze 7px</font>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card" style="width: 700px; margin-top: 50px;">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <p style="color: white;">
+                       <samp><b> &lt;font size="100px"&gt;&lt;/font&gt; </b></samp>
+                        </p>
+                      </div>
+                      <div class="flip-card-back">
+                        <p>
+                           <font size="100px" >Czcionka o rozmiarze 100px</font>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+</div>
+
+<div style="font-size: 22px; margin-top: 100px;">
+  
+  <ul>
+    <li>
+      CSS<br><br>
+      Rozmiar możemy określić stylem CSS, stosując go dla całego elementu sekcji lub umieścić tekst między znacznikami <samp>&lt;span&gt;</samp> i nadać styl tylko temu elementowi.
+    </li>
+  </ul>
+  
+</div>
+
+<div style="display: flex; justify-content: center;">
+  <div style=" margin-top: 30px;">
+  <div class="flip-card" style="width: 700px;">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <p style="color: white; font-size: 22px;">
+         <samp>&lt;span style="font-size: 30px;"&gt;Tekst o rozmiarze 30px&lt;/span&gt;</samp>
+          </p>
+        </div>
+        <div class="flip-card-back">
+          <p>
+             <span style="font-size: 30px;">Tekst o rozmiarze 30px</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+</div>
+
+            </div>
+
+
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+              Kolor tekstu
+              <bR>
+              <br>
+              <div style="font-size: 22px;">
+                  Kolor tekstu można określić na dwa sposoby. Za pomocą znacznika <samp>&lt;font&gt;</samp> z parametrem <samp>color</samp> jednak jest to przestarzały znacznik i nie należy go używać. Lepszym sposobem jest nadanie stylu za pomocą CSS.
+                  <br>
+                  <br>
+                  <ul>
+                    <li>
+                      HTML<br><br>
+                      Znacznik <samp>&lt;font&gt;</samp>.
+                    </li>
+                  </ul>
+                  
+              </div>
+<div style="display: flex; justify-content: center;">
+              <div style=" margin-top: 30px;">
+              <div class="flip-card" style="width: 700px;">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p style="color: white; font-size: 22px;">
+                     <samp>&lt;font color="yellow" &gt;Czcionka koloru żółtego&lt;/font&gt;</samp>
+                      </p>
+                    </div>
+                    <div class="flip-card-back">
+                      <p>
+                         <font color="yellow" >Czcionka koloru żółtego</font>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                
+                </div>
+</div>
+
+<div style="font-size: 22px; margin-top: 100px;">
+
+<ul>
+  <li>
+    CSS<br><br>
+    Kolor możemy określić stylem CSS, stosując go dla całego elementu sekcji lub umieścić tekst między znacznikami <samp>&lt;span&gt;</samp> i nadać styl tylko temu elementowi.
+  </li>
+</ul>
+
+</div>
+
+<div style="display: flex; justify-content: center;">
+<div style=" margin-top: 30px;">
+<div class="flip-card" style="width: 700px;">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+          <p style="color: white; font-size: 22px;">
+       <samp>&lt;span style="color: yellow;"&gt;Czcionka koloru żółtego&lt;/span&gt;</samp>
+        </p>
+      </div>
+      <div class="flip-card-back">
+        <p>
+           <span style="color: yellow;">Czcionka koloru żółtego</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+  
+</div>
+
+<div style="font-size: 22px; margin-top: 100px;">
+
+  <ul>
+    <li>
+      Sposoby określania koloru
+      <br><br>
+      Jako kolor należy podać konkretną wartość w zapisie rgb, heksadecymalnym lub definicję koloru.
+    </li>
+  </ul>
+  
+  </div>
+
+ 
+    
+  
+  <span class="syntax" style="margin-bottom: 0px;">
+  <span style="color: red;">
+  red
+  </span>
+  </span>
+  <br>
+  <span class="syntax" style="margin-bottom: 0px;">
+    <span style="color: #FF0000">
+    #FF0000
+    </span>
+    </span>
+    <br>
+    <span class="syntax" style="margin-bottom: 0px;">
+      <span style="color: rgb(255, 0, 0)">
+      rgb(255, 0, 0)
+      </span>
+      </span>
+      <br>
+  
+  
+  
+  
+
+          </div>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px; height: 740px;">
+                Wyróżniki tekstu
+                <bR>
+                <br>
+                <div style="font-size: 22px;">
+                    Język HTML posiada możliwość wyróżnienia tekstu poprzez np. pogrubienie, pochylenie, przekreślenie. Aby osiągnąć taki efekt należy zastosować jedne z poniższych znaczników:
+                    <br>
+                    <br>
+                    <span style="font-size: 16px;">
+                        Najedź na prostokąt aby zobaczyć przykład.
+                    </span>
+                </div>
+
+                <div style="display: flex; justify-content: center; margin-top: 30px;">
+                <div class="flip-card" >
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front" style="font-size: 22px; height: 500px; line-height: 2;">
+                          <p style="color: white; padding-top: 22px;">
+                            
+                            &lt;b&gt;Tekst pogrubiony&lt;/b&gt;
+                            <br>
+                              &lt;i&gt;Tekst pochylony&lt;/i&gt;
+                              <br>
+                              &lt;small&gt;Tekst pomniejszony&lt;/small&gt;
+                              <br>
+                              &lt;big&gt;Tekst powiększony&lt;/big&gt;
+                              <br>
+                              &lt;mark&gt;Tekst podświetlony&lt;/mark&gt;
+                              <br>
+                              Indeks &lt;sup&gt;górny&lt;/sup&gt;
+                              <br>
+                              Indeks &lt;sub&gt;dolny&lt;/sub&gt;
+                              <br>
+                              &lt;u&gt;Tekst podkreślony&lt;/u&gt;
+                              <br>
+                              &lt;s&gt;Tekst przekreślony&lt;/s&gt;
+
+                        </p>
+                      </div>
+                      <div class="flip-card-back" style="font-size: 22px; height: 500px; line-height: 2;">
+                        <p style="color: white; padding-top: 22px;">
+                            <b>Tekst pogrubiony</b>
+                            <br>
+                            <i>Tekst pochylony</i>
+                            <br>
+                            <small>Tekst pomniejszony</small>
+                            <br>
+                            <big>Tekst powiększony</big>
+                            <br>
+                            <mark>Tekst podświetlony</mark>
+                            <br>
+                            Indeks <sup>górny</sup>
+                            <br>
+                            Indeks <sub>dolny</sub>
+                            <br>
+                            <u>Tekst podkreślony</u>
+                            <br>
+                            <s>Tekst przekreślony</s>
+                            <br>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+            </div>
+
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+              marquee
+              <bR>
+              <br>
+              <div style="font-size: 22px;">
+                  Dzięki znacznikowi &lt;marquee&gt; możemy dodać proste animacje do strony.
+                  <br>
+                  <br>
+                  <p style="line-height: 1.8;">
+                    <b>Typ animacji</b>
+                    <br>
+                    <span>
+                      Możemy go określić dodając parametr <samp>behavior</samp>
+                    </span>
+                    <br>
+                    Istnieją następujące typy:
+                    <div style="font-size: 22px; display: flex; justify-content: center;">
+                      <ul style="font-size: 22px; text-align: left;">
+                        <li><samp>scroll</samp> - tekst przesuwa się od prawej do lewej</li>
+                        <li><samp>alternate</samp> - tekst przesuwa sie od prawej do lewej, odbija się i wraca</li>
+                        <li><samp>slide</samp> - tekst przesunie się tylko raz, a potem się zatrzyma i zostanie nieruchomy</li>
+                      </ul>
+                    </div>
+                    
+                  </p>
+              </div>
+
+              <div style="display: flex; justify-content: center; margin-top: 30px;">
+              <div class="flip-card" >
+                  <div class="flip-card-inner" style="display: flex; justify-content: center;">
+                    <div class="flip-card-front" style="width:700px;">
+                        <p style="color: white; font-size: 24px; padding-top: 10px;">
+                     <samp>&lt;marquee behavior="alternate"&gt;tekst&lt;/marquee&gt;</samp>
+                      </p>
+                    </div>
+                    <div class="flip-card-back" style="width:700px;">
+                      <p style="font-size: 16pt; color: yellow; padding-top: 15px;">
+                          <marquee behavior="alternate">tekst</marquee>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                </div>
+
+                <div style="display: flex; justify-content: center; margin-top: 30px;">
+                  <div class="flip-card" >
+                      <div class="flip-card-inner" style="display: flex; justify-content: center;">
+                        <div class="flip-card-front" style="width:700px;">
+                            <p style="color: white; font-size: 24px; padding-top: 10px;">
+                         <samp>&lt;marquee behavior="slide"&gt;tekst&lt;/marquee&gt;</samp>
+                          </p>
+                        </div>
+                        <div class="flip-card-back" style="width:700px;">
+                          <p style="font-size: 16pt; color: yellow; padding-top: 15px;">
+                              <marquee behavior="slide">tekst</marquee>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+
+
+                    
+                      
+                      <div style="font-size: 22px; padding-top: 70px;">
+                          
+                          <p style="line-height: 1.8;">
+                            <b>Kierunek animacji</b>
+                            <br>
+                            <span>
+                              Możemy go określić dodając parametr <samp>direction</samp>
+                            </span>
+                            <br>
+                            Istnieją następujące możliwości:
+                            <div style="font-size: 22px; display: flex; justify-content: center;">
+                              <ul style="font-size: 22px; text-align: left;">
+                                <li><samp>left</samp> -  tekst będzie przesuwał się w lewo (domyślnie)</li>
+                                <li><samp>right</samp> – tekst będzie przesuwał się w prawo</li>
+                                <li><samp>up</samp> – tekst będzie przesuwał się w górę</li>
+                                <li><samp>down</samp> –  tekst będzie przesuwał się w dół</li>
+                                </ul>
+                            </div>
+                            
+                          </p>
+                      </div>
+
+                      <div style="display: flex; justify-content: center; margin-top: 30px;">
+                        <div class="flip-card" >
+                            <div class="flip-card-inner" style="display: flex; justify-content: center;">
+                              <div class="flip-card-front" style="width:700px;">
+                                  <p style="color: white; font-size: 24px; padding-top: 10px;">
+                               <samp>&lt;marquee direction="up"&gt;tekst&lt;/marquee&gt;</samp>
+                                </p>
+                              </div>
+                              <div class="flip-card-back" style="width:700px;">
+                                <p style="font-size: 16pt; color: yellow; padding-top: 15px; padding-left: 170px;">
+                                    <marquee direction="up">tekst</marquee>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          </div>
+          
+                          <div style="display: flex; justify-content: center; margin-top: 30px;">
+                            <div class="flip-card" >
+                                <div class="flip-card-inner" style="display: flex; justify-content: center;">
+                                  <div class="flip-card-front" style="width:700px;">
+                                      <p style="color: white; font-size: 24px; padding-top: 10px;">
+                                   <samp>&lt;marquee direction="down"&gt;tekst&lt;/marquee&gt;</samp>
+                                    </p>
+                                  </div>
+                                  <div class="flip-card-back" style="width:700px;">
+                                    <p style="font-size: 16pt; color: yellow; padding-top: 15px; padding-left: 170px;">
+                                        <marquee direction="down">tekst</marquee>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              </div>
+
+                              <div style="display: flex; justify-content: center; margin-top: 30px;">
+                                <div class="flip-card" >
+                                    <div class="flip-card-inner" style="display: flex; justify-content: center;">
+                                      <div class="flip-card-front" style="width:700px;">
+                                          <p style="color: white; font-size: 24px; padding-top: 10px;">
+                                      <samp> &lt;marquee direction="right"&gt;tekst&lt;/marquee&gt;</samp>
+                                        </p>
+                                      </div>
+                                      <div class="flip-card-back" style="width:700px;">
+                                        <p style="font-size: 16pt; color: yellow; padding-top: 0px;">
+                                            <marquee direction="right">tekst</marquee>
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  </div>
+
+                                  <div style="font-size: 22px; padding-top: 70px;">
+                          
+                                    <p style="line-height: 1.8;">
+                                      <b>Ilość powtórzeń</b>
+                                      <br>
+                                      <span>
+                                        Aby określić ilość powtórzeń należy dodać parametr <samp>loop</samp>
+                                      </span>
+                                      <br>
+                                      na przykład:
+                                      <div style="font-size: 22px; display: flex; justify-content: center; margin-bottom: 20px;">
+                                        <samp>&lt;marquee loop="5"&gt;tekst&lt;/marquee&gt;</samp>
+                                      </div>
+                                      Zostanie wykonanych 5 powtórzeń.
+                                      
+                                    </p>
+                                </div>
+                                </div>
+                                <div class="hd1" style="margin-top: 10px; font-size:30px; height: 740px;">
+                                  Tekst preformatowany
+                                  <bR>
+                                  <br>
+                                  <div style="font-size: 22px;">
+                                    Tekst preformatowany, czyli napisany czcionką monotypiczną (o stałej szerokości znaku), który uwzględnia dodatkowe spacje, tabulację i znaki końca linii oraz nie jest automatycznie zawijany. Dzięki niemu możesz np. wkleić na stronę WWW tekst, wprost ze zwykłego edytora, bez stosowania dodatkowych znaczników. Należy jednak przy tym pamiętać, aby tekst nie zawierał znaków: "&lt;" oraz "&gt;"
+                                      <br>
+   <!--NIE DAWAJ TABOW PRZED PREFORMAT. BO SIE ROZWALI-->                                   <br>
+                                      <span>
+                                        Dodatkowo znacznik &lt;mark&gt; umożliwia podświetlenie tekstu.
+                                      </span>
+                                  </div>
+                  
+                                  <div style="display: flex; justify-content: center; margin-top: 30px;">
+                                    <pre style="font-size: 22px;">
+  Tekst preformatowany, wyswietlony czcionką monotypiczną.
+    Uwzględniający tabulacje, spacje i znaki końca linii.
+    a     b     c
+                                    </pre>
+                                    
+                                    </div>
+                                    <div>
+                                      
+                                      <pre style="font-size: 22px;">
+                                        <mark>
+ Tekst preformatowany, wyswietlony czcionką monotypiczną.
+   Uwzględniający tabulacje, spacje i znaki końca linii.
+   a     b     c
+</mark></pre>
+
+
+                                    </div>
+                  
+                              </div>
+
+
+    <!--Pozdrawiam wszystkich którzy to czytają-->   
+
+    <div class="hd1" style="margin-top: 10px; font-size:30px; height: 500px;">
+      Cytaty
+      <bR>
+      <br>
+      <div style="font-size: 22px;">
+          Język HTML umożliwia wstawienie cytatu. Służą do tego znaczniki <samp>&lt;cite&gt;&lt;/cite&gt; </samp>oraz <samp>&lt;q&gt;&lt;/q&gt;</samp><br>
+        Między <samp>&lt;cite&gt;&lt;/cite&gt; </samp> należy wstawić osobę, której wypowiedź cytujemy, a między <samp>&lt;q&gt;&lt;/q&gt;</samp> treść cytatu.
+          <br>
+          <br>
+          
+      </div>
+
+      <div style="display: flex; justify-content: center; margin-top: 30px;">
+      <div class="flip-card" >
+          <div class="flip-card-inner">
+            <div class="flip-card-front" style="font-size: 22px; height: 200px; line-height: 2;">
+                <p style="color: white; padding-top: 22px;">
+                  
+                  &lt;cite&gt;Kuba&lt;/cite&gt; powiedział &lt;q&gt;Kocham linuxa&lt;/q&gt;
+
+              </p>
+            </div>
+            <div class="flip-card-back" style="font-size: 22px; height: 200px; line-height: 2;">
+              <p style="color: white; padding-top: 22px;">
+                  <cite>Kuba</cite> powiedział <q>Kocham linuxa</q>
+              </p>
+            </div>
+          </div>
+        </div>
+        </div>
+
+  </div>
+
+
+  <div class="hd1" style="margin-top: 10px; font-size:30px; height: 550px;">
+    Akronimy
+    <bR>
+    <br>
+    <div style="font-size: 22px;">
+        Język HTML umożliwia też wstawienie akronimu. Służą do tego znaczniki <samp>&lt;abbr&gt;&lt;/abbr&gt; </samp> lub <samp>&lt;acronym&gt;&lt;/acronym&gt;</samp><br>
+      <br>
+      Znacznik akronimu musi posiadać atrybuty <samp>lang</samp> oraz <samp>title</samp>.
+      <br>
+      <br>
+      <samp>lang</samp> określa język, z którego pochodzi akronim (np. pl,en)
+      <br>
+      <samp>title</samp> - służy do podania rozwinięcia akronimu
+        <br>
+        <br>
+        
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-top: 30px;">
+    <div class="flip-card" >
+        <div class="flip-card-inner" style="display: flex; justify-content:center;">
+          <div class="flip-card-front" style="font-size: 22px; height: 200px; line-height: 2; width: 600px;">
+              <p style="color: white; padding-top: 22px;">
+                
+                Będę na miejscu &lt;abbr  lang="en" title="As Soon As Possible - tak szybko jak to możliwe"&gt;ASAP&lt;/abbr&gt;.
+
+            </p>
+          </div>
+          <div class="flip-card-back" style="font-size: 22px; height: 200px; line-height: 2; width: 600px;">
+            <p style="color: white; padding-top: 22px;">
+              Będę na miejscu <abbr  lang="en" title="As Soon As Possible - tak szybko jak to możliwe">ASAP</abbr>.
+            </p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+</div>
+
+
+<div class="hd1" style="margin-top: 10px; font-size:30px; height: 700px;">
+  Kierunek tekstu
+  <bR>
+  <br>
+  <div style="font-size: 22px;">
+      HTML pozwala na zmianę kierunku wyświetlania tekstu. Do tego celu należy wykorzystać znacznik <samp>&lt;bdo&gt;&lt;/bdo&gt;</samp>
+    <br>
+    <br>
+    Znacznik musi posiadać atrybut <samp>dir</samp> określający kierunek.
+    <br>
+    <br>
+    <samp>ltr</samp>  - (left to right) od lewej do prawej
+    <br>
+    <samp>rtl</samp> - (right to left) od prawej do lewej
+      <br>
+      <br>
+      
+  </div>
+
+  <div style="display: flex; justify-content: center; margin-top: 30px;">
+  <div class="flip-card" >
+      <div class="flip-card-inner" style="display: flex; justify-content:center;">
+        <div class="flip-card-front" style="font-size: 22px; height: 300px; line-height: 2; width: 600px;">
+            <p style="color: white; padding-top: 22px;">
+              
+              &lt;bdo dir="rtl"&gt;12345&lt;/bdo&gt;
+<br>
+&lt;bdo dir="rtl"&gt;kamil ślimak&lt;/bdo&gt;
+<br>
+&lt;bdo dir="rtl"&gt;HTML&lt;/bdo&gt;
+<br>
+&lt;bdo dir="rtl"&gt;nie wiem&lt;/bdo&gt;
+
+          </p>
+        </div>
+        <div class="flip-card-back" style="font-size: 22px; height: 300px; line-height: 2;">
+          <p style="color: white; padding-top: 22px;">
+            <bdo dir="rtl">12345</bdo>
+<br>
+<bdo dir="rtl">kamil ślimak</bdo>
+<br>
+<bdo dir="rtl">HTML</bdo>
+<br>
+<bdo dir="rtl">nie wiem</bdo>
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+</div>
+
+
+<div class="hd1" style="margin-top: 10px; font-size:30px; height: 2000px;">
+  Pozycja tekstu
+  <bR>
+  <br>
+  <div style="font-size: 22px;">
+      HTML pozwala na wyrównanie tekstu do lewej, do prawej, wysrodkowanie oraz wyjustowanie.
+    <br>
+    Aby określić pozycjonowanie należy do znacznika określającego sekcję (div, span, p itp.) dodać 
+    <br><br><samp>style="text-align: X ;"</samp>
+    <br>
+    <br>
+    <br>
+    <samp>left</samp>  - wyrównany do lewej
+    <br>
+    <samp>right</samp> - wyrównany do prawej
+    <br>
+    <samp>center</samp> - wyśrodkowany
+    <br>
+    <samp>justify</samp> - wyjustowany
+      <br>
+      <br>
+      
+  </div>
+
+
+  <div style="display: flex; justify-content: center; margin-top: 30px;">
+    <div class="flip-card" >
+        <div class="flip-card-inner" style="display: flex; justify-content:center;">
+          <div class="flip-card-front" style="font-size: 16px; height: 250px; line-height: 2; width: 600px;">
+              <p style="color: white;">
+                
+                <samp>&lt;p &gt;
+                <br>
+                Formuła 1 – przeprowadzany regularnie od 1950 roku cykl najbardziej prestiżowych międzynarodowych wyścigów samochodowych, znany również jako wyścigi Grand Prix, a jednocześnie klasa biorących w nich udział jednomiejscowych samochodów wyścigowych o otwartym nadwoziu.
+                <br>
+              &lt;/p&gt;</samp>
+            </p>
+          </div>
+          <div class="flip-card-back" style="font-size: 18px; height: 250px; line-height: 2; width: 600px;">
+            <p style="color: white; ">
+              Formuła 1 – przeprowadzany regularnie od 1950 roku cykl najbardziej prestiżowych międzynarodowych wyścigów samochodowych, znany również jako wyścigi Grand Prix, a jednocześnie klasa biorących w nich udział jednomiejscowych samochodów wyścigowych o otwartym nadwoziu.
+            </p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+  <div style="display: flex; justify-content: center; margin-top: 200px;">
+  <div class="flip-card" >
+      <div class="flip-card-inner" style="display: flex; justify-content:center;">
+        <div class="flip-card-front" style="font-size: 16px; height: 250px; line-height: 2; width: 600px;">
+            <p style="color: white;">
+              
+              <samp>&lt;p style="text-align: left;"&gt;
+              <br>
+              Formuła 1 – przeprowadzany regularnie od 1950 roku cykl najbardziej prestiżowych międzynarodowych wyścigów samochodowych, znany również jako wyścigi Grand Prix, a jednocześnie klasa biorących w nich udział jednomiejscowych samochodów wyścigowych o otwartym nadwoziu.
+              <br>
+            &lt;/p&gt;</samp>
+          </p>
+        </div>
+        <div class="flip-card-back" style="font-size: 18px; height: 250px; line-height: 2; width: 600px;">
+          <p style="color: white;  text-align: left;">
+            Formuła 1 – przeprowadzany regularnie od 1950 roku cykl najbardziej prestiżowych międzynarodowych wyścigów samochodowych, znany również jako wyścigi Grand Prix, a jednocześnie klasa biorących w nich udział jednomiejscowych samochodów wyścigowych o otwartym nadwoziu.
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-top: 200px;">
+      <div class="flip-card" >
+          <div class="flip-card-inner" style="display: flex; justify-content:center;">
+            <div class="flip-card-front" style="font-size: 16px; height: 250px; line-height: 2; width: 600px;">
+                <p style="color: white;">
+                  
+                  <samp>&lt;p style="text-align: right;"&gt;
+                  <br>
+                  Formuła 1 – przeprowadzany regularnie od 1950 roku cykl najbardziej prestiżowych międzynarodowych wyścigów samochodowych, znany również jako wyścigi Grand Prix, a jednocześnie klasa biorących w nich udział jednomiejscowych samochodów wyścigowych o otwartym nadwoziu.
+                  <br>
+                &lt;/p&gt;</samp>
+              </p>
+            </div>
+            <div class="flip-card-back" style="font-size: 18px; height: 250px; line-height: 2; width: 600px;">
+              <p style="color: white;  text-align: right;">
+                Formuła 1 – przeprowadzany regularnie od 1950 roku cykl najbardziej prestiżowych międzynarodowych wyścigów samochodowych, znany również jako wyścigi Grand Prix, a jednocześnie klasa biorących w nich udział jednomiejscowych samochodów wyścigowych o otwartym nadwoziu.
+              </p>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div style="display: flex; justify-content: center; margin-top: 200px;">
+          <div class="flip-card" >
+              <div class="flip-card-inner" style="display: flex; justify-content:center;">
+                <div class="flip-card-front" style="font-size: 16px; height: 250px; line-height: 2; width: 600px;">
+                    <p style="color: white;">
+                      
+                      <samp>&lt;p style="text-align: center;"&gt;
+                      <br>
+                      Formuła 1 – przeprowadzany regularnie od 1950 roku cykl najbardziej prestiżowych międzynarodowych wyścigów samochodowych, znany również jako wyścigi Grand Prix, a jednocześnie klasa biorących w nich udział jednomiejscowych samochodów wyścigowych o otwartym nadwoziu.
+                      <br>
+                    &lt;/p&gt;</samp>
+                  </p>
+                </div>
+                <div class="flip-card-back" style="font-size: 18px; height: 250px; line-height: 2; width: 600px;">
+                  <p style="color: white;  text-align: center;">
+                    Formuła 1 – przeprowadzany regularnie od 1950 roku cykl najbardziej prestiżowych międzynarodowych wyścigów samochodowych, znany również jako wyścigi Grand Prix, a jednocześnie klasa biorących w nich udział jednomiejscowych samochodów wyścigowych o otwartym nadwoziu.
+                  </p>
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <div style="display: flex; justify-content: center; margin-top: 200px;">
+              <div class="flip-card" >
+                  <div class="flip-card-inner" style="display: flex; justify-content:center;">
+                    <div class="flip-card-front" style="font-size: 16px; height: 250px; line-height: 2; width: 600px;">
+                        <p style="color: white;">
+                          
+                          <samp>&lt;p style="text-align: justify;"&gt;
+                          <br>
+                          Formuła 1 – przeprowadzany regularnie od 1950 roku cykl najbardziej prestiżowych międzynarodowych wyścigów samochodowych, znany również jako wyścigi Grand Prix, a jednocześnie klasa biorących w nich udział jednomiejscowych samochodów wyścigowych o otwartym nadwoziu.
+                          <br>
+                        &lt;/p&gt;</samp>
+                      </p>
+                    </div>
+                    <div class="flip-card-back" style="font-size: 18px; height: 250px; line-height: 2; width: 600px;">
+                      <p style="color: white;  text-align: justify;">
+                        Formuła 1 – przeprowadzany regularnie od 1950 roku cykl najbardziej prestiżowych międzynarodowych wyścigów samochodowych, znany również jako wyścigi Grand Prix, a jednocześnie klasa biorących w nich udział jednomiejscowych samochodów wyścigowych o otwartym nadwoziu.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                </div>
+
+</div>
+
+<p class="hd1" style="margin-top: 10px; font-size:22px; height: 30px;">
+                
+  <span style="float: left;">
+    <a href="wstep.html"> <- Poprzednia strona</a>
+  </span>
+  <span style="float: right;">
+      <a href="znaki.html">Następna strona -></a>
+  </span>
+</p>
+    
+    
+
+          
+
+            
+
+
+
+
+
+        </div>
+    </div>
+
+    <script>
+      // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+      </script>
 </body>
 </html>

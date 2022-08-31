@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/progressbar.css">
+
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+        body{
+            font-family: 'Oxygen', sans-serif;
+            margin: 0px 0px 0px 0px;
+            color: white;
+            margin-bottom: 200px;
+        }
+        .srodek{
+            display: flex;
+            justify-content: center;
+        }
+
+        .hd1{
+            font-size: 34px;
+            margin-top: 20px;
+            border: 1px solid white;
+            padding: 15px 30px 15px 30px;
+            border-radius: 10px;
+            width: 1000px;
+            text-align: center;
+            background-color: #68686825;
+            margin-bottom: 0px;
+        }
+
+        abbr{
+            text-decoration: none;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        .syntax{
+          height: 50px;
+          width:500px;
+          background-color: rgba(187, 187, 187, 0.226);
+          display: block;
+          text-align: center;
+          margin-bottom: 30px;
+          padding-top: 18px;
+          margin-left: 250px;
+          margin-top: 30px;
+          font-family: monospace;
+          border: 1px dotted white;
+          border-radius: 10px;
+          font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+  <div class="header">
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+    <div class="srodek">
+        <div>
+            
+            <p class="hd1" style="margin-top: 10px; font-size:30px;">
+                Marginesy
+            </p>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+                Margines górny
+                <bR>
+                <br>
+                <span class="syntax">
+                  selektor
+{
+   margin-top: rozmiar;
+}
+                </span>
+                <Br>
+                <span style="font-size: 22px;">
+                  Jako "rozmiar" należy podać konkretną wartość w jednostkach długości. Wpisanie auto ustali wartość automatyczną.
+                  
+</span>
+
+            </div>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+              Margines dolny
+              <bR>
+              <br>
+              <span class="syntax">
+                selektor
+{
+ margin-bottom: rozmiar;
+}
+              </span>
+              <Br>
+              <span style="font-size: 22px;">
+                Jako "rozmiar" należy podać konkretną wartość w jednostkach długości. Wpisanie auto ustali wartość automatyczną.
+                <br><br>
+                  Przykład:
+</span>
+
+<br><Br>
+
+
+  <div style="font-size: 22px;">
+     HTML:
+     <br>
+     <span class="syntax" style="height: 100px;">
+      &lt;p&gt;Tekst 1&lt;/p&gt;<br>
+&lt;p class="klasajeden"&gt;Tekst 2&lt;/p&gt;<br>
+&lt;p&gt;Tekst 3&lt;/p&gt;
+     </span>
+     <br><br>
+     CSS:
+     <br>
+     <span class="syntax">
+      .klasajeden
+      {
+         margin-bottom: 20px;
+      }
+     </span>
+     <br><br>
+     Rezultat:
+     <br>
+     <span style="height: 150px;" class="syntax" >
+        <span>Tekst 1</span><br>
+        <span style="margin-bottom: 20px; display:block;">Tekst 2</span><br>
+        <span>Tekst 3</span>
+     </span>
+  </div>
+
+          </div>
+
+          <div class="hd1" style="margin-top: 10px; font-size:30px;">
+            Lewy margines
+            <bR>
+            <br>
+            <span class="syntax">
+              selektor
+{
+   margin-left: rozmiar;
+}
+            </span>
+            <Br>
+            <span style="font-size: 22px;">
+              Natomiast jako "rozmiar" należy podać konkretną wartość w jednostkach długości. Wpisanie auto ustali wartość automatyczną.
+            </span>
+
+
+        </div>
+
+        <div class="hd1" style="margin-top: 10px; font-size:30px;">
+          Prawy margines
+          <bR>
+          <br>
+          <span class="syntax">
+            selektor
+{
+margin-right: rozmiar;
+}
+          </span>
+          <Br>
+          <span style="font-size: 22px;">
+            Jako "rozmiar" należy podać konkretną wartość w jednostkach długości. Wpisanie auto ustali wartość automatyczną.
+            <br><br>
+              Przykład:
+</span>
+
+<br><Br>
+
+
+<div style="font-size: 22px;">
+ HTML:
+ <br>
+ <span class="syntax" style="height: 100px;">
+  &lt;p&gt;Tekst 1&lt;/p&gt;<br>
+&lt;p class="klasajeden"&gt;Tekst 2&lt;/p&gt;<br>
+&lt;p&gt;Tekst 3&lt;/p&gt;
+ </span>
+ <br><br>
+ CSS:
+ <br>
+ <span class="syntax">
+  .klasajeden
+  {
+     margin-right: 80px;
+  }
+ </span>
+ <br><br>
+ Rezultat:
+ <br>
+ <span  class="syntax" >
+    <span style="display: inline-block;">Tekst 1</span>
+    <span style="margin-right: 80px; display:inline-block;">Tekst 2</span>
+    <span style="display: inline-block;">Tekst 3</span>
+ </span>
+</div>
+</div>
+
+      <div class="hd1" style="margin-top: 10px; font-size:30px;">
+        Marginesy - zapis skrócony
+        <bR>
+        <br>
+        <span class="syntax" style="width: 600px; margin-left: 200px;">
+          selektor
+{
+   margin: wartosci atrybutów;
+}
+        </span>
+        <Br>
+        <span style="font-size: 22px;">
+          Jako "wartości atrybutów" należy podać:
+        </span>
+
+
+
+
+
+        <div style="font-size: 22px; display: flex; justify-content: center;">
+          <ul class="listamargines" style="font-size: 22px; text-align: left;">
+            <li><samp>Jedną wartość</samp> -  wtedy wszystkie marginesy będą jednakowe</li>
+            <li><samp>Dwie wartości</samp> -  z których pierwsza oznacza górny i dolny margines, natomiast druga -  lewy i prawy.</li>
+            <li><samp>Trzy wartości </samp> -  z których pierwsza oznacza górny margines, druga - jednocześnie lewy i prawy, a ostatnia - dolny.</li>
+            <li><samp>Cztery wartości</samp>  - które oznaczają kolejno marginesy: górny, prawy, dolny, lewy.</li>
+      
+          
+          
+          
+          </ul>
+        </div>
+        
+    </div>
+
+    <p class="hd1" style="margin-top: 10px; font-size:22px; height: 30px; ">
+                
+      <span style="float: left;">
+        <a href="tekst.html"> <- Poprzednia strona</a>
+      </span>
+      <span style="float: right;">
+          <a href="obramowanie.html">Następna strona -></a>
+      </span>
+    </p>
+
+
+
+
+
+
+        </div>
+    </div>
+    <script src="js/progressbar.js"></script>
+
+
+</body>
+</html>

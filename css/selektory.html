@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/progressbar.css">
+
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+        body{
+            font-family: 'Oxygen', sans-serif;
+            margin: 0px 0px 0px 0px;
+            color: white;
+            margin-bottom: 200px;
+        }
+        .srodek{
+            display: flex;
+            justify-content: center;
+        }
+
+        .hd1{
+            font-size: 34px;
+            margin-top: 20px;
+            border: 1px solid white;
+            padding: 15px 30px 15px 30px;
+            border-radius: 10px;
+            width: 1000px;
+            text-align: center;
+            background-color: #68686825;
+            margin-bottom: 0px;
+        }
+
+        abbr{
+            text-decoration: none;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        .syntax{
+          height: 50px;
+          width:500px;
+          background-color: rgba(187, 187, 187, 0.226);
+          display: block;
+          text-align: center;
+          margin-bottom: 30px;
+          padding-top: 18px;
+          margin-left: 250px;
+          margin-top: 30px;
+          font-family: monospace;
+          border: 1px dotted white;
+          border-radius: 10px;
+          font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+  <div class="header">
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+    <div class="srodek">
+        <div>
+            
+            <p class="hd1" style="margin-top: 10px; font-size:30px;">
+                Selektory
+                
+            </p>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+                Czym są selektory ?
+                <bR>
+                <br>
+                <div style="font-size: 22px; ">
+                  W CSS selektor to cześć stylu która poprzedza otwierający nawias klamrowy. Określa on do jakiego elementu odnosi się dana reguła.
+
+                  Selektorami mogą być praktycznie wszystkie tagi HTML takie jak: <samp> h1, h2, ol, ul, li, p, span </samp> itd.
+                </div>
+            </div>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+                Najważniejsze selektory:
+                
+            </div>
+
+            <div class="hd1" style="margin-top: 10px; font-size:30px;">
+              *
+              <bR>
+              <br>
+              <div style="font-size: 22px; ">
+                Symbol gwiazdki obierze za cel każdy element znajdujący się na stronie. Wielu deweloperów używa tego triku by wyzerować <samp>margin</samp>  i <samp>padding</samp> dla całej strony.
+                <br>
+                <span class="syntax">
+                  *
+{
+   margin: 0;
+   padding: 0;
+}
+                </span>
+              </div>
+          </div>
+
+          <div class="hd1" style="margin-top: 10px; font-size:30px;">
+            #X
+            <bR>
+            <br>
+            <div style="font-size: 22px; ">
+              Symbol '#' pozwala nam wybrać cel na podstawie id.Jest to najpopularniejszy sposób wykorzystania, jednak bądź ostrożny używając go.
+              <br>
+              <span class="syntax">
+                #x
+{
+   width: 960px;
+   margin: auto;
+}
+              </span>
+            </div>
+        </div>
+
+        <div class="hd1" style="margin-top: 10px; font-size:30px;">
+          .X
+          <bR>
+          <br>
+          <div style="font-size: 22px; ">
+            Jest to selektor klasy. Różnica między nim a id jest taka, że klasą możesz wybrać wiele elementów. Użyj klasy jeśli chcesz nadać styl grupie elementów. Ewentualnie, użyj id by znaleźć i wystylizować tylko konkretny element.
+            <br>
+            <span class="syntax">
+              .x
+{
+   color: red;
+}
+            </span>
+          </div>
+      </div>
+
+
+      <div class="hd1" style="margin-top: 10px; font-size:30px;">
+        X Y
+        <bR>
+        <br>
+        <div style="font-size: 22px; ">
+          Jednym z najpopularniejszych selektorów jest selektor potomka. Jeśli musisz lepiej sprecyzować cel, używasz właśnie tego. Na przykład, jeśli zamiast zaznaczać wszystkie linki, chcesz wybrać tylko te, które znajdują się w nieuporządkowane liście? Jest to sprecyzowane, gdy używasz selektora potomka.
+          <br>
+          <span class="syntax">
+            li a
+{
+   text-decoration: none;
+}
+          </span>
+        </div>
+    </div>
+
+    <div class="hd1" style="margin-top: 10px; font-size:30px;">
+      X
+      <bR>
+      <br>
+      <div style="font-size: 22px; ">
+        Jeśli chcesz zaznaczyć wszystkie elementy tego samego typu bez używania id lub klasy użyj selektora typu. Jeśli chcesz zaznaczyć wszystkie nieuporządkowane listy, użyj <samp>ul {}</samp>.
+        <br>
+        <span class="syntax">
+          ul
+{
+   margin-left: 0;
+}
+        </span>
+      </div>
+  </div>
+
+  <div class="hd1" style="margin-top: 10px; font-size:30px;">
+    X:VISITED / X:LINK
+    <bR>
+    <br>
+    <div style="font-size: 22px; ">
+      Pseudo-klasy <samp>:link</samp> używamy by zaznaczyć wszystkie linki które jeszcze nie były kliknięte. Ewentualnie, używamy pseudo-klasy <samp>:visited</samp>, która, pozwala na dodanie stylu do linka na stronie który był kliknięty, lub odwiedzony.
+      <br>
+      <span class="syntax" style="height: 70px;">
+        a:link
+{
+   color: red;
+}
+<br>
+a:visited
+{
+   color: purple;
+}
+      </span>
+    </div>
+</div>
+
+
+<div class="hd1" style="margin-top: 10px; font-size:30px;">
+  X + Y
+  <bR>
+  <br>
+  <div style="font-size: 22px; ">
+    Ten selektor odwołuje się do sąsiedniego selektora. Wybierze tylko ten element, który występuje bezpośrednio po wcześniej wymienionym elemencie. W tym przypadku, tylko pierwszy paragraf, po każdym ul będzie miał czerwony tekst.
+    <br>
+    <span class="syntax">
+      ul + p
+{
+   color: red;
+}
+    </span>
+  </div>
+</div>
+
+<div class="hd1" style="margin-top: 10px; font-size:30px;">
+  X ~ Y
+  <bR>
+  <br>
+  <div style="font-size: 22px; ">
+    Ogólny selektor następnika jest podobny do X + Y, ale jest mniej ścisły. Kiedy selektor następnika (ul + p) wybierze tylko pierwszy element występujący natychmiast po poprzednim selektorze, ten jest bardziej ogólny.Wybierze, odwołując się do przykładu wyżej, każdy element p jeśli tylko następuje po ul.
+    <br>
+    <span class="syntax">
+      ul ~ p
+{
+   color: red;
+}
+    </span>
+  </div>
+</div>
+
+
+<div class="hd1" style="margin-top: 10px; font-size:30px;">
+  X[TITLE]
+  <bR>
+  <br>
+  <div style="font-size: 22px; ">
+    Odwołując się do tak zwanego selektora atrybutu,w przykładzie powyżej, wybierze on tylko element z atrybutem <samp>title</samp>.
+    <br>
+    <span class="syntax">
+      a[title]
+{
+   color: green;
+}
+    </span>
+  </div>
+</div>
+
+<div class="hd1" style="margin-top: 10px; font-size:30px;">
+  X:CHECKED
+  <bR>
+  <br>
+  <div style="font-size: 22px; ">
+    Ta pseudo-klasa obierze za cel tylko zaznaczone elementy - jak przycisk radio lub checkbox.
+    <br>
+    <span class="syntax" style="height: 70px;">
+      input[type=radio]:checked<br>
+{
+   border: 1px solid black;
+}
+    </span>
+  </div>
+</div>
+
+
+<div class="hd1" style="margin-top: 10px; font-size:30px;">
+  X:HOVER
+  <bR>
+  <br>
+  <div style="font-size: 22px; ">
+    Jest to pseudo-klasa akcji użytkownika, która działa na zasadzie najechania kursorem na dany element. W poniższym przykładzie po najechaniu kursorem na element <samp>div</samp> jego tło zmieni się na czerwony.
+    <br>
+    <span class="syntax">
+      div:hover
+{
+   background-color: red;
+}
+    </span>
+  </div>
+</div>
+
+
+<div class="hd1" style="margin-top: 10px; font-size:30px;">
+  X::PSEUDOELEMENT
+  <bR>
+  <br>
+  <div style="font-size: 22px; ">
+    Możemy użyć pseudo-elementu (poprzedzonego ::) by wystylizować elementy takie jak pierwsza linia czy pierwsza litera. Zapamiętaj, że muszą one być dodane do elementów blokowych, by zadziałały.
+    <br>
+    <span class="syntax">
+      p::first-line
+{
+   font-size: 20px;
+}
+    </span>
+  </div>
+</div>
+
+
+<div class="hd1" style="margin-top: 10px; font-size:30px;">
+  X::NTH-CHILD(N)
+  <bR>
+  <br>
+  <div style="font-size: 22px; ">
+    <samp> nth-child </samp> akceptuje tylko naturalne liczby i zaczyna się od 1. Jeśli chcesz wybrać drugi element z listy użyj <samp>li:nth-child(2)</samp>.
+
+Możemy tego użyć by wybrać grupę elementów. Na przykład użyjemy <samp>li:nth-child(4)</samp> by wybrać co czwarty element listy.
+    <br>
+    <span class="syntax">
+      li:nth-child(3)
+{
+   color: red;
+}
+    </span>
+  </div>
+</div>
+
+<p class="hd1" style="margin-top: 10px; font-size:22px; height: 30px; ">
+                
+  <span style="float: left;">
+    <a href="wstep.html"> <- Poprzednia strona</a>
+  </span>
+  <span style="float: right;">
+      <a href="czcionki.html">Następna strona -></a>
+  </span>
+</p>
+
+
+
+
+
+
+        </div>
+    </div>
+    <script src="js/progressbar.js"></script>
+
+
+</body>
+</html>
