@@ -1,0 +1,5 @@
+w html/hiperlacza link otwierajacy podstrone multimedia wrzucony na flipcarda (I-78)
+zmiana nazy przycisku w navbarze, I-67
+zmiana nazwy odnosnikow w multimediach, I-68
+w html/tekst zostaly usuniete nagowki "HTML" i "CSS" oraz punktory, I-70
+dodanie polskiego akronimu w html/tekst, I-72
