@@ -3,3 +3,9 @@ zmiana nazy przycisku w navbarze, I-67
 zmiana nazwy odnosnikow w multimediach, I-68
 w html/tekst zostaly usuniete nagowki "HTML" i "CSS" oraz punktory, I-70
 dodanie polskiego akronimu w html/tekst, I-72
+
+==2.61
+quiz przed linkami w navbarze, I-62
+tabelka, I-77
+
+
